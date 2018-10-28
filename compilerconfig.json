@@ -1,0 +1,50 @@
+﻿[
+  {
+    "outputFile": "content/chat/chat.css",
+    "inputFile": "content/chat/chat.scss"
+  },
+  {
+    "outputFile": "content/formValidation/formValidation.css",
+    "inputFile": "content/formValidation/formValidation.scss"
+  },
+  {
+    "outputFile": "content/JavascriptCalculus/JavascriptCalculus.css",
+    "inputFile": "content/JavascriptCalculus/JavascriptCalculus.scss"
+  },
+  {
+    "outputFile": "content/JavascriptCalculus/SecondDegreeFuntionStyles/SecondDegreeFuntionStyles.css",
+    "inputFile": "content/JavascriptCalculus/SecondDegreeFuntionStyles/SecondDegreeFuntionStyles.scss"
+  },
+  {
+    "outputFile": "content/formValidation/Sarus-Rule.css",
+    "inputFile": "content/formValidation/Sarus-Rule.scss"
+  },
+  {
+    "outputFile": "content/JavascriptCalculus/Sarus-Rule.css",
+    "inputFile": "content/JavascriptCalculus/Sarus-Rule.scss"
+  },
+  {
+    "outputFile": "content/WineMajestic/WineMajestic.css",
+    "inputFile": "content/WineMajestic/WineMajestic.scss"
+  },
+  {
+    "outputFile": "content/Video/Video.css",
+    "inputFile": "content/Video/Video.scss"
+  },
+  {
+    "outputFile": "content/EventListener/changeImg.css",
+    "inputFile": "content/EventListener/changeImg.scss"
+  },
+  {
+    "outputFile": "content/EventListener/changeBlock.css",
+    "inputFile": "content/EventListener/changeBlock.scss"
+  },
+  {
+    "outputFile": "content/AIA Worldwide/AIA-Worldwide.css",
+    "inputFile": "content/AIA Worldwide/AIA-Worldwide.scss"
+  },
+  {
+    "outputFile": "content/mixins/mixins.css",
+    "inputFile": "content/mixins/mixins.scss"
+  }
+]
