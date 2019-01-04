@@ -1,3 +1,5 @@
 #app {
   margin: 25px auto;
   max-width: 500px; }
+  #app .text {
+    font-size: 14px; }
