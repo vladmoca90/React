@@ -9,11 +9,7 @@ class App extends React.Component {
   }
 
   render() {
-    return React.createElement(
-      'h1',
-      null,
-      this.state.title
-    );
+    return React.createElement('h1', null, this.state.title);
   }
 }
 
