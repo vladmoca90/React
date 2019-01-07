@@ -24,8 +24,8 @@ var MyName = function (_React$Component) {
   _createClass(MyName, [{
     key: 'render',
     value: function render() {
-      function sum(a, b) {
-        return a + b;
+      function averageGrades(a, b, c) {
+        return ((a + b + c) / 3).toFixed(2);
       }
 
       return React.createElement(
@@ -47,9 +47,9 @@ var MyName = function (_React$Component) {
           profile.nationality
         ),
         React.createElement(
-          'h5',
+          'h3',
           null,
-          sum(1, 7)
+          averageGrades(9.55, 9.05, 9.95)
         )
       );
     }
