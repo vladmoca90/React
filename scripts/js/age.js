@@ -6,27 +6,26 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-import MyAge from 'age.js';
+var age = 28;
+export var MyAge = function (_React$Component) {
+  _inherits(MyAge, _React$Component);
 
-var MyName = function (_React$Component) {
-  _inherits(MyName, _React$Component);
+  function MyAge() {
+    _classCallCheck(this, MyAge);
 
-  function MyName() {
-    _classCallCheck(this, MyName);
-
-    return _possibleConstructorReturn(this, (MyName.__proto__ || Object.getPrototypeOf(MyName)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (MyAge.__proto__ || Object.getPrototypeOf(MyAge)).apply(this, arguments));
   }
 
-  _createClass(MyName, [{
-    key: 'render',
+  _createClass(MyAge, [{
+    key: "render",
     value: function render() {
-      return React.createElement(MyAge, null);
+      return React.createElement(
+        "p",
+        null,
+        age
+      );
     }
   }]);
 
-  return MyName;
-}(React.Component);
-
-;
-
-ReactDOM.render(React.createElement(MyName, null), document.getElementById('app'));
+  return MyAge;
+}(React.Component);;

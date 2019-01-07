@@ -1,10 +1,8 @@
-import React from 'react';
-import ReactDOM from 'React-dom';
-
-class myProfile extends React.Component {
+import MyAge from 'age.js';
+class MyName extends React.Component {
   render() {
-    return <h1>Vlad Mocanu</h1>;
+    return <MyAge />;
   }
 };
 
-ReactDOM.render(<myProfile />, document.getElementById('app'));
+ReactDOM.render(<MyName />, document.getElementById('app'));
