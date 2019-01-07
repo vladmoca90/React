@@ -15,18 +15,19 @@ var profile = {
 var MyName = function (_React$Component) {
   _inherits(MyName, _React$Component);
 
-  function MyName(props) {
+  function MyName() {
     _classCallCheck(this, MyName);
 
-    var _this = _possibleConstructorReturn(this, (MyName.__proto__ || Object.getPrototypeOf(MyName)).call(this, props));
-
-    _this.state = { totalClicks: 0 };
-    return _this;
+    return _possibleConstructorReturn(this, (MyName.__proto__ || Object.getPrototypeOf(MyName)).apply(this, arguments));
   }
 
   _createClass(MyName, [{
     key: 'render',
     value: function render() {
+      function sum(a, b) {
+        return a + b;
+      }
+
       return React.createElement(
         'div',
         null,
@@ -44,6 +45,11 @@ var MyName = function (_React$Component) {
           'h3',
           null,
           profile.nationality
+        ),
+        React.createElement(
+          'h5',
+          null,
+          sum(1, 7)
         )
       );
     }
