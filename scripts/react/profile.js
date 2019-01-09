@@ -5,6 +5,9 @@ const profile = {
 }
 
 class MyName extends React.Component {
+  constructor(props) {
+        super(props);
+  }
 
     render() {
       function averageGrades(a, b, c) {
