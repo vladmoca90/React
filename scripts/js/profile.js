@@ -15,10 +15,10 @@ var profile = {
 var MyName = function (_React$Component) {
   _inherits(MyName, _React$Component);
 
-  function MyName() {
+  function MyName(props) {
     _classCallCheck(this, MyName);
 
-    return _possibleConstructorReturn(this, (MyName.__proto__ || Object.getPrototypeOf(MyName)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (MyName.__proto__ || Object.getPrototypeOf(MyName)).call(this, props));
   }
 
   _createClass(MyName, [{
