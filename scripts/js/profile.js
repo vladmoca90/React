@@ -6,23 +6,24 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var profile = {
-  name: 'Vlad Mocanu',
-  age: 28,
-  nationality: 'Romanian'
-};
+import { profile } from './profileObj';
 
 var MyName = function (_React$Component) {
   _inherits(MyName, _React$Component);
 
-  function MyName(props) {
+  function MyName() {
     _classCallCheck(this, MyName);
 
-    return _possibleConstructorReturn(this, (MyName.__proto__ || Object.getPrototypeOf(MyName)).call(this, props));
+    return _possibleConstructorReturn(this, (MyName.__proto__ || Object.getPrototypeOf(MyName)).apply(this, arguments));
   }
 
   _createClass(MyName, [{
     key: 'render',
+
+    // constructor(props) {
+    //       super(props);
+    // }
+
     value: function render() {
       function averageGrades(a, b, c) {
         return ((a + b + c) / 3).toFixed(2);
