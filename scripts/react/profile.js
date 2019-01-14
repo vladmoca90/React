@@ -1,9 +1,10 @@
-import { profile } from './profileObj';
+const profile = {
+  name: 'Vlad Mocanu',
+  age: 28,
+  nationality: 'Romanian',
+}
 
 class MyName extends React.Component {
-  // constructor(props) {
-  //       super(props);
-  // }
 
     render() {
       function averageGrades(a, b, c) {
