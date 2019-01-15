@@ -1,4 +1,4 @@
-const data = [
+const persons = [
     {
         name: "Joe",
         age: 27
@@ -16,8 +16,13 @@ const data = [
 class Names extends React.Component {
 
     render() {
+        for(var i = 0; i<persons.length; i++ ) {
+
+        }
         return (
-            <div>{data.map((data) => data.name)}</div>
+            <ul>
+                <li>{persons.map((persons) => persons.name)}</li>
+            </ul>
         );
     }
 }

@@ -6,7 +6,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var data = [{
+var persons = [{
     name: "Joe",
     age: 27
 }, {
@@ -29,12 +29,17 @@ var Names = function (_React$Component) {
     _createClass(Names, [{
         key: "render",
         value: function render() {
+            for (var i = 0; i < persons.length; i++) {}
             return React.createElement(
-                "div",
+                "ul",
                 null,
-                data.map(function (data) {
-                    return data.name;
-                })
+                React.createElement(
+                    "li",
+                    null,
+                    persons.map(function (persons) {
+                        return persons.name;
+                    })
+                )
             );
         }
     }]);
