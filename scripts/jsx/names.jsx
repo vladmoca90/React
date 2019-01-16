@@ -16,7 +16,7 @@ const persons = [
 class Names extends React.Component {
 
     render() {
-        for(var i = 0; i<persons.length; i++ ) {
+        for(var i = 0; i < persons.length; i++ ) {
 
         }
         return (
