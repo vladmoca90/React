@@ -16,7 +16,7 @@ class NumberList extends React.Component {
 
     render() {
         const listItems = numbers.map((number) =>
-            <li style={numberStyling(colors)} key={number.toString()}>{number}</li>
+            <li style={numberStyling(colors)} key={number.toString()}>{number * 10}</li>
         );
         return (
             <ul>

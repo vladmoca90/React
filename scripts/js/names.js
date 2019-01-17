@@ -17,6 +17,16 @@ var persons = [{
     age: 25
 }];
 
+function returnPersonName(persons) {
+    return persons.map(function (persons) {
+        return React.createElement(
+            "li",
+            null,
+            persons.name
+        );
+    });
+}
+
 var Names = function (_React$Component) {
     _inherits(Names, _React$Component);
 
@@ -29,17 +39,10 @@ var Names = function (_React$Component) {
     _createClass(Names, [{
         key: "render",
         value: function render() {
-            for (var i = 0; i < persons.length; i++) {}
             return React.createElement(
                 "ul",
                 null,
-                React.createElement(
-                    "li",
-                    null,
-                    persons.map(function (persons) {
-                        return persons.name;
-                    })
-                )
+                returnPersonName(persons)
             );
         }
     }]);

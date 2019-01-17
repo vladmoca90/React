@@ -13,15 +13,16 @@ const persons = [
     }
 ];
 
+function returnPersonName(persons) {
+    return persons.map((persons) => <li>{persons.name}</li>);
+}
+
 class Names extends React.Component {
 
     render() {
-        for(var i = 0; i < persons.length; i++ ) {
-
-        }
         return (
             <ul>
-                <li>{persons.map((persons) => persons.name)}</li>
+                {returnPersonName(persons)}
             </ul>
         );
     }

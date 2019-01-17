@@ -36,7 +36,7 @@ var NumberList = function (_React$Component) {
                 return React.createElement(
                     'li',
                     { style: numberStyling(colors), key: number.toString() },
-                    number
+                    number * 10
                 );
             });
             return React.createElement(
