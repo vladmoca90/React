@@ -17,7 +17,9 @@ var persons = [{
     age: 25
 }];
 
-function returnPersonName(persons) {
+function returnPersonName(_ref) {
+    var persons = _ref.persons;
+
     return persons.map(function (persons) {
         return React.createElement(
             "li",
@@ -42,7 +44,7 @@ var Names = function (_React$Component) {
             return React.createElement(
                 "ul",
                 null,
-                returnPersonName(persons)
+                React.createElement("returnPersonName", null)
             );
         }
     }]);
