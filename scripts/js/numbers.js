@@ -8,6 +8,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
+var colors = {
+    red: 'red'
+};
+
 var NumberList = function (_React$Component) {
     _inherits(NumberList, _React$Component);
 
@@ -23,7 +27,7 @@ var NumberList = function (_React$Component) {
             var listItems = numbers.map(function (number) {
                 return React.createElement(
                     'li',
-                    { key: number.toString() },
+                    { style: { color: colors.red }, key: number.toString() },
                     number
                 );
             });
