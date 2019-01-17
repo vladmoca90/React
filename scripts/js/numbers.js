@@ -11,10 +11,10 @@ var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var NumberList = function (_React$Component) {
     _inherits(NumberList, _React$Component);
 
-    function NumberList(props) {
+    function NumberList() {
         _classCallCheck(this, NumberList);
 
-        return _possibleConstructorReturn(this, (NumberList.__proto__ || Object.getPrototypeOf(NumberList)).call(this, props));
+        return _possibleConstructorReturn(this, (NumberList.__proto__ || Object.getPrototypeOf(NumberList)).apply(this, arguments));
     }
 
     _createClass(NumberList, [{
