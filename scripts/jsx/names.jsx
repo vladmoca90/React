@@ -13,7 +13,7 @@ const persons = [
     }
 ];
 
-function returnPersonName({persons}) {
+function returnPersonName(persons) {
     return persons.map((persons) => <li>{persons.name}</li>);
 }
 
@@ -22,7 +22,7 @@ class Names extends React.Component {
     render() {
         return (
             <ul>
-                <returnPersonName/>
+                {returnPersonName(persons)}
             </ul>
         );
     }
