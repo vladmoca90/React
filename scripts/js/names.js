@@ -27,6 +27,16 @@ function returnPersonName(persons) {
     });
 }
 
+function returnPersonAge(persons) {
+    return persons.map(function (persons) {
+        return React.createElement(
+            "option",
+            null,
+            persons.age
+        );
+    });
+}
+
 var Names = function (_React$Component) {
     _inherits(Names, _React$Component);
 
@@ -40,9 +50,18 @@ var Names = function (_React$Component) {
         key: "render",
         value: function render() {
             return React.createElement(
-                "ul",
+                "div",
                 null,
-                returnPersonName(persons)
+                React.createElement(
+                    "ul",
+                    null,
+                    returnPersonName(persons)
+                ),
+                React.createElement(
+                    "select",
+                    null,
+                    returnPersonAge(persons)
+                )
             );
         }
     }]);
