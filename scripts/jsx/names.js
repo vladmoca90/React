@@ -17,13 +17,22 @@ function returnPersonName(persons) {
     return persons.map((persons) => <li>{persons.name}</li>);
 }
 
+function returnPersonAge(persons) {
+    return persons.map((persons) => <option>{persons.age}</option>);
+}
+
 class Names extends React.Component {
 
     render() {
         return (
-            <ul>
-                {returnPersonName(persons)}
-            </ul>
+            <div>
+                <ul>
+                    {returnPersonName(persons)}
+                </ul>
+                <select>
+                    {returnPersonAge(persons)}
+                </select>
+            </div>
         );
     }
 }
