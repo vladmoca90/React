@@ -13,9 +13,9 @@ const persons = [
     }
 ];
 
-persons.PropsTypes = {
-    name: propTypes.string.isRequired,
-    age: propTypes.number.isRequired,
+Names.propsTypes = {
+    name: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
 }
 
 function returnPersonName(persons) {
