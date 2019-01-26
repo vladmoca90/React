@@ -4,10 +4,6 @@ const profile = {
   nationality: 'Romanian',
 }
 
-MyName.propTypes = {
-
-}
-
 class MyName extends React.Component {
     render() {
     return (

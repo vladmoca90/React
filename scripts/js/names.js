@@ -17,6 +17,11 @@ var persons = [{
     age: 25
 }];
 
+Names.propsTypes = {
+    name: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired
+};
+
 function returnPersonName(persons) {
     return persons.map(function (persons) {
         return React.createElement(
