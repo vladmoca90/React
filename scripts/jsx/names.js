@@ -13,6 +13,11 @@ const persons = [
     }
 ];
 
+persons.PropsTypes = {
+    name: propTypes.string.isRequired,
+    age: propTypes.number.isRequired,
+}
+
 function returnPersonName(persons) {
     return persons.map((persons) => <li>{persons.name}</li>);
 }
@@ -22,7 +27,6 @@ function returnPersonAge(persons) {
 }
 
 class Names extends React.Component {
-
     render() {
         return (
             <div>
