@@ -1,5 +1,8 @@
-#app {
-  margin: 25px auto;
-  max-width: 300px; }
-  #app .text {
-    font-size: 16px; }
+.name {
+    color: blue;
+    margin-top: 10px;
+}
+
+.age {
+    font-size: 15px;
+}

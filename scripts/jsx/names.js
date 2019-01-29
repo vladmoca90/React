@@ -13,17 +13,12 @@ const persons = [
     }
 ];
 
-Names.propsTypes = {
-    name: PropTypes.string.isRequired,
-    age: PropTypes.number.isRequired,
-}
-
 function returnPersonName(persons) {
-    return persons.map((persons) => <li>{persons.name}</li>);
+    return persons.map((persons) => <li key={persons.name} className="name">{persons.name}</li>);
 }
 
 function returnPersonAge(persons) {
-    return persons.map((persons) => <option>{persons.age}</option>);
+    return persons.map((persons) => <option key={persons.age} className="age">{persons.age}</option>);
 }
 
 class Names extends React.Component {
