@@ -2,17 +2,24 @@
   "name": "reactjs",
   "version": "1.0.0",
   "description": "ReactJS",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "dependencies": {
-    "babel-preset-react": "^6.24.1"
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^3.1.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "yarn": "^1.13.0"
   },
   "devDependencies": {
-
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
   },
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ag_dubs <vladmoca90@gmail.com>",
-  "license": "MIT",
-  "keywords": []
+  "license": "MIT"
 }
