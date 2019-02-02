@@ -12,12 +12,17 @@ var data = [{
 }, {
     make: 'Honda',
     model: 'Civic',
-    year: 2009,
+    year: 2012,
     img: ''
 }, {
     make: 'Honda',
     model: 'Civic',
-    year: 2009,
+    year: 2018,
+    img: ''
+}, {
+    make: 'Honda',
+    model: 'Civic',
+    year: 2005,
     img: ''
 }, {
     make: 'Honda',
