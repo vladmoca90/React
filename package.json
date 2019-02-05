@@ -21,6 +21,12 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production"
   },
+  "babel": {
+    "presets": [
+        "@babel/env",
+        "@babel/react"
+    ]
+},
   "author": "ag_dubs <vladmoca90@gmail.com>",
   "license": "MIT"
 }
