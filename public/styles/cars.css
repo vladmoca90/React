@@ -6,3 +6,12 @@
   .content-showroom .card {
     border: 1px solid #ccc;
     width: 350px; }
+    .content-showroom .card__header {
+      font-weight: bold; }
+    .content-showroom .card__buttons {
+      display: flex;
+      justify-content: space-around; }
+      .content-showroom .card__buttons a {
+        border: 2px solid #ccc;
+        display: inline-block;
+        padding: 5px; }

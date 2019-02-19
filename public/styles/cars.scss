@@ -7,5 +7,20 @@
     .card {
         border: 1px solid #ccc;
         width: 350px;
+
+        &__header {
+            font-weight: bold;
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                border: 2px solid #ccc;
+                display: inline-block;
+                padding: 5px;
+            }
+        }
     }
 }
