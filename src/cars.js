@@ -18,7 +18,9 @@ class Showroom extends Component {
           <img alt={carName} src={carImg} />
         </div>
         <div class="card__buttons">
-
+          <a href="https://reactjs.org/">Enquiry</a>
+          <a href="https://reactjs.org/">Brochure</a>
+          <a href="https://reactjs.org/">More details</a>
         </div>
       </div>
     );

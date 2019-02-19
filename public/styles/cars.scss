@@ -1,0 +1,11 @@
+.content-showroom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    .card {
+        border: 1px solid #ccc;
+        width: 350px;
+    }
+}
