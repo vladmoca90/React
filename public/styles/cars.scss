@@ -12,6 +12,12 @@
             font-weight: bold;
         }
 
+        &__body {
+            img {
+                max-width: 300px;
+            }
+        }
+
         &__buttons {
             display: flex;
             justify-content: space-around;

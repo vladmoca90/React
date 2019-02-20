@@ -8,6 +8,8 @@
     width: 350px; }
     .content-showroom .card__header {
       font-weight: bold; }
+    .content-showroom .card__body img {
+      max-width: 300px; }
     .content-showroom .card__buttons {
       display: flex;
       justify-content: space-around; }
