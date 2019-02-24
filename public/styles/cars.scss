@@ -14,7 +14,9 @@
 
         &__body {
             img {
-                max-width: 320px;
+                display: block;
+                margin: 0 auto;
+                width: 320px;
             }
         }
 
@@ -23,7 +25,7 @@
             justify-content: space-around;
 
             a {
-                border: 2px solid #ccc;
+                border: 2px solid #abc;
                 border-radius: 12px;
                 display: inline-block;
                 padding: 5px;

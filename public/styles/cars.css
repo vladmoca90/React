@@ -9,12 +9,14 @@
     .content-showroom .card__header {
       font-weight: bold; }
     .content-showroom .card__body img {
-      max-width: 320px; }
+      display: block;
+      margin: 0 auto;
+      width: 320px; }
     .content-showroom .card__buttons {
       display: flex;
       justify-content: space-around; }
       .content-showroom .card__buttons a {
-        border: 2px solid #ccc;
+        border: 2px solid #abc;
         border-radius: 12px;
         display: inline-block;
         padding: 5px; }

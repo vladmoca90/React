@@ -10,15 +10,15 @@ class Showroom extends Component {
   render() {
     return (
       cars.map((car) =>
-        <div class="card">
-          <div class="card__header">
+        <div className="card">
+          <div className="card__header">
             {car.name} {car.year}
             <div>£{car.price}</div>
           </div>
-          <div class="card__body">
+          <div className="card__body">
             <img alt={car.name} src={car.image} />
           </div>
-          <div class="card__buttons">
+          <div className="card__buttons">
             <a href="https://reactjs.org/">Enquiry</a>
             <a href="https://reactjs.org/">Brochure</a>
             <a href="https://reactjs.org/">More details</a>
