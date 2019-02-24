@@ -5,11 +5,11 @@
   max-width: 1200px; }
   .content-showroom .card {
     border: 1px solid #ccc;
-    width: 350px; }
+    max-width: 350px; }
     .content-showroom .card__header {
       font-weight: bold; }
     .content-showroom .card__body img {
-      max-width: 300px; }
+      max-width: 320px; }
     .content-showroom .card__buttons {
       display: flex;
       justify-content: space-around; }

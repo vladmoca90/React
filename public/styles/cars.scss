@@ -6,7 +6,7 @@
 
     .card {
         border: 1px solid #ccc;
-        width: 350px;
+        max-width: 350px;
 
         &__header {
             font-weight: bold;
@@ -14,7 +14,7 @@
 
         &__body {
             img {
-                max-width: 300px;
+                max-width: 320px;
             }
         }
 
