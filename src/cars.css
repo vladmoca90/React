@@ -1,15 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 #root {
   display: flex;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Verdana', sans-serif;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 1200px; }
+  max-width: 1280px; }
   #root .card {
     border: 1px solid #ccc;
-    width: 385px; }
+    width: 400px; }
     #root .card__header {
+      color: #111;
       display: flex;
+      font-size: 15px;
       font-weight: bold;
       justify-content: space-around;
       line-height: 55px;
@@ -17,17 +18,17 @@
     #root .card__body img {
       display: block;
       margin: 0 auto;
-      width: 385px; }
+      width: 380px; }
     #root .card__buttons {
       display: flex;
       justify-content: space-around;
-      margin: 12px 0; }
+      margin: 20px 0; }
       #root .card__buttons a {
-        border: 2px solid #1de;
-        border-radius: 12px;
-        color: #1de;
+        border: 1px solid #fb8c00;
+        border-radius: 8px;
+        color: #fb8c00;
         display: inline-block;
-        font-size: 14px;
+        font-size: 13px;
         padding: 10px 15px;
         text-decoration: none;
         text-transform: uppercase; }
