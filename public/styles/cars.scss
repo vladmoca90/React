@@ -13,10 +13,18 @@
             color: #111;
             display: flex;
             font-size: 15px;
-            font-weight: bold;
+            font-weight: normal;
             justify-content: space-around;
-            line-height: 55px;
-            height: 55px;
+            padding: 15px 10px;
+
+            span {
+                width: 75%;
+                white-space: wrap;
+                word-break: break-all;
+            }
+            .card__price {
+                font-weight: bold;
+            }
         }
 
         &__body {

@@ -6,7 +6,7 @@ const allCars =  cars.map((car) =>
         <div className="card">
           <div className="card__header">
             <span>{car.name} {car.year}</span>
-            <div>£{car.price}</div>
+            <div className="card__price">&pound;{car.price}</div>
           </div>
           <div className="card__body">
             <img alt={car.name} src={car.image} />
