@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import './cars.css';
 import cars from './data';
 
-const allCars = cars.map((car) =>
+class Showroom extends Component {
+  render() {
+    return cars.map((car) =>
         <div className="card">
           <div className="card__header">
             {car.name} {car.year}
@@ -18,10 +20,6 @@ const allCars = cars.map((car) =>
           </div>
         </div>
       );
-
-class Showroom extends Component {
-  render() {
-    return allCars;
   }
 }
 
