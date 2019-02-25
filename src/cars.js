@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import './cars.css';
 import cars from './data';
 
-class Showroom extends Component {
-  render() {
-    return cars.map((car) =>
+const allCars =  cars.map((car) =>
         <div className="card">
           <div className="card__header">
-            {car.name} {car.year}
+            <span>{car.name} {car.year}</span>
             <div>£{car.price}</div>
           </div>
           <div className="card__body">
@@ -20,6 +18,11 @@ class Showroom extends Component {
           </div>
         </div>
       );
+
+
+class Showroom extends Component {
+  render() {
+    return allCars;
   }
 }
 

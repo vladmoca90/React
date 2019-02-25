@@ -1,26 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
-.content-showroom {
+#root {
     display: flex;
     font-family: 'Ubuntu', sans-serif;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1260px;
+    max-width: 1200px;
 
     .card {
         border: 1px solid #ccc;
-        max-width: 400px;
+        width: 385px;
 
         &__header {
+            display: flex;
             font-weight: bold;
-            height: 70px;
+            justify-content: space-around;
+            line-height: 55px;
+            height: 55px;
         }
 
         &__body {
             img {
                 display: block;
                 margin: 0 auto;
-                width: 390px;
+                width: 385px;
             }
         }
 

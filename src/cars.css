@@ -1,25 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
-.content-showroom {
+#root {
   display: flex;
   font-family: 'Ubuntu', sans-serif;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 1260px; }
-  .content-showroom .card {
+  max-width: 1200px; }
+  #root .card {
     border: 1px solid #ccc;
-    max-width: 400px; }
-    .content-showroom .card__header {
+    width: 385px; }
+    #root .card__header {
+      display: flex;
       font-weight: bold;
-      height: 70px; }
-    .content-showroom .card__body img {
+      justify-content: space-around;
+      line-height: 55px;
+      height: 55px; }
+    #root .card__body img {
       display: block;
       margin: 0 auto;
-      width: 390px; }
-    .content-showroom .card__buttons {
+      width: 385px; }
+    #root .card__buttons {
       display: flex;
       justify-content: space-around;
       margin: 12px 0; }
-      .content-showroom .card__buttons a {
+      #root .card__buttons a {
         border: 2px solid #1de;
         border-radius: 12px;
         color: #1de;
