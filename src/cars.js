@@ -1,15 +1,8 @@
 import React, { Component } from 'react';
+import './cars.css';
 import cars from './data';
 
-// const carName = cars.map(cars => <span>{cars.name}</span>);
-// const carYear = cars.map(cars  => <span>{cars.year}</span>);
-// const carPrice = cars.map(cars => <span>{cars.price}</span>);
-// const carImg = cars.map(cars => <span>{cars.image}</span>);
-
-class Showroom extends Component {
-  render() {
-    return (
-      cars.map((car) =>
+const allCars = cars.map((car) =>
         <div className="card">
           <div className="card__header">
             {car.name} {car.year}
@@ -24,8 +17,11 @@ class Showroom extends Component {
             <a href="https://reactjs.org/">More details</a>
           </div>
         </div>
-      )
-    );
+      );
+
+class Showroom extends Component {
+  render() {
+    return allCars;
   }
 }
 
