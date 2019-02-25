@@ -1,34 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 .content-showroom {
     display: flex;
+    font-family: 'Ubuntu', sans-serif;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1260px;
 
     .card {
         border: 1px solid #ccc;
-        max-width: 350px;
+        max-width: 400px;
 
         &__header {
             font-weight: bold;
+            height: 70px;
         }
 
         &__body {
             img {
                 display: block;
                 margin: 0 auto;
-                width: 320px;
+                width: 390px;
             }
         }
 
         &__buttons {
             display: flex;
             justify-content: space-around;
+            margin: 12px 0;
 
             a {
-                border: 2px solid #abc;
+                border: 2px solid #1de;
                 border-radius: 12px;
+                color: #1de;
                 display: inline-block;
-                padding: 5px;
+                font-size: 14px;
+                padding: 10px 15px;
+                text-decoration: none;
+                text-transform: uppercase;
             }
         }
     }
