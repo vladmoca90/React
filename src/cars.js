@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './cars.css';
+import styles from './styles';
 import cars from './data';
 
 const allCars =  cars.map((car) =>
-        <div className="card">
+        <div className="card" style={styles}>
           <div className="card__header">
             <span>{car.name} {car.year}</span>
             <div className="card__price">&pound;{car.price}</div>

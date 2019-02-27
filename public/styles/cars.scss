@@ -6,20 +6,18 @@
     max-width: 1250px;
 
     .card {
-        box-shadow: 6px 6px 16px #ccc;
-        width: 385px;
 
         &__header {
             color: #111;
             display: flex;
             font-weight: normal;
+            height: 65px;
             justify-content: space-around;
             padding: 20px 10px;
 
             span {
                 font-size: 15px;
-                width: 75%;
-                white-space: wrap;
+                width: 80%;
             }
             .card__price {
                 font-size: 16px;
