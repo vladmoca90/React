@@ -6,7 +6,7 @@ import cars from './data';
 const allCars =  cars.map((car) =>
         <div className="card" style={styles}>
           <div className="card__header">
-            <span>{car.name} {car.year}</span>
+            <div className="card__name">{car.name} {car.year}</div>
             <div className="card__price">&pound;{car.price}</div>
           </div>
           <div className="card__body">
