@@ -5,14 +5,13 @@
   margin: 4rem auto 0;
   max-width: 1250px; }
   #root .card__header {
-    align-content: space-around;
     color: #111;
-    display: flex;
-    flex-direction: column;
     font-weight: normal;
-    height: 65px;
-    text-align: center;
-    padding: 20px 10px; }
+    height: 70px;
+    padding: 10px; }
+    #root .card__header div {
+      margin-bottom: 5px;
+      text-align: center; }
     #root .card__header .card__name {
       font-size: 15px; }
     #root .card__header .card__price {
@@ -26,14 +25,14 @@
     display: flex;
     justify-content: space-between;
     margin: 20px auto;
-    width: 95%; }
+    width: 90%; }
     #root .card__buttons a {
-      border: 2px solid #fb8c00;
-      border-radius: 16px;
+      border: 1px solid #fb8c00;
+      border-radius: 8px;
       color: #fb8c00;
       display: inline-block;
-      font-size: 13px;
-      font-weight: bold;
-      padding: 8px 12px;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 9px 13px;
       text-decoration: none;
       text-transform: uppercase; }
