@@ -5,41 +5,43 @@
   font-family: 'Cabin', sans-serif;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin: 1.5rem auto 0;
+  margin: .5rem auto 0;
   max-width: 1250px; }
-  #root .card__header {
-    align-items: center;
-    color: #111;
-    display: flex;
-    font-weight: normal;
-    height: 70px;
-    justify-content: space-between;
-    padding: 10px 20px; }
-    #root .card__header div {
-      margin-bottom: 5px;
-      text-align: center; }
-    #root .card__header .card__name {
-      font-size: 16px;
-      width: 290px; }
-    #root .card__header .card__price {
-      font-size: 18px;
-      font-weight: bold; }
-  #root .card__body img {
-    display: block;
-    margin: 0 auto;
-    width: 100%; }
-  #root .card__buttons {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto;
-    width: 92%; }
-    #root .card__buttons a {
-      border: 1px solid #fb8c00;
-      border-radius: 8px;
-      color: #fb8c00;
-      display: inline-block;
-      font-size: 14px;
-      font-weight: 400;
-      padding: 8px 12px;
-      text-decoration: none;
-      text-transform: uppercase; }
+  #root .card {
+    margin-top: 20px; }
+    #root .card__header {
+      align-items: flex-start;
+      color: #111;
+      display: flex;
+      font-weight: normal;
+      height: 55px;
+      justify-content: space-between;
+      padding: 20px 20px 0; }
+      #root .card__header div {
+        margin-bottom: 5px;
+        text-align: center; }
+      #root .card__header .card__name {
+        font-size: 16px;
+        width: 290px; }
+      #root .card__header .card__price {
+        font-size: 18px;
+        font-weight: bold; }
+    #root .card__body img {
+      display: block;
+      margin: 0 auto;
+      width: 100%; }
+    #root .card__buttons {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px auto;
+      width: 92%; }
+      #root .card__buttons a {
+        border: 1px solid #fb8c00;
+        border-radius: 8px;
+        color: #fb8c00;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 8px 16px;
+        text-decoration: none;
+        text-transform: uppercase; }
