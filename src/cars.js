@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './cars.css';
 import styles from './styles';
 import cars from './data';
@@ -21,7 +21,7 @@ const allCars =  cars.map((car) =>
       );
 
 
-class Showroom extends Component {
+class Showroom extends React.Component {
   render() {
     return allCars;
   }
