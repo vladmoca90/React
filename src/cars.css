@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin");
+body {
+  background-color: #f9f6f6; }
+
 #root {
   align-items: space-between;
   display: flex;
@@ -8,7 +11,11 @@
   margin: .5rem auto 0;
   max-width: 1200px; }
   #root .card {
-    margin-top: 20px; }
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 3px 3px 12px #ccc;
+    margin-top: 20px;
+    max-width: 385px; }
     #root .card__header {
       align-items: center;
       display: flex;
