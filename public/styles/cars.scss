@@ -14,7 +14,6 @@
 
         &__header {
             align-items: flex-start;
-            color: #111;
             display: flex;
             font-weight: normal;
             height: 55px;
@@ -27,11 +26,13 @@
             }
 
             .card__name {
+                color: #fb8c00;
                 font-size: 16px;
                 width: 290px;
             }
             .card__price {
-                font-size: 18px;
+                color: #111;
+                font-size: 19px;
                 font-weight: bold;
             }
         }
@@ -52,12 +53,12 @@
 
             a {
                 border: 1px solid #fb8c00;
-                border-radius: 8px;
+                border-radius: 25px;
                 color: #fb8c00;
                 display: inline-block;
                 font-size: 14px;
                 font-weight: 500;
-                padding: 8px 15px;
+                padding: 9px 18px;
                 text-decoration: none;
                 text-transform: uppercase;
             }
