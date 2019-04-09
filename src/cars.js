@@ -1,8 +1,8 @@
 import React from 'react';
 import './cars.css';
-import styles from './styles';
 import cars from './data';
 
+const total = <span>{cars.length}</span>;
 const allCars =  cars.map((car) =>
         <div className="card">
           <div className="card__header">
@@ -13,16 +13,21 @@ const allCars =  cars.map((car) =>
             <img alt={car.name} src={car.image} />
           </div>
           <div className="card__buttons">
-            <a href="https://reactjs.org/">Enquiry</a>
-            <a href="https://reactjs.org/">Brochure</a>
-            <a href="https://reactjs.org/">More details</a>
+            <a href="##">Enquiry</a>
+            <a href="##">Brochure</a>
+            <a href="##">More details</a>
           </div>
         </div>
       );
 
 class Showroom extends React.Component {
   render() {
-    return allCars;
+    return (
+    <div className="main">
+      <div className="total">{total}</div>
+      <div className="showroom-container">{allCars}</div>
+    </div>
+    );
   }
 }
 

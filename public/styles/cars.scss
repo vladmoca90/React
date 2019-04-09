@@ -4,14 +4,17 @@ body {
     background-color: #f9f6f6;
 }
 
-#root {
-    align-items: space-between;
-    display: flex;
+.main {
     font-family: 'Cabin', sans-serif;
-    flex-flow: row wrap;
-    justify-content: space-between;
     margin: .5rem auto 0;
     max-width: 1200px;
+}
+
+.showroom-container {
+    align-items: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     .card {
         background-color: #fff;

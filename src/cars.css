@@ -2,49 +2,51 @@
 body {
   background-color: #f9f6f6; }
 
-#root {
-  align-items: space-between;
-  display: flex;
+.main {
   font-family: 'Cabin', sans-serif;
-  flex-flow: row wrap;
-  justify-content: space-between;
   margin: .5rem auto 0;
   max-width: 1200px; }
-  #root .card {
+
+.showroom-container {
+  align-items: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .showroom-container .card {
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 3px 3px 12px #ccc;
     margin-top: 20px;
     max-width: 385px; }
-    #root .card__header {
+    .showroom-container .card__header {
       align-items: center;
       display: flex;
       font-weight: normal;
       height: 80px;
       justify-content: space-between;
       padding: 0px 20px 0; }
-      #root .card__header div {
+      .showroom-container .card__header div {
         margin-bottom: 5px;
         text-align: left; }
-      #root .card__header .card__name {
+      .showroom-container .card__header .card__name {
         color: #fb8c00;
         font-size: 15px;
         line-height: 20px;
         max-width: 280px; }
-      #root .card__header .card__price {
+      .showroom-container .card__header .card__price {
         color: #111;
         font-size: 20px;
         font-weight: bold; }
-    #root .card__body img {
+    .showroom-container .card__body img {
       display: block;
       margin: 0 auto;
       width: 100%; }
-    #root .card__buttons {
+    .showroom-container .card__buttons {
       display: flex;
       justify-content: space-between;
       margin: 20px auto;
       width: 92%; }
-      #root .card__buttons a {
+      .showroom-container .card__buttons a {
         border: 1px solid #fb8c00;
         border-radius: 25px;
         color: #fb8c00;
