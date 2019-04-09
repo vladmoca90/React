@@ -20,7 +20,6 @@ const allCars =  cars.map((car) =>
         </div>
       );
 
-
 class Showroom extends React.Component {
   render() {
     return allCars;

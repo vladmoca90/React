@@ -21,13 +21,13 @@ const cars = [
       name: 'Renault Megane 1.5 dCi FAP Dynamique Tom Tom Coupe 3dr Diesel EDC',
       year: 2011,
       price: 5290,
-      image: '../images/renault-megane.jpg',
+      image: '../images/subaru-impreza.jpg',
     },
     {
       name: 'Volkswagen Golf R Dsg 5dr Auto',
       year: 2016,
       price: 21995,
-      image: '../images/volkswagen-golf.jpg',
+      image: '../images/subaru-impreza.jpg',
     },
     {
       name: 'Subaru Impreza 2.0 Turbo WRX 5dr',
