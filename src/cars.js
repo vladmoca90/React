@@ -14,8 +14,8 @@ const allCars =  cars.map((car) =>
           </div>
           <div className="card__buttons">
             <a className="card__link" href="##">Enquiry</a>
-            <a className="card__link"  href="##">Brochure</a>
-            <a className="card__link"  href="##">More details</a>
+            <a className="card__link" href="##">Brochure</a>
+            <a className="card__link" href="##">More details</a>
           </div>
         </div>
       );

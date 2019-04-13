@@ -24,12 +24,12 @@ body {
         max-width: 385px;
 
         &__header {
-            align-items: center;
+            align-items: flex-start;
             display: flex;
             font-weight: normal;
-            height: 85px;
+            height: 70px;
             justify-content: space-between;
-            padding: 0px 20px 0;
+            padding: 30px 20px 0;
 
             div {
                 margin-bottom: 5px;
@@ -39,13 +39,12 @@ body {
             .card__name {
                 color: #fb8c00;
                 font-size: 16px;
-                line-height: 20px;
                 max-width: 280px;
             }
 
             .card__price {
                 color: #111;
-                font-size: 20px;
+                font-size: 21px;
                 font-weight: bold;
             }
         }
@@ -76,5 +75,9 @@ body {
                 text-transform: uppercase;
             }
         }
+    }
+
+    .total-cars {
+        margin-top: 20px;
     }
 }

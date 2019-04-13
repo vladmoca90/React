@@ -19,23 +19,22 @@ body {
     margin-top: 20px;
     max-width: 385px; }
     .showroom-container .card__header {
-      align-items: center;
+      align-items: flex-start;
       display: flex;
       font-weight: normal;
-      height: 85px;
+      height: 70px;
       justify-content: space-between;
-      padding: 0px 20px 0; }
+      padding: 30px 20px 0; }
       .showroom-container .card__header div {
         margin-bottom: 5px;
         text-align: left; }
       .showroom-container .card__header .card__name {
         color: #fb8c00;
         font-size: 16px;
-        line-height: 20px;
         max-width: 280px; }
       .showroom-container .card__header .card__price {
         color: #111;
-        font-size: 20px;
+        font-size: 21px;
         font-weight: bold; }
     .showroom-container .card__body img {
       display: block;
@@ -56,3 +55,5 @@ body {
         padding: 9px 18px;
         text-decoration: none;
         text-transform: uppercase; }
+  .showroom-container .total-cars {
+    margin-top: 20px; }
