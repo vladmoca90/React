@@ -46,7 +46,7 @@ body {
       justify-content: space-between;
       margin: 25px auto;
       width: 92%; }
-      .showroom-container .card__buttons a {
+      .showroom-container .card__buttons .card__link {
         border: 1px solid #fb8c00;
         border-radius: 25px;
         color: #fb8c00;
