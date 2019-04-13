@@ -27,7 +27,7 @@ body {
             align-items: center;
             display: flex;
             font-weight: normal;
-            height: 80px;
+            height: 85px;
             justify-content: space-between;
             padding: 0px 20px 0;
 
@@ -38,7 +38,7 @@ body {
 
             .card__name {
                 color: #fb8c00;
-                font-size: 15px;
+                font-size: 16px;
                 line-height: 20px;
                 max-width: 280px;
             }
@@ -60,7 +60,7 @@ body {
         &__buttons {
             display: flex;
             justify-content: space-between;
-            margin: 20px auto;
+            margin: 25px auto;
             width: 92%;
 
             a {
