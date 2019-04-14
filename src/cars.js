@@ -10,7 +10,7 @@ const allCars =  cars.map((car) =>
             <div className="card__price">&pound;{car.price}</div>
           </div>
           <div className="card__body">
-            <img alt={car.name} src={car.image} />
+            <img class="card__image" alt={car.name} src={car.image} />
           </div>
           <div className="card__buttons">
             <a className="card__link" href="##">Enquiry</a>

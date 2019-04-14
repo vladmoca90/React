@@ -24,7 +24,8 @@ body {
       font-weight: normal;
       justify-content: space-between;
       padding: 20px; }
-      .showroom-container .card__header div {
+      .showroom-container .card__header .card__name,
+      .showroom-container .card__header .card__price {
         text-align: left; }
       .showroom-container .card__header .card__name {
         color: #fb8c00;
@@ -34,7 +35,7 @@ body {
         color: #111;
         font-size: 21px;
         font-weight: bold; }
-    .showroom-container .card__body img {
+    .showroom-container .card__body .card__image {
       display: block;
       margin: 0 auto;
       width: 100%; }
