@@ -24,9 +24,8 @@ body {
       font-weight: normal;
       height: 70px;
       justify-content: space-between;
-      padding: 30px 20px 0; }
+      padding: 20px 20px 0; }
       .showroom-container .card__header div {
-        margin-bottom: 5px;
         text-align: left; }
       .showroom-container .card__header .card__name {
         color: #fb8c00;
