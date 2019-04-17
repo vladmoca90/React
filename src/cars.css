@@ -17,13 +17,14 @@ body {
     border: 1px solid #ddd;
     box-shadow: 3px 3px 12px #ccc;
     margin-top: 20px;
-    max-width: 385px; }
+    max-width: 365px; }
     .showroom-container .card__header {
-      align-items: flex-start;
+      align-items: center;
       display: flex;
       font-weight: normal;
+      height: 85px;
       justify-content: space-between;
-      padding: 20px; }
+      padding: 0 20px; }
       .showroom-container .card__header .card__name,
       .showroom-container .card__header .card__price {
         text-align: left; }
@@ -43,7 +44,7 @@ body {
       display: flex;
       justify-content: space-between;
       margin: 25px auto;
-      width: 92%; }
+      width: 94%; }
       .showroom-container .card__buttons .card__link {
         border: 1px solid #fb8c00;
         border-radius: 25px;
@@ -51,7 +52,7 @@ body {
         display: inline-block;
         font-size: 14px;
         font-weight: 500;
-        padding: 9px 18px;
+        padding: 9px 16px;
         text-decoration: none;
         text-transform: uppercase; }
   .showroom-container .total-cars {
