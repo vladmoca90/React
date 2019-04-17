@@ -42,18 +42,22 @@ body {
       width: 100%; }
     .showroom-container .card__buttons {
       display: flex;
-      justify-content: space-between;
-      margin: 25px auto;
-      width: 94%; }
+      justify-content: space-around;
+      padding: 20px 0; }
       .showroom-container .card__buttons .card__link {
         border: 1px solid #fb8c00;
         border-radius: 25px;
         color: #fb8c00;
         display: inline-block;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 500;
-        padding: 9px 16px;
+        letter-spacing: 1px;
+        padding: 8px 13px;
         text-decoration: none;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        transition: all .4s linear; }
+        .showroom-container .card__buttons .card__link:hover {
+          background-color: #fb8c00;
+          color: #fff; }
   .showroom-container .total-cars {
     margin-top: 20px; }
