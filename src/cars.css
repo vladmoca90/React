@@ -43,16 +43,18 @@ body {
     .showroom-container .card__buttons {
       display: flex;
       justify-content: space-around;
-      padding: 20px 0; }
+      margin: 0 auto;
+      padding: 20px 0;
+      width: 95.5%; }
       .showroom-container .card__buttons .card__link {
         border: 1px solid #fb8c00;
         border-radius: 25px;
         color: #fb8c00;
         display: inline-block;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 500;
         letter-spacing: 1px;
-        padding: 8px 13px;
+        padding: 7px 12px;
         text-decoration: none;
         text-transform: uppercase;
         transition: all .4s linear; }
@@ -60,4 +62,4 @@ body {
           background-color: #fb8c00;
           color: #fff; }
   .showroom-container .total-cars {
-    margin-top: 20px; }
+    margin-top: 25px; }
