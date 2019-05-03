@@ -57,7 +57,7 @@ body {
         padding: 7px 12px;
         text-decoration: none;
         text-transform: uppercase;
-        transition: all .4s linear; }
+        transition: all .33s linear; }
         .showroom-container .card__buttons .card__link:hover {
           background-color: #fb8c00;
           color: #fff; }
