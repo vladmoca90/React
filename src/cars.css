@@ -34,7 +34,7 @@ body {
         max-width: 250px; }
       .showroom-container .card__header .card__price {
         color: #111;
-        font-size: 21px;
+        font-size: 22px;
         font-weight: bold; }
     .showroom-container .card__body .card__image {
       display: block;
@@ -61,5 +61,6 @@ body {
         .showroom-container .card__buttons .card__link:hover {
           background-color: #fb8c00;
           color: #fff; }
-  .showroom-container .total-cars {
-    margin-top: 25px; }
+
+.total-cars {
+  margin-top: 15px; }
