@@ -3,8 +3,8 @@ import './cars.css';
 import cars from './data';
 
 const total = <span className="total-number">{cars.length}</span>;
-const allCars =  cars.map((car) =>
-        <div className="card">
+const allCars =  cars.map((car, i) =>
+        <div className="card" key={i}>
           <div className="card__header">
             <div className="card__name">{car.name} {car.year}</div>
             <div className="card__price">&pound;{car.price}</div>
