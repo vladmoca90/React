@@ -1,14 +1,14 @@
 import React from 'react';
 import './filter.css';
-import Filter from './data';
+import actors from './data';
 
-var filter = <div class="filter-box">
+var actorsList = <div class="filter-box">
         <input class="filter-field" type="text" />
       </div>;
 
-class Filter extends React.Component {
+class Actors extends React.Component {
   render() {
-    return filter;
+    return actorsList;
 }
 
-export default Filter;
+export default actors;
