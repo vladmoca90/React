@@ -4,6 +4,7 @@ import actors from './data';
 
 var actorsList = <div class="filter-box">
         <input class="filter-field" type="text" />
+        { actors }
       </div>;
 
 class Actors extends React.Component {
@@ -11,4 +12,4 @@ class Actors extends React.Component {
     return actorsList;
 }
 
-export default actors;
+export default Actors;
