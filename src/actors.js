@@ -11,7 +11,7 @@ var allActors = actors.map((actor) =>
                     <p role="text" className="article__text">{ actor.biography }</p>
                 </div>
                 <div className="article__image">
-                    <img src="{actor.image}" />
+                    <img alt={actor.name} src={actor.image} />
                 </div>
             </article>);
 

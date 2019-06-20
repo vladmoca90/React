@@ -1,4 +1,5 @@
-const actors = [{
+const actors = [
+    {
         name: 'Russell Crowe',
         dateOfBirth: '7 April 1964',
         placeOfBirth: 'Wellington, New Zealand',
