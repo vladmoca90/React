@@ -2,8 +2,8 @@ import React from 'react';
 import './filter.css';
 import actors from './data';
 
-var actorsList = <div class="filter-box">
-        <input class="filter-field" type="text" />
+var actorsList = <div className="filter-box">
+        <input className="filter-field" type="text" />
         { actors }
       </div>;
 
