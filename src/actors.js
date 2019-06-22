@@ -1,5 +1,5 @@
 import React from 'react';
-import './filter.css';
+import './actors.css';
 import actors from './data';
 
 var allActors = actors.map((actor) =>
