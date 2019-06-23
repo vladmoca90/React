@@ -15,6 +15,7 @@ body {
     background-color: #eee;
     border-radius: 4px;
     color: #444;
+    display: flex;
     margin-bottom: 25px;
     padding: 40px 20px 30px; }
     .box .article__content {
@@ -39,4 +40,4 @@ body {
       margin-bottom: 0; }
     .box .article__image img {
       border-radius: 4px;
-      min-width: 215px; }
+      max-width: 250px; }

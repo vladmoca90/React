@@ -20,6 +20,7 @@ body {
         background-color: #eee;
         border-radius: 4px;
         color: #444;
+        display: flex;
         margin-bottom: 25px;
         padding: 40px 20px 30px;
   
@@ -62,7 +63,7 @@ body {
         &__image {
             img {
                 border-radius: 4px;
-                min-width: 215px;
+                max-width: 250px;
             }
         }
     }
