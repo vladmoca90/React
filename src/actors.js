@@ -25,4 +25,4 @@ class Actors extends React.Component {
     );
 }
 
-export default Actors;
+// export default Actors;
