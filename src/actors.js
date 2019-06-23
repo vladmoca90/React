@@ -23,6 +23,7 @@ class Actors extends React.Component {
         {allActors}
       </section>
     );
+  }
 }
 
-// export default Actors;
+export default Actors;
