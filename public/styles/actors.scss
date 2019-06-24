@@ -1,70 +1,71 @@
 body {
-    background: url('../../../public/images/actors/background.jpg') no-repeat fixed;
+    background: url('images/actors/background.jpg') no-repeat fixed;
     margin: 0;
     padding: 0;
-}
 
-.box {
-    margin: 0 auto;
-    max-width: 650px;
+    .box {
+        margin: 0 auto;
+        max-width: 650px;
 
-    &__filter {
-        display: inherit;
-        margin: 25px auto;
-        padding: 5px;
+        &__filter {
+            display: inherit;
+            margin: 25px auto;
+            padding: 5px;
 
-        &:focus {
-            outline: 0;
-        }
-    }
-    .article {
-        background-color: #eee;
-        border-radius: 4px;
-        color: #444;
-        display: flex;
-        margin-bottom: 25px;
-        padding: 40px 20px 30px;
-  
-        &__content {
-            padding-right: 20px;
-        }
-
-        &__close {
-            cursor: pointer;
-            right: 20px;
-            top: 8px;
-        }
-
-        &__heading {
-            margin: 0 auto 15px;
-
-            &-sub {
-                font-size: 16px;
-                margin-bottom: 5px;
-
-                &:nth-of-type(1) {
-                    text-transform: uppercase;
-                }
-
-                &:nth-of-type(2) {
-                    font-style: italic;
-                }
+            &:focus {
+                outline: 0;
             }
         }
 
-        &__separator {
+        .article {
             background-color: #eee;
-        }
+            border-radius: 4px;
+            color: #444;
+            display: flex;
+            margin-bottom: 25px;
+            padding: 40px 20px 30px;
 
-        &__text {
-            font-size: 14px;
-            margin-bottom: 0;
-        }
+            &__content {
+                padding-right: 20px;
+            }
 
-        &__image {
-            img {
-                border-radius: 4px;
-                max-width: 250px;
+            &__close {
+                cursor: pointer;
+                right: 20px;
+                top: 8px;
+            }
+
+            &__heading {
+                margin: 0 auto 15px;
+
+                &-sub {
+                    font-size: 16px;
+                    margin-bottom: 5px;
+
+                    &:nth-of-type(1) {
+                        text-transform: uppercase;
+                    }
+
+                    &:nth-of-type(2) {
+                        font-style: italic;
+                    }
+                }
+            }
+
+            &__separator {
+                background-color: #eee;
+            }
+
+            &__text {
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+
+            &__image {
+                img {
+                    border-radius: 4px;
+                    max-width: 250px;
+                }
             }
         }
     }

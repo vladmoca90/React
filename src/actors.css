@@ -1,44 +1,43 @@
 body {
-  background: url("../../../public/images/actors/background.jpg") no-repeat fixed;
+  background: url("images/actors/background.jpg") no-repeat fixed;
   margin: 0;
   padding: 0; }
-
-.box {
-  margin: 0 auto;
-  max-width: 650px; }
-  .box__filter {
-    display: inherit;
-    margin: 25px auto;
-    padding: 5px; }
-    .box__filter:focus {
-      outline: 0; }
-  .box .article {
-    background-color: #eee;
-    border-radius: 4px;
-    color: #444;
-    display: flex;
-    margin-bottom: 25px;
-    padding: 40px 20px 30px; }
-    .box .article__content {
-      padding-right: 20px; }
-    .box .article__close {
-      cursor: pointer;
-      right: 20px;
-      top: 8px; }
-    .box .article__heading {
-      margin: 0 auto 15px; }
-      .box .article__heading-sub {
-        font-size: 16px;
-        margin-bottom: 5px; }
-        .box .article__heading-sub:nth-of-type(1) {
-          text-transform: uppercase; }
-        .box .article__heading-sub:nth-of-type(2) {
-          font-style: italic; }
-    .box .article__separator {
-      background-color: #eee; }
-    .box .article__text {
-      font-size: 14px;
-      margin-bottom: 0; }
-    .box .article__image img {
+  body .box {
+    margin: 0 auto;
+    max-width: 650px; }
+    body .box__filter {
+      display: inherit;
+      margin: 25px auto;
+      padding: 5px; }
+      body .box__filter:focus {
+        outline: 0; }
+    body .box .article {
+      background-color: #eee;
       border-radius: 4px;
-      max-width: 250px; }
+      color: #444;
+      display: flex;
+      margin-bottom: 25px;
+      padding: 40px 20px 30px; }
+      body .box .article__content {
+        padding-right: 20px; }
+      body .box .article__close {
+        cursor: pointer;
+        right: 20px;
+        top: 8px; }
+      body .box .article__heading {
+        margin: 0 auto 15px; }
+        body .box .article__heading-sub {
+          font-size: 16px;
+          margin-bottom: 5px; }
+          body .box .article__heading-sub:nth-of-type(1) {
+            text-transform: uppercase; }
+          body .box .article__heading-sub:nth-of-type(2) {
+            font-style: italic; }
+      body .box .article__separator {
+        background-color: #eee; }
+      body .box .article__text {
+        font-size: 14px;
+        margin-bottom: 0; }
+      body .box .article__image img {
+        border-radius: 4px;
+        max-width: 250px; }
