@@ -3,3 +3,5 @@ https://www.geeksforgeeks.org/reactjs-introduction-jsx/
 https://reactjs.org/ 
 
 https://codeburst.io/react-js-for-beginners-the-basics-87ef6e54dae7
+
+https://www.w3schools.com/react/default.asp
