@@ -25,6 +25,10 @@ body {
             margin-bottom: 25px;
             padding: 40px 20px 30px;
 
+            @media screen and (max-width: 719px) {
+                flex-direction: column;
+            }
+
             &__content {
                 padding-right: 20px;
             }

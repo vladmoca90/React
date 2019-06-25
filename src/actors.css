@@ -18,6 +18,9 @@ body {
       display: flex;
       margin-bottom: 25px;
       padding: 40px 20px 30px; }
+      @media screen and (max-width: 719px) {
+        body .box .article {
+          flex-direction: column; } }
       body .box .article__content {
         padding-right: 20px; }
       body .box .article__close {
