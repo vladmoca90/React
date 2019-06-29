@@ -39,6 +39,7 @@ body {
             font-style: italic; }
       body .box .article__text {
         font-size: 14px;
+        line-height: 150%;
         margin-bottom: 0; }
       body .box .article__image img {
         border-radius: 4px;
