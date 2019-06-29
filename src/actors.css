@@ -37,8 +37,6 @@ body {
             text-transform: uppercase; }
           body .box .article__heading-sub:nth-of-type(2) {
             font-style: italic; }
-      body .box .article__separator {
-        background-color: #eee; }
       body .box .article__text {
         font-size: 14px;
         margin-bottom: 0; }
