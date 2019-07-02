@@ -8,7 +8,8 @@ body {
     body .box__filter {
       display: inherit;
       margin: 25px auto;
-      padding: 5px; }
+      padding: 5px;
+      width: 220px; }
       body .box__filter:focus {
         outline: 0; }
     body .box .article {
