@@ -7,7 +7,7 @@ body {
     max-width: 650px; }
     body .box__filter {
       display: inherit;
-      margin: 25px auto;
+      margin: 30px auto 40px;
       padding: 4px;
       width: 220px; }
       body .box__filter:focus {
