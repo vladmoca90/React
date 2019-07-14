@@ -21,7 +21,7 @@ body {
       @media screen and (max-width: 719px) {
         body .box .article {
           flex-direction: column;
-          justify-content: center; } }
+          align-items: center; } }
       body .box .article__content {
         padding-right: 20px; }
       body .box .article__close {
