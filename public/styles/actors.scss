@@ -6,11 +6,12 @@ body {
     padding: 0;
 
     .box {
+        display: flex;
+        flex-direction: column;
         margin: 0 auto;
-        max-width: 650px;
+        max-width: 720px;
 
         &__filter {
-            display: inherit;
             margin: 30px auto 40px;
             padding: 4px;
             width: 220px;
@@ -68,7 +69,7 @@ body {
 
             &__image {
                 img {
-                    border-radius: 4px;
+                    border-radius: 50px;
                     max-width: 250px;
                 }
             }
