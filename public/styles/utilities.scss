@@ -1,0 +1,80 @@
+//Utilities for positions
+.u-relative {
+    position: relative;
+}
+
+//Only when the parent has position: relative
+.u--absolute {
+    position: absolute;
+}
+
+.u-fixed {
+    position: fixed;
+}
+
+//Utilities for texts and links
+.u-text--bold {
+    font-weight: 700;
+}
+
+.u-text--white {
+    color: #fff;
+}
+
+//Utilities for background
+.u-bg--white {
+    background-color: #fff;
+}
+
+//Utilities for sizes
+.u-full-width {
+    width: 100%;
+}
+
+.u-full-height {
+    height: 100%;
+}
+
+//Utilities for border
+.u-border {
+    border: 1px solid #ccc;
+}
+
+//Utilities for displays
+.u-inline {
+    display: inline;
+}
+
+.u-block {
+    display: block;
+}
+
+.u-table {
+    display: table;
+}
+
+//Utilities for flexbox
+.u-flex {
+    display: flex;
+}
+
+.u-flex--column {
+    flex-direction: column;
+} //if the element is on column on all devices
+
+.u-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.u-space-around {
+    justify-content: space-around;
+}
+
+.u-space-between {
+    justify-content: space-between;
+}
+
+.u-space-evenly {
+    justify-content: space-evenly;
+}
