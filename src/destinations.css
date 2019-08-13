@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.main {
+  margin: 30px auto;
+  max-width: 1200px; }
+  .main .cards .row:nth-of-type(1) .card__subHeading {
+    color: #c0002b; }
+  .main .cards .row:nth-of-type(2) .card__subHeading {
+    color: #0c0cc7; }
+  .main .cards .row:nth-of-type(3) .card__subHeading {
+    color: #317c2e; }
+  .main .cards .row:nth-of-type(4) .card__subHeading {
+    color: #e6cb32; }
+  @media screen and (max-width: 767px) {
+    .main .cards .row {
+      margin: 0 auto; } }
+  .main .cards .card {
+    border-radius: 8px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin-bottom: 50px;
+    max-width: 350px; }
+    .main .cards .card__img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      height: 225px;
+      width: 100%; }
+    .main .cards .card__content {
+      border-top: 1px solid #ccc;
+      color: #444;
+      min-height: 350px;
+      padding: 20px 20px 40px 20px; }
+    .main .cards .card__heading {
+      font-size: 21px;
+      margin-bottom: 7px;
+      text-align: center; }
+    .main .cards .card__subHeading {
+      font-size: 15px;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+      text-transform: uppercase; }
+    .main .cards .card__text {
+      font-size: 15px; }
+    .main .cards .card__link-container {
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      text-align: center; }
+    .main .cards .card__link {
+      border-bottom: 1px solid transparent;
+      color: #444;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all ease-in-out 0.4s; }
+      .main .cards .card__link::after {
+        content: '>';
+        right: -10px;
+        position: absolute;
+        opacity: 0;
+        top: -1px;
+        transition: all ease 0.4s; }
+      .main .cards .card__link:hover {
+        border-bottom: 1px solid #444; }
+        .main .cards .card__link:hover::after {
+          opacity: 1;
+          right: -15px; }
