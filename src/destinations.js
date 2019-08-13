@@ -3,17 +3,17 @@ import './destination.css';
 import destinations from './data';
 
 var allDestinations = destinations.map((destination) =>
-             <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+             <div className="card-container">
                     <div className="card">
                         <div className="card__img-container">
-                            <img src="../../../images/cards/destinations/Malaysia.jpg" alt="Malaysia travel" className="card__img" />
+                            <img src={ destination.img } alt={ destination.imgDescription} className="card__img" />
                         </div>
                         <div className="card__content">
-                            <p className="card__heading"></p>
-                            <p className="card__subHeading"></p>
-                            <p className="card__text"></p>
+                            <p className="card__heading">{ destination.title }</p>
+                            <p className="card__subHeading">{ destination.subTitle }</p>
+                            <p className="card__text">{ destination.content }</p>
                             <div className="card__link-container u--absolute">
-                                <a href="##" className="card__link u-relative">g</a>
+                                <a href="##" className="card__link u-relative">{ destination.url }</a>
                             </div>
                         </div>
                     </div>
