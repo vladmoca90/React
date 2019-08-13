@@ -1,0 +1,92 @@
+@import '../mixins/mixins.scss';
+@import '../variables/variables.scss';
+
+body {
+    @include background(fixed, url('../../../images/cards/destinations/background.jpg'), no-repeat, cover);
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin: 30px auto;
+    max-width: 1200px;
+    .cards {
+        .row:nth-of-type(1) .card__subHeading {
+            color: $red;
+        }
+        .row:nth-of-type(2) .card__subHeading {
+            color: $blue;
+        }
+        .row:nth-of-type(3) .card__subHeading {
+            color: $green-light;
+        }
+        .row:nth-of-type(4) .card__subHeading {
+            color: rgb(230, 203, 50);
+        }
+        .row {
+            @media screen and (max-width: $break-tablet - 1) {
+                margin: 0 auto;
+            }
+        }
+        .card {
+            border-radius: 8px;
+            font-family: $gill-sans;
+            margin-bottom: 50px;
+            max-width: 350px;
+            &__img {
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                height: 225px;
+                width: 100%;
+            }
+            &__content {
+                border-top: $side-gray;
+                color: $font-color;
+                min-height: 350px;
+                padding: 20px 20px 40px 20px;
+            }
+            &__heading {
+                font-size: 21px;
+                margin-bottom: 7px;
+                text-align: center;
+            }
+            &__subHeading {
+                font-size: 15px;
+                letter-spacing: 1px;
+                margin-bottom: 4px;
+                text-transform: uppercase;
+            }
+            &__text {
+                font-size: 15px;
+            }
+            &__link-container {
+                bottom: 20px;
+                left: 0;
+                right: 0;
+                text-align: center;
+            }
+            &__link {
+                border-bottom: 1px solid transparent;
+                color: $font-color;
+                cursor: pointer;
+                text-decoration: none;
+                transition: all ease-in-out 0.4s;
+                &::after {
+                    content: '>';
+                    right: -10px;
+                    position: absolute;
+                    opacity: 0;
+                    top: -1px;
+                    transition: all ease 0.4s;
+                }
+                &:hover {
+                    border-bottom: 1px solid $font-color;
+                    &::after {
+                        opacity: 1;
+                        right: -15px;
+                    }
+                }
+            }
+        }
+    }
+}
