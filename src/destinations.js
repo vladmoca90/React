@@ -6,7 +6,7 @@ var allDestinations = destinations.map((destination) =>
              <div className="card-container">
                     <div className="card">
                         <div className="card__img-container">
-                            <img src={ destination.img } alt={ destination.imgDescription} className="card__img" />
+                            <img src={ destination.img } alt={ destination.imgDescription } className="card__img" />
                         </div>
                         <div className="card__content">
                             <p className="card__heading">{ destination.title }</p>
