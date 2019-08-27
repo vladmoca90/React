@@ -13,7 +13,7 @@ var allDestinations = destinations.map((destination) =>
                             <p className="card__subHeading">{ destination.subTitle }</p>
                             <p className="card__text">{ destination.content }</p>
                             <div className="card__link-container">
-                                <a href="##" className="card__link">{ destination.url }</a>
+                                <a href="##" target="_blank" className="card__link">{ destination.url }</a>
                             </div>
                         </div>
                     </div>

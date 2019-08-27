@@ -1,26 +1,26 @@
 const destinations = [
     {
-        img: 'images/',
+        img: 'images/destinations/Malaysia.jpg',
         imgDescription: 'Malaysia Travel',
         title: 'Malaysia',
         subTitle: 'Asia',
-        content: '',
+        content: 'Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. Its known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences. The capital, Kuala Lumpur, is home to colonial buildings, busy shopping districts such as Bukit Bintang and skyscrapers such as the iconic, 451m-tall Petronas Twin Towers.',
         url: '',
     },
     {
-        img: 'Thailand Travel',
+        img: 'images/destinations/Thailand.jpg',
         imgDescription: 'Thailand Travel',
         title: 'Thailand',
         subTitle: 'Asia',
-        content: '',
+        content: 'Thailand is a Southeast Asian country. Its known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha. In Bangkok, the capital, an ultramodern cityscape rises next to quiet canalside communities and the iconic temples of Wat Arun, Wat Pho and the Emerald Buddha Temple (Wat Phra Kaew). Nearby beach resorts include bustling Pattaya and fashionable Hua Hin.',
         url: '',
     },
     {
-        img: 'Japan Travel',
+        img: 'images/destinations/Japan.jpg',
         imgDescription: 'Japan Travel',
         title: 'Japan',
         subTitle: 'Asia',
-        content: '',
+        content: 'Japan is an island nation in the Pacific Ocean with dense cities, imperial palaces, mountainous national parks and thousands of shrines and temples. Shinkansen bullet trains connect the main islands of Kyushu (with Okinawas subtropical beaches), Honshu (home to Tokyo and Hiroshimas atomic-bomb memorial) and Hokkaido (famous for skiing). Tokyo, the capital, is known for skyscrapers, shopping and pop culture.',
         url: '',
     },
     {
