@@ -1,5 +1,5 @@
 import React from 'react';
-import './destination.css';
+import './destinations.css';
 import destinations from './data';
 
 var allDestinations = destinations.map((destination) =>
