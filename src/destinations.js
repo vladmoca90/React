@@ -22,7 +22,7 @@ var allDestinations = destinations.map((destination) =>
 class Destinations extends React.Component {
   render() {
     return (
-       <section role="main" className="main">
+       <section className="main">
         <div className="cards container">
           <div className="row">
                 {allDestinations}
