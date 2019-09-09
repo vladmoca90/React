@@ -23,6 +23,11 @@ body .main .cards .row:nth-of-type(4) .card__subHeading {
     margin: 0 auto;
   }
 }
+body .main .cards .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 body .main .cards .card {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -37,14 +42,15 @@ body .main .cards .card___img-container {
 body .main .cards .card__img {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  display: block;
   height: 225px;
   width: 100%;
 }
 body .main .cards .card__content {
   border-top: 1px solid #ccc;
   color: #444;
-  min-height: 275px;
-  padding: 20px 20px 40px 20px;
+  min-height: 285px;
+  padding: 0 20px 40px 20px;
   position: relative;
 }
 body .main .cards .card__heading {
@@ -56,7 +62,7 @@ body .main .cards .card__subHeading {
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   text-transform: uppercase;
 }
 body .main .cards .card__text {
