@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Destinations from './destinations';
+import airlineDest from './airline-destinations';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Destinations />, document.getElementById('root'));
+ReactDOM.render(<airlineDest />, document.getElementById('root'));
 
 serviceWorker.unregister();
