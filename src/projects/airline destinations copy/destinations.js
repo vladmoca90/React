@@ -1,6 +1,6 @@
 import React from 'react';
 import './destinations.css';
-import destinations from '../destinations/data';
+import destinations from './data';
 
 var allDestinations = destinations.map((destination) =>
              <div className="card-container">
