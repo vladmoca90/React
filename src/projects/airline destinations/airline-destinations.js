@@ -6,10 +6,8 @@ class airlineDest extends React.Component {
   render() {
     return (
        <section className="main">
-        <div className="cards container">
-          <div className="row">
-                {allDestinations}
-          </div>
+        <div className="container">
+              {allDestinations}
         </div>
       </section>
     );
