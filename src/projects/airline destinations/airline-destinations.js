@@ -7,7 +7,7 @@ class airlineDest extends React.Component {
     return (
        <section className="main">
         <div className="container">
-              {allDestinations}
+          {airline}
         </div>
       </section>
     );
