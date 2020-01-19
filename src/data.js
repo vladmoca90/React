@@ -4,6 +4,10 @@ const airline = [
         destinations: 'Algiers',
     },
     {
+        name: 'Avianca',
+        destinations: 'Bogota',
+    },
+    {
         name: 'Cathay Pacific',
         destinations: 'Hong Kong',
     },
@@ -14,6 +18,14 @@ const airline = [
     {
         name: 'Japan Airlines',
         destinations: 'Tokyo-Haneda',
+    },
+    {
+        name: 'KLM',
+        destinations: 'Amsterdam',
+    },
+     {
+        name: 'Lufthansa',
+        destinations: 'Frankfurt, Munich',
     },
     {
         name: 'Oman Air',
