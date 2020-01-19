@@ -1,5 +1,5 @@
 import React from 'react';
-import './airline-destinations.css';
+import './airlines-destinations.css';
 import airline from './data';
 
 class airlineDest extends React.Component {
