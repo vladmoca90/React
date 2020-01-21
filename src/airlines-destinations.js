@@ -4,7 +4,7 @@ import flights from './data';
 
 const allFlights = flights.map((flight) => 
   <table className="table">
-    <thead class="table-header">
+    <thead className="table-header">
       <th>Name</th>
       <th>Destinations</th>
     </thead>
@@ -23,9 +23,6 @@ class Destinations extends React.Component {
        <section className="main">
         <div className="container">
           {allFlights}
-          <div className="total">
-            {flights.length}
-          </div>
         </div>
       </section>
     );
