@@ -1,0 +1,14 @@
+.table {
+    border: 1px solid #222;
+    margin: 30px auto 0;
+    max-width: 800px;
+    width: 100%;
+}
+
+.table-header {
+    border-bottom: 1px solid #222;
+}
+
+.table-content>tr>td:nth-of-type(1) {
+    border-right: 1px solid #222;
+}
