@@ -23,6 +23,9 @@ class Destinations extends React.Component {
        <section className="main">
         <div className="container">
           {allFlights}
+          <div className="total">
+            {flights.length}
+          </div>
         </div>
       </section>
     );

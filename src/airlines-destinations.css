@@ -12,3 +12,7 @@
 .table-content>tr>td:nth-of-type(1) {
     border-right: 1px solid #222;
 }
+
+.total {
+    margin-top: 20px;
+}
