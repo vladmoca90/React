@@ -1,17 +1,17 @@
 import React from 'react';
 import './airlines-destinations.css';
-import airline from './data';
+import destinations from './data';
 
-class airlineDest extends React.Component {
+class Destinations extends React.Component {
   render() {
     return (
        <section className="main">
         <div className="container">
-          {airline}
+          {destinations}
         </div>
       </section>
     );
   }
 }
 
-export default airlineDest;
+export default Destinations;

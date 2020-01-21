@@ -1,4 +1,4 @@
-const airline = [
+const destinations = [
     {
         name: 'Air Algerie',
         destinations: 'Algiers',
@@ -41,4 +41,4 @@ const airline = [
     }
 ];
 
-export default airline;
+export default destinations;
