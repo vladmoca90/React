@@ -2,18 +2,10 @@ import React from 'react';
 import './airlines-destinations.css';
 import flights from './data';
 const allFlights = flights.map((flight) => 
-  <table className="table">
-    <thead className="table-header">
-      <th>Name</th>
-      <th>Destinations</th>
-    </thead>
-    <tbody className="table-content">
-      <tr>
-        <td>{flight.airline}</td>
-        <td>{flight.destinations}</td>
-      </tr>
-    </tbody>
-  </table>
+  <tr>
+    <td>{flight.airline}</td>
+    <td>{flight.destinations}</td>
+  </tr>
 );
 
 class Destinations extends React.Component {
@@ -21,7 +13,16 @@ class Destinations extends React.Component {
     return (
        <section className="main">
         <div className="container">
-          {allFlights}
+
+          <table className="table">
+    <thead className="table-header">
+      <th>Name</th>
+      <th>Destinations</th>
+    </thead>
+    <tbody className="table-content">
+                {allFlights}
+    </tbody>
+  </table>
         </div>
       </section>
     );
