@@ -13,16 +13,15 @@ class Destinations extends React.Component {
     return (
        <section className="main">
         <div className="container">
-
           <table className="table">
-    <thead className="table-header">
-      <th>Name</th>
-      <th>Destinations</th>
-    </thead>
-    <tbody className="table-content">
+            <thead className="table-header">
+              <th>Name</th>
+              <th>Destinations</th>
+            </thead>
+            <tbody className="table-content">
                 {allFlights}
-    </tbody>
-  </table>
+            </tbody>
+          </table>
         </div>
       </section>
     );
