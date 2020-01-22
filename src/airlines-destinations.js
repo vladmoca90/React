@@ -1,7 +1,6 @@
 import React from 'react';
 import './airlines-destinations.css';
 import flights from './data';
-
 const allFlights = flights.map((flight) => 
   <table className="table">
     <thead className="table-header">
