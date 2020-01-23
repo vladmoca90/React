@@ -3,6 +3,10 @@ const flights = [
         airline: 'Air Algerie',
         destinations: 'Algiers',
     },
+     {
+        airline: 'Air France',
+        destinations: 'Paris-Charles de Gaulle',
+    },
     {
         airline: 'Avianca',
         destinations: 'Bogota',
@@ -15,6 +19,10 @@ const flights = [
         airline: 'El Al',
         destinations: 'Tel Aviv-Ben Gurion',
     },
+     {
+        airline: 'Hainan Airlines',
+        destinations: 'Beijing-Capital, Shanghai-Pudong',
+    },
     {
         airline: 'Japan Airlines',
         destinations: 'Tokyo-Haneda',
@@ -26,6 +34,10 @@ const flights = [
      {
         airline: 'Lufthansa',
         destinations: 'Frankfurt, Munich',
+    },
+    {
+        airline: 'Royal Air Jordanian',
+        destinations: 'Amman-Queen Alia',
     },
     {
         airline: 'Oman Air',
