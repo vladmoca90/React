@@ -21,6 +21,6 @@
     padding: 5px;
 }
 
-.table-content>tr>td:nth-of-type(last) {
+.table-content>tr:last-of-type>td {
     border-bottom: 0;
 }
