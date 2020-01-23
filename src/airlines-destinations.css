@@ -11,9 +11,10 @@
     text-transform: uppercase;
 }
 
-.table-header>thead>th:nth-of-type(1),
+.table-header>th:nth-of-type(1),
 .table-content>tr>td:nth-of-type(1) {
     border-right: 1px solid #222;
+    width: 20%;
 }
 
 .table-content>tr>td {
