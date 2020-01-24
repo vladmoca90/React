@@ -12,6 +12,10 @@ const flights = [
         destinations: 'Bogota',
     },
     {
+        airline: 'Brussels Airlines',
+        destinations: 'Brussels',
+    },
+    {
         airline: 'Cathay Pacific',
         destinations: 'Hong Kong',
     },
@@ -24,6 +28,10 @@ const flights = [
         destinations: 'Beijing-Capital, Shanghai-Pudong',
     },
     {
+        airline: 'Iran Air',
+        destinations: 'Teheran-Komeini',
+    },
+    {
         airline: 'Japan Airlines',
         destinations: 'Tokyo-Haneda',
     },
@@ -31,9 +39,13 @@ const flights = [
         airline: 'KLM',
         destinations: 'Amsterdam',
     },
-     {
+    {
         airline: 'Lufthansa',
         destinations: 'Frankfurt, Munich',
+    },
+    {
+        airline: 'Mexicana',
+        destinations: 'Mexico City',
     },
     {
         airline: 'Royal Air Jordanian',
@@ -46,6 +58,10 @@ const flights = [
     {
         airline: 'Turkish Airlines',
         destinations: 'Istanbul',
+    },
+     {
+        airline: 'United Airlines',
+        destinations: 'Chicago, Dallas-Fort Worth, Houston-Intercontinental, Los Angeles, New York-Newark, San Francisco',
     },
     {
         airline: 'Virgin Atlantic',
