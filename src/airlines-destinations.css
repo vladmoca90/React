@@ -1,13 +1,16 @@
 .table {
     border: 1px solid #222;
+    border-spacing: 0;
     margin: 15px auto 0;
-    max-width: 850px;
+    max-width: 900px;
     width: 100%;
 }
 
 .table-header>th {
+    background-color: #eee;
     border-bottom: 1px solid #222;
-    padding: 5px 20px 5px 0;
+    offset: 0;
+    padding: 7px 20px 7px 0;
     text-transform: uppercase;
 }
 
@@ -19,7 +22,7 @@
 
 .table-content>tr>td {
     border-bottom: 1px solid #222;
-    padding: 5px;
+    padding: 7px;
 }
 
 .table-content>tr:last-of-type>td {
