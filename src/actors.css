@@ -50,7 +50,10 @@ body .box .article__close {
 }
 
 body .box .article__heading {
+  font-size: 21px;
+  letter-spacing: 2px;
   margin: 0 auto 15px;
+  text-transform: uppercase;
 }
 
 body .box .article__heading-sub {
