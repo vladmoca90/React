@@ -1,8 +1,10 @@
 .table {
     border: 1px solid #222;
     border-spacing: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
     margin: 15px auto 0;
-    max-width: 900px;
+    max-width: 850px;
     width: 100%;
 }
 
