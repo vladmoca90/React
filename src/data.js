@@ -9,11 +9,11 @@ const flights = [
     },
     {
         airline: 'Avianca',
-        destinations: 'Bogota',
+        destinations: 'Bogota-El Dorado',
     },
     {
         airline: 'Brussels Airlines',
-        destinations: 'Brussels',
+        destinations: 'Brussels-International',
     },
     {
         airline: 'Cathay Pacific',
@@ -29,7 +29,7 @@ const flights = [
     },
     {
         airline: 'Iran Air',
-        destinations: 'Teheran-Komeini',
+        destinations: 'Teheran-Khomeini',
     },
     {
         airline: 'Japan Airlines',
@@ -57,7 +57,7 @@ const flights = [
     },
     {
         airline: 'Turkish Airlines',
-        destinations: 'Istanbul',
+        destinations: 'Istanbul-Ataturk',
     },
      {
         airline: 'United Airlines',
