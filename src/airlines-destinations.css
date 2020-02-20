@@ -2,14 +2,10 @@
     border: 1px solid #222;
     border-spacing: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     margin: 15px auto 0;
     max-width: 960px;
     width: 100%;
-}
-
-.table-header {
-    text-align: center;
 }
 
 .table-header>th {
@@ -17,6 +13,7 @@
     border-bottom: 1px solid #222;
     offset: 0;
     padding: 7px 20px 7px 0;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -33,6 +30,7 @@
 
 .table-content>tr>td {
     border-bottom: 1px solid #222;
+    vertical-align: middle;
     padding: 7px 14px;
 } 
 
