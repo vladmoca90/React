@@ -4,8 +4,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     margin: 15px auto 0;
-    max-width: 850px;
+    max-width: 900px;
     width: 100%;
+}
+
+.table-header {
+    text-align: center;
 }
 
 .table-header>th {
@@ -19,12 +23,11 @@
 .table-header>th:nth-of-type(1),
 .table-content>tr>td:nth-of-type(1) {
     border-right: 1px solid #222;
-    width: 20%;
 }
 
 .table-content>tr>td {
     border-bottom: 1px solid #222;
-    padding: 7px;
+    padding: 7px 14px;
 }
 
 .table-content>tr:last-of-type>td {
@@ -36,7 +39,7 @@
     max-width: 300px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    border:1px solid #ccc;
-    padding: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
     text-align: center;
 }
