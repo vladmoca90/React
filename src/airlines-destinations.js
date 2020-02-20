@@ -22,6 +22,7 @@ class Destinations extends React.Component {
                 {allFlights}
             </tbody>
           </table>
+          <div class="total-destinations">Number of airlines: {flights.length}</div>
         </div>
       </section>
     );

@@ -28,3 +28,10 @@
 .table-content>tr:last-of-type>td {
     border-bottom: 0;
 }
+
+.total-destinations {
+    margin: 10px auto;
+    max-width: 300px;
+    font-size: 18px;
+    text-align: center;
+}
