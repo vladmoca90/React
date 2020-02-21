@@ -25,6 +25,7 @@
 
 .table-content>tr>th {
     border-color: #222;
+    vertical-align: middle;
     text-align: center;
 }
 
