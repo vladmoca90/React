@@ -18,8 +18,8 @@ var allActors = actors.map((actor) =>
 class Actors extends React.Component {
   render() {
     return (
-      <section className="box">
-        <input type="text" className="box__filter" />
+      <section className="main">
+        <input type="text" className="filter-box" />
         {allActors}
       </section>
     );
