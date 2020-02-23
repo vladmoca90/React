@@ -1,65 +1,89 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin");
+
 body {
-  background-color: #f9f6f6; }
+  background-color: #f9f6f6;
+}
 
 .main {
   font-family: 'Cabin', sans-serif;
   margin: .5rem auto 0;
-  max-width: 1200px; }
+  max-width: 1200px;
+}
 
 .showroom-container {
   align-items: space-between;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
-  .showroom-container .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 3px 3px 12px #ccc;
-    margin-top: 20px;
-    max-width: 365px; }
-    .showroom-container .card__header {
-      align-items: center;
-      display: flex;
-      font-weight: normal;
-      height: 85px;
-      justify-content: space-between;
-      padding: 0 20px; }
-      .showroom-container .card__header .card__name,
-      .showroom-container .card__header .card__price {
-        text-align: left; }
-      .showroom-container .card__header .card__name {
-        color: #fb8c00;
-        font-size: 16px;
-        max-width: 250px; }
-      .showroom-container .card__header .card__price {
-        color: #111;
-        font-size: 21px;
-        font-weight: bold; }
-    .showroom-container .card__body .card__image {
-      display: block;
-      margin: 0 auto;
-      width: 100%; }
-    .showroom-container .card__buttons {
-      display: flex;
-      justify-content: space-around;
-      margin: 0 auto;
-      padding: 20px 0;
-      width: 95.5%; }
-      .showroom-container .card__buttons .card__link {
-        border: 1px solid #fb8c00;
-        border-radius: 21px;
-        color: #fb8c00;
-        display: inline-block;
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 1px;
-        padding: 7px 12px;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: all .4s linear; }
-        .showroom-container .card__buttons .card__link:hover {
-          background-color: #fb8c00;
-          color: #fff; }
-  .showroom-container .total-cars {
-    margin-top: 25px; }
+  justify-content: space-between;
+}
+
+.showroom-container .card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 3px 3px 12px #ccc;
+  margin-top: 20px;
+  max-width: 365px;
+}
+
+.showroom-container .card__header {
+  align-items: center;
+  display: flex;
+  font-weight: normal;
+  height: 85px;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.showroom-container .card__header .card__name,
+.showroom-container .card__header .card__price {
+  text-align: left;
+}
+
+.showroom-container .card__header .card__name {
+  color: #fb8c00;
+  font-size: 16px;
+  max-width: 250px;
+}
+
+.showroom-container .card__header .card__price {
+  color: #111;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.showroom-container .card__body .card__image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.showroom-container .card__buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 95.5%;
+}
+
+.showroom-container .card__buttons .card__link {
+  border: 1px solid #fb8c00;
+  border-radius: 21px;
+  color: #fb8c00;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 7px 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .4s linear;
+}
+
+.showroom-container .card__buttons .card__link:hover {
+  background-color: #fb8c00;
+  color: #fff;
+}
+
+.showroom-container .total-cars {
+  margin-top: 25px;
+}
