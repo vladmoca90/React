@@ -10,11 +10,12 @@ body .main {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding-top: 30px;
   max-width: 720px;
 }
 
 body .filter {
-  margin: 30px auto 40px;
+  margin: 0 auto 40px;
   padding: 4px;
   width: 220px;
 }
@@ -28,7 +29,7 @@ body .main .article {
   color: #333;
   display: flex;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 25px;
+  margin: 40px 0 0;
   padding: 20px;
 }
 
