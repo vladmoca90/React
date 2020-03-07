@@ -4,7 +4,7 @@ import destinations from './data';
 
 var allDestinations = destinations.map((destination) =>
              <div className="card-container">
-                    <div className="card" key={ destination.name }>
+                    <div className="card" key={ destination.title }>
                         <div className="card__img-container">
                             <img src={ destination.img } alt={ destination.imgDescription } className="card__img" />
                         </div>
