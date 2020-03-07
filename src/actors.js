@@ -3,7 +3,7 @@ import './actors.css';
 import actors from './data';
 
 var allActors = actors.map((actor) =>
-            <div className="article">
+            <div className="article" key={ actor.name }>
                 <div className="article__content">
                     <h2 className="article__heading">{ actor.name }</h2>
                     <p className="article__heading-sub">{ actor.dateOfBirth }</p>
