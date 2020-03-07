@@ -54,7 +54,7 @@ body .main .cards .card__img {
 body .main .cards .card__content {
   border-top: 1px solid #ccc;
   color: #444;
-  min-height: 285px;
+  height: 335px;
   padding: 0 20px 40px 20px;
   position: relative;
 }
