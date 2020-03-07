@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Actors from './actors';
+import Destinations from './destinations';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Actors />, document.getElementById('root'));
+ReactDOM.render(<Destinations />, document.getElementById('root'));
 
 serviceWorker.unregister();

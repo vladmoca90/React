@@ -1,6 +1,6 @@
 import React from 'react';
 import './actors.css';
-import actors from './data';
+import actors from './projects/actors/data';
 
 var allActors = actors.map((actor) =>
             <div className="article" key={ actor.name }>
