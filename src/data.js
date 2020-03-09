@@ -6,6 +6,7 @@ const destinations = [
         subTitle: 'Asia',
         content: 'Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. Its known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences. The capital, Kuala Lumpur, is home to colonial buildings, busy shopping districts such as Bukit Bintang and skyscrapers such as the iconic, 451m-tall Petronas Twin Towers.',
         url: '##',
+        id: 1,
     },
     {
         img: 'images/destinations/Thailand.jpg',
@@ -14,6 +15,7 @@ const destinations = [
         subTitle: 'Asia',
         content: 'Thailand is a Southeast Asian country. Its known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha. In Bangkok, the capital, an ultramodern cityscape rises next to quiet canalside communities and the iconic temples of Wat Arun, Wat Pho and the Emerald Buddha Temple (Wat Phra Kaew). Nearby beach resorts include bustling Pattaya and fashionable Hua Hin.',
         url: '##',
+        id: 1,
     },
     {
         img: 'images/destinations/Japan.jpg',
@@ -22,6 +24,7 @@ const destinations = [
         subTitle: 'Asia',
         content: 'Japan is an island nation in the Pacific Ocean with dense cities, imperial palaces, mountainous national parks and thousands of shrines and temples. Shinkansen bullet trains connect the main islands of Kyushu (with Okinawas subtropical beaches), Honshu (home to Tokyo and Hiroshimas atomic-bomb memorial) and Hokkaido (famous for skiing). Tokyo, the capital, is known for skyscrapers, shopping and pop culture.',
         url: '##',
+        id: 1,
     },
     {
         img: 'images/destinations/Italy.jpg',
@@ -30,6 +33,7 @@ const destinations = [
         subTitle: 'Europe',
         content: 'Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s "David" and Brunelleschis Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital.',
         url: '##',
+        id: 2,
     },
     {
         img: 'images/destinations/Spain.jpg',
@@ -38,6 +42,7 @@ const destinations = [
         subTitle: 'Europe',
         content: 'Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters. Segovia has a medieval castle (the Alcázar) and an intact Roman aqueduct. Catalonia’s capital, Barcelona, is defined by Antoni Gaudí’s whimsical modernist landmarks like the Sagrada Família church.',
         url: '##',
+        id: 2,
     },
     {
         img: 'images/destinations/UK.jpg',
@@ -46,6 +51,7 @@ const destinations = [
         subTitle: 'Europe',
         content: 'The United Kingdom, made up of England, Scotland, Wales and Northern Ireland, is an island nation in northwestern Europe. England – birthplace of Shakespeare and The Beatles – is home to the capital, London, a globally influential centre of finance and culture. England is also site of Neolithic Stonehenge, Bath’s Roman spa and centuries-old universities at Oxford and Cambridge.',
         url: '##',
+        id: 2,
     },
     {
         img: 'images/destinations/Brazil.jpg',
@@ -54,6 +60,7 @@ const destinations = [
         subTitle: 'Americas',
         content: 'Brazil, a vast South American country, stretches from the Amazon Basin in the north to vineyards and massive Iguaçu Falls in the south. Rio de Janeiro, symbolized by its 38m Christ the Redeemer statue atop Mount Corcovado, is famed for its busy Copacabana and Ipanema beaches as well as its enormous, raucous Carnaval festival, featuring parade floats, flamboyant costumes, and samba music and dance.',
         url: '##',
+        id: 3,
     },
     {
         img: 'images/destinations/Bolivia.jpg',
@@ -62,6 +69,7 @@ const destinations = [
         subTitle: 'Americas',
         content: 'Bolivia is a country in central South America, with a varied terrain spanning Andes Mountains, the Atacama Desert and Amazon Basin rainforest. At more than 3,500m, its administrative capital, La Paz, sits on the Andes’ Altiplano plateau with snow-capped Mt. Illimani in the background. Nearby is glass-smooth Lake Titicaca, the continent’s largest lake, straddling the border with Peru.',
         url: '##',
+        id: 3,
     },
       {
         img: 'images/destinations/USA.jpg',
@@ -70,6 +78,7 @@ const destinations = [
         subTitle: 'Americas',
         content: 'The U.S. is a country of 50 states covering a vast swath of North America, with Alaska in the northwest and Hawaii extending the nation’s presence into the Pacific Ocean. Major Atlantic Coast cities are New York, a global finance and culture center, and capital Washington, DC. Midwestern metropolis Chicago is known for influential architecture and on the west coast, Los Angeles Hollywood is famed for filmmaking.',
         url: '##',
+        id: 3,
     },
      {
         img: 'images/destinations/Egypt.jpg',
@@ -78,6 +87,7 @@ const destinations = [
         subTitle: 'Middle East',
         content: 'Egypt, a country linking northeast Africa with the Middle East, dates to the time of the pharaohs. Millennia-old monuments sit along the fertile Nile River Valley, including Giza`s colossal Pyramids and Great Sphinx as well as Luxor`s hieroglyph-lined Karnak Temple and Valley of the Kings tombs. The capital, Cairo, is home to Ottoman landmarks like Muhammad Ali Mosque and the Egyptian Museum, a trove of antiquities.',
         url: '##',
+        id: 4,
     },
     {
         img: 'images/destinations/Israel.jpg',
@@ -86,6 +96,7 @@ const destinations = [
         subTitle: 'Middle East',
         content: 'Israel, a Middle Eastern country on the Mediterranean Sea, is regarded by Jews, Christians and Muslims as the biblical Holy Land. Its most sacred sites are in Jerusalem. Within its Old City, the Temple Mount complex includes the Dome of the Rock shrine, the historic Western Wall, Al-Aqsa Mosque and the Church of the Holy Sepulchre. Israel`s financial hub, Tel Aviv, is known for its Bauhaus architecture and beaches.',
         url: '##',
+        id: 4,
     },
       {
         img: 'images/destinations/UAE.jpg',
@@ -94,6 +105,7 @@ const destinations = [
         subTitle: 'Middle East',
         content: 'The United Arab Emirates is an Arabian Peninsula nation settled mainly along the Persian (Arabian) Gulf. The country is a federation of 7 emirates. Abu Dhabi, the island capital, is home to Sheikh Zayed Grand Mosque, with crystal chandeliers and room for 40,000 worshipers. Dubai is the site of ultramodern Burj Khalifa tower, enormous shopping centers and extravagant entertainment attractions.',
         url: '##',
+        id: 4,
     },
 ];
 
