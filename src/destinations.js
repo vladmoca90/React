@@ -3,21 +3,23 @@ import './destinations.css';
 import destinations from './data';
 
 var allDestinations = destinations.map((destination) =>
-<div className="card-container">
-  <div className="card" key={ destination.title }>
-    <div className="card__img-container">
-      <img src={ destination.img } alt={ destination.imgDescription } className="card__img" />
-    </div>
-    <div className="card__content">
-      <p className="card__heading">{ destination.title }</p>
-      <p className="card__subHeading">{ destination.subTitle }</p>
-      <p className="card__text">{ destination.content }</p>
-      <div className="card__link-container">
-          <a rel="noopener noreferrer" target="_blank" href={ destination.url } className="card__link">See our offers</a>
-      </div>
-    </div>
-  </div>
-</div>);
+                      <div className="card-container">
+                        <div className="card" key={ destination.title }>
+                          <div className="card__img-container">
+                            <img src={ destination.img } alt={ destination.imgDescription } className="card__img" />
+                          </div>
+                          <div className="card__content">
+                            <p className="card__heading">{ destination.title }</p>
+                            <p className="card__subHeading">{ destination.subTitle }</p>
+                            <p className="card__text">{ destination.content }</p>
+                            <div className="card__link-container">
+                                <a rel="noopener noreferrer" target="_blank" 
+                                href={ destination.url } 
+                                className="card__link">See our offers</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>);
 
 class Destinations extends React.Component {
   render() {
