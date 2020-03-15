@@ -2,7 +2,7 @@ import React from 'react';
 import './destinations.css';
 import destinations from './data';
 
-var allDestinations = destinations.map((destination) =>
+const allDestinations = destinations.map((destination) =>
                       <div className="card-container">
                         <div className="card" key={ destination.title }>
                           <div className="card__img-container">

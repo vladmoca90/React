@@ -2,7 +2,7 @@ import React from 'react';
 import './actors.css';
 import actors from './projects/actors/data';
 
-var allActors = actors.map((actor) =>
+const allActors = actors.map((actor) =>
             <div className="article" key={ actor.name }>
                 <div className="article__content">
                     <h2 className="article__heading">{ actor.name }</h2>

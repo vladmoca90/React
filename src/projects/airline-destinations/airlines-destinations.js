@@ -1,13 +1,14 @@
 import React from 'react';
 import './airlines-destinations.css';
 import flights from './data';
+
 const allFlights = flights.map((flight) => 
-  <tr>
-    <th scope="row">{flights.indexOf(flight) + 1}</th>
-    <td>{flight.airline}</td>
-    <td>{flight.destinations}</td>
-  </tr>
-);
+                    <tr>
+                      <th scope="row">{flights.indexOf(flight) + 1}</th>
+                      <td>{flight.airline}</td>
+                      <td>{flight.destinations}</td>
+                    </tr>
+                  );
 
 class Destinations extends React.Component {
   render() {
