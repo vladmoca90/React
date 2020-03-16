@@ -25,6 +25,7 @@ class Destinations extends React.Component {
   render() {
     return (
        <section className="main">
+        <input type="text" className="filter-search" />
         <div className="cards container">
           <div className="row">
             {allDestinations}

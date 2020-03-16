@@ -19,7 +19,7 @@ class Actors extends React.Component {
   render() {
     return (
       <section className="main">
-        <input type="text" className="filter-box" />
+        <input type="text" className="filter-search" />
         {allActors}
       </section>
     );
