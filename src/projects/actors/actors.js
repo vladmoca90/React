@@ -26,7 +26,9 @@ class Actors extends React.Component {
     return (
       <section className="main">
         <input type="text" placeholder={this.state.placeholder} className="filter-search" />
-        {allActors}
+        <div className="container">
+         {allActors}
+        </div>
       </section>
     );
   }
