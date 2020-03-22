@@ -21,9 +21,16 @@ const allCars =  cars.map((car) =>
       );
 
 class Showroom extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+          placeholder:'Search...'
+        };
+    }
   render() {
     return (
     <div className="main">
+      <input type="text" placeholder={this.state.placeholder} className="filter-search" />
       <div className="showroom-container">{allCars}</div>
       <div className="total-cars">There are {total} cars available</div>
     </div>

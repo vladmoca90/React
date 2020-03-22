@@ -16,10 +16,16 @@ const allActors = actors.map((actor) =>
             </div>);
 
 class Actors extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+          placeholder:'Search...'
+        };
+    }
   render() {
     return (
       <section className="main">
-        <input type="text" className="filter-search" />
+        <input type="text" placeholder={this.state.placeholder} className="filter-search" />
         {allActors}
       </section>
     );

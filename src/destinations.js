@@ -22,10 +22,16 @@ const allDestinations = destinations.map((destination) =>
                       </div>);
 
 class Destinations extends React.Component {
+   constructor() {
+        super();
+        this.state = {
+          placeholder:'Search...'
+        };
+    }
   render() {
     return (
        <section className="main">
-        <input type="text" className="filter-search" />
+        <input type="text" placeholder={this.state.placeholder} className="filter-search" />
         <div className="cards container">
           <div className="row">
             {allDestinations}
