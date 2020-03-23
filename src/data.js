@@ -98,7 +98,7 @@ const destinations = [
         url: '##',
         id: 4,
     },
-      {
+    {
         img: 'images/destinations/UAE.jpg',
         imgDescription: 'UAE Travel',
         title: 'United Arab Emirates',

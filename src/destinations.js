@@ -21,11 +21,21 @@ const allDestinations = destinations.map((destination) =>
                         </div>
                       </div>);
 
+const searchItem = destinations.filter((destination) => {
+  if(this.state.search == null) {
+      return destinations;
+  }
+  else if(data.name.toLowerCase().includes(this.state.search.toLowerCase()) || 
+          data.country.toLowerCase().includes(this.state.search.toLowerCase())) {
+      return destinations;
+  }
+
 class Destinations extends React.Component {
    constructor() {
         super();
         this.state = {
-          placeholder:'Search...'
+          placeholder:'Search...',
+          search: null,
         };
     }
   render() {
