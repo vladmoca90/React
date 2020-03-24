@@ -26,14 +26,19 @@ class Destinations extends React.Component {
         super();
         this.state = {
           placeholder:'Search...',
-          search: null,
+          search: '',
         };
     }
 
   render() {
+    let filterDestinations = this.destinations.filter(
+      (destination) => {
+        return destination.title.indexOf(this.state.search) !== -1;
+      }
+    );
     return (
        <section className="main">
-        <input type="text" placeholder={this.state.placeholder} className="filter-search" />
+        <input type="text" value={this.state.search} placeholder={this.state.placeholder} className="filter-search" />
         <div className="cards container">
           <div className="row">
             {allDestinations}
