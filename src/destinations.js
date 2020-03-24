@@ -2,7 +2,31 @@ import React from 'react';
 import './destinations.css';
 import destinations from './data';
 
-const allDestinations = destinations.map((destination) =>
+// const allDestinations =
+
+class Destinations extends React.Component {
+   constructor() {
+        super();
+        this.state = {
+          placeholder:'Search...',
+          search: '',
+        };
+    }
+
+  render() {
+    let filterDestinations = this.props.destinations.filter(
+      (destination) => {
+        return destination.title.indexOf(this.state.search) !== -1 ||
+              destination.subTitle.indexOf(this.state.search) !== -1 ||
+              destination.content.indexOf(this.state.search) !== -1;
+      }
+    );
+    return (
+       <section className="main">
+        <input type="text" value={this.state.search} placeholder={this.state.placeholder} className="filter-search" />
+        <div className="cards container">
+          <div className="row">
+            { filterDestinations.destinations.map((destination) =>
                       <div className="card-container">
                         <div className="card" key={ destination.title }>
                           <div className="card__img-container">
@@ -19,29 +43,8 @@ const allDestinations = destinations.map((destination) =>
                             </div>
                           </div>
                         </div>
-                      </div>);
-
-class Destinations extends React.Component {
-   constructor() {
-        super();
-        this.state = {
-          placeholder:'Search...',
-          search: '',
-        };
-    }
-
-  render() {
-    let filterDestinations = this.destinations.filter(
-      (destination) => {
-        return destination.title.indexOf(this.state.search) !== -1;
-      }
-    );
-    return (
-       <section className="main">
-        <input type="text" value={this.state.search} placeholder={this.state.placeholder} className="filter-search" />
-        <div className="cards container">
-          <div className="row">
-            {allDestinations}
+                      </div>)
+            }
           </div>
         </div>
       </section>
