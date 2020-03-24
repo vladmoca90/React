@@ -14,7 +14,7 @@ class Destinations extends React.Component {
     }
 
   render() {
-    let filterDestinations = this.props.destinations.filter(
+    let filterDestinations = destinations.filter(
       (destination) => {
         return destination.title.indexOf(this.state.search) !== -1 ||
               destination.subTitle.indexOf(this.state.search) !== -1 ||
@@ -26,7 +26,7 @@ class Destinations extends React.Component {
         <input type="text" value={this.state.search} placeholder={this.state.placeholder} className="filter-search" />
         <div className="cards container">
           <div className="row">
-            { filterDestinations.destinations.map((destination) =>
+            { destinations.map((destination) =>
                       <div className="card-container">
                         <div className="card" key={ destination.title }>
                           <div className="card__img-container">
