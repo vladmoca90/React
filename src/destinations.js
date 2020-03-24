@@ -9,7 +9,7 @@ class Destinations extends React.Component {
         super();
         this.state = {
           placeholder:'Search...',
-          search: '',
+          search: null,
         };
     }
 
@@ -23,7 +23,7 @@ class Destinations extends React.Component {
     );
     return (
        <section className="main">
-        <input type="text" value={this.state.search} placeholder={this.state.placeholder} className="filter-search" />
+        <input type="text" value={this.state.search} onChange={filterDestinations} placeholder={this.state.placeholder} className="filter-search" />
         <div className="cards container">
           <div className="row">
             { destinations.map((destination) =>
