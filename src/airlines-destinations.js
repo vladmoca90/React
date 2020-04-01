@@ -1,6 +1,6 @@
 import React from 'react';
 import './airlines-destinations.css';
-import flights from './data';
+import flights from './projects/destinations/data';
 
 const allFlights = flights.map((flight) => 
                     <tr>
