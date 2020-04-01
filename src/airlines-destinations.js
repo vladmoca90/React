@@ -16,7 +16,7 @@ class Destinations extends React.Component {
        <section className="main">
         <div className="container">
           <table className="table">
-            <thead className="thead-dark table-header">
+            <thead className="table-header">
               <th>#</th>
               <th>Name</th>
               <th>Destinations</th>
