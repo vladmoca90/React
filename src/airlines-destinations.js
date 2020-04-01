@@ -15,7 +15,7 @@ class Destinations extends React.Component {
     return (
        <section className="main">
         <div className="container">
-          <table className="table">
+          <table className="table table-hover">
             <thead className="table-header">
               <th>#</th>
               <th>Name</th>
