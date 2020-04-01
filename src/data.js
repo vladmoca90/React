@@ -25,7 +25,7 @@ const flights = [
     },
      {
         airline: 'Hainan Airlines',
-        destinations: 'Beijing-Capital, Shanghai-Pudong',
+        destinations: ['Beijing-Capital', 'Shanghai-Pudong'],
     },
     {
         airline: 'Iran Air',
@@ -41,7 +41,7 @@ const flights = [
     },
     {
         airline: 'Lufthansa',
-        destinations: 'Frankfurt, Munich',
+        destinations:  ['Frankfurt', 'Munich'],
     },
     {
         airline: 'Mexicana',
@@ -61,11 +61,11 @@ const flights = [
     },
      {
         airline: 'United Airlines',
-        destinations: 'Chicago, Dallas-Fort Worth, Houston-Intercontinental, Los Angeles, New York-Newark, San Francisco',
+        destinations: ['Chicago', 'Dallas-Fort Worth', 'Houston-Intercontinental', 'Los Angeles', 'Newark', 'San Francisco'],
     },
     {
         airline: 'Virgin Atlantic',
-        destinations: '	Atlanta, Boston, Delhi, Havana, Hong Kong, Johannesburg, Lagos, Las Vegas, Los Angeles, Miami, Mumbai, New York–JFK, Newark, San Francisco, São Paulo–Guarulhos, Seattle/Tacoma, Shanghai–Pudong, Tel Aviv, Washington–Dulles',
+        destinations: ['Atlanta', 'Boston', 'Delhi', 'Havana', 'Hong Kong', 'Johannesburg', 'Lagos', 'Las Vegas', 'Los Angeles', 'Miami', 'Mumbai', 'New York–JFK', 'Newark', 'San Francisco', 'São Paulo–Guarulhos', 'Seattle/Tacoma', 'Shanghai–Pudong', 'Tel Aviv', 'Washington–Dulles'],
     }
 ];
 

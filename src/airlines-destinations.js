@@ -25,7 +25,10 @@ class Destinations extends React.Component {
                 {allFlights}
             </tbody>
           </table>
-          <div class="total-destinations">Number of airlines: {flights.length}</div>
+          <div class="total-destinations">
+            <span>Number of airlines: {flights.length}</span>
+            {/* <span>Number of destinations: {destinations.map((destination) => destination.length)}</span> */}
+          </div>
         </div>
       </section>
     );
