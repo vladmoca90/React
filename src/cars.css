@@ -1,22 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin");
 
 body {
-  background-color: #f9f6f6;
+  background-color: #fff;
 }
-
 .main {
   font-family: 'Cabin', sans-serif;
   margin: .5rem auto 0;
   max-width: 1200px;
 }
-
 .showroom-container {
   align-items: space-between;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .showroom-container .card {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -24,7 +21,6 @@ body {
   margin-top: 20px;
   max-width: 365px;
 }
-
 .showroom-container .card__header {
   align-items: center;
   display: flex;
@@ -33,30 +29,25 @@ body {
   justify-content: space-between;
   padding: 0 20px;
 }
-
 .showroom-container .card__header .card__name,
 .showroom-container .card__header .card__price {
   text-align: left;
 }
-
 .showroom-container .card__header .card__name {
   color: #fb8c00;
   font-size: 16px;
   max-width: 250px;
 }
-
 .showroom-container .card__header .card__price {
   color: #111;
   font-size: 21px;
   font-weight: bold;
 }
-
 .showroom-container .card__body .card__image {
   display: block;
   margin: 0 auto;
   width: 100%;
 }
-
 .showroom-container .card__buttons {
   display: flex;
   justify-content: space-around;
@@ -64,7 +55,6 @@ body {
   padding: 20px 0;
   width: 95.5%;
 }
-
 .showroom-container .card__buttons .card__link {
   border: 1px solid #fb8c00;
   border-radius: 21px;
@@ -78,12 +68,10 @@ body {
   text-transform: uppercase;
   transition: all .4s linear;
 }
-
 .showroom-container .card__buttons .card__link:hover {
   background-color: #fb8c00;
   color: #fff;
 }
-
 .showroom-container .total-cars {
   margin-top: 25px;
 }
