@@ -20,6 +20,7 @@ body {
   box-shadow: 3px 3px 12px #ccc;
   margin-top: 20px;
   max-width: 365px;
+  width: 100%;
 }
 .showroom-container .card__header {
   align-items: center;
@@ -60,7 +61,7 @@ body {
   border-radius: 21px;
   color: #fb8c00;
   display: inline-block;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 1px;
   padding: 7px 12px;
