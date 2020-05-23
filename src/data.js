@@ -1,72 +1,40 @@
-const flights = [
+const cars = [
     {
-        airline: "Air Algerie",
-        destinations: "Algiers",
-    },
-     {
-        airline: "Air France",
-        destinations: "Paris-Charles de Gaulle",
+      name: 'Ford Focus 1.6 ZETEC S TDCI 5d 113 BHP 5-Door',
+      year: 2014,
+      price: 8590,
+      image: '../images/cars/ford-focus.jpg',
     },
     {
-        airline: "Avianca",
-        destinations: "Bogota-El Dorado",
+      name: 'Alfa Romeo Giulieta 2.0 JTDM Exclusive 5-Door',
+      year: 2014,
+      price: 7995,
+      image: '../images/cars/alfa-romeo.jpg',
     },
     {
-        airline: "Brussels Airlines",
-        destinations: "Brussels-International",
+      name: 'Subaru Impreza 2.0 Turbo WRX 5dr',
+      year: 2001,
+      price: 2495,
+      image: '../images/cars/subaru-impreza.jpg',
     },
     {
-        airline: "Cathay Pacific",
-        destinations: "Hong Kong",
+      name: 'Renault Megane 1.5 dCi FAP Dynamique Tom Tom Coupe 3dr Diesel EDC',
+      year: 2011,
+      price: 5290,
+      image: '../images/cars/subaru-impreza.jpg',
     },
     {
-        airline: "El Al",
-        destinations: "Tel Aviv-Ben Gurion",
-    },
-     {
-        airline: "Hainan Airlines",
-        destinations: ["Beijing-Capital", "Shanghai-Pudong"],
+      name: 'Volkswagen Golf R Dsg 5dr Auto',
+      year: 2016,
+      price: 21995,
+      image: '../images/cars/subaru-impreza.jpg',
     },
     {
-        airline: "Iran Air",
-        destinations: "Tehran-Khomeini",
+      name: 'Subaru Impreza 2.0 Turbo WRX 5dr',
+      year: 2001,
+      price: 2495,
+      image: '../images/cars/subaru-impreza.jpg',
     },
-    {
-        airline: "Japan Airlines",
-        destinations: "Tokyo-Haneda",
-    },
-    {
-        airline: "KLM",
-        destinations: "Amsterdam",
-    },
-    {
-        airline: "Lufthansa",
-        destinations:  ["Frankfurt", "Munich"],
-    },
-    {
-        airline: "Mexicana",
-        destinations: "Mexico City",
-    },
-    {
-        airline: "Royal Air Jordanian",
-        destinations: "Amman-Queen Alia",
-    },
-    {
-        airline: "Oman Air",
-        destinations: "Muscat",
-    },
-    {
-        airline: "Turkish Airlines",
-        destinations: "Istanbul-Ataturk",
-    },
-     {
-        airline: "United Airlines",
-        destinations: ["Chicago-O'Hare", "Dallas-Fort Worth", "Houston-Intercontinental", "Los Angeles", "Newark", "San Francisco"],
-    },
-    {
-        airline: "Virgin Atlantic",
-        destinations: ["Atlanta", "Boston", "Delhi", "Havana", "Hong Kong", "Johannesburg", "Lagos", "Las Vegas", "Los Angeles", "Miami", "Mumbai", "New York–JFK", "Newark", "San Francisco", "São Paulo–Guarulhos", "Seattle/Tacoma", "Shanghai–Pudong", "Tel Aviv-Ben Gurion", "Washington–Dulles"],
-    }
 ];
 
-export default flights;
+export default cars;
