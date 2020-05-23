@@ -27,7 +27,6 @@ class Destinations extends React.Component {
           </table>
           <div class="total-destinations">
             <span>Number of airlines: {flights.length}</span>
-            {/* <span>Number of destinations: {destinations.map((destination) => destination.length)}</span> */}
           </div>
         </div>
       </section>

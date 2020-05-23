@@ -12,12 +12,12 @@
     border-bottom: 1px solid #ccc;
     font-weight: 500;
     offset: 0;
-    padding: 7px 20px 7px 0;
+    padding: 8px 0;
     text-align: center;
     text-transform: uppercase;
 }
-.table-header>th:nth-of-type(1),
-.table-content>tr>td:nth-of-type(1),
+.table-header>th,
+.table-content>tr>td,
 .table-content>tr>th {
     border-right: 1px solid #ccc;
 }
