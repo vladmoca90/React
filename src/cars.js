@@ -1,6 +1,6 @@
 import React from 'react';
 import './cars.css';
-import cars from './data';
+import cars from './projects/airline-destinations/data';
 
 const total = <span className="total-number">{cars.length}</span>;
 const allCars =  cars.map((car) =>
