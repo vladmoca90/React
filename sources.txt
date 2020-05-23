@@ -7,6 +7,8 @@ https://codeburst.io/react-js-for-beginners-the-basics-87ef6e54dae7
 https://www.w3schools.com/react/default.asp
 
 
+* Commands ->
+
 npm run build - is the command to build
 
 npm start - to open IE
