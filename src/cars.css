@@ -23,7 +23,7 @@ body {
   width: 100%;
 }
 .showroom-container .card__header {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   font-weight: normal;
   height: 85px;
