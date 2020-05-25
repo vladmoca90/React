@@ -6,11 +6,11 @@ const total = <span className="total-number">{cars.length}</span>;
 const allCars =  cars.map((car) =>
         <div className="card">
           <div className="card__header">
-            <div className="card__name">{car.name} {car.year}</div>
-            <div className="card__price">&pound;{car.price}</div>
+            <div className="card__name" key={car.name}>{car.name} {car.year}</div>
+            <div className="card__price" key={car.price}>&pound;{car.price}</div>
           </div>
           <div className="card__body">
-            <img className="card__image" alt={car.name} src={car.image} />
+            <img className="card__image" ky={car.name} alt={car.name} src={car.image} />
           </div>
           <div className="card__buttons">
             <a className="card__link" href="##">Enquiry</a>
