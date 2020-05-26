@@ -829,7 +829,7 @@
     "scheduler": "^0.15.0",
     "select-hose": "^2.0.0",
     "semver": "^5.6.0",
-    "serialize-javascript": "^1.6.1",
+    "serialize-javascript": "^2.1.1",
     "schema-utils": "^1.0.0",
     "set-blocking": "^2.0.0",
     "serve-index": "^1.9.1",
