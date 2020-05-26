@@ -540,7 +540,7 @@
     "lodash.templatesettings": "^4.1.0",
     "lodash.uniq": "^4.5.0",
     "loglevel": "^1.6.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "lru-cache": "^5.1.1",
     "make-dir": "^1.3.0",
     "map-cache": "^0.2.2",
