@@ -4,9 +4,8 @@ body {
   background: url("images/actors/background.jpg") no-repeat fixed;
   margin: 0;
   padding: 0;
-}
 
-body .main {
+  .main {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -14,15 +13,17 @@ body .main {
   max-width: 720px;
 }
 
-body .filter {
+.filter {
   margin: 0 auto 40px;
   padding: 4px;
   width: 220px;
-}
-
-body .filter:focus {
+  &:focus {
   outline: 0;
 }
+}
+}
+
+
 
 body .main .article {
   background-color: #fff;
