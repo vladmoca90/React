@@ -16,7 +16,6 @@ body {
       max-width: 220px;
       padding: 5px;
       width: 100%;
-
       &:focus {
         outline: 0;
       }
@@ -28,10 +27,9 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
 
-        @media screen and (min-width: 768px) and (max-width: 959px) {
+        @media screen and (max-width: 991px) {
           justify-content: space-around;
         }
-
         @media screen and (max-width: 767px) {
           justify-content: center;
         }
@@ -112,7 +110,6 @@ body {
         position: relative;
         text-decoration: none;
         transition: all ease-in-out 0.4s;
-
         &::after {
           content: '>';
           right: -10px;
@@ -121,10 +118,8 @@ body {
           top: -1px;
           transition: all ease 0.4s;
         }
-
         &:hover {
           border-bottom: 1px solid #444;
-
           &::after {
             opacity: 1;
             right: -15px;

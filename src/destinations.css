@@ -20,7 +20,7 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; }
-      @media screen and (min-width: 768px) and (max-width: 959px) {
+      @media screen and (max-width: 991px) {
         body .main .cards .row {
           justify-content: space-around; } }
       @media screen and (max-width: 767px) {
