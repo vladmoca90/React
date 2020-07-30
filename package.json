@@ -241,7 +241,7 @@
     "domutils": "^1.1.6",
     "domain-browser": "^1.2.0",
     "domhandler": "^2.1.0",
-    "dot-prop": "^4.2.0",
+    "dot-prop": "^5.1.1",
     "dotenv-expand": "^4.2.0",
     "dom-serializer": "^0.1.0",
     "domexception": "^1.0.1",
