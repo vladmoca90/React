@@ -12,3 +12,6 @@ https://www.w3schools.com/react/default.asp
 npm run build - is the command to build
 
 npm start - to open IE
+
+
+jjjjjj
