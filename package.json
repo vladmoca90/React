@@ -244,7 +244,7 @@
     "domexception": "^1.0.1",
     "domhandler": "^2.1.0",
     "domutils": "^1.1.6",
-    "dot-prop": "^4.2.0",
+    "dot-prop": "^4.2.1",
     "dotenv": "^6.0.0",
     "dotenv-expand": "^4.2.0",
     "duplexer": "^0.1.1",
