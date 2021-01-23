@@ -16,12 +16,12 @@ const allActors = actors.map((actor) =>
             </div>);
 
 class Actors extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-          placeholder:'Search...'
-        };
-    }
+  constructor() {
+      super();
+      this.state = {
+        placeholder:'Search...'
+      };
+  }
   render() {
     return (
       <section className="main">
