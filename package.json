@@ -399,7 +399,7 @@
     "ieee754": "^1.1.12",
     "iferr": "^0.1.5",
     "ignore": "^4.0.6",
-    "immer": "^1.10.0",
+    "immer": "^8.0.1",
     "import-cwd": "^2.1.0",
     "import-fresh": "^2.0.0",
     "import-from": "^2.1.0",
