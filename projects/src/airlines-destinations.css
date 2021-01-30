@@ -19,8 +19,10 @@
     text-transform: uppercase;
   }
   
-  .table-content > tr > td, .table-content > tr > th {
+  .table-content > tr > td, 
+  .table-content > tr > th {
     border-right: 1px solid #ccc;
+    padding: 10px;
   }
   .table-content > tr > th {
     border-color: #ccc;
@@ -30,7 +32,6 @@
   .table-content > tr > td {
     border-bottom: 1px solid #ccc;
     vertical-align: middle;
-    padding: 10px;
   }
   .table-content > tr > td:nth-of-type(1) {
     width: 17%;
