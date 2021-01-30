@@ -5,4 +5,4 @@ import Destinations from './airlines-destinations';
 
 ReactDOM.render(<Destinations />, document.getElementById('root'));
 
-serviceWorker.unregister();
+// serviceWorker.unregister();
