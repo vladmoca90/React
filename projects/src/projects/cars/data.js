@@ -8,7 +8,7 @@ const cars = [
     {
       name: 'Alfa Romeo Giulieta 2.0 JTDM Exclusive 5-Door',
       year: 2014,
-      price: 7995,
+      price: 7900,
       image: '../images/cars/alfa-romeo.jpg',
     },
     {
