@@ -5,7 +5,7 @@ import destinations from './data';
 // const allDestinations =
 
 class Destinations extends React.Component {
-   constructor() {
+    constructor() {
         super();
         this.state = {
           placeholder:'Search...',
