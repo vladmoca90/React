@@ -20,6 +20,10 @@ const flights = [
         destinations: "Hong Kong",
     },
     {
+        airline: "Delta Airlines",
+        destinations: "New York-JFK",
+    },
+    {
         airline: "El Al",
         destinations: "Tel Aviv-Ben Gurion",
     },
