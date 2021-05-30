@@ -1,68 +1,82 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-body {
-  background: url("images/actors/background.jpg") no-repeat fixed;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
+
+ body {
+     background: url("images/actors/background.jpg") no-repeat fixed;
+     background-size: cover;
+     margin: 0;
+     padding: 0;
 }
-body .main {
-  display: flex;
-  flex-direction: column;
-  margin: 30px auto;
-  max-width: 720px;
+
+ body .main {
+     display: flex;
+     flex-direction: column;
+     margin: 30px auto;
+     max-width: 720px;
 }
-body .main .article {
-  background-color: #fff;
-  color: #333;
-  display: flex;
-  font-family: "Montserrat", sans-serif;
-  margin: 40px 0 0;
-  padding: 20px;
+
+ body .main .article {
+     background-color: #fff;
+     color: #333;
+     display: flex;
+     font-family: "Montserrat", sans-serif;
+     margin: 40px 0 0;
+     padding: 20px;
 }
-@media screen and (max-width: 767px) {
-  body .main .article {
-    flex-direction: column;
-    align-items: center;
-  }
+
+ @media screen and (max-width: 767px) {
+     body .main .article {
+         flex-direction: column;
+         align-items: center;
+    }
 }
-body .main .article__content {
-  padding-right: 20px;
+
+ body .main .article__content {
+     padding-right: 20px;
 }
-body .main .article__close {
-  cursor: pointer;
-  right: 20px;
-  top: 8px;
+
+ body .main .article__close {
+     cursor: pointer;
+     right: 20px;
+     top: 8px;
 }
-body .main .article__heading {
-  font-size: 21px;
-  letter-spacing: 2px;
-  margin: 0 auto 15px;
-  text-transform: uppercase;
+
+ body .main .article__heading {
+     font-size: 21px;
+     letter-spacing: 2px;
+     margin: 0 auto 15px;
+     text-transform: uppercase;
 }
-body .main .article__heading-sub {
-  font-size: 15px;
-  margin-bottom: 0;
+
+ body .main .article__heading-sub {
+     font-size: 15px;
+     margin-bottom: 0;
 }
-body .main .article__heading-sub:nth-of-type(1) {
-  text-transform: uppercase;
+
+ body .main .article__heading-sub:nth-of-type(1) {
+     text-transform: uppercase;
 }
-body .main .article__heading-sub:nth-of-type(2) {
-  font-style: italic;
+
+ body .main .article__heading-sub:nth-of-type(2) {
+     font-style: italic;
 }
-body .main .article__text {
-  font-size: 13px;
-  line-height: 160%;
-  margin: 20px 0 0;
+
+ body .main .article__text {
+     font-size: 13px;
+     line-height: 160%;
+     margin: 20px 0 0;
 }
-body .main .article__image img {
-  border-radius: 50px;
-  max-width: 250px;
+
+ body .main .article__image img {
+     border-radius: 50px;
+     max-width: 250px;
 }
-body .filter {
-  margin: 0 auto 40px;
-  padding: 4px;
-  width: 220px;
+
+ body .filter {
+     margin: 0 auto 40px;
+     padding: 4px;
+     width: 220px;
 }
-body .filter:focus {
-  outline: 0;
+
+ body .filter:focus {
+     outline: 0;
 }
