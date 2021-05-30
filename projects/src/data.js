@@ -48,7 +48,7 @@ const flights = [
         destinations:  ["Frankfurt", "Munich"],
     },
     {
-        airline: "Mexicana",
+        airline: "Aeromexico",
         destinations: "Mexico City",
     },
     {
