@@ -69,6 +69,6 @@ body {
       body .showroom-container .card__link:hover {
         background-color: #fb8c00;
         color: #fff; }
-    body .showroom-container .total-cars {
+    body .total-cars {
       display: block;
       margin-top: 25px; }
