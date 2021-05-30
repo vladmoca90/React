@@ -1,74 +1,89 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin");
-body {
-  background-color: #fff; }
-  body .main {
-    font-family: 'Cabin', sans-serif;
-    margin: .5rem auto 0;
-    max-width: 1200px; }
-  body .filter-search {
-    border: 1px solid #ccc;
-    color: #111;
-    display: block;
-    margin: 25px auto 20px;
-    padding-left: 4px; }
-    body .filter-search:focus {
-      border: 1px solid #ccc;
-      outline: 0; }
-  body .showroom-container {
-    align-items: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    body .showroom-container .card {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      box-shadow: 3px 3px 12px #ccc;
-      margin-top: 20px;
-      max-width: 365px;
-      width: 100%; }
-    body .showroom-container .card__header {
-      align-items: flex-start;
-      display: flex;
-      font-weight: normal;
-      height: 85px;
-      justify-content: space-between;
-      padding: 0 20px; }
-      body .showroom-container .card__header .card__name,
-      body .showroom-container .card__header .card__price {
-        text-align: left; }
-      body .showroom-container .card__header .card__name {
-        color: #fb8c00;
-        font-size: 16px;
-        max-width: 250px; }
-      body .showroom-container .card__header .card__price {
-        color: #111;
-        font-size: 21px;
-        font-weight: bold; }
-    body .showroom-container .card__body .card__image {
-      display: block;
-      margin: 0 auto;
-      width: 100%; }
-    body .showroom-container .card__buttons {
-      display: flex;
-      justify-content: space-around;
-      margin: 0 auto;
-      padding: 20px 0;
-      width: 95.5%; }
-    body .showroom-container .card__link {
-      border: 1px solid #fb8c00;
-      border-radius: 21px;
-      color: #fb8c00;
-      display: inline-block;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 1px;
-      padding: 7px 12px;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: all .4s linear; }
-      body .showroom-container .card__link:hover {
-        background-color: #fb8c00;
-        color: #fff; }
-    body .total-cars {
-      display: block;
-      margin-top: 25px; }
+ body {
+     background-color: #fff;
+}
+ body .main {
+     font-family: 'Cabin', sans-serif;
+     margin: .5rem auto 0;
+     max-width: 1200px;
+}
+ body .filter-search {
+     border: 1px solid #ccc;
+     color: #111;
+     display: block;
+     margin: 25px auto 20px;
+     padding-left: 4px;
+}
+ body .filter-search:focus {
+     border: 1px solid #ccc;
+     outline: 0;
+}
+ body .showroom-container {
+     align-items: space-between;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+ body .showroom-container .card {
+     background-color: #fff;
+     border: 1px solid #ddd;
+     box-shadow: 3px 3px 12px #ccc;
+     margin-top: 20px;
+     max-width: 365px;
+     width: 100%;
+}
+ body .showroom-container .card__header {
+     align-items: flex-start;
+     display: flex;
+     font-weight: normal;
+     height: 85px;
+     justify-content: space-between;
+     padding: 0 20px;
+}
+ body .showroom-container .card__header .card__name, body .showroom-container .card__header .card__price {
+     text-align: left;
+}
+ body .showroom-container .card__header .card__name {
+     color: #fb8c00;
+     font-size: 16px;
+     max-width: 250px;
+}
+ body .showroom-container .card__header .card__price {
+     color: #111;
+     font-size: 21px;
+     font-weight: bold;
+}
+ body .showroom-container .card__body .card__image {
+     display: block;
+     margin: 0 auto;
+     width: 100%;
+}
+ body .showroom-container .card__buttons {
+     display: flex;
+     justify-content: space-around;
+     margin: 0 auto;
+     padding: 20px 0;
+     width: 95.5%;
+}
+ body .showroom-container .card__link {
+     border: 1px solid #fb8c00;
+     border-radius: 21px;
+     color: #fb8c00;
+     display: inline-block;
+     font-size: 14px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     padding: 7px 12px;
+     text-decoration: none;
+     text-transform: uppercase;
+     transition: all .4s linear;
+}
+ body .showroom-container .card__link:hover {
+     background-color: #fb8c00;
+     color: #fff;
+}
+ body .total-cars {
+     display: block;
+     margin-top: 25px;
+}
+ 
