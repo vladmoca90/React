@@ -60,6 +60,10 @@ const flights = [
         destinations: "Muscat",
     },
     {
+        airline: "TAROM",
+        destinations: "Bucharest-Otopeni",
+    },
+    {
         airline: "Turkish Airlines",
         destinations: "Istanbul-Ataturk",
     },
