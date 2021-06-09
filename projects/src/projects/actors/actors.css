@@ -27,7 +27,7 @@ body .main .article {
     body .main .article {
         flex-direction: column;
         align-items: center;
-}
+    }
 }
 
 body .main .article__content {
