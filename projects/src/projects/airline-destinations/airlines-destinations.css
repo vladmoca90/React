@@ -1,52 +1,52 @@
 .table {
-    border: 1px solid #ccc;
-    border-spacing: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-    margin: 15px auto 0;
-    max-width: 960px;
-    width: 100%;
-  }
-  
-  .table-header > th {
-    background-color: #efe;
-    border-bottom: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    font-weight: 500;
-    offset: 0;
-    padding: 8px 0;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  
-  .table-content > tr > td, 
-  .table-content > tr > th {
-    border-right: 1px solid #ccc;
-    padding: 10px;
-  }
-  .table-content > tr > th {
-    border-color: #ccc;
-    vertical-align: middle;
-    text-align: center;
-  }
-  .table-content > tr > td {
-    border-bottom: 1px solid #ccc;
-    vertical-align: middle;
-  }
-  .table-content > tr > td:nth-of-type(1) {
-    width: 17%;
-  }
-  .table-content > tr:last-of-type > td {
-    border-bottom: 0;
-  }
-  
-  .total-destinations {
-    margin: 15px auto;
-    max-width: 250px;
-    font-family: Verdana, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    border: 1px solid #ccc;
-    padding: 5px;
-    text-align: center;
-  }
+  border: 1px solid #ccc;
+  border-spacing: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  margin: 15px auto 0;
+  max-width: 960px;
+  width: 100%;
+}
+
+.table-header > th {
+  background-color: #efe;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  font-weight: 500;
+  offset: 0;
+  padding: 8px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.table-content > tr > td, 
+.table-content > tr > th {
+  border-right: 1px solid #ccc;
+  padding: 10px;
+}
+.table-content > tr > th {
+  border-color: #ccc;
+  vertical-align: middle;
+  text-align: center;
+}
+.table-content > tr > td {
+  border-bottom: 1px solid #ccc;
+  vertical-align: middle;
+}
+.table-content > tr > td:nth-of-type(1) {
+  width: 17%;
+}
+.table-content > tr:last-of-type > td {
+  border-bottom: 0;
+}
+
+.total-destinations {
+  margin: 15px auto;
+  max-width: 250px;
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
