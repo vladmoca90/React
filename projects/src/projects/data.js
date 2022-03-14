@@ -53,7 +53,7 @@ const flights = [
     },
     {
         airline: "Royal Air Jordanian",
-        destinations: "Amman-Queen Alia",
+        destinations: "Amman-Queen",
     },
     {
         airline: "Oman Air",
@@ -61,7 +61,7 @@ const flights = [
     },
     {
         airline: "TAROM",
-        destinations: "Bucharest-Otopeni",
+        destinations: "Bucharest",
     },
     {
         airline: "Turkish Airlines",
