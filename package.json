@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/vladmoca90/ReactJS/issues"
   },
-  "homepage": "https://github.com/vladmoca90/ReactJS#readme"
+  "homepage": "https://github.com/vladmoca90/ReactJS#readme",
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "url-loader": "^4.1.1"
+  }
 }
