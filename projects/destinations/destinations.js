@@ -37,9 +37,7 @@ class Destinations extends React.Component {
                     <p className="card__subHeading">{destination.subTitle}</p>
                     <p className="card__text">{destination.content}</p>
                     <div className="card__link-container">
-                      <a rel="noopener noreferrer" target="_blank"
-                        href={destination.url}
-                        className="card__link">See our offers</a>
+                      <a rel="link" target="_blank" href={destination.url} className="card__link">See our offers</a>
                     </div>
                   </div>
                 </div>
