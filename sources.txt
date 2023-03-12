@@ -19,3 +19,6 @@ npm start - to open IE
 cd projects
 
 npm start
+
+
+npx tsc
