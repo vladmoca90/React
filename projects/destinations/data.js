@@ -71,7 +71,7 @@ const destinations = [
         url: '##',
         id: 3,
     },
-      {
+    {
         img: 'images/destinations/USA.jpg',
         imgDescription: 'USA Travel',
         title: 'United States',
@@ -80,7 +80,7 @@ const destinations = [
         url: '##',
         id: 3,
     },
-     {
+    {
         img: 'images/destinations/Egypt.jpg',
         imgDescription: 'Egypt Travel',
         title: 'Egypt',
