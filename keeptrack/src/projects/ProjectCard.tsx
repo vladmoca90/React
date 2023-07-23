@@ -24,7 +24,7 @@ function ProjectCard(props: ProjectCardProps) {
                 <p>{formatDescription(project.description)}</p>
                 <p>Budget : {project.budget.toLocaleString()}</p>
                 <button className=" bordered" onClick={() => {handleEditClick(project);}}>
-                    <span className="icon-edit "></span>
+                    <span className="icon-edit"></span>
                     Edit
                 </button>
             </section>
