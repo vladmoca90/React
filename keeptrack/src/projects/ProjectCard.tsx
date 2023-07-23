@@ -2,7 +2,7 @@ import React from 'react';
 import { Projects } from './Projects';
 
 function formatDescription(description: string): string {
-    return description.substring(0, 60)  '...';
+    return description.substring(0, 60);
 }
 
 interface ProjectCardProps {
