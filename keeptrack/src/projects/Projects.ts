@@ -1,4 +1,4 @@
-export class Project {
+export class Projects {
     id: number | undefined;
     name: string = '';
     description: string = '';

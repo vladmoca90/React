@@ -1,11 +1,11 @@
 import React from 'react';
-import { MOCK_PROJECTS } from './MockProjects';
+import { MockProjects } from './MockProjects';
 
 function ProjectsPage() {
  return (
       <>
         <h1>Projects</h1>
-        <pre>{JSON.stringify(MOCK_PROJECTS, null, ' ')}</pre>
+        <pre>{JSON.stringify(MockProjects, null, ' ')}</pre>
        </>
     )
 }

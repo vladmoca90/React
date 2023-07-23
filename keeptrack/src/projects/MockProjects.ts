@@ -1,7 +1,7 @@
-import { Project } from './Project';
+import { Projects } from './Projects';
 
-export const MOCK_PROJECTS = [
-  new Project({
+export const MockProjects = [
+  new Projects({
     id: 1,
     name: 'Johnson - Kutch',
     description:
@@ -12,7 +12,7 @@ export const MOCK_PROJECTS = [
     budget: 54637,
     isActive: false,
   }),
-  new Project({
+  new Projects({
     id: 2,
     name: 'Wisozk Group',
     description:
@@ -23,7 +23,7 @@ export const MOCK_PROJECTS = [
     budget: 91638,
     isActive: true,
   }),
-  new Project({
+  new Projects({
     id: 3,
     name: 'Denesik LLC',
     description:
@@ -34,7 +34,7 @@ export const MOCK_PROJECTS = [
     budget: 29729,
     isActive: true,
   }),
-  new Project({
+  new Projects({
     id: 4,
     name: 'Purdy, Keeling and Smitham',
     description:
@@ -45,7 +45,7 @@ export const MOCK_PROJECTS = [
     budget: 45660,
     isActive: true,
   }),
-  new Project({
+  new Projects({
     id: 5,
     name: 'Kreiger - Waelchi',
     description:
@@ -56,11 +56,11 @@ export const MOCK_PROJECTS = [
     budget: 81188,
     isActive: true,
   }),
-  new Project({
+  new Projects({
     id: 6,
     name: 'Lesch - Waelchi',
     description:
-      'Profound mobile project. Rem consequatur laborum explicabo sint odit et illo voluptas expedita.',
+      'Profound mobile Projects. Rem consequatur laborum explicabo sint odit et illo voluptas expedita.',
     imageUrl: '/assets/placeimg_500_300_arch1.jpg',
     contractTypeId: 3,
     contractSignedOn: '2016-09-23T21:27:25.035Z',
