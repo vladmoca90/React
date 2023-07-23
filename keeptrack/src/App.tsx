@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectsPage from './projects/ProjectsPage';
+import ProjectsPage from './ProjectsPage';
 import './App.css';
 
 function App() {
