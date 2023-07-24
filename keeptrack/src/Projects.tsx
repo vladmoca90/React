@@ -7,6 +7,7 @@ export class Projects {
   contractSignedOn: Date = new Date();
   budget: number = 0;
   isActive: boolean = false;
+  
   get isNew(): boolean {
     return this.id === undefined;
   }
