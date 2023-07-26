@@ -1,9 +1,9 @@
-interface Flights {
+interface flightsRow {
     airline: string;
     destinations: string | string[];
 }
 
-const flights: Flights[] = [
+const flights: flightsRow[] = [
     {
         airline: "Air Algerie",
         destinations: "Algiers",
