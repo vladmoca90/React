@@ -58,7 +58,7 @@ const allFlights: Flights[] = [
     },
     {
         airline: "Royal Air Jordanian",
-        destinations: "Amman-Queen",
+        destinations: "Amman-Queen Alia",
     },
     {
         airline: "Oman Air",
@@ -66,7 +66,7 @@ const allFlights: Flights[] = [
     },
     {
         airline: "TAROM",
-        destinations: "Bucharest",
+        destinations: "Bucharest-Otopeni",
     },
     {
         airline: "Turkish Airlines",
@@ -78,7 +78,7 @@ const allFlights: Flights[] = [
     },
     {
         airline: "Virgin Atlantic",
-        destinations: ["Atlanta", "Boston", "Delhi", "Havana", "Hong Kong", "Johannesburg", "Lagos", "Las Vegas", "Los Angeles", "Miami", "Mumbai", "New York–JFK", "Newark", "San Francisco", "São Paulo–Guarulhos", "Seattle/Tacoma", "Shanghai–Pudong", "Tel Aviv-Ben Gurion", "Washington–Dulles"],
+        destinations: ["Atlanta-Hartsfield Jackson", "Boston-Logan", "Delhi-Indira Ghandi", "Havana", "Hong Kong", "Johannesburg-Tambo", "Lagos", "Las Vegas-McCarran", "Los Angeles", "Miami", "Mumbai-Shivaji", "New York–JFK", "Newark", "San Francisco", "São Paulo–Guarulhos", "Seattle/Tacoma", "Shanghai–Pudong", "Tel Aviv-Ben Gurion", "Washington–Dulles"],
     }
 ];
 
