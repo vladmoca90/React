@@ -1,12 +1,11 @@
 import React from 'react';
 import './airlines-destinations.css';
-import allFlights from './data';
+import flights from './data';
 
-const airport = allFlights.map(allFlight => {
+const allFlights:any[] = flights.map((flight) => {
     <tr>
-      <th scope="row">{allFlights.indexOf(allFlight) + 1}</th>
-      <td>{allFlight.airline}</td>
-      <td>{allFlight.destinations}</td>
+      <td>{flight.airline}</td>
+      <td>{flight.destinations}</td>
     </tr>
 });
 
@@ -21,7 +20,7 @@ const Destinations = () => {
             <th>Destinations</th>
           </thead>
           <tbody className="table-content">
-            {airport}
+            {allFlights}
           </tbody>
         </table>
         <div className="total-destinations">

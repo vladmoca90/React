@@ -3,7 +3,7 @@ interface Flights {
     destinations: string | string[];
 }
 
-const allFlights: Flights[] = [
+const flights: Flights[] = [
     {
         airline: "Air Algerie",
         destinations: "Algiers",
@@ -82,4 +82,4 @@ const allFlights: Flights[] = [
     }
 ];
 
-export default allFlights;
+export default flights;
