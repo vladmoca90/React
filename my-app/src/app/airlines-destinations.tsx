@@ -2,15 +2,15 @@ import React from 'react';
 import './airlines-destinations.css';
 import allFlights from './data';
 
-const airport = allFlights.map((allFlight) =>
+const airport = allFlights.map((allFlights: []) =>
   <tr>
-    <th scope="row">{allFlight.indexOf(allFlight) + 1}</th>
-    <td>{allFlight.airline}</td>
-    <td>{allFlight.destinations}</td>
+    <th scope="row">{allFlight.indexOf(allFlights) + 1}</th>
+    <td>{allFlights.airline}</td>
+    <td>{allFlights.destinations}</td>
   </tr>
 );
 
-export default function Destinations() {
+const Destinations = () => {
     return (
       <section className="main">
         <div className="container">
@@ -32,4 +32,4 @@ export default function Destinations() {
     );
 }
 
-// export default Destinations;
+export default Destinations;
