@@ -10,4 +10,10 @@ const airport = allFlights.map((allFlight) =>
   </tr>
 );
 
-export default Destinations;
+export default function Destinations() {
+  return (
+    
+  )
+}
+
+// export default Destinations;
