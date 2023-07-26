@@ -11,9 +11,25 @@ const airport = allFlights.map((allFlight) =>
 );
 
 export default function Destinations() {
-  return (
-    
-  )
+    return (
+      <section className="main">
+        <div className="container">
+          <table className="table table-hover">
+            <thead className="table-header">
+              <th>#</th>
+              <th>Name</th>
+              <th>Destinations</th>
+            </thead>
+            <tbody className="table-content">
+              {airport}
+            </tbody>
+          </table>
+          <div className="total-destinations">
+            <span>Number of airlines: {allFlights.length}</span>
+          </div>
+        </div>
+      </section>
+    );
 }
 
 // export default Destinations;
