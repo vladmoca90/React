@@ -2,11 +2,11 @@ import React from 'react';
 import './airlines-destinations.css';
 import allFlights from './data';
 
-const airport = flights.map((flight) => 
+const airport = allFlights.map((allFlight) => 
                     <tr>
-                      <th scope="row">{flights.indexOf(flight) + 1}</th>
-                      <td>{flight.airline}</td>
-                      <td>{flight.destinations}</td>
+                      <th scope="row">{allFlight.indexOf(allFlight) + 1}</th>
+                      <td>{allFlight.airline}</td>
+                      <td>{allFlight.destinations}</td>
                     </tr>
                   );
 
