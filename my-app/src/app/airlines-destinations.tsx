@@ -1,8 +1,8 @@
 import React from 'react';
 import './airlines-destinations.css';
-import flights from './data';
+import allFlights from './data';
 
-const allFlights = flights.map((flight) => 
+const airport = flights.map((flight) => 
                     <tr>
                       <th scope="row">{flights.indexOf(flight) + 1}</th>
                       <td>{flight.airline}</td>
@@ -22,11 +22,11 @@ class Destinations extends React.Component {
               <th>Destinations</th>
             </thead>
             <tbody className="table-content">
-                {allFlights}
+                {airport}
             </tbody>
           </table>
           <div class="total-destinations">
-            <span>Number of airlines: {flights.length}</span>
+            <span>Number of airlines: {allFlights.length}</span>
           </div>
         </div>
       </section>
