@@ -1,9 +1,9 @@
-interface flights {
+interface Flights {
     airline: string;
     destinations: string | string[];
 }
 
-const allFlights: flights = [
+const allFlights: Flights[] = [
     {
         airline: "Air Algerie",
         destinations: "Algiers",
