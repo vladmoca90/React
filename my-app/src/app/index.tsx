@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import Destinations from './airlines-destinations';
 // import * as serviceWorker from '../../serviceWorker';
 
-ReactDOM.render(<Destinations />, document.getElementById('root'));
+ReactDOM.render(<Destinations />, root);
 
-// serviceWorker.unregister();
+serviceWorker.unregister();
