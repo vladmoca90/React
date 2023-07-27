@@ -2,7 +2,7 @@ import React from 'react';
 import './airlines-destinations.css';
 import flights from './data';
 
-const allFlights: any[] = flights.map((flight) => {;
+const allFlights = flights.map((flight) => {;
     <tr key={flight.id}>;
       <td>{flight.airline}</td>;
       <td>{flight.destinations}</td>;
@@ -20,7 +20,7 @@ export default function Destinations() {
             <th>Destinations</th>
           </thead>
           <tbody className="table-content">
-            {allFlights}
+           {allFlights}
           </tbody>
         </table>
         <div className="total-destinations">
