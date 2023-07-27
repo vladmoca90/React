@@ -4,7 +4,7 @@ interface flightsRow {
     destinations: string | string[];
 }
 
-const flights: flightsRow[] = [
+const flights = [
     {
         id: 1,
         airline: "Air Algerie",
