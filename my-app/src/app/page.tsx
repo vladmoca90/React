@@ -9,7 +9,7 @@ const allFlights:any[]= flights.map((flight) => {
     </tr>
 });
 
-export default function Destination() {
+export default function Destinations() {
   return (
     <section className="main">
       <div className="container">
