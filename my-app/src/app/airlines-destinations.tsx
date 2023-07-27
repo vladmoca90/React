@@ -12,7 +12,7 @@ const allFlights:any[]= flights.map((flight) => {
 export default function Destinations() {
   return (
     <section className="main">
-      <div className="container">
+      <div className="container-table">
         <table className="table table-hover">
           <thead className="table-header">
             <th>#</th>
