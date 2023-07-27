@@ -11,8 +11,8 @@ const allFlights:any[]= flights.map((flight) => {
 
 export default function Destinations() {
   return (
-    <section className="main">
-      <div className="container">
+    <main className="main">
+      <div className="container-table">
         <table className="table table-hover">
           <thead className="table-header">
             <th>#</th>
@@ -27,6 +27,6 @@ export default function Destinations() {
           <span>Number of airlines: {allFlights.length}</span>
         </div>
       </div>
-    </section>
+    </main>
   );
 }
