@@ -6,7 +6,7 @@ const allFlights:any = flights.map((flight) => {
     <tr key={flight.id}>
       <td>{flight.airline}</td>
       <td>{flight.destinations}</td>
-    </tr>;
+    </tr>
 });
 
 export default function Destinations() {
