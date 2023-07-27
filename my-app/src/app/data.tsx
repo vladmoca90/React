@@ -99,6 +99,11 @@ const flights: flightsRow[] = [
         id: 19,
         airline: "Virgin Atlantic",
         destinations: ["Atlanta-Hartsfield Jackson", "Boston-Logan", "Delhi-Indira Ghandi", "Havana", "Hong Kong", "Johannesburg-Tambo", "Lagos", "Las Vegas-McCarran", "Los Angeles", "Miami", "Mumbai-Shivaji", "New York–JFK", "Newark", "San Francisco", "São Paulo–Guarulhos", "Seattle/Tacoma", "Shanghai–Pudong", "Tel Aviv-Ben Gurion", "Washington–Dulles"],
+    },
+    {
+        id: 20,
+        airline: "WestJet",
+        destinations: "Calgary",
     }
 ];
 
