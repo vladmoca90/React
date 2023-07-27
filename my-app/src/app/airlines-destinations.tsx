@@ -3,7 +3,7 @@ import './airlines-destinations.css';
 import flights from './data';
 
 const allFlights:any[]= flights.map((flight) => {
-    <tr>
+    <tr key={flight.id}>
       <td>{flight.airline}</td>
       <td>{flight.destinations}</td>
     </tr>
