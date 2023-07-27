@@ -2,10 +2,10 @@ import React from 'react';
 import './airlines-destinations.css';
 import flights from './data';
 
-const allFlights = flights.map((flight) => {;
-    <tr key={flight.id}>;
-      <td>{flight.airline}</td>;
-      <td>{flight.destinations}</td>;
+const allFlights:any = flights.map((flight) => {
+    <tr key={flight.id}>
+      <td>{flight.airline}</td>
+      <td>{flight.destinations}</td>
     </tr>;
 });
 
