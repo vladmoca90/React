@@ -10,7 +10,7 @@ const flights: flightsProps[] = [
         airline: "Air Algerie",
         destinations: "Algiers",
     },
-     {
+    {
         id: 2,
         airline: "Air France",
         destinations: "Paris-Charles de Gaulle",
@@ -40,7 +40,7 @@ const flights: flightsProps[] = [
         airline: "El Al",
         destinations: "Tel Aviv-Ben Gurion",
     },
-     {
+    {
         id: 8,
         airline: "Hainan Airlines",
         destinations: ["Beijing-Capital", "Shanghai-Pudong"],
@@ -63,7 +63,7 @@ const flights: flightsProps[] = [
     {
         id: 12,
         airline: "Lufthansa",
-        destinations:  ["Frankfurt", "Munich"],
+        destinations: ["Frankfurt", "Munich"],
     },
     {
         id: 13,
@@ -90,7 +90,7 @@ const flights: flightsProps[] = [
         airline: "Turkish Airlines",
         destinations: "Istanbul-Ataturk",
     },
-     {
+    {
         id: 18,
         airline: "United Airlines",
         destinations: ["Chicago-O'Hare", "Dallas-Fort Worth", "Houston-Intercontinental", "Los Angeles", "Newark", "San Francisco"],
