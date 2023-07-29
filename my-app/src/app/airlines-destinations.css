@@ -40,6 +40,10 @@
   vertical-align: middle;
 }
 
+.table-content>tr>td:nth-of-type(2) {
+  width: 20%;
+}
+
 .table-content>tr:last-of-type>td {
   border-bottom: 0;
 }
