@@ -5,9 +5,9 @@ import flights from './data';
 const allFlights = flights.map((flight) => {
     return (
       <tr key={flight.id}>
-        <td>{flight.id}</td>
-        <td>{flight.airline}</td>
-        <td>{flight.destinations}</td>
+        <td className="airline-number">{flight.id}</td>
+        <td className="airline-name">{flight.airline}</td>
+        <td className="airline-destinations-list">{flight.destinations}</td>
       </tr> 
     );
 });
