@@ -101,7 +101,11 @@ const flights = [
     }
 ];
 
-function total() {
+const total = () => {
+    if(flights.length == 0) {
+        throw new Error('The list of flights must be provided!');
+    }
+
     for(let i = 0;  i < flights.length; i++) { 
         let totalDestinationsRow = flights[i].destinations.length;
 
