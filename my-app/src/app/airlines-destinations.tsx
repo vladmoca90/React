@@ -19,7 +19,7 @@ export default function Destinations() {
         <table className="table table-hover">
           <thead className="table-header">
             <th>#</th>
-            <th>Name</th>
+            <th>Airline</th>
             <th>Destinations</th>
           </thead>
           <tbody className="table-content">
