@@ -8,7 +8,6 @@ const allFlights = flights.map((flight) => {
         <td className="airline-number">{flights.indexOf(flight) + 1}</td>
         <td className="airline-name">{flight.airline}</td>
         <td className="airline-destinations-list">{flight.destinations}</td>
-        <td className="airline-destinations-total">{flight.destinations.length}</td>
       </tr> 
     );
 });
@@ -22,7 +21,6 @@ export default function Destinations() {
             <th>#</th>
             <th>Name</th>
             <th>Destinations</th>
-            <th>Total</th>
           </thead>
           <tbody className="table-content">
            {allFlights}
