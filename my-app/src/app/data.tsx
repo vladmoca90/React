@@ -58,7 +58,7 @@ const flights: flightsProps[] = [
     {
         id: 11,
         airline: "KLM",
-        destinations: "Amsterdam",
+        destinations: "Amsterdam-Schipol",
     },
     {
         id: 12,
