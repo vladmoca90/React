@@ -102,10 +102,12 @@ const flights = [
 ];
 
 function total() {
-    let count = 0;
-    
     for(let i = 0;  i < flights.length; i++) { 
-        return flights[i].destinations.length;
+        let totalDestinationsRow = flights[i].destinations.length;
+
+        for(let j = 0; j < flights[i].destinations.length; j++) {
+            return flights[i].destinations[j].length;
+        }
     }
 }
 
