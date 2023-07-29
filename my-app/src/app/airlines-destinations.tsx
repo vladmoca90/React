@@ -3,11 +3,13 @@ import './airlines-destinations.css';
 import flights from './data';
 
 const allFlights = flights.map((flight) => {
-    return (<tr key={flight.id}>
-      <td>{flight.id}</td>
-      <td>{flight.airline}</td>
-      <td>{flight.destinations}</td>
-    </tr> );
+    return (
+      <tr key={flight.id}>
+        <td>{flight.id}</td>
+        <td>{flight.airline}</td>
+        <td>{flight.destinations}</td>
+      </tr> 
+    );
 });
 
 export default function Destinations() {
