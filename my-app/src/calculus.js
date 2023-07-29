@@ -101,7 +101,7 @@ const flights = [
     }
 ];
 
-const totalDestinations = () => {
+const totalNumberOfDestinations = () => {
     if(flights.length == 0) {
         throw new Error('The list of flights must be provided!');
     }
@@ -113,4 +113,4 @@ const totalDestinations = () => {
     }
 }
 
-totalDestinations();
+totalNumberOfDestinations();
