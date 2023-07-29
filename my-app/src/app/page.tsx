@@ -28,7 +28,7 @@ export default function Destinations() {
         </table>
         <div className="total-destinations">
           <span>Total number of airlines: {allFlights.length}</span>
-          <span>Total number of airlines: {allFlights.length}</span>
+          <span>Total number of airlines: { }</span>
         </div>
       </div>
     </main>
