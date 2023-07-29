@@ -106,11 +106,28 @@ const totalNumberOfDestinations = () => {
         throw new Error('The list of flights must be provided!');
     }
 
+    let counterOne = 0;
+    // let counterTwo = 0;
+
     for(let i in flights) {
-        if(flights[i].destinations.length == 0) {
-            throw new Error('A destination must be provided!');
-        }
+        if(flights[i].length == 0) {
+            throw new Error('A flight must be provided!');
+        } 
+        if(flights[i].length > 0) {
+           counterOne++;
+        }  
+
+       /* for(let j in flights[i]) {
+            if(flights[j].destinations.length == 0) {
+                throw new Error('A destination must be provided!');
+            } 
+            if(flights[j].destinations.length > 0) {
+                counterTwo++;
+             } 
+        } */
     }
+
+    return counterOne;
 }
 
 totalNumberOfDestinations();
