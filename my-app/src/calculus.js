@@ -101,18 +101,16 @@ const flights = [
     }
 ];
 
-const total = () => {
+const totalDestinations = () => {
     if(flights.length == 0) {
         throw new Error('The list of flights must be provided!');
     }
 
-    for(let i = 0;  i < flights.length; i++) { 
-        let totalDestinationsRow = flights[i].destinations.length;
-
-        for(let j = 0; j < flights[i].destinations.length; j++) {
-            return flights[i].destinations[j].length;
+    for(let i in flights) {
+        if(flights[i].destinations.length == 0) {
+            throw new Error('A destination must be provided!');
         }
     }
 }
 
-total();
+totalDestinations();
