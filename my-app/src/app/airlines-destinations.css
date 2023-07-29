@@ -14,7 +14,7 @@
 }
 
 .table-header>th {
-  background-color: rgb(162, 224, 162);
+  background-color: #b7b7b7;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
   font-weight: 500;
