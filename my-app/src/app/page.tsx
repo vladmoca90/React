@@ -5,7 +5,7 @@ import flights from './data';
 const allFlights = flights.map((flight) => {
     return (
       <tr key={flight.id}>
-        <td className="airline-number">{flight.id}</td>
+        <td className="airline-number">{flights.indexOf(flight) + 1}</td>
         <td className="airline-name">{flight.airline}</td>
         <td className="airline-destinations-list">{flight.destinations}</td>
         <td className="airline-destinations-total">{flight.destinations.length}</td>
