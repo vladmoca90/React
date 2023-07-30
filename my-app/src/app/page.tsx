@@ -2,6 +2,7 @@ import React from 'react';
 import './airlines-destinations.css';
 import flights from './data';
 
+//Populates the entire table with all the data from flights = []
 const allFlights = flights.map((flight) => {
   return (
     <tr key={flight.id}>
@@ -12,6 +13,7 @@ const allFlights = flights.map((flight) => {
   );
 });
 
+//Calculates the total number of destinations
 const totalNumberOfDestinations = () => {
   if (flights.length == 0) {
     throw new Error('The list of flights must be provided!');
