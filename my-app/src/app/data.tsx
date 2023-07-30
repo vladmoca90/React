@@ -104,6 +104,11 @@ const flights: flightsProps[] = [
         id: 20,
         airline: "WestJet",
         destinations: "Calgary",
+    },
+    {
+        id: 21,
+        airline: "Virgin Atlantic 2",
+        destinations: ["Atlanta-Hartsfield Jackson", "Boston-Logan", "Delhi-Indira Ghandi", "Havana", "Hong Kong", "Johannesburg-Tambo", "Lagos", "Las Vegas-McCarran", "Los Angeles", "Miami", "Mumbai-Shivaji", "New York–JFK", "Newark", "San Francisco", "São Paulo–Guarulhos", "Seattle/Tacoma", "Shanghai–Pudong", "Tel Aviv-Ben Gurion", "Washington–Dulles"],
     }
 ];
 
