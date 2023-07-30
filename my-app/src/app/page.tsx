@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useCallback} from 'react';
 import flights from './data';
-
+import 'bootstrap/dist/css/bootstrap.css';
 import './airlines-destinations.css';
 
 //Populates the entire table with all the data from flights = []
