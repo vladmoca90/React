@@ -92,7 +92,7 @@ const flights = [
     {
         id: 19,
         airline: "Virgin Atlantic",
-        destinations: ["Atlanta-Hartsfield Jackson", "Boston-Logan", "Delhi-Indira Ghandi", "Havana", "Hong Kong", "Johannesburg-Tambo", "Lagos", "Las Vegas-McCarran", "Los Angeles", "Miami", "Mumbai-Shivaji", "New York–JFK", "Newark", "San Francisco", "São Paulo–Guarulhos", "Seattle/Tacoma", "Shanghai–Pudong", "Tel Aviv-Ben Gurion", "Washington–Dulles"],
+        destinations: ["Atlanta-Hartsfield Jackson", "Boston-Logan", "Delhi-Indira Ghandi", "Havana", "Hong Kong", "Johannesburg-Tambo", "Lagos", "Las Vegas-McCarran", "Los Angeles", "Miami", "Mumbai-Shivaji", "New York–JFK", "Newark", "San Francisco", "São Paulo–Guarulhos", "Seattle-Tacoma", "Shanghai–Pudong", "Tel Aviv-Ben Gurion", "Washington–Dulles"],
     },
     {
         id: 20,
@@ -105,29 +105,6 @@ const totalNumberOfDestinations = () => {
     if(flights.length == 0) {
         throw new Error('The list of flights must be provided!');
     }
-
-    let counterOne = 0;
-    // let counterTwo = 0;
-
-    for(let i in flights) {
-        if(flights[i].length == 0) {
-            throw new Error('A flight must be provided!');
-        } 
-        if(flights[i].length > 0) {
-           counterOne++;
-        }  
-
-       /* for(let j in flights[i]) {
-            if(flights[j].destinations.length == 0) {
-                throw new Error('A destination must be provided!');
-            } 
-            if(flights[j].destinations.length > 0) {
-                counterTwo++;
-             } 
-        } */
-    }
-
-    return counterOne;
 }
 
 totalNumberOfDestinations();
