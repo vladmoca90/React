@@ -3,29 +3,29 @@ import './airlines-destinations.css';
 import flights from './data';
 
 const allFlights = flights.map((flight) => {
-    return (
-      <tr key={flight.id}>
-        <td className="airline-number">{flights.indexOf(flight) + 1}</td>
-        <td className="airline-name">{flight.airline}</td>
-        <td className="airline-destinations-list">{flight.destinations.toString().replace(/,/g, ', ')}</td>
-      </tr> 
-    );
+  return (
+    <tr key={flight.id}>
+      <td className="airline-number">{flights.indexOf(flight) + 1}</td>
+      <td className="airline-name">{flight.airline}</td>
+      <td className="airline-destinations-list">{flight.destinations.toString().replace(/,/g, ', ')}</td>
+    </tr>
+  );
 });
 
 const totalNumberOfDestinations = () => {
-  if(flights.length == 0) {
-      throw new Error('The list of flights must be provided!');
+  if (flights.length == 0) {
+    throw new Error('The list of flights must be provided!');
   }
 
   let counter = 0;
 
-  for(let i in flights) {
-      if(typeof flights[i].destinations === 'string') {
-          counter += 1;
-      }
-      if(typeof flights[i].destinations === 'object') {
-          counter += flights[i].destinations.length;
-      }
+  for (let i in flights) {
+    if (typeof flights[i].destinations === 'string') {
+      counter += 1;
+    }
+    if (typeof flights[i].destinations === 'object') {
+      counter += flights[i].destinations.length;
+    }
   }
 
   return counter;
@@ -42,12 +42,12 @@ export default function Destinations() {
             <th>Destinations</th>
           </thead>
           <tbody className="table-content">
-           {allFlights}
+            {allFlights}
           </tbody>
         </table>
         <div className="totals">
           <span>Total number of airlines: {allFlights.length}</span>
-          <span>Total number of destinations: { totalNumberOfDestinations() }</span>
+          <span>Total number of destinations: {totalNumberOfDestinations()}</span>
         </div>
       </div>
     </main>
