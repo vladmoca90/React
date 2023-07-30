@@ -12,6 +12,25 @@ const allFlights = flights.map((flight) => {
     );
 });
 
+const totalNumberOfDestinations = () => {
+  if(flights.length == 0) {
+      throw new Error('The list of flights must be provided!');
+  }
+
+  let counter = 0;
+
+  for(let i in flights) {
+      if(typeof flights[i].destinations === 'string') {
+          counter += 1;
+      }
+      if(typeof flights[i].destinations === 'object') {
+          counter += flights[i].destinations.length;
+      }
+  }
+
+  return counter;
+}
+
 export default function Destinations() {
   return (
     <main className="main">
@@ -28,7 +47,7 @@ export default function Destinations() {
         </table>
         <div className="totals">
           <span>Total number of airlines: {allFlights.length}</span>
-          <span>Total number of destinations: { }</span>
+          <span>Total number of destinations: { totalNumberOfDestinations() }</span>
         </div>
       </div>
     </main>
