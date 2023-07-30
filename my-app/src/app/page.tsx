@@ -33,6 +33,7 @@ const totalNumberOfDestinations = () => {
   return counter;
 }
 
+//Main function, that shows the table structure
 export default function Destinations() {
   return (
     <main className="main">
