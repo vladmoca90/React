@@ -7,7 +7,6 @@
   border-spacing: 0;
   border: 1px solid #ccc;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
   margin: 15px auto 0;
   max-width: 960px;
   width: 100%;
@@ -16,10 +15,8 @@
 .table-header>th {
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
-  font-weight: 500;
   padding: 8px 0;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .table-content>tr>td,
@@ -29,7 +26,6 @@
 }
 
 .table-content>tr>th {
-  border-color: #ccc;
   text-align: center;
   vertical-align: middle;
 }
