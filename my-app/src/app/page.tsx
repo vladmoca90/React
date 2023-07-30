@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useCallback} from 'react';
-import './airlines-destinations.css';
 import flights from './data';
+
+import './airlines-destinations.css';
 
 //Populates the entire table with all the data from flights = []
 const allFlights = flights.map((flight) => {
