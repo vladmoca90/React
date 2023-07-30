@@ -40,11 +40,11 @@ export default function Destinations() {
   return (
     <main className="main">
       <div className="container-table">
-        <table className="table-main table table-dark table-striped">
+        <table className="table-main table">
           <thead className="table-header">
-            <th>#</th>
-            <th>Name</th>
-            <th>Destinations</th>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Destinations</th>
           </thead>
           <tbody className="table-content">
             {allFlights}
