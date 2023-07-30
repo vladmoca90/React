@@ -2,7 +2,7 @@ import React from 'react';
 import './airlines-destinations.css';
 import flights from './data';
 
-const allFlights = flights.map((flight, i) => {
+const allFlights = flights.map((flight) => {
     return (
       <tr key={flight.id}>
         <td className="airline-number">{flights.indexOf(flight) + 1}</td>
