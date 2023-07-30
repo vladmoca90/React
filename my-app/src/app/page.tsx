@@ -40,7 +40,7 @@ export default function Destinations() {
   return (
     <main className="main">
       <div className="container-table">
-        <table className="table-main">
+        <table className="table-main table table-dark table-striped">
           <thead className="table-header">
             <th>#</th>
             <th>Name</th>
