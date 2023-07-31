@@ -29,7 +29,6 @@ const flights: flightsProps[] = [
         destinations: "New York-JFK",
     },
     {
-        id: 7,
         airline: "El Al",
         destinations: "Tel Aviv-Ben Gurion",
     },
