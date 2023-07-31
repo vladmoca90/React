@@ -5,9 +5,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './airlines-destinations.css';
 
 //Populates the entire table with all the data from flights = []
-const allFlights = flights.map((flight) => {
+const allFlights = flights.map((flight, index) => {
   return (
-    <tr key={flight.id}>
+    <tr key={index}>
       <td className="airline-number">{flights.indexOf(flight) + 1}</td>
       <td className="airline-name">{flight.airline}</td>
       <td className="airline-destinations-list">{flight.destinations.toString().replace(/,/g, ', ')}</td>
