@@ -27,7 +27,6 @@
 }
 
 .table-content>tr>th {
-  text-align: center;
   vertical-align: middle;
 }
 
@@ -36,7 +35,11 @@
   vertical-align: middle;
 }
 
-.table-content>tr>td:nth-of-type(2) {
+.table-content>tr>td.airline-number {
+  text-align: center;
+}
+
+.table-content>tr>td.airline-name {
   width: 20%;
 }
 
