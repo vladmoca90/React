@@ -8,32 +8,32 @@ const wines: winesProp[] = [
     {
         id: 1,
         name: 'Italian Red Wine',
-        img: '',
+        img: './wine-sell-img/italian-red.jpg',
     },
     {
         id: 2,
         name: 'Chilean Dry White',
-        img: '',
+         img: './wine-sell-img/italian-red.jpg',
     },
     {
         id: 3,
         name: 'NZ Savignon Blanc',
-        img: '',
+         img: './wine-sell-img/italian-red.jpg',
     },
     {
         id: 4,
         name: 'Spanish Dry White',
-        img: '',
+         img: './wine-sell-img/italian-red.jpg',
     },
     {
         id: 5,
         name: 'Californian Chardonnay',
-        img: '',
+         img: './wine-sell-img/italian-red.jpg',
     },
     {
         id: 6,
         name: 'Pinot Noir Romania',
-        img: '',
+         img: './wine-sell-img/italian-red.jpg',
     }
 ];
 
