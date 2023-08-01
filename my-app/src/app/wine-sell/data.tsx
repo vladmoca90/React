@@ -1,39 +1,39 @@
 interface winesProp {
     id: number;
     name: string;
-    image: string;
+    imgName: string;
 }
 
 const wines: winesProp[] = [
     {
         id: 1,
         name: 'Italian Red Wine',
-        image: '',
+        imgName: '',
     },
     {
         id: 2,
         name: 'Chilean Dry White',
-        image: '',
+        imgName: '',
     },
     {
         id: 3,
         name: 'NZ Savignon Blanc',
-        image: '',
+        imgName: '',
     },
     {
         id: 4,
         name: 'Spanish Dry White',
-        image: '',
+        imgName: '',
     },
     {
         id: 5,
         name: 'Californian Chardonnay',
-        image: '',
+        imgName: '',
     },
     {
         id: 6,
         name: 'Pinot Noir Romania',
-        image: '',
+        imgName: '',
     }
 ];
 
