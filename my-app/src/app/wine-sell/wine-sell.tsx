@@ -12,7 +12,7 @@ const giveWines = wines.map((wine) => {
                 <h3 className="product-title">{wine.name}</h3>
             </div>
             <div className="product-description__right">
-                <profileImg />
+                {profileImg()}
             </div>
         </div>
     );
