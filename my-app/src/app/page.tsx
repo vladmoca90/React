@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useCallback} from 'react';
-import flights from './data';
+import flights from './airlines-destinations/data';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './airlines-destinations.css';
