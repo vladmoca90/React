@@ -4,9 +4,9 @@ import wines from './data';
 import 'bootstrap/dist/css/bootstrap.css';
 import './wine-sell.css';
 
-const giveWines = wines.map((wine, index) => {
+const giveWines = wines.map((wine) => {
     return (
-        <div className="product" key={wine.index}>
+        <div className="product" key={wine.id}>
             <div className="product-description__left">
                 <h3 className="product-title">{wine.name}</h3>
             </div>
