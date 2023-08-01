@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useCallback} from 'react';
 import wines from './data';
-import profileImg from './imageProfile';
+import ProfileImg from './imageProfile';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './wine-sell.css';
@@ -12,7 +12,7 @@ const giveWines = wines.map((wine) => {
                 <h3 className="product-title">{wine.name}</h3>
             </div>
             <div className="product-description__right">
-                <profileImg />
+                <ProfileImg />
             </div>
         </div>
     );
