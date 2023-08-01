@@ -4,7 +4,6 @@ import profileImg from './imageProfile';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './wine-sell.css';
-import ProfileImage from './imageProfile';
 
 const giveWines = wines.map((wine) => {
     return (
