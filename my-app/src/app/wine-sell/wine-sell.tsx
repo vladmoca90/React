@@ -1,5 +1,6 @@
 import React from 'react';
 import wines from '../data';
+import Image from 'next/image'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './wine-sell.css';
@@ -12,7 +13,7 @@ const getWines = wines.map((wine) => {
                 <h3 className="product-title">{wine.name}</h3>
             </div>
             <div className="product-description__right">
-                <img key={wine.id} src={wine.img} alt="img" className="product-img" />
+                <Image key={wine.id} src={wine.img} alt="img" className="product-img" />
             </div>
         </div>
     );
