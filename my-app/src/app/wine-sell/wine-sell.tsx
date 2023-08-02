@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useCallback} from 'react';
 import wines from './data';
-import ProfileImg from './imageProfile';
+import ProfileImg from './wineImage';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './wine-sell.css';
