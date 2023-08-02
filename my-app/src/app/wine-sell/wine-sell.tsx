@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useCallback} from 'react';
+import React from 'react';
 import wines from './data';
 import ProfileImg from './wineImage';
 
