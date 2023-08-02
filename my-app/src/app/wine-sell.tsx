@@ -18,7 +18,7 @@ const getWines = wines.map((wine) => {
     );
 });
 
-export default function wineSell() {
+export default function WineSell() {
     return (
         <div className='product-container'>
             {getWines}
