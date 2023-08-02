@@ -4,7 +4,7 @@ interface winesProp {
     img: string;
 }
 
-const wines: winesProp = [
+const wines: winesProp[] = [
     {
         id: 1,
         name: 'Italian Red Wine',
