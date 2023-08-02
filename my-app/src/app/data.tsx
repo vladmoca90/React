@@ -8,7 +8,7 @@ const wines: winesProp[] = [
     {
         id: 1,
         name: 'Italian Red Wine',
-        img: './italian-red.jpg',
+        img: './wineImages/italian-red.jpg',
     },
     {
         id: 2,
