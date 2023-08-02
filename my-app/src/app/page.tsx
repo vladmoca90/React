@@ -1,58 +1,27 @@
-import React, {useState, useEffect, useCallback} from 'react';
-import flights from './airlines-destinations/data';
+import React from 'react';
+import wines from './data';
+import ProfileImg from './wineImage';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './airlines-destinations.css';
+import './wine-sell.css';
 
-//Populates the entire table with all the data from flights = []
-const allFlights = flights.map((flight) => 
-    <tr key={flight.id}>
-      <td className="airline-number">{flights.indexOf(flight) + 1}</td>
-      <td className="airline-name">{flight.airline}</td>
-      <td className="airline-destinations-list">{flight.destinations.toString().replace(/,/g, ', ')}</td>
-    </tr>
-);
-
-//Calculates the total number of destinations
-const totalNumberOfDestinations = () => {
-  if (flights.length == 0) {
-    throw new Error('The list of flights must be provided!');
-  }
-
-  let counter = 0;
-
-  for (let i in flights) {
-    if (typeof flights[i].destinations === 'string') {
-      counter += 1;
-    }
-    if (typeof flights[i].destinations === 'object') {
-      counter += flights[i].destinations.length;
-    }
-  }
-
-  return counter;
-}
-
-//Main function, that shows the table structure
-export default function Destinations() {
-  return (
-    <main className="main">
-      <div className="container-table">
-        <table className="table-main table">
-          <thead className="table-header">
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Destinations</th>
-          </thead>
-          <tbody className="table-content">
-            {allFlights}
-          </tbody>
-        </table>
-        <div className="totals">
-          <span>Total number of airlines: {allFlights.length}</span>
-          <span>Total number of destinations: {totalNumberOfDestinations()}</span>
+const getWines = wines.map((wine) => {
+    return (
+        <div className="product" key={wine.id}>
+            <div className="product-description__left">
+                <h3 className="product-title">{wine.name}</h3>
+            </div>
+            <div className="product-description__right">
+                <ProfileImg />
+            </div>
         </div>
-      </div>
-    </main>
-  );
+    );
+});
+
+export default function wineSell() {
+    return (
+        <div className='product-container'>
+            {getWines}
+        </div>
+    );
 }
