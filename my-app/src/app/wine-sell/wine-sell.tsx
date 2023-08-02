@@ -5,7 +5,7 @@ import ProfileImg from './imageProfile';
 import 'bootstrap/dist/css/bootstrap.css';
 import './wine-sell.css';
 
-const giveWines = wines.map((wine) => {
+const getWines = wines.map((wine) => {
     return (
         <div className="product" key={wine.id}>
             <div className="product-description__left">
@@ -21,7 +21,7 @@ const giveWines = wines.map((wine) => {
 export default function wineSell() {
     return (
         <div className='product-container'>
-            {giveWines}
+            {getWines}
         </div>
     );
 }
