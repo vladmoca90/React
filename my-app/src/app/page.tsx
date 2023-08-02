@@ -13,7 +13,7 @@ const getWines = wines.map((wine) => {
                 <h3 className="product-title">{wine.name}</h3>
             </div>
             <div className="product-description__right">
-                <img key={wine.id} src={wine.img} alt="wine" className="product-img" />
+                <img alt="wine" className="product-img" key={wine.id} src={wine.img} />
             </div>
         </div>
     );
