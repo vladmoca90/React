@@ -1,5 +1,5 @@
 import React from 'react';
-import wines from './data';
+import wines from '../data';
 import Image from 'next/image';
 
 import 'bootstrap/dist/css/bootstrap.css';
