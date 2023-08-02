@@ -1,6 +1,5 @@
 import React from 'react';
 import wines from './data';
-import ProfileImg from './wineImage';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './wine-sell.css';
@@ -12,13 +11,13 @@ const getWines = wines.map((wine) => {
                 <h3 className="product-title">{wine.name}</h3>
             </div>
             <div className="product-description__right">
-                <ProfileImg />
+                <img key={wine.id} src={wine.img} alt="img" className="product-img" />;
             </div>
         </div>
     );
 });
 
-export default function WineSell() {
+export default function wineSell() {
     return (
         <div className='product-container'>
             {getWines}
