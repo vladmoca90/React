@@ -5,6 +5,7 @@ import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.css';
 import './wine-sell.css';
 
+//A constant that populates the product with wines
 const getWines = wines.map((wine) => {
     return (
         <div className="product" key={wine.id}>
