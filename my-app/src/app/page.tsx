@@ -21,7 +21,7 @@ const getWines = wines.map((wine) => {
 
 //A constant that populates the dropdown
 const winesDropdown = wines.map((wine) => {
-    return <option key={wine.id}>{wine.id}</option>
+    return <option key={wine.id}>{wine.name}</option>
 });
 
 export default function wineSell() {
