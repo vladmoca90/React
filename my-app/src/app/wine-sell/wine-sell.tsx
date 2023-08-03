@@ -19,9 +19,18 @@ const getWines = wines.map((wine) => {
     );
 });
 
+//A constant that populates the dropdown
+const winesDropdown = wines.map((wine) => {
+    return <option key={wine.id}>{wine.name}</option>
+});
+
 export default function wineSell() {
     return (
         <section className="box">
+            <select aria-label="allProducts" id="productsList">
+                <option>All products</option>
+                {winesDropdown}
+            </select>
             <div className='product-container'>
                 {getWines}
             </div>
