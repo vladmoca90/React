@@ -28,6 +28,7 @@ export default function wineSell() {
     return (
         <section className="box">
             <select aria-label="allProducts" id="productsList">
+                <option>All products</option>
                 {winesDropdown}
             </select>
             <div className='product-container'>
