@@ -12,8 +12,8 @@ const getWines = wines.map((wine, index) => {
             <div className="product-description__top">
                 <h3 className="product-title">{wine.name}</h3>
             </div>
-            <div className="product-description__bottom">
-                <img alt="wine" className="product-img" key={index} src={wine.img} />
+            <div className="product-description__bottom"> 
+                <img alt="wine" className="product-img" key={index} src={"./wineImages/" + wine.img} />
             </div>
         </div>
     );
