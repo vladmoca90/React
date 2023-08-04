@@ -46,8 +46,8 @@ body {
     font-weight: bold;
     letter-spacing: 0;
     margin: 0 15px 35px;
+    max-width: 300px;
     padding: 15px 0;
-    width: 320px;
 }
 
 .product-description__top {
@@ -64,7 +64,7 @@ body {
 
 .product .product-img {
     display: block;
-    max-width: 285px;
+    max-width: 250px;
     margin: 0 auto;
     padding-bottom: 10px;
 }
