@@ -31,7 +31,7 @@ export default function wineSell() {
                 <option>All products</option>
                 {winesDropdown}
             </select>
-            <div className='product-container'>
+            <div className='products-container'>
                 {getWines}
             </div>
         </section>
