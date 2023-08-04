@@ -9,10 +9,10 @@ import './wine-sell.css';
 const getWines = wines.map((wine, index) => {
     return (
         <div className="product" key={index}>
-            <div className="product-description__left">
+            <div className="product-description__top">
                 <h3 className="product-title">{wine.name}</h3>
             </div>
-            <div className="product-description__right">
+            <div className="product-description__bottom">
                 <img alt="wine" className="product-img" key={index} src={wine.img} />
             </div>
         </div>
