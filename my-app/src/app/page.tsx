@@ -27,7 +27,7 @@ const winesDropdown = wines.map((wine) => {
 export default function wineSell() {
     return (
         <section className="box">
-            <select aria-label="allProducts" id="productsList">
+            <select aria-label="winesDropdown" id="productsList">
                 <option>All products</option>
                 {winesDropdown}
             </select>
