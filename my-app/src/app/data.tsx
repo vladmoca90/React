@@ -6,27 +6,27 @@ interface winesProp {
 const wines: winesProp[] = [
     {
         name: 'Italian Red Wine',
-        img: 'wine-sell/wineImages/italian-red.jpg',
+        img: 'italian-red',
     },
     {
         name: 'Chilean Dry White',
-        img: 'wine-sell/wineImages/chilean-dry-white.jpg',
+        img: 'chilean-dry-white',
     },
     {
         name: 'NZ Savignon Blanc',
-        img: 'wine-sell/wineImages/nz-savignon-blanc.jpg',
+        img: 'nz-savignon-blanc',
     },
     {
         name: 'Spanish Dry White',
-        img: 'wine-sell/wineImages/spanish-dry-white.jpg',
+        img: 'spanish-dry-white',
     },
     {
         name: 'Californian Chardonnay',
-        img: 'wine-sell/wineImages/californian-chardonnay.jpg',
+        img: 'californian-chardonnay',
     },
     {
         name: 'Pinot Noir Romania',
-        img: 'wine-sell/wineImages/romania-pinot-noir.jpg',
+        img: 'romania-pinot-noir',
     }
 ];
 
