@@ -1,10 +1,10 @@
-interface flightsProps {
+interface flight {
     id: number;
     airline: string;
     destinations: string | string[];
 }
 
-const flights: flightsProps[] = [
+const flights: flight[] = [
     {
         id: 1,
         airline: "Air Algerie",
