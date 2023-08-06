@@ -24,6 +24,12 @@ const winesDropdown = wines.map((wine, index) => {
     return <option key={index}>{wine.name}</option>
 });
 
+
+//A function that filters the dropdown and leaves only the selected wine on the page
+function wineFiltering(winesDropdown) {
+
+}
+
 export default function GetWines() {
     return (
         <section className="box">
@@ -37,21 +43,3 @@ export default function GetWines() {
         </section>
     );
 }
-
-/* 
-    list.change(function () {
-        let selected = $(this).find(':selected');
-        let selectedOption = selected.val();
-
-        product.hide();
-
-        let matchedValue = '.product[data-product-id=' + selectedOption + ']';
-
-        if(selectedOption == 0) {
-            product.show();
-        }
-        if(selectedOption !== 0) {
-            $(matchedValue).show();
-        }
-    });
-*/
