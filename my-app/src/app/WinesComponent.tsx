@@ -22,6 +22,7 @@ export default function WinesComponent() {
         console.log('Wines changed!');
     }, [wines]);
 
+    //Rest of the render
     return (
         <section className="box">
             <WinesFilterComponent categories={categories} onWineSelected={whenWineIsSelected} />
