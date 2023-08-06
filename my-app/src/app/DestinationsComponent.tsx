@@ -1,5 +1,5 @@
 import React from 'react';
-import { TotalDestinations } from './totalNumberOfDestinations';
+import { TotalDestinations } from './TotalDestinations';
 import { allFlights } from './data';
 
 //Main function, that shows the table structure
