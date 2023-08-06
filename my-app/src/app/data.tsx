@@ -1,4 +1,5 @@
 export interface flight {
+    index: Key | null | undefined;
     airline: string;
     destinations: string | string[];
 }

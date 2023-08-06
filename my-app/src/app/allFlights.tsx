@@ -1,5 +1,5 @@
 import React from 'react';
-import flights from './data';
+import { flights } from './data';
 
 //Populates the entire table with all the data from flights = []
 export const allFlights = flights.map((flight, index) => {
