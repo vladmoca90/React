@@ -26,7 +26,7 @@ const winesDropdown = wines.map((wine, index) => {
 
 
 //A function that filters the dropdown and leaves only the selected wine on the page
-/* function wineFiltering(winesDropdown) {
+/*function wineFiltering(winesDropdown) {
 
 } */
 
