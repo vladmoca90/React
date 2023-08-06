@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from 'react';
 "use client";
+import React, { useState } from 'react';
 import wines from './data';
 
 import 'bootstrap/dist/css/bootstrap.css';
