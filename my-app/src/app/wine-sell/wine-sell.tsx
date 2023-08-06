@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { useState, useEffect } from 'react';
-import wines from './data';
+import wines from '../data';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './wine-sell.css';
@@ -26,21 +26,9 @@ const winesDropdown = wines.map((wine, index) => {
 });
 
 //A function that filters the dropdown and leaves only the selected wine on the page
-/* function winesFilter() {
-    const [filteredWines, setFilteredWines] = useState<String>();
-
-    const selectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        const value = event.target.value;
-        setFilteredWines(value);
-    };
-
-    return (
-        <select onChange={selectChange} aria-label="winesDropdown" id="productsList">
-            <option selected disabled>All products</option>
-            {winesDropdown}
-        </select>
-    );
-} */
+function winesFilter() {
+   
+}
 
 export default function GetWines() {
     return (
