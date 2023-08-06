@@ -1,4 +1,4 @@
-import DestinationsComponent from './Destinations';
+import DestinationsComponent from './DestinationsComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './airlines-destinations.css';
