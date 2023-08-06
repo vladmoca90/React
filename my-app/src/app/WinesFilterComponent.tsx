@@ -29,7 +29,7 @@ export const WinesFilterComponent = (props: WinesFilterProps) => {
                     );
                 })}
             </select>
-            {selectedOption && <h2>{selectedOption}</h2>}
+            {selectedOption}
         </div>
     );
 };
