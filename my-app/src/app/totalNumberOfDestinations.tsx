@@ -1,19 +1,19 @@
-import { flights } from './data';
+import { allFlights } from './data';
 
 //Calculates the total number of destinations
 export const totalNumberOfDestinations = () => {
-  if (flights.length == 0) {
-    throw new Error('The list of flights must be provided!');
+  if (allFlights.length == 0) {
+    throw new Error('The list of allFlights must be provided!');
   }
 
   let counter = 0;
 
-  for (let i in flights) {
-    if (typeof flights[i].destinations === 'string') {
+  for (let i in allFlights) {
+    if (typeof allFlights[i].destinations === 'string') {
       counter += 1;
     }
-    if (typeof flights[i].destinations === 'object') {
-      counter += flights[i].destinations.length;
+    if (typeof allFlights[i].destinations === 'object') {
+      counter += allFlights[i].destinations.length;
     }
   }
 

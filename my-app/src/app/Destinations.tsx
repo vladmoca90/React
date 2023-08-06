@@ -1,5 +1,4 @@
 import React from 'react';
-import { totalFlights } from './allFlights';
 import { totalNumberOfDestinations } from './totalNumberOfDestinations';
 import { allFlights } from './data';
 
