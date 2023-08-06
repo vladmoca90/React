@@ -1,5 +1,5 @@
 import React from 'react';
-import { totalNumberOfDestinations } from './totalNumberOfDestinations';
+import { TotalDestinations } from './totalNumberOfDestinations';
 import { allFlights } from './data';
 
 //Main function, that shows the table structure
@@ -20,7 +20,7 @@ export default function DestinationsComponent() {
         </table>
         <div className="totals">
           <span>Total number of airlines: {allFlights.length}</span>
-          <span>Total number of destinations: {totalNumberOfDestinations()}</span>
+          <span>Total number of destinations: {TotalDestinations()}</span>
         </div>
       </div>
     </main>

@@ -1,7 +1,7 @@
 import { allFlights } from './data';
 
 //Calculates the total number of destinations
-export const totalNumberOfDestinations = () => {
+export const TotalDestinations = () => {
   if (allFlights.length == 0) {
     throw new Error('The list of allFlights must be provided!');
   }
