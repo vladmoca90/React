@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from "react-dom/client";
-import Destinations from './airlines-destinations';
+import Destinations from './page';
 
 //import reportWebVitals from "./reportWebVitals";
 
