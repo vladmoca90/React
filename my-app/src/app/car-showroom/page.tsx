@@ -1,15 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-
-/*
+"use client";
 import React from 'react';
-import cars from '../data';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './car-showroom.css';
+import './cars-showroom.css';
+import WinesComponent from './CarsComponent';
 
-export default function getVehicles() {
-    return (
-        
-    );
+export default function MainPage() {
+    return (<CarsComponent />);
 }
-*/
