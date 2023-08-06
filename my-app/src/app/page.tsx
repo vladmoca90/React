@@ -55,22 +55,3 @@ export default function GetWines() {
         </section>
     );
 }
-
-
-/* 
- list.change(function () {
-        let selected = $(this).find(':selected');
-        let selectedOption = selected.val();
-
-        product.hide();
-
-        let matchedValue = '.product[data-product-id=' + selectedOption + ']';
-
-        if(selectedOption == 0) {
-            product.show();
-        }
-        if(selectedOption !== 0) {
-            $(matchedValue).show();
-        }
-    });
-*/

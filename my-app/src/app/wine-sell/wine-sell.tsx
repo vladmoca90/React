@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { useState, useEffect } from 'react';
-import wines from '../data';
+import wines from './data';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './wine-sell.css';
@@ -13,7 +13,7 @@ const allWines = wines.map((wine, index) => {
             <div className="product-description__top">
                 <p className="product-title">{wine.name}</p>
             </div>
-            <div className="product-description__bottom"> 
+            <div className="product-description__bottom">
                 <img alt="wine" className="product-img" key={index} src={"./wineImages/" + wine.img} />
             </div>
         </div>
@@ -27,13 +27,19 @@ const winesDropdown = wines.map((wine, index) => {
 
 //A function that filters the dropdown and leaves only the selected wine on the page
 /* function winesFilter() {
-    const [filteredWines, setFilteredWines] = useState(wines);
+    const [filteredWines, setFilteredWines] = useState<String>();
+
+    const selectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const value = event.target.value;
+        setFilteredWines(value);
+    };
 
     return (
-        wines.filter((wine, index) => {
-
-        });
-    ):
+        <select onChange={selectChange} aria-label="winesDropdown" id="productsList">
+            <option selected disabled>All products</option>
+            {winesDropdown}
+        </select>
+    );
 } */
 
 export default function GetWines() {
@@ -49,22 +55,3 @@ export default function GetWines() {
         </section>
     );
 }
-
-
-/* 
- list.change(function () {
-        let selected = $(this).find(':selected');
-        let selectedOption = selected.val();
-
-        product.hide();
-
-        let matchedValue = '.product[data-product-id=' + selectedOption + ']';
-
-        if(selectedOption == 0) {
-            product.show();
-        }
-        if(selectedOption !== 0) {
-            $(matchedValue).show();
-        }
-    });
-*/
