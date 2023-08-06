@@ -1,4 +1,4 @@
-import flights from './data';
+import { flights } from './data';
 
 //Calculates the total number of destinations
 export const totalNumberOfDestinations = () => {
