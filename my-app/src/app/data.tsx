@@ -1,10 +1,9 @@
 export interface flight {
-    index: Key | null | undefined;
     airline: string;
     destinations: string | string[];
 }
 
-export const flights: flight[] = [
+export const allFlights: flight[] = [
     {
         airline: "Air Algerie",
         destinations: "Algiers",
