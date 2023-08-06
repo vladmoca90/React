@@ -27,9 +27,9 @@ const winesDropdown = wines.map((wine, index) => {
 
 
 //A function that filters the dropdown and leaves only the selected wine on the page
-/*function wineFiltering(winesDropdown) {
-
-} */
+function winesFilter() {
+    const [filteredNumbers, setFilteredNumbers] = useState(wines)
+}
 
 export default function GetWines() {
     return (
@@ -44,3 +44,22 @@ export default function GetWines() {
         </section>
     );
 }
+
+
+/* 
+ list.change(function () {
+        let selected = $(this).find(':selected');
+        let selectedOption = selected.val();
+
+        product.hide();
+
+        let matchedValue = '.product[data-product-id=' + selectedOption + ']';
+
+        if(selectedOption == 0) {
+            product.show();
+        }
+        if(selectedOption !== 0) {
+            $(matchedValue).show();
+        }
+    });
+*/
