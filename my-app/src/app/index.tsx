@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from "react-dom/client";
-import GetWines from './wine-sell/wine-sell';
+import GetWines from './page';
 
 //import reportWebVitals from "./reportWebVitals";
 
