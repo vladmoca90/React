@@ -6,6 +6,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './cars-showroom.css';
 import WinesComponent from './CarsComponent';
 
-export default function MainPage() {
+export default function CarsPage() {
     return (<CarsComponent />);
 }
