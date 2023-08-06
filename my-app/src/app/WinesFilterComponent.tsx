@@ -21,7 +21,7 @@ export const WinesFilterComponent = (props: WinesFilterProps) => {
 
     return (
         <div>
-            <select title="winesD" onChange={selectChange}>
+            <select id="productsList" title="winesD" onChange={selectChange}>
                 <option>All products</option>
                 {props.categories.map((category, index) => {
                     return (
