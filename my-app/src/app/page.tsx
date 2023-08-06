@@ -41,11 +41,7 @@ const WinesFilter = () => {
                 <option selected disabled>
                     All products
                 </option>
-                <option value="blue">Blue</option>
-                <option value="red">Red</option>
-                <option value="green">Green</option>
-                <option value="yellow">Yellow</option>
-                <option value="kindacode">Kindacode</option>
+                {winesDropdown}
             </select>
             {selectedOption && <h2>{selectedOption}</h2>}
         </div>
@@ -56,7 +52,7 @@ export default function GetWines() {
     return (
         <section className="box">
             <select aria-label="winesDropdown" id="productsList">
-                {WinesFilter()}
+                <WinesFilter />
             </select>
             <div className='products-container'>
                 {allWines}
