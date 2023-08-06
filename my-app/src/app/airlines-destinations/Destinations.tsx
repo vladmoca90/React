@@ -4,7 +4,7 @@ import { totalNumberOfDestinations } from './totalNumberOfDestinations';
 
 //Main function, that shows the table structure
 
-export default function Destinations() {
+export default function DestinationsComponent() {
   return (
     <main className="main">
       <div className="container-table">
