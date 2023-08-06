@@ -13,7 +13,7 @@ const allWines = wines.map((wine, index) => {
             <div className="product-description__top">
                 <p className="product-title">{wine.name}</p>
             </div>
-            <div className="product-description__bottom"> 
+            <div className="product-description__bottom">
                 <img alt="wine" className="product-img" key={index} src={"./wineImages/" + wine.img} />
             </div>
         </div>
@@ -26,15 +26,19 @@ const winesDropdown = wines.map((wine, index) => {
 });
 
 //A function that filters the dropdown and leaves only the selected wine on the page
-/* function winesFilter() {
-    const [filteredWines, setFilteredWines] = useState(wines);
+function winesFilter() {
+    const [filteredWines, setFilteredWines] = useState<String>();
+
+    // This function is triggered when the select changes
+    const selectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const value = event.target.value;
+        setFilteredWines(value);
+    };
 
     return (
-        wines.filter((wine, index) => {
 
-        });
-    ):
-} */
+    );
+}
 
 export default function GetWines() {
     return (
