@@ -5,14 +5,14 @@ import { WinesFilterComponent } from './WinesFilterComponent';
 import { Wine, WineCategory, allWines } from './data';
 
 export default function WinesComponent() {
-    const [originalWines] = useState<Wine[]>(allWines); 
+    const [originalWines] = useState<Wine[]>(allWines);
     const [wines, setWines] = useState<Wine[]>(allWines);
     const [categories] = useState<WineCategory[]>(Array.from(new Set(wines.map((wine) => wine.category))));
     const whenWineIsSelected = useCallback((category: WineCategory) => {
         const filteredWines = originalWines.filter(w => w.category === category);
         setWines(filteredWines);
     }, [originalWines]);
-    
+
     //How to use useEffect
     useEffect(() => {
         console.log('Hello!');
