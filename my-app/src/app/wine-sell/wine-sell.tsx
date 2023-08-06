@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
+import { useState, useEffect } from 'react';
 import wines from '../data';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './wine-sell.css';
 
 //A constant that populates the product with wines
-const getWines = wines.map((wine, index) => {
+const allWines = wines.map((wine, index) => {
     return (
         <div className="product" key={index}>
             <div className="product-description__top">
@@ -24,7 +25,13 @@ const winesDropdown = wines.map((wine, index) => {
     return <option key={index}>{wine.name}</option>
 });
 
-export default function winesSell() {
+
+//A function that filters the dropdown and leaves only the selected wine on the page
+/*function wineFiltering(winesDropdown) {
+
+} */
+
+export default function GetWines() {
     return (
         <section className="box">
             <select aria-label="winesDropdown" id="productsList">
@@ -32,7 +39,7 @@ export default function winesSell() {
                 {winesDropdown}
             </select>
             <div className='products-container'>
-                {getWines}
+                {allWines}
             </div>
         </section>
     );
