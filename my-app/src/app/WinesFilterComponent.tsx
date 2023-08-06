@@ -9,7 +9,6 @@ export type WinesFilterProps = {
 }
 
 //A function that filters the dropdown and leaves only the selected wine on the page
-
 export const WinesFilterComponent = (props: WinesFilterProps) => {
     const [selectedOption, setSelectedOption] = useState<String>();
 
