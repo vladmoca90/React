@@ -22,3 +22,11 @@ npm start
 
 
 npx tsc
+
+
+
+Run:
+
+cd my-app
+
+npm run dev
