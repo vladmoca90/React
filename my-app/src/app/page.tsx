@@ -26,8 +26,30 @@ const winesDropdown = wines.map((wine, index) => {
 });
 
 //A function that filters the dropdown and leaves only the selected wine on the page
-function winesFilter() {
-   
+const winesFilter = () => {
+    const [selectedOption, setSelectedOption] = useState<String>();
+
+    // This function is triggered when the select changes
+    const selectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const value = event.target.value;
+        setSelectedOption(value);
+    };
+
+    return (
+        <div>
+            <select onChange={selectChange}>
+                <option selected disabled>
+                    Choose one
+                </option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="kindacode">Kindacode</option>
+            </select>
+            {selectedOption && <h2>{selectedOption}</h2>}
+        </div>
+    );
 }
 
 export default function GetWines() {
