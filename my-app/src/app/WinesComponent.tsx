@@ -13,6 +13,7 @@ export default function WinesComponent() {
         setWines(filteredWines);
     }, [originalWines]);
     
+    //How to use useEffect
     useEffect(() => {
         console.log('Hello!');
     }, []);
