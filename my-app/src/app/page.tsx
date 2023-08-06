@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+"use client";
 import wines from './data';
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -26,7 +26,7 @@ const winesDropdown = wines.map((wine, index) => {
 });
 
 //A function that filters the dropdown and leaves only the selected wine on the page
-const winesFilter = () => {
+const WinesFilter = () => {
     const [selectedOption, setSelectedOption] = useState<String>();
 
     // This function is triggered when the select changes
@@ -39,7 +39,7 @@ const winesFilter = () => {
         <div>
             <select onChange={selectChange}>
                 <option selected disabled>
-                    Choose one
+                    All products
                 </option>
                 <option value="blue">Blue</option>
                 <option value="red">Red</option>
@@ -56,8 +56,7 @@ export default function GetWines() {
     return (
         <section className="box">
             <select aria-label="winesDropdown" id="productsList">
-                <option>All products</option>
-                {winesDropdown}
+                {WinesFilter()}
             </select>
             <div className='products-container'>
                 {allWines}
