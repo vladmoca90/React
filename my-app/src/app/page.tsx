@@ -6,6 +6,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './wine-sell.css';
 import WinesComponent from './WinesComponent';
 
-export default function MainPage() {
+export default function WinesPage() {
     return (<WinesComponent />);
 }
