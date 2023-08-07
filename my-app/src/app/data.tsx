@@ -1,9 +1,9 @@
-export interface flight {
+export interface Flight {
     airline: string;
     destinations: string | string[];
 }
 
-export const allFlights: flight[] = [
+export const allFlights: Flight[] = [
     {
         airline: "Air Algerie",
         destinations: "Algiers",
