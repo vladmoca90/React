@@ -1,5 +1,4 @@
 export interface flight {
-    [x: string]: any;
     airline: string;
     destinations: string | string[];
 }
