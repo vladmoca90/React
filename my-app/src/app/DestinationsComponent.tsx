@@ -10,7 +10,7 @@ export type TotalDestinationsProps = {
 }
 
 export const TotalDestinations = {
-
+  // const [] = useState<String>();
 }
 
 export default function DestinationsComponent() {
