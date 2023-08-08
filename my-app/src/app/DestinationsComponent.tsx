@@ -4,7 +4,6 @@ import React, { useCallback, useState } from 'react';
 import { Flight, allFlights } from './data';
 
 //Main function, that shows the table structure
-
 export type TotalDestinationsProps = {
   allDestinations: Flight[];
 }
