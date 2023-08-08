@@ -18,7 +18,7 @@ export default function DestinationsComponent() {
             <th scope="col">Destinations</th>
           </thead>
           <tbody className="table-content">
-            {flights.map((flight, index) => {
+            {allFlights.map((flight, index) => {
               return (
                 <tr key={index}>
                   <td className="airline-number">{flight.index + 1}</td>
