@@ -2,7 +2,7 @@
 "use client";
 import React from 'react';
 import { TotalDestinations } from './TotalDestinations';
-import { Flight, allFlights } from './data';
+import { allFlights } from './data';
 
 //Main function, that shows the table structure
 
