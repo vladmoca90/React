@@ -9,9 +9,13 @@ export type TotalDestinationsProps = {
   allDestinations: Flight[];
 }
 
-export const TotalDestinations = {
-  // const [] = useState<String>();
-}
+/*
+export const TotalDestinations = (props: TotalDestinationsProps)  => {
+  const [] = useState<String>();
+
+  const destinationCalculus = useCallback((() => {
+}), []);
+} */
 
 export default function DestinationsComponent() {
   return (
