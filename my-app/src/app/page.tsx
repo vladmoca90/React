@@ -1,3 +1,5 @@
+"use client";
+import React from 'react';
 import DestinationsComponent from './DestinationsComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
