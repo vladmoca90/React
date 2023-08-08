@@ -8,11 +8,11 @@ export type TotalDestinationsProps = {
   allDestinations: Flight[];
 }
 
-export const TotalDestinations = (props: TotalDestinationsProps)  => {
+export const TotalDestinations = (props: TotalDestinationsProps) => {
   const [] = useState<String>();
 
   const TotalDestinations = useCallback((() => {
-}), []);
+  }), []);
 }
 
 export default function DestinationsComponent() {
