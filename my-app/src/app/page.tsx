@@ -1,9 +1,9 @@
 "use client";
 import React from 'react';
-import DestinationsComponent from './DestinationsComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './airlines-destinations.css';
+import './airlinesDestinations.css';
+import DestinationsComponent from './DestinationsComponent';
 
 export default function DestinationsPage() {
   return (<DestinationsComponent />);
