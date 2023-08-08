@@ -21,7 +21,7 @@ export default function DestinationsComponent() {
             {allFlights.map((flight, index) => {
               return (
                 <tr key={index}>
-                  <td className="airline-number">{flight.index + 1}</td>
+                  <td className="airline-number">{index + 1}</td>
                   <td className="airline-name">{flight.airline}</td>
                   <td className="airline-destinations-list">{flight.destinations.toString().replace(/,/g, ', ')}</td>
                 </tr>
