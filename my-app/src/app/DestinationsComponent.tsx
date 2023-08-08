@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import { TotalDestinations } from './TotalDestinations';
 import { allFlights } from './data';
 
