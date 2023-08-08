@@ -2,11 +2,12 @@
 "use client";
 import React from 'react';
 import { TotalDestinations } from './TotalDestinations';
-import { allFlights } from './data';
+import { Flight, allFlights } from './data';
 
 //Main function, that shows the table structure
 
 export default function DestinationsComponent() {
+
   return (
     <main className="main">
       <div className="container-table">
@@ -17,12 +18,12 @@ export default function DestinationsComponent() {
             <th scope="col">Destinations</th>
           </thead>
           <tbody className="table-content">
-            {allFlights.map((Flight, index) => {
+            {flights.map((flight, index) => {
               return (
                 <tr key={index}>
-                  <td className="airline-number">{Flight.index + 1}</td>
-                  <td className="airline-name">{Flight.airline}</td>
-                  <td className="airline-destinations-list">{Flight.destinations.toString().replace(/,/g, ', ')}</td>
+                  <td className="airline-number">{flight.index + 1}</td>
+                  <td className="airline-name">{flight.airline}</td>
+                  <td className="airline-destinations-list">{flight.destinations.toString().replace(/,/g, ', ')}</td>
                 </tr>
               );
             })}
