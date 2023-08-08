@@ -9,13 +9,12 @@ export type TotalDestinationsProps = {
   allDestinations: Flight[];
 }
 
-/*
 export const TotalDestinations = (props: TotalDestinationsProps)  => {
   const [] = useState<String>();
 
-  const destinationCalculus = useCallback((() => {
+  const TotalDestinations = useCallback((() => {
 }), []);
-} */
+}
 
 export default function DestinationsComponent() {
   return (
@@ -41,7 +40,7 @@ export default function DestinationsComponent() {
         </table>
         <div className="totals">
           <span>Total number of airlines: {allFlights.length}</span>
-          <span>Total number of destinations: <TotalDestinations /></span>
+          <span>Total number of destinations: </span>
         </div>
       </div>
     </main>
