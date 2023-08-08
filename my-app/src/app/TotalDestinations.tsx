@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+"use client";
 import { allFlights } from './data';
 
 //Calculates the total number of destinations
