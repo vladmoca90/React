@@ -3,7 +3,6 @@
 import React from 'react';
 import { TotalDestinations } from './TotalDestinations';
 import { allFlights } from './data';
-import { totalFlights } from './allFlights';
 
 //Main function, that shows the table structure
 
@@ -18,7 +17,15 @@ export default function DestinationsComponent() {
             <th scope="col">Destinations</th>
           </thead>
           <tbody className="table-content">
-            {totalFlights}
+            {allFlights.map((Flight, index) => {
+              return (
+                <tr key={index}>
+                  <td className="airline-number">{Flight.index + 1}</td>
+                  <td className="airline-name">{Flight.airline}</td>
+                  <td className="airline-destinations-list">{Flight.destinations.toString().replace(/,/g, ', ')}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
         <div className="totals">
