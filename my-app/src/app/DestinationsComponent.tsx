@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useCallback, useState } from 'react';
-import { Flight, allFlights } from './data';
+import { allFlights } from './data';
 
 //Main function, that shows the table structure
 export type TotalDestinationsProps = {
-  allDestinations: Flight[];
+  counter: number;
 }
 
 export const TotalDestinations = (props: TotalDestinationsProps) => {
