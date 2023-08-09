@@ -12,7 +12,8 @@ export const TotalDestinations = (props: TotalDestinationsProps) => {
   const [] = useState<String>();
 
   const TotalDestinations = useCallback((() => {
-  }), []);
+
+  }), [props]);
 }
 
 export default function DestinationsComponent() {
