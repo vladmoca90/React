@@ -5,6 +5,6 @@ import { AllCars } from './data';
 
 export default function CarsComponent() {
     return (
-        <div></div>
+        <div className="showroom-container"></div>
     );
 }
