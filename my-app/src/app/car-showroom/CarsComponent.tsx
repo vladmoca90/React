@@ -8,8 +8,8 @@ export default function CarsComponent() {
         return (
             <div className="showroom-container" key={index}>
                 <div className='car-container'>
-                    <h3 className="car-title"></h3>
-                    <p className="car-price"></p>
+                    <h3 className="car-title">{car.make} <span>{car.model}</span></h3>
+                    <p className="car-price">{car.price}</p>
                     <div>
                         <img alt="car" className="product-img" key={index} src={"./carShowroom/" + car.img} />
                     </div>
