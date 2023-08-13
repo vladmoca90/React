@@ -2,6 +2,10 @@
 "use client";
 import { allFlights } from './data';
 
+export type TotalDestinationsProps  = {
+  counter: string;
+}
+
 //Calculates the total number of destinations
 export const TotalDestinations = () => {
   if (allFlights.length == 0) {
