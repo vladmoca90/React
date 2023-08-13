@@ -2,7 +2,7 @@
 "use client";
 import React from 'react';
 import { allFlights } from './data';
-import { TotalDestinations } from './TotalDestinations';
+import { TotalDestinations } from './TotalDestinationsComponent';
 
 export default function DestinationsComponent() {
   return (
