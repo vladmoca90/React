@@ -3,13 +3,12 @@
 import React, { useCallback, useState } from 'react';
 import { allFlights } from './data';
 
-//Main function, that shows the table structure
 export type TotalDestinationsProps = {
   counter: number;
 }
 
 export const TotalDestinations = (props: TotalDestinationsProps) => {
-  const [selectOption] = useState<String>();
+  const [] = useState<String>();
   const totalAirlines = allFlights.length;
 
   const totalCalculus = useCallback((() => {
