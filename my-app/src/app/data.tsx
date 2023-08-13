@@ -6,31 +6,31 @@ export interface Flight {
 export const allFlights: Flight[] = [
     {
         airline: "Air Algerie",
-        destinations: "Algiers",
+        destinations: ["Algiers"],
     },
     {
         airline: "Air France",
-        destinations: "Paris-Charles de Gaulle",
+        destinations: ["Paris-Charles de Gaulle"],
     },
     {
         airline: "Avianca",
-        destinations: "Bogota-El Dorado",
+        destinations: ["Bogota-El Dorado"],
     },
     {
         airline: "Brussels Airlines",
-        destinations: "Brussels-International",
+        destinations: ["Brussels-International"],
     },
     {
         airline: "Cathay Pacific",
-        destinations: "Hong Kong",
+        destinations: ["Hong Kong"],
     },
     {
         airline: "Delta Airlines",
-        destinations: "New York-JFK",
+        destinations: ["New York-JFK"],
     },
     {
         airline: "El Al",
-        destinations: "Tel Aviv-Ben Gurion",
+        destinations: ["Tel Aviv-Ben Gurion"],
     },
     {
         airline: "Hainan Airlines",
@@ -38,15 +38,15 @@ export const allFlights: Flight[] = [
     },
     {
         airline: "Iran Air",
-        destinations: "Tehran-Khomeini",
+        destinations: ["Tehran-Khomeini"],
     },
     {
         airline: "Japan Airlines",
-        destinations: "Tokyo-Haneda",
+        destinations: ["Tokyo-Haneda"],
     },
     {
         airline: "KLM",
-        destinations: "Amsterdam-Schipol",
+        destinations: ["Amsterdam-Schipol"],
     },
     {
         airline: "Lufthansa",
@@ -54,23 +54,23 @@ export const allFlights: Flight[] = [
     },
     {
         airline: "Aeromexico",
-        destinations: "Mexico City",
+        destinations: ["Mexico City"],
     },
     {
         airline: "Royal Air Jordanian",
-        destinations: "Amman-Queen Alia",
+        destinations: ["Amman-Queen Alia"],
     },
     {
         airline: "Oman Air",
-        destinations: "Muscat",
+        destinations: ["Muscat"],
     },
     {
         airline: "TAROM",
-        destinations: "Bucharest-Otopeni",
+        destinations: ["Bucharest-Otopeni"],
     },
     {
         airline: "Turkish Airlines",
-        destinations: "Istanbul-Ataturk",
+        destinations: ["Istanbul-Ataturk"],
     },
     {
         airline: "United Airlines",
@@ -82,6 +82,6 @@ export const allFlights: Flight[] = [
     },
     {
         airline: "WestJet",
-        destinations: "Calgary",
+        destinations: ["Calgary"],
     }
 ];
