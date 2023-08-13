@@ -13,7 +13,7 @@ export const TotalDestinations = (props: TotalDestinationsProps) => {
 
   const TotalDestinations = useCallback((() => {
 
-  }), [props]);
+  }), []);
 }
 
 /* 
