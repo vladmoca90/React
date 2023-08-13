@@ -16,7 +16,7 @@ export const TotalDestinations = (props: TotalDestinationsProps) => {
   }), []);
 
   return (
-    <div></div>
+    <span>Total number of destinations: {totalCalculus}</span>
   );
 }
 
