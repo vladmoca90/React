@@ -1,14 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
+import React, { useCallback, useState } from 'react';
 import { allFlights } from './data';
 
-export type TotalDestinationsProps  = {
-  counter: string;
+//Main function, that shows the table structure
+export type TotalDestinationsProps = {
+  counter: number;
 }
 
-//Calculates the total number of destinations
-export const TotalDestinations = () => {
-  if (allFlights.length == 0) {
+export const TotalDestinations = (props: TotalDestinationsProps) => {
+  const [] = useState<String>();
+
+  const TotalDestinations = useCallback((() => {
+
+  }), [props]);
+}
+
+/* 
+
+ if (allFlights.length == 0) {
     throw new Error('The list of allFlights must be provided!');
   }
 
@@ -24,4 +34,5 @@ export const TotalDestinations = () => {
   }
 
   return counter;
-};
+
+*/

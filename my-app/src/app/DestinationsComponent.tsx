@@ -3,19 +3,6 @@
 import React, { useCallback, useState } from 'react';
 import { allFlights } from './data';
 
-//Main function, that shows the table structure
-export type TotalDestinationsProps = {
-  counter: number;
-}
-
-export const TotalDestinations = (props: TotalDestinationsProps) => {
-  const [] = useState<String>();
-
-  const TotalDestinations = useCallback((() => {
-
-  }), [props]);
-}
-
 export default function DestinationsComponent() {
   return (
     <main className="main">
