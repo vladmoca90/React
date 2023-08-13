@@ -9,14 +9,14 @@ export type TotalDestinationsProps = {
 }
 
 export const TotalDestinations = (props: TotalDestinationsProps) => {
-  // const [] = useState<String>();
+  const [selectOption] = useState<String>();
 
-  const totalCalculus = useCallback((() => {
-
-  }), []);
+  const totalCalculus = useCallback((( ) => {
+  
+  }), [props]);
 
   return (
-    <span>Total number of destinations: {totalCalculus}</span>
+    <span>Total number of destinations: </span>
   );
 }
 

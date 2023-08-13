@@ -4,7 +4,7 @@ import React from 'react';
 import { allFlights } from './data';
 import { TotalDestinations } from './TotalDestinationsComponent';
 
-export default function DestinationsComponent() {
+export default function AirlinesDestinationsComponent() {
   return (
     <main className="main">
       <div className="container-table">
@@ -15,15 +15,17 @@ export default function DestinationsComponent() {
             <th scope="col">Destinations</th>
           </thead>
           <tbody className="table-content">
-            {allFlights.map((flight, index) => {
-              return (
-                <tr key={index}>
-                  <td className="airline-number">{index + 1}</td>
-                  <td className="airline-name">{flight.airline}</td>
-                  <td className="airline-destinations-list">{flight.destinations.toString().replace(/,/g, ', ')}</td>
-                </tr>
-              );
-            })}
+            {
+              allFlights.map((flight, index) => {
+                return (
+                  <tr key={index}>
+                    <td className="airline-number">{index + 1}</td>
+                    <td className="airline-name">{flight.airline}</td>
+                    <td className="airline-destinations-list">{flight.destinations.toString().replace(/,/g, ', ')}</td>
+                  </tr>
+                );
+              })
+            }
           </tbody>
         </table>
         <div className="totals">
