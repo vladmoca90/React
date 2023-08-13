@@ -11,17 +11,21 @@ export type TotalDestinationsProps = {
 export const TotalDestinations = (props: TotalDestinationsProps) => {
   const [selectOption] = useState<String>();
 
-  const totalCalculus = useCallback((( ) => {
-  
+  const totalFlightsNumber = allFlights.length;
+
+  const totalCalculus = useCallback((() => {
+
   }), [props]);
 
   return (
-    <span>Total number of destinations: </span>
+    <div className="totals">
+      <span>Total number of airlines: {totalFlightsNumber}</span>
+      <span>Total number of destinations: </span>
+    </div>
   );
 }
 
 /* 
-
  if (allFlights.length == 0) {
     throw new Error('The list of allFlights must be provided!');
   }
@@ -38,5 +42,4 @@ export const TotalDestinations = (props: TotalDestinationsProps) => {
   }
 
   return counter;
-
 */

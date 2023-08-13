@@ -28,10 +28,7 @@ export default function AirlinesDestinationsComponent() {
             }
           </tbody>
         </table>
-        <div className="totals">
-          <span>Total number of airlines: {allFlights.length}</span>
           <TotalDestinations counter={0} />
-        </div>
       </div>
     </main>
   );
