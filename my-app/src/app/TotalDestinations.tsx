@@ -11,9 +11,13 @@ export type TotalDestinationsProps = {
 export const TotalDestinations = (props: TotalDestinationsProps) => {
   // const [] = useState<String>();
 
-  const TotalDestinations = useCallback((() => {
+  const totalCalculus = useCallback((() => {
 
   }), []);
+
+  return (
+    <div></div>
+  );
 }
 
 /* 
