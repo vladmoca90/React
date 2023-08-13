@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useCallback, useEffect, useState } from 'react';
-import { CarFilterComponent } from './CarFilterComponent';
+import { CarsFilterComponent } from './CarsFilterComponent';
 import { AllCars } from './data';
 
 export default function CarsComponent() {
     {AllCars.map((car, index) => {
         return (
             <section className="box" key={index}>
-                <CarFilterComponent />
+                <CarsFilterComponent />
                 <div className="showroom-container">
                     <div className='car-container'>
                         <h3 className="car-title">{car.make} <span>{car.model}</span></h3>

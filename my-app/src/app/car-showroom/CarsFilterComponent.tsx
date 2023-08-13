@@ -2,6 +2,10 @@
 "use client";
 import React, { useCallback, useEffect, useState } from 'react';
 
-export type CarFilterProps = {
+export type CarsFilterProps = {
 
+}
+
+export default function CarsFilterComponent() {
+    
 }
