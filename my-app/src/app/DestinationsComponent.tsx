@@ -2,6 +2,7 @@
 "use client";
 import React from 'react';
 import { allFlights } from './data';
+import { TotalDestinations } from './TotalDestinations';
 
 export default function DestinationsComponent() {
   return (
@@ -27,7 +28,7 @@ export default function DestinationsComponent() {
         </table>
         <div className="totals">
           <span>Total number of airlines: {allFlights.length}</span>
-          <span>Total number of destinations: </span>
+          <span>Total number of destinations: {TotalDestinations}</span>
         </div>
       </div>
     </main>
