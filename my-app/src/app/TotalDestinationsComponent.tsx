@@ -11,7 +11,7 @@ export type TotalDestinationsProps = {
 export const TotalDestinations = (props: TotalDestinationsProps) => {
   const [selectOption] = useState<String>();
 
-  const totalFlightsNumber = allFlights.length;
+  const airlinesNumb = allFlights.length;
 
   const totalCalculus = useCallback((() => {
 
@@ -19,7 +19,7 @@ export const TotalDestinations = (props: TotalDestinationsProps) => {
 
   return (
     <div className="totals">
-      <span>Total number of airlines: {totalFlightsNumber}</span>
+      <span>Total number of airlines: {airlinesNumb}</span>
       <span>Total number of destinations: </span>
     </div>
   );
