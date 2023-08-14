@@ -1,29 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React, { useCallback } from 'react';
-import { allFlights } from './data';
+import React, { useCallback, useState } from 'react';
+import { Flight } from './data';
 
 export type TotalDestinationsProps = {
-  counter: number;
-  flights: typeof allFlights;
+  flights: Flight[];
 };
 
 export const TotalDestinations = (props: TotalDestinationsProps) => {
-  let counter = 0;
+  //const [counter, setCounter] = useState(0);
+  
+  const calculateTotal = useCallback((() => {
+    let sum = 0;
 
-  const total = useCallback((() => {
     for (const flight of props.flights) {
-      counter += props.flights.length;
+      sum += flight.destinations.length;
     }
 
-    return counter;
+   //setCounter(sum);
+
+    return sum;
 
   }), [props.flights]);
 
   return (
     <div className="totals">
       <span>Total number of airlines: {props.flights.length}</span>
-      <span>Total number of destinations: {total()}</span>
+      <span>Total number of destinations: {calculateTotal()}</span>
     </div>
   );
 }

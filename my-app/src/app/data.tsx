@@ -1,6 +1,6 @@
 export interface Flight {
     airline: string;
-    destinations: string | string[];
+    destinations: string[];
 }
 
 export const allFlights: Flight[] = [

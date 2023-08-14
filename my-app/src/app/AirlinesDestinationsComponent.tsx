@@ -1,10 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import { allFlights } from './data';
 import { TotalDestinations } from './TotalDestinationsComponent';
 
 export default function AirlinesDestinationsComponent() {
+  const [flights, setFlights] = useState(allFlights);
+
   return (
     <main className="main">
       <div className="container-table">
@@ -18,7 +20,7 @@ export default function AirlinesDestinationsComponent() {
           </thead>
           <tbody className="table-content">
             {
-              allFlights.map((flight, index) => {
+              flights.map((flight, index) => {
                 return (
                   <tr key={index}>
                     <td className="airline-number">{index + 1}</td>
@@ -30,7 +32,7 @@ export default function AirlinesDestinationsComponent() {
             }
           </tbody>
         </table>
-        <TotalDestinations counter={0} flights={allFlights} />
+        <TotalDestinations flights={flights} />
       </div>
     </main>
   );
