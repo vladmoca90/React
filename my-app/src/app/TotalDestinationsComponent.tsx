@@ -9,20 +9,20 @@ export type TotalDestinationsProps = {
 };
 
 export const TotalDestinations = (props: TotalDestinationsProps) => {
-  const [counter, setCounter] = useState<Number>(0);
+  let counter = 0;
 
   const total = useCallback((() => {
     for (const flight of props.flights) {
-      return props.flights;
+      counter += props.flights.length;
     }  
-  
+
     return counter;
   }), [props]);
 
   return (
     <div className="totals">
-      <span>Total number of airlines: {allFlights.length}</span>
-      <span>Total number of destinations: {total}</span>
+      <span>Total number of airlines: {counter}</span>
+      <span>Total number of destinations:  {total()}</span>
     </div>
   );
 }

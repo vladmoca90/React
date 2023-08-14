@@ -28,7 +28,7 @@ export default function AirlinesDestinationsComponent() {
             }
           </tbody>
         </table>
-          <TotalDestinations counter={0} flights={[]} />
+          <TotalDestinations counter={0} flights={allFlights} />
       </div>
     </main>
   );
