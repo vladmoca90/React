@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React, { useCallback, useState } from 'react';
+import React, { useCallback } from 'react';
 import { allFlights } from './data';
 
 export type TotalDestinationsProps = {
@@ -24,6 +24,7 @@ export const TotalDestinations = (props: TotalDestinationsProps) => {
     <div className="totals">
       <span>Total number of airlines: {props.flights.length}</span>
       <span>Total number of destinations: {total()}</span>
+      <span>{Foo()}</span>
     </div>
   );
 }
