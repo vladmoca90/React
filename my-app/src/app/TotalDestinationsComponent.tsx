@@ -8,16 +8,12 @@ export type TotalDestinationsProps = {
 };
 
 export const TotalDestinations = (props: TotalDestinationsProps) => {
-  //const [counter, setCounter] = useState(0);
-  
   const calculateTotal = useCallback(((flights: Flight[]) => {
     let sum = 0;
 
     for (const flight of flights) {
       sum += flight.destinations.length;
     }
-
-   //setCounter(sum);
 
     return sum;
 
@@ -30,14 +26,3 @@ export const TotalDestinations = (props: TotalDestinationsProps) => {
     </div>
   );
 }
-
-/*
- for (let i in allFlights) {
-      if (typeof allFlights[i].destinations === 'object') {
-        counter += allFlights[i].destinations.length;
-      }
-    }
-  
-    return counter;
-
-*/
