@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React, { useCallback, useState } from 'react';
+import React, { useCallback } from 'react';
 import { Flight } from './data';
 
 export type TotalDestinationsProps = {
@@ -10,10 +10,10 @@ export type TotalDestinationsProps = {
 export const TotalDestinations = (props: TotalDestinationsProps) => {
   //const [counter, setCounter] = useState(0);
   
-  const calculateTotal = useCallback((() => {
+  const calculateTotal = useCallback(((flights: Flight[]) => {
     let sum = 0;
 
-    for (const flight of props.flights) {
+    for (const flight of flights) {
       sum += flight.destinations.length;
     }
 
@@ -21,12 +21,12 @@ export const TotalDestinations = (props: TotalDestinationsProps) => {
 
     return sum;
 
-  }), [props.flights]);
+  }), []);
 
   return (
     <div className="totals">
       <span>Total number of airlines: {props.flights.length}</span>
-      <span>Total number of destinations: {calculateTotal()}</span>
+      <span>Total number of destinations: {calculateTotal(props.flights)}</span>
     </div>
   );
 }
