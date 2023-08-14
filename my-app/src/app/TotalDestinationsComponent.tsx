@@ -18,7 +18,7 @@ export const TotalDestinations = (props: TotalDestinationsProps) => {
 
     return counter;
   
-  }), [props]);
+  }), [props.flights]);
 
   return (
     <div className="totals">
