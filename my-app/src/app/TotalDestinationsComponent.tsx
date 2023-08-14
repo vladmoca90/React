@@ -14,10 +14,10 @@ export const TotalDestinations = (props: TotalDestinationsProps) => {
   const total = useCallback((() => {
     for (const flight of props.flights) {
       counter += props.flights.length;
-    }  
+    }
 
     return counter;
-  
+
   }), [props.flights]);
 
   return (
