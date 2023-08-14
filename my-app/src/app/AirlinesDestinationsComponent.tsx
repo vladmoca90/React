@@ -5,7 +5,7 @@ import { allFlights } from './data';
 import { TotalDestinations } from './TotalDestinationsComponent';
 
 export default function AirlinesDestinationsComponent() {
-  const [flights, setFlights] = useState(allFlights);
+  const [flights] = useState(allFlights);
 
   return (
     <main className="main">
