@@ -10,9 +10,11 @@ export default function AirlinesDestinationsComponent() {
       <div className="container-table">
         <table className="table-main table">
           <thead className="table-header">
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Destinations</th>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Destinations</th>
+            </tr>
           </thead>
           <tbody className="table-content">
             {
