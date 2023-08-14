@@ -17,26 +17,13 @@ export const TotalDestinations = (props: TotalDestinationsProps) => {
     }  
 
     return counter;
+  
   }), [props]);
 
   return (
     <div className="totals">
-      <span>Total number of airlines: {counter}</span>
-      <span>Total number of destinations:  {total()}</span>
+      <span>Total number of airlines: {props.flights.length}</span>
+      <span>Total number of destinations: {total()}</span>
     </div>
   );
 }
-
-/* 
- if (allFlights.length == 0) {
-    throw new Error('The list of allFlights must be provided!');
-  }
-
-  let counter = 0;
-
-  for (const flight of flights) {
-    counter += flights.length;
-  }  
-
-  return counter;
-*/
