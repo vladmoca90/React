@@ -12,10 +12,12 @@ export const TotalDestinations = (props: TotalDestinationsProps) => {
   let counter = 0;
 
   const total = useCallback((() => {
-    for (const flight of props.flights) {
-      counter += props.flights.length;
-    }  
-
+    for (let i in allFlights) {
+      if (typeof allFlights[i].destinations === 'object') {
+        counter += allFlights[i].destinations.length;
+      }
+    }
+  
     return counter;
   
   }), [props]);
