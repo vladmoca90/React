@@ -3,6 +3,10 @@ export interface tubeStatus {
     status: string,
 }
 
+export enum statusColors {
+    
+}
+
 export const tubeLines: tubeStatus[] = [
     {
         name: 'Bakerloo',
