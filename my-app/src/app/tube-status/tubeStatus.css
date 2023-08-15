@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body #main {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 0 0;
+}
+
+body #main .tube-container {
+    margin: 0 auto;
+    max-width: 480px;
+}
+
+body #main .tube-container .tube-table {
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 450px;
+}
+
+body #main .tube-container .tube-table th {
+    text-align: left;
+}
+
+body #main .tube-container .tube-table th,
+body #main .tube-container .tube-table td {
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+body #main .tube-container .tube-table .tube-status {
+    font-weight: bold;
+}
