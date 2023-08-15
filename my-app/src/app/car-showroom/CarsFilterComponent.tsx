@@ -6,6 +6,6 @@ export type CarsFilterProps = {
 
 }
 
-export default function CarsFilterComponent() {
+export const CarsFilterComponent = (props: CarsFilterProps) => {
     
 }
