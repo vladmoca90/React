@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './tubeStatus.css';
 
 export default function TubeComponent() {
+    const [colorStatus, setColor] = useState(statusColors);
+
     return (
         <section></section>
     );
