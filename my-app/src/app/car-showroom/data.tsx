@@ -6,7 +6,7 @@ export interface Car {
     year: number;
 }
 
-export enum CarColor {
+export enum CarsColor {
     Black = 'Black',
     Blue = 'Blue',
     Red = 'Red',
