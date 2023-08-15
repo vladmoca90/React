@@ -6,7 +6,7 @@ export interface Car {
     year: number;
 }
 
-export const AllCars: Car[] = [
+export const Cars: Car[] = [
     {
         img: 'audi.jpg',
         make: 'Audi',

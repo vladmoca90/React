@@ -1,11 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useCallback, useEffect, useState } from 'react';
-import { CarsFilterComponent } from './CarsFilterComponent';
-import { AllCars } from './data';
+import CarsFilterComponent from './CarsFilterComponent';
+import { Cars } from './data';
 
 export default function CarsComponent() {
-    {AllCars.map((car, index) => {
+    const [allCars] = useState(Cars);
+
+    {allCars.map((car, index) => {
         return (
             <section className="box" key={index}>
                 <CarsFilterComponent />
