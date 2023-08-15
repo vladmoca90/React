@@ -6,6 +6,13 @@ export interface Car {
     year: number;
 }
 
+export enum CarColor {
+    Black = 'Black',
+    Blue = 'Blue',
+    Red = 'Red',
+    White = 'White',
+}
+
 export const Cars: Car[] = [
     {
         img: 'audi.jpg',
