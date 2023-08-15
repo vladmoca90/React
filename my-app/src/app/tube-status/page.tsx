@@ -6,6 +6,6 @@ import TubeComponent from './TubeComponent';
 import 'bootstrap/dist/css/bootstrap.css';
 import './wine-sell.css';
 
-export default function WinesPage() {
+export default function TubePage() {
     return (<TubeComponent />);
 }
