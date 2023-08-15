@@ -4,7 +4,9 @@ export interface tubeStatus {
 }
 
 export enum statusColors {
-    
+    Green = 'Green',
+    Orange = 'Orange',
+    Red = 'Red',
 }
 
 export const tubeLines: tubeStatus[] = [
