@@ -4,7 +4,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { tubeStatus, StatusColors, tubeLines } from './data';
 
 export default function TubeComponent() {
-    const [colorStatus, setColor] = useState(StatusColors);
+    const [colorStatus] = useState(StatusColors);
     const [lines] = useState(tubeLines);
 
     const selectColor = useCallback((color: StatusColors) => {
@@ -27,7 +27,7 @@ export default function TubeComponent() {
                                 return (
                                     <tr key={index}>
                                         <td className="tube-lines">{line.name}</td>
-                                        <td className="tube-status">{line.status}</td>
+                                        <td className="tube-status" color={line.color}>{line.status}</td>
                                     </tr>
                                 );
                             })
