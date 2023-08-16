@@ -10,6 +10,10 @@ export default function TubeComponent() {
     const [colorStatus, setColor] = useState(statusColors);
     const [lines] = useState(tubeLines);
 
+    const selectColor = useCallback((color: statusColors) => {
+
+    }, []);
+
     return (
         <section id="main" className="d-flex">
             <div className="tube-container">
