@@ -15,7 +15,7 @@ body #main .tube-container {
 }
 
 body #main .tube-container .tube-table {
-    border: 1px solid #ccc;
+    border: 1px solid #cecece;
     font-size: 14px;
     width: 480px;
 }
@@ -26,7 +26,7 @@ body #main .tube-container .tube-table th {
 
 body #main .tube-container .tube-table th,
 body #main .tube-container .tube-table td {
-    border: 1px solid #ccc;
+    border: 1px solid #cecece;
     padding: 15px;
 }
 
