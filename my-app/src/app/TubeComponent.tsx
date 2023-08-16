@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useCallback, useEffect, useState } from 'react';
-import { tubeStatus, statusColors, tubeLines } from './data';
+import { tubeStatus, StatusColors, tubeLines } from './data';
 
 export default function TubeComponent() {
-    const [colorStatus, setColor] = useState(statusColors);
+    const [colorStatus, setColor] = useState(StatusColors);
     const [lines] = useState(tubeLines);
 
-    const selectColor = useCallback((color: statusColors) => {
+    const selectColor = useCallback((color: StatusColors) => {
 
     }, []);
 
