@@ -10,6 +10,23 @@ export default function TubeComponent() {
     const [colorStatus, setColor] = useState(statusColors);
 
     return (
-        <section></section>
+        <section id="main" className="d-flex">
+            <div className="tube-container">
+                <table className="tube-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody className="tube-body">
+                        <tr>
+                            <td className="tube-lines"></td>
+                            <td className="tube-status"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     );
 }
