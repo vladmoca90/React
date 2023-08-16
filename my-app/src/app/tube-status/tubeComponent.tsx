@@ -8,6 +8,7 @@ import './tubeStatus.css';
 
 export default function TubeComponent() {
     const [colorStatus, setColor] = useState(statusColors);
+    const [lines] = useState(tubeLines);
 
     return (
         <section id="main" className="d-flex">
@@ -15,15 +16,21 @@ export default function TubeComponent() {
                 <table className="tube-table">
                     <thead>
                         <tr>
-                            <th></th>
-                            <th></th>
+                            <th scope="col">Line name</th>
+                            <th scope="col">Line status</th>
                         </tr>
                     </thead>
                     <tbody className="tube-body">
-                        <tr>
-                            <td className="tube-lines"></td>
-                            <td className="tube-status"></td>
-                        </tr>
+                        {
+                            lines.map((line, index) => {
+                                return (
+                                    <tr key={index}>
+                                        <td className="tube-lines">{line.name}</td>
+                                        <td className="tube-status">{line.status}</td>
+                                    </tr>
+                                );
+                            })
+                        }
                     </tbody>
                 </table>
             </div>
