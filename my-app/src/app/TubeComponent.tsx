@@ -7,12 +7,12 @@ export default function TubeComponent() {
     const [colorStatus] = useState(StatusColors);
     const [lines] = useState(tubeLines);
 
-    const selectColor = useCallback((color: StatusColors) => {
+    const selectColor = useCallback(() => {
 
     }, []);
 
     return (
-        <section id="main" className="d-flex">
+        <div id="main" className="d-flex">
             <div className="tube-container">
                 <table className="tube-table">
                     <thead>
@@ -27,7 +27,7 @@ export default function TubeComponent() {
                                 return (
                                     <tr key={index}>
                                         <td className="tube-lines">{line.name}</td>
-                                        <td className="tube-status" color={line.color}>{line.status}</td>
+                                        <td className="tube-status" style={line.color}>{line.status}</td>
                                     </tr>
                                 );
                             })
@@ -35,6 +35,6 @@ export default function TubeComponent() {
                     </tbody>
                 </table>
             </div>
-        </section>
+        </div>
     );
 }
