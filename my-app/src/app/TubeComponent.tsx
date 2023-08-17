@@ -4,12 +4,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { tubeStatus, StatusColors, tubeLines } from './data';
 
 export default function TubeComponent() {
-    const [colorStatus] = useState(StatusColors);
     const [lines] = useState(tubeLines);
-
-    const selectColor = useCallback(() => {
-
-    }, []);
 
     return (
         <div id="main" className="d-flex">
