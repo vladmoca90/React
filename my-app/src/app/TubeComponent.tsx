@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React, { useCallback, useEffect, useState } from 'react';
-import { tubeStatus, StatusColors, tubeLines } from './data';
+import React, { useState } from 'react';
+import { tubeLines } from './data';
 
 export default function TubeComponent() {
     const [lines] = useState(tubeLines);
