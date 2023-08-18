@@ -27,7 +27,7 @@ body #main .tube-container .tube-table th {
 body #main .tube-container .tube-table th,
 body #main .tube-container .tube-table td {
     border: 1px solid #cecece;
-    padding: 15px;
+    padding: 12px;
 }
 
 body #main .tube-container .tube-table .tube-status {
