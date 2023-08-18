@@ -33,15 +33,3 @@ body #main .tube-container .tube-table td {
 body #main .tube-container .tube-table .tube-status {
     font-weight: bold;
 }
-
-.green {
-    color: rgb(0, 76, 0);
-}
-
-.orange {
-    color: rgb(254, 167, 6);
-}
-
-.red {
-    color: rgb(179, 0, 0);
-}
