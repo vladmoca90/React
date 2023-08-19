@@ -40,6 +40,7 @@ const getLineStatusFriendlyName = (status: LineStatus) => {
 
 export default function TubeComponent() {
     const [lines] = useState(tubeLines);
+    const [selectedLine] = useState(LineStatus);
 
     return (
         <div id="main">
@@ -48,7 +49,7 @@ export default function TubeComponent() {
                     {
                         lines.map((line, index) => {
                             return (
-                                <option key={index}>{line.name}</option>
+                                <option value={line.name} key={index}>{line.name}</option>
                             );
                         })
                     }
@@ -57,7 +58,7 @@ export default function TubeComponent() {
                     {
                         lines.map((line, index) => {
                             return (
-                                <option key={index}>{line.status}</option>
+                                <option value={line.status} key={index}>{line.status}</option>
                             );
                         })
                     }
