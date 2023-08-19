@@ -41,13 +41,13 @@ body #main {
 }
 
 .tube-status--Good {
-    color: #006700;
+    color: #007100;
 }
 
 .tube-status--PartSuspended {
-    color: #f9a304;
+    color: #ed9f0f;
 }
 
 .tube-status--Closed {
-    color: #f30000;
+    color: #dd0000;
 }
