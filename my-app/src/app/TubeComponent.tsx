@@ -17,8 +17,7 @@ export default function TubeComponent() {
                         </tr>
                     </thead>
                     <tbody className="tube-body">
-                        {
-                            lines.map((line, index) => {
+                        {lines.map((line, index) => {
                                 return (
                                     <tr key={index}>
                                         <td className="tube-lines">{line.name}</td>
