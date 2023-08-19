@@ -42,7 +42,16 @@ export default function TubeComponent() {
     const [lines] = useState(tubeLines);
 
     return (
-        <div id="main" className="d-flex">
+        <div id="main">
+            <select id="chooseLineName" title="tube">
+                {
+                    lines.map((line, index) => {
+                        return (
+                            <option key={index}>{line.name}</option>
+                        );
+                    })
+                }
+            </select>
             <div className="tube-container">
                 <table className="tube-table">
                     <thead>
@@ -52,14 +61,15 @@ export default function TubeComponent() {
                         </tr>
                     </thead>
                     <tbody className="tube-body">
-                        {lines.map((line, index) => {
-                            return (
-                                <tr key={index}>
-                                    <td className="tube-lines">{line.name}</td>
-                                    <td className={getLineStatusClassName(line.status)}>{getLineStatusFriendlyName(line.status)}</td>
-                                </tr>
-                            );
-                        })
+                        {
+                            lines.map((line, index) => {
+                                return (
+                                    <tr key={index}>
+                                        <td className="tube-lines">{line.name}</td>
+                                        <td className={getLineStatusClassName(line.status)}>{getLineStatusFriendlyName(line.status)}</td>
+                                    </tr>
+                                );
+                            })
                         }
                     </tbody>
                 </table>

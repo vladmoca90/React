@@ -8,11 +8,13 @@ body {
 body #main {
     color: #333;
     font-family: 'Montserrat', sans-serif;
-    margin: 50px 0 0;
+    margin: 50px auto 0;
+    max-width: 500px;
 }
 
 .tube-container {
-    margin: 0 auto;
+    display: block;
+    margin: 20px auto 0;
     max-width: 500px;
 }
 
@@ -50,4 +52,10 @@ body #main {
 
 .tube-status--closed {
     color: #dd0000;
+}
+
+#chooseLineName {
+    border: 1px solid #333;
+    height: 30px;
+    width: 150px;
 }
