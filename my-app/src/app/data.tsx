@@ -5,8 +5,8 @@ export interface Line {
 
 export enum LineStatus {
     Closed = 'Closed',
-    Good = 'Good service',
-    PartSuspended = 'Partially suspended',
+    Good = 'Good',
+    PartSuspended = 'PartSuspended',
 }
 
 export const tubeLines: Line[] = [

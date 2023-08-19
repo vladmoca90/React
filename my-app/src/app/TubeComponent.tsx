@@ -1,21 +1,41 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useState } from 'react';
-import { tubeLines } from './data';
+import { LineStatus, tubeLines } from './data';
 
-const getLineStatusClassName = () => {
-    switch(tubeLines) {
-        case tubeLines = ;
-        return 'tube-lines--Good';
-        break;
+const getLineStatusClassName = (status: LineStatus) => {
+    let lineStatusClass = ''; 
 
-        case tubeLines == ;
-        return 'tube-lines--PartSuspended';
-        break;
+    switch(status) {
+        case LineStatus.Good:
+            lineStatusClass = 'tube-status--good';
+            break;
 
-        case tubeLines == ;
-        return 'tube-lines--Closed';
-        break;
+        case LineStatus.PartSuspended:
+            lineStatusClass = 'tube-status--part-suspended';
+            break;
+
+        case LineStatus.Closed:
+            lineStatusClass = 'tube-status--closed';
+            break;
+    }
+
+    return `tube-status ${lineStatusClass}`;
+}
+
+const getLineStatusFriendlyName = (status: LineStatus) => {
+
+    switch(status) {
+        case LineStatus.Good:
+            return 'Good service';
+
+        case LineStatus.PartSuspended:
+            return 'Partially Suspended';
+
+        case LineStatus.Closed:
+            return 'Closed';
+        default:
+            return 'Unknown';
     }
 }
 
@@ -37,7 +57,7 @@ export default function TubeComponent() {
                                 return (
                                     <tr key={index}>
                                         <td className="tube-lines">{line.name}</td>
-                                        <td className={getLineStatusClassName(line.status)}>{line.status}</td>
+                                        <td className={getLineStatusClassName(line.status)}>{getLineStatusFriendlyName(line.status)}</td>
                                     </tr>
                                 );
                             })
