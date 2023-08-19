@@ -40,12 +40,12 @@ const getLineStatusFriendlyName = (status: LineStatus) => {
 
 export default function TubeComponent() {
     const [lines] = useState(tubeLines);
-    const [selectedLine] = useState(LineStatus);
+    const [selectedLine, setSelectedLine] = useState(lines[0]);
 
     return (
         <div id="main">
             <div className="d-flex justify-content-between tube-options">
-                <select id="chooseLineName" title="tubeLine">
+                <select id="chooseLineName" title="tubeLine" onChange={selectedLine()}>
                     {
                         lines.map((line, index) => {
                             return (
