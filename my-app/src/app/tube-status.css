@@ -16,24 +16,28 @@ body #main {
     max-width: 480px;
 }
 
-.tube-container>.tube-table {
+.tube-container .tube-table {
     border: 1px solid #cecece;
     font-size: 14px;
     width: 480px;
 }
 
-.tube-container>.tube-table>th {
+.tube-container .tube-table th {
     text-align: left;
 }
 
-.tube-container>.tube-table>th,
-.tube-container>.tube-table>td {
+.tube-container .tube-table th,
+.tube-container .tube-table td {
     border: 1px solid #cecece;
     padding: 12px;
 }
 
-.tube-container>.tube-table .tube-status {
-    font-weight: bold;
+.tube-container .tube-table .tube-lines {
+    font-weight: 400;
+}
+
+.tube-container .tube-table .tube-status {
+    font-weight: 700;
 }
 
 .tube-status--green {
