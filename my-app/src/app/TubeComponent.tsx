@@ -21,7 +21,7 @@ export default function TubeComponent() {
                                 return (
                                     <tr key={index}>
                                         <td className="tube-lines">{line.name}</td>
-                                        <td className="tube-status" style={{color: line.color}}>{line.status}</td>
+                                        <td className="tube-status">{line.status}</td>
                                     </tr>
                                 );
                             })
