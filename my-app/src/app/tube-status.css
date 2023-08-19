@@ -13,12 +13,12 @@ body #main {
 
 .tube-container {
     margin: 0 auto;
-    max-width: 480px;
+    max-width: 500px;
 }
 
 .tube-container .tube-table {
     border: 1px solid #cecece;
-    font-size: 14px;
+    font-size: 15px;
     width: 480px;
 }
 
