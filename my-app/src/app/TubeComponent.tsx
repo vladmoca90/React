@@ -3,6 +3,22 @@
 import React, { useState } from 'react';
 import { tubeLines } from './data';
 
+const getLineStatusClassName = () => {
+    switch(tubeLines) {
+        case tubeLines = ;
+        return 'tube-lines--Good';
+        break;
+
+        case tubeLines == ;
+        return 'tube-lines--PartSuspended';
+        break;
+
+        case tubeLines == ;
+        return 'tube-lines--Closed';
+        break;
+    }
+}
+
 export default function TubeComponent() {
     const [lines] = useState(tubeLines);
 
@@ -21,7 +37,7 @@ export default function TubeComponent() {
                                 return (
                                     <tr key={index}>
                                         <td className="tube-lines">{line.name}</td>
-                                        <td className="tube-status">{line.status}</td>
+                                        <td className={getLineStatusClassName(line.status)}>{line.status}</td>
                                     </tr>
                                 );
                             })
