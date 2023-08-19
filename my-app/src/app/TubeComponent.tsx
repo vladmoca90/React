@@ -55,13 +55,9 @@ export default function TubeComponent() {
                     }
                 </select>
                 <select id="chooseLineStatus" title="tubeStatus">
-                    {
-                        lines.map((line, index) => {
-                            return (
-                                <option value={line.status} key={index}>{line.status}</option>
-                            );
-                        })
-                    }
+                    <option value="Good service">Good service</option>
+                    <option value="Partially suspended">Partially suspended</option>
+                    <option value="Closed">Closed</option>
                 </select>
             </div>
             <div className="tube-container">
