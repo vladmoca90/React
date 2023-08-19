@@ -43,15 +43,26 @@ export default function TubeComponent() {
 
     return (
         <div id="main">
-            <select id="chooseLineName" title="tube">
-                {
-                    lines.map((line, index) => {
-                        return (
-                            <option key={index}>{line.name}</option>
-                        );
-                    })
-                }
-            </select>
+            <div className="d-flex justify-content-between tube-options">
+                <select id="chooseLineName" title="tubeLine">
+                    {
+                        lines.map((line, index) => {
+                            return (
+                                <option key={index}>{line.name}</option>
+                            );
+                        })
+                    }
+                </select>
+                <select id="chooseLineStatus" title="tubeStatus">
+                    {
+                        lines.map((line, index) => {
+                            return (
+                                <option key={index}>{line.status}</option>
+                            );
+                        })
+                    }
+                </select>
+            </div>
             <div className="tube-container">
                 <table className="tube-table">
                     <thead>

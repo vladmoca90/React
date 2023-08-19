@@ -9,13 +9,19 @@ body #main {
     color: #333;
     font-family: 'Montserrat', sans-serif;
     margin: 50px auto 0;
-    max-width: 500px;
+    width: 480px;
+}
+
+#chooseLineName, #chooseLineStatus {
+    border: 1px solid #333;
+    height: 30px;
+    width: 150px;
 }
 
 .tube-container {
     display: block;
     margin: 20px auto 0;
-    max-width: 500px;
+    width: 480px;
 }
 
 .tube-container .tube-table {
@@ -52,10 +58,4 @@ body #main {
 
 .tube-status--closed {
     color: #dd0000;
-}
-
-#chooseLineName {
-    border: 1px solid #333;
-    height: 30px;
-    width: 150px;
 }
