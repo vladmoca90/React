@@ -46,9 +46,9 @@ export default function TubeComponent() {
         <div id="main">
             <div className="d-flex justify-content-between tube-options">
                 <select id="chooseLineName" title="tubeLine" onChange={selectedLine()}>
+                    <option value="All lines">All lines</option>
                     {
                         lines.map((line, index) => {
-                            <option value="All lines">All lines</option>
                             return (
                                 <option value={line.name} key={index}>{line.name}</option>
                             );
