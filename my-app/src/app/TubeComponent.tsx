@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import { LineStatus, tubeLines } from './data';
 
 const getLineStatusClassName = (status: LineStatus) => {
-    let lineStatusClass = ''; 
+    let lineStatusClass = '';
 
-    switch(status) {
+    switch (status) {
         case LineStatus.Good:
             lineStatusClass = 'tube-status--good';
             break;
@@ -24,8 +24,7 @@ const getLineStatusClassName = (status: LineStatus) => {
 }
 
 const getLineStatusFriendlyName = (status: LineStatus) => {
-
-    switch(status) {
+    switch (status) {
         case LineStatus.Good:
             return 'Good service';
 
@@ -54,13 +53,13 @@ export default function TubeComponent() {
                     </thead>
                     <tbody className="tube-body">
                         {lines.map((line, index) => {
-                                return (
-                                    <tr key={index}>
-                                        <td className="tube-lines">{line.name}</td>
-                                        <td className={getLineStatusClassName(line.status)}>{getLineStatusFriendlyName(line.status)}</td>
-                                    </tr>
-                                );
-                            })
+                            return (
+                                <tr key={index}>
+                                    <td className="tube-lines">{line.name}</td>
+                                    <td className={getLineStatusClassName(line.status)}>{getLineStatusFriendlyName(line.status)}</td>
+                                </tr>
+                            );
+                        })
                         }
                     </tbody>
                 </table>
