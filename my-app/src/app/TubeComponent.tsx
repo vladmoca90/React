@@ -45,7 +45,7 @@ export default function TubeComponent() {
     return (
         <div id="main">
             <div className="d-flex justify-content-between tube-options">
-                <select id="chooseLineName" title="tubeLine">
+                <select id="chooseLineName" title="tubeLines">
                     {
                         lines.map((line, index) => {
                             return (
