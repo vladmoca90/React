@@ -48,6 +48,7 @@ export default function TubeComponent() {
                 <select id="chooseLineName" title="tubeLine" onChange={selectedLine()}>
                     {
                         lines.map((line, index) => {
+                            <option value="All lines">All lines</option>
                             return (
                                 <option value={line.name} key={index}>{line.name}</option>
                             );
@@ -55,9 +56,10 @@ export default function TubeComponent() {
                     }
                 </select>
                 <select id="chooseLineStatus" title="tubeStatus">
-                    <option value="Good service">Good service</option>
-                    <option value="Partially suspended">Partially suspended</option>
-                    <option value="Closed">Closed</option>
+                    <option value="Status">Status</option>
+                    <option value={LineStatus.Good}>{LineStatus.Good}</option>
+                    <option value={LineStatus.PartSuspended}>{LineStatus.PartSuspended}</option>
+                    <option value={LineStatus.Closed}>{LineStatus.Closed}</option>
                 </select>
             </div>
             <div className="tube-container">
