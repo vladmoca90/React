@@ -34,14 +34,14 @@ body #main .tube-container .tube-table .tube-status {
     font-weight: bold;
 }
 
-body #main .tube-container .tube-table .tube-status--green {
+.tube-status--green {
     color: #006700;
 }
 
-body #main .tube-container .tube-table .tube-status--orange {
+.tube-status--orange {
     color: #f9a304;
 }
 
-body #main .tube-container .tube-table .tube-status--red {
+.tube-status--red {
     color: #f30000;
 }

@@ -1,6 +1,6 @@
 export interface Line {
     name: string,
-    status: string,
+    status: LineStatus,
 }
 
 export enum LineStatus {
@@ -12,62 +12,62 @@ export enum LineStatus {
 export const tubeLines: Line[] = [
     {
         name: 'Bakerloo',
-        status: 'Good service',
+        status: LineStatus.Good,
     },
     {
         name: 'Central',
-        status: 'Good service',
+        status: LineStatus.Good,
     },
     {
         name: 'Circle',
-        status: 'Good service',
+        status: LineStatus.Good,
     },
     {
         name: 'District',
-        status: 'Partially closed',
+        status: LineStatus.PartiallyClosed,
     },
     {
         name: 'Hammersmith & City',
-        status: 'Partially closed',
+        status: LineStatus.PartiallyClosed,
     },
     {
         name: 'Jubilee',
-        status: 'Good service',
+        status: LineStatus.Good,
     },
     {
         name: 'Metropolitan',
-        status: 'Partially closed',
+        status: LineStatus.PartiallyClosed,
     },
     {
         name: 'Northern',
-        status: 'Good service',
+        status: LineStatus.Good,
     },
     {
         name: 'Picadilly',
-        status: 'Good service',
+        status: LineStatus.Good,
     },
     {
         name: 'Victoria',
-        status: 'Good service',
+        status: LineStatus.Good,
     },
     {
         name: 'Waterloo & City',
-        status: 'Closed',
+        status: LineStatus.Closed,
     },
     {
         name: 'London Overground',
-        status: 'Good service',
+        status: LineStatus.Good,
     },
     {
         name: 'Tfl Rail',
-        status: 'Good service',
+        status: LineStatus.Good,
     },
     {
         name: 'DLR',
-        status: 'Good service',
+        status: LineStatus.Good,
     },
     {
         name: 'Croydon Tram',
-        status: 'Closed',
+        status: LineStatus.Closed,
     },
 ]
