@@ -1,10 +1,8 @@
 https://www.geeksforgeeks.org/reactjs-introduction-jsx/ 
 
-https://reactjs.org/ --> https://react.dev/ 
+https://reactjs.org/ ---> https://react.dev/ (new website)
 
 https://codeburst.io/react-js-for-beginners-the-basics-87ef6e54dae7
-
-https://www.w3schools.com/react/default.asp
 
 
 * Commands ->
@@ -21,11 +19,7 @@ cd projects
 npm start
 
 
-npx tsc
-
-
-
-Run:
+RUN:
 
 cd my-app
 
