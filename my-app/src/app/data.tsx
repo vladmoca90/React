@@ -3,6 +3,12 @@ export interface Line {
     status: string,
 }
 
+export enum LineStatus {
+    Closed = 'Closed',
+    Good = 'Good service',
+    PartiallyClosed = 'Partially closed',
+}
+
 export const tubeLines: Line[] = [
     {
         name: 'Bakerloo',
