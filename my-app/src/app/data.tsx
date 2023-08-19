@@ -1,4 +1,4 @@
-export interface tubeStatus {
+export interface Line {
     color: StatusColors,
     name: string,
     status: string,
@@ -11,7 +11,7 @@ export enum StatusColors {
     Red = '#f30000',
 } */
 
-export const tubeLines: tubeStatus[] = [
+export const tubeLines: Line[] = [
     {
         color: StatusColors.Green,
         name: 'Bakerloo',
