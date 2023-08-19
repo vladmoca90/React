@@ -40,14 +40,14 @@ body #main {
     font-weight: 700;
 }
 
-.tube-status--green {
+.tube-status--good {
     color: #006700;
 }
 
-.tube-status--orange {
+.tube-status--part-suspended {
     color: #f9a304;
 }
 
-.tube-status--red {
+.tube-status--closed {
     color: #f30000;
 }

@@ -6,7 +6,7 @@ export interface Line {
 export enum LineStatus {
     Closed = 'Closed',
     Good = 'Good service',
-    PartiallyClosed = 'Partially closed',
+    PartSuspended = 'Partially suspended',
 }
 
 export const tubeLines: Line[] = [
@@ -24,11 +24,11 @@ export const tubeLines: Line[] = [
     },
     {
         name: 'District',
-        status: LineStatus.PartiallyClosed,
+        status: LineStatus.PartSuspended,
     },
     {
         name: 'Hammersmith & City',
-        status: LineStatus.PartiallyClosed,
+        status: LineStatus.PartSuspended,
     },
     {
         name: 'Jubilee',
@@ -36,7 +36,7 @@ export const tubeLines: Line[] = [
     },
     {
         name: 'Metropolitan',
-        status: LineStatus.PartiallyClosed,
+        status: LineStatus.PartSuspended,
     },
     {
         name: 'Northern',
