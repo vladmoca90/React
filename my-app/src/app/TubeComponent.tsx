@@ -61,7 +61,7 @@ export default function TubeComponent() {
 
     const selectLine = useCallback((event: ChangeEvent<HTMLSelectElement>) => {
         const lineName = event.target.value;
-        const line = lines.find((line) => line.name === lineName)!; //exclamation mark makes a variable NOT BE UNDEFINED
+        const line = lines.find((line) => line.name === lineName)!; // ! - exclamation mark makes a variable NOT BE UNDEFINED
 
         setSelectedLine(line);
 
