@@ -7,20 +7,27 @@ import { Cars } from './data';
 export default function CarsComponent() {
     const [allCars] = useState(Cars);
 
-    {allCars.map((car, index) => {
-        return (
-            <section className="box" key={index}>
-                <CarsFilterComponent />
-                <div className="showroom-container">
-                    <div className='car-container'>
-                        <h3 className="car-title">{car.make} <span>{car.model}</span></h3>
-                        <p className="car-price">{car.price}</p>
-                        <div>
-                            <img alt="car" className="car-img" key={index} src={"./carShowroom/" + car.img} />
+    {
+        allCars.map((car, index) => {
+            return (
+                <section className="box" key={index}>
+                    <CarsFilterComponent />
+                    <div className="showroom-container">
+                        <div className='car-container'>
+                            <h3 className="car-title">{car.make} <span>{car.model}</span></h3>
+                            <p className="car-price">{car.price}</p>
+                            <div>
+                                <img alt="car" className="car-img" key={index} src={"./carShowroom/" + car.img} />
+                            </div>
+                            <div className="showroom-buttons">
+                                <a href="">Enquiry</a>
+                                <a href="">Share</a>
+                                <a href="">Brochure</a>
+                                <a href="">Full details</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
             );
         });
     }
