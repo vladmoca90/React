@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { LineStatus, tubeLines } from './data';
 
 const getLineStatusClassName = (status: LineStatus) => {
@@ -42,6 +42,13 @@ export default function TubeComponent() {
     const [lines] = useState(tubeLines);
     const [selectedLine, setSelectedLine] = useState(lines[0]);
 
+    const changeLineStatus = useCallback((event: React.ChangeEvent<HTMLSelectElement>) => {
+        const value = event.target.value;
+        setSelectedLine(value);
+
+        console.log(value);
+    }, []);
+
     return (
         <div id="main">
             <div className="d-flex justify-content-between tube-options">
@@ -49,7 +56,7 @@ export default function TubeComponent() {
                     {
                         lines.map((line, index) => {
                             return (
-                                <option value={line.name} key={index}>{line.name}</option>
+                                <option onChange={changeLineStatus} value={line.name} key={index}>{line.name}</option>
                             );
                         })
                     }
