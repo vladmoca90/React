@@ -4,6 +4,8 @@ https://reactjs.org/ ---> https://react.dev/ (new website)
 
 https://codeburst.io/react-js-for-beginners-the-basics-87ef6e54dae7
 
+https://codeflarelimited.com/blog/dynamically-populate-select-options-in-react-js/
+
 
 * Commands ->
 
