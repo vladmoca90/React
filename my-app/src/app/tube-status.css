@@ -15,7 +15,7 @@ body #main {
 #chooseLineName, #chooseLineStatus {
     border: 1px solid #333;
     height: 30px;
-    width: 250px;
+    width: 200px;
 }
 
 .tube-container {
