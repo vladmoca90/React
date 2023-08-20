@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React, { useCallback, useState } from 'react';
+import React, { ChangeEvent, useCallback, useState } from 'react';
 import { LineStatus, tubeLines } from './data';
 
 const getLineStatusClassName = (status: LineStatus) => {
@@ -29,12 +29,29 @@ const getLineStatusFriendlyName = (status: LineStatus) => {
             return 'Good service';
 
         case LineStatus.PartSuspended:
-            return 'Partially Suspended';
+            return 'Part Suspended';
 
         case LineStatus.Closed:
             return 'Closed';
+
         default:
             return 'Unknown';
+    }
+}
+
+const getLineStatusFromFriendlyName = (friendlyName: string): LineStatus => {
+    switch(friendlyName) {
+        case 'Good service':
+            return LineStatus.Good;
+
+        case 'Part Suspended':
+            return LineStatus.PartSuspended;
+
+        case 'Closed':
+            return LineStatus.Closed;
+
+        default:
+            throw new Error('Unrecognized friendly name: ' + friendlyName);
     }
 }
 
@@ -42,30 +59,38 @@ export default function TubeComponent() {
     const [lines] = useState(tubeLines);
     const [selectedLine, setSelectedLine] = useState(lines[0]);
 
-    const changeLineStatus = useCallback((event: React.ChangeEvent<HTMLSelectElement>) => {
-        const value = event.target.value;
-        setSelectedLine(value);
+    const selectLine = useCallback((event: ChangeEvent<HTMLSelectElement>) => {
+        const lineName = event.target.value;
+        const line = lines.find((line) => line.name === lineName)!; //exclamation mark makes a variable NOT BE UNDEFINED
 
-        console.log(value);
+        setSelectedLine(line);
+
+        console.log(lineName, line);
+    }, [lines]);
+
+    const selectStatus = useCallback((event: ChangeEvent<HTMLSelectElement>) => {
+        const statusName = event.target.value;
+        const lineStatus = getLineStatusFromFriendlyName(statusName);
+
+        console.log(statusName, lineStatus);
     }, []);
 
     return (
         <div id="main">
             <div className="d-flex justify-content-between tube-options">
-                <select id="chooseLineName" title="tubeLines">
+                <select id="chooseLineName" title="tubeLines" onChange={selectLine} defaultValue={selectedLine.name}>
                     {
                         lines.map((line, index) => {
                             return (
-                                <option onChange={changeLineStatus} value={line.name} key={index}>{line.name}</option>
+                                <option value={line.name} key={index}>{line.name}</option>
                             );
                         })
                     }
                 </select>
-                <select id="chooseLineStatus" title="tubeStatus">
-                    <option value="Status">Status</option>
-                    <option value={LineStatus.Good}>{LineStatus.Good}</option>
-                    <option value={LineStatus.PartSuspended}>{LineStatus.PartSuspended}</option>
-                    <option value={LineStatus.Closed}>{LineStatus.Closed}</option>
+                <select id="chooseLineStatus" title="tubeStatus" onChange={selectStatus} value={getLineStatusFriendlyName(selectedLine.status)}>
+                    <option value={getLineStatusFriendlyName(LineStatus.Good)}>{getLineStatusFriendlyName(LineStatus.Good)}</option>
+                    <option value={getLineStatusFriendlyName(LineStatus.PartSuspended)}>{getLineStatusFriendlyName(LineStatus.PartSuspended)}</option>
+                    <option value={getLineStatusFriendlyName(LineStatus.Closed)}>{getLineStatusFriendlyName(LineStatus.Closed)}</option>
                 </select>
             </div>
             <div className="tube-container">
