@@ -8,19 +8,16 @@ https://codeburst.io/react-js-for-beginners-the-basics-87ef6e54dae7
 * Commands ->
 
 npm run build - is the command to build
-
 npm start - to open IE
 
 
 *Just do:*
 
 cd projects
-
 npm start
 
 
 RUN:
 
 cd my-app
-
 npm run dev
