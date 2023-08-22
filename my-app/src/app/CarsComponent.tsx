@@ -21,10 +21,10 @@ export default function CarsComponent() {
                                     <img alt="car" className="car-img" key={index} src={"./carsShowroom/" + car.img} />
                                 </div>
                                 <div className="showroom-buttons">
-                                    <a href="">Enquiry</a>
-                                    <a href="">Share</a>
-                                    <a href="">Brochure</a>
-                                    <a href="">Full details</a>
+                                    <a href="#">Enquiry</a>
+                                    <a href="#">Share</a>
+                                    <a href="#">Brochure</a>
+                                    <a href="#">Full details</a>
                                 </div>
                             </div>
                         );
