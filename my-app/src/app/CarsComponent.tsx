@@ -5,18 +5,18 @@ import React, { useCallback, useState } from 'react';
 import { Cars } from './data';
 
 export default function CarsComponent() {
-    const [allCars] = useState(Cars);
+    //const [cars] = useState(cars);
 
     <section className="box">
         <div className="showroom-container">
             {
-                allCars.map((car, index) => {
+                Cars.map((Car, index) => {
                     return (
                         <div className='car-container' key={index}>
-                            <h3 className="car-title">{car.make} <span>{car.model}</span></h3>
-                            <p className="car-price">&pound; {car.price}</p>
+                            <h3 className="car-title">{Car.make} <span>{Car.model}</span></h3>
+                            <p className="car-price">&pound; {Car.price}</p>
                             <div>
-                                <img alt="car" className="car-img" key={index} src={"./carShowroom/" + car.img} />
+                                <img alt="car" className="car-img" key={index} src={"./carShowroom/" + Car.img} />
                             </div>
                             <div className="showroom-buttons">
                                 <a href="">Enquiry</a>
