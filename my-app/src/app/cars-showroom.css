@@ -11,7 +11,7 @@
 }
 
 .car-title {
-
+    font-size: 1.25rem;
 }
 
 .car-price {
@@ -19,7 +19,7 @@
 }
 
 .car-img {
-    
+    max-width: 480px;
 }
 
 .showroom-buttons {

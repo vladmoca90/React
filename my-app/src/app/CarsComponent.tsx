@@ -17,7 +17,7 @@ export default function CarsComponent() {
                                 <h3 className="car-title">{car.make} <span>{car.model}</span></h3>
                                 <p className="car-price">&pound; {car.price}</p>
                                 <div>
-                                    <img alt="car" className="car-img" key={index} src={"./carShowroom/" + car.img} />
+                                    <img alt="car" className="car-img" key={index} src={"./carsShowroom/" + car.img} />
                                 </div>
                                 <div className="showroom-buttons">
                                     <a href="">Enquiry</a>
