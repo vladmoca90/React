@@ -8,7 +8,7 @@ export default function CarsComponent() {
     const [cars] = useState(allCars);
 
     <section className="box">
-
+        <div>Test</div>
         <div className="showroom-container">
             {
                 cars.map((car, index) => {
