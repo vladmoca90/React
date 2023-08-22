@@ -14,7 +14,7 @@ export default function CarsComponent() {
                     return (
                         <div className='car-container' key={index}>
                             <h3 className="car-title">{car.make} <span>{car.model}</span></h3>
-                            <p className="car-price">{car.price}</p>
+                            <p className="car-price">&pound; {car.price}</p>
                             <div>
                                 <img alt="car" className="car-img" key={index} src={"./carShowroom/" + car.img} />
                             </div>
