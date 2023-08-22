@@ -2,7 +2,7 @@
 "use client";
 import React, { useCallback, useEffect, useState } from 'react';
 import { CarsFilterComponent } from './CarsFilterComponent';
-import { allCars } from './data';
+import { allCars, Car, CarsColor } from './data';
 
 export default function CarsComponent() {
     const [cars] = useState(allCars);
