@@ -1,21 +1,27 @@
 .box {
-
+    margin: 20px auto;
+    width: 85%;
 }
 
 .showroom-container {
-
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .car-container {
-
+    margin: 20px;
 }
 
 .car-title {
     font-size: 1.25rem;
+    text-align: center;
 }
 
 .car-price {
-
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
 }
 
 .car-img {
@@ -23,9 +29,17 @@
 }
 
 .showroom-buttons {
-
+    display: flex;
 }
 
 .showroom-buttons>a {
-    
+    background-color: #cb2000;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 7px;
+    padding: 5px 12px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
