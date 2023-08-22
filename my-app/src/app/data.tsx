@@ -14,7 +14,7 @@ export enum CarsColor {
     White = 'White',
 }
 
-export const Cars: Car[] = [
+export const allCars: Car[] = [
     {
         color: CarsColor.Black,
         img: 'audi.jpg',

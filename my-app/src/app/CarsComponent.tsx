@@ -1,22 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React, { useCallback, useState } from 'react';
-/* import { CarsFilterComponent } from './CarsFilterComponent'; */
-import { Cars } from './data';
+import React, { useCallback, useEffect, useState } from 'react';
+import { CarsFilterComponent } from './CarsFilterComponent';
+import { allCars } from './data';
 
 export default function CarsComponent() {
     //const [cars] = useState(cars);
 
     <section className="box">
+        <CarsFilterComponent />
         <div className="showroom-container">
             {
-                Cars.map((Car, index) => {
+                allCars.map((car, index) => {
                     return (
                         <div className='car-container' key={index}>
-                            <h3 className="car-title">{Car.make} <span>{Car.model}</span></h3>
-                            <p className="car-price">&pound; {Car.price}</p>
+                            <h3 className="car-title">{car.make} <span>{car.model}</span></h3>
+                            <p className="car-price">&pound; {car.price}</p>
                             <div>
-                                <img alt="car" className="car-img" key={index} src={"./carShowroom/" + Car.img} />
+                                <img alt="car" className="car-img" key={index} src={"./carShowroom/" + car.img} />
                             </div>
                             <div className="showroom-buttons">
                                 <a href="">Enquiry</a>
