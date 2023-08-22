@@ -5,13 +5,13 @@ import { CarsFilterComponent } from './CarsFilterComponent';
 import { allCars } from './data';
 
 export default function CarsComponent() {
-    //const [cars] = useState(cars);<CarsFilterComponent />
+    const [cars] = useState(allCars);
 
     <section className="box">
 
         <div className="showroom-container">
             {
-                allCars.map((car, index) => {
+                cars.map((car, index) => {
                     return (
                         <div className='car-container' key={index}>
                             <h3 className="car-title">{car.make} <span>{car.model}</span></h3>
