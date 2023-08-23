@@ -1,3 +1,7 @@
+body {
+    background-color: #1a1a1a;
+}
+
 .box {
     margin: 20px auto;
     width: 85%;
@@ -10,14 +14,16 @@
 }
 
 .car-container {
-    border: 1px solid #ccc;
+    background-color: #646464;
+    border: 1px solid #841400;
     margin: 10px;
     max-width: 480px;
 }
 
 .car-title {
+    color: #fff;
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
     margin: 12px 0;
     text-align: center;
 }
