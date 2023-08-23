@@ -16,15 +16,19 @@
 }
 
 .car-title {
-    font-size: 1.15rem;
-    margin: 10px 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 12px 0;
     text-align: center;
 }
 
 .car-price {
-    font-size: 1.5rem;
-    font-weight: 800;
-    margin: 0 0 5px;
+    background-color: #841400;
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 7px 0;
     text-align: center;
 }
 
@@ -36,6 +40,7 @@
 
 .showroom-buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
 }
@@ -43,11 +48,13 @@
 .showroom-buttons>a {
     background-color: #841400;
     color: #fff;
-    font-size: .77rem;
+    font-size: 1rem;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin: 5px;
     padding: 6px 12px;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    width: 47.5%;
 }
