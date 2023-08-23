@@ -4,7 +4,7 @@ body {
 
 .box {
     margin: 20px auto;
-    width: 85%;
+    width: 75%;
 }
 
 .showroom-container {
@@ -17,12 +17,12 @@ body {
     background-color: #646464;
     border: 1px solid #841400;
     margin: 10px;
-    max-width: 480px;
+    max-width: 450px;
 }
 
 .car-title {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 1px;
     margin: 12px 0;
@@ -32,7 +32,7 @@ body {
 .car-price {
     background-color: #841400;
     color: #fff;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 1px;
     margin: 0;
