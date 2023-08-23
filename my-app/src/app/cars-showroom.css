@@ -22,8 +22,9 @@ body {
 
 .car-title {
     color: #fff;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 500;
+    letter-spacing: 1px;
     margin: 12px 0;
     text-align: center;
 }
@@ -33,12 +34,14 @@ body {
     color: #fff;
     font-size: 1.75rem;
     font-weight: 700;
+    letter-spacing: 1px;
     margin: 0;
     padding: 7px 0;
     text-align: center;
 }
 
 .car-img {
+    border-bottom: 1px solid #841400;
     display: block;
     margin: 0 auto;
     width: 100%;
