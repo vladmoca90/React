@@ -76,5 +76,11 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    transition: all .5s linear;
     width: 47%;
+}
+
+.showroom-buttons>a:hover {
+    background-color: #020202;
+    cursor: pointer;
 }
