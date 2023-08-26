@@ -32,7 +32,7 @@ body {
 .car-price {
     background-color: #841400;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: 700;
     letter-spacing: 1px;
     margin: 0;
@@ -57,13 +57,13 @@ body {
 .showroom-buttons>a {
     background-color: #841400;
     color: #fff;
-    font-size: 1rem;
+    font-size: .85rem;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 5px;
-    padding: 6px 12px;
+    padding: 7px 0;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    width: 47.5%;
+    width: 47%;
 }
