@@ -14,8 +14,12 @@ export default function CarsComponent() {
                     cars.map((car, index) => {
                         return (
                             <div className='car-container' key={index}>
-                                <h3 className="car-title">{car.make} <span>{car.model}</span></h3>
-                                <p className="car-price">&pound; {car.price}</p>
+                                <div className="car-header">
+                                    <h3 className="car-title">{car.make} <span>{car.model}</span></h3>
+                                    <p className="car-price">&pound; {car.price}
+                                        <span className="car-monthly-price">from &pound;{car.price}/monthly</span>
+                                    </p>
+                                </div>
                                 <div>
                                     <img alt="car" className="car-img" key={index} src={"./carsShowroom/" + car.img} />
                                 </div>

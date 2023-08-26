@@ -20,13 +20,16 @@ body {
     max-width: 450px;
 }
 
+.car-header {
+    text-align: center;
+}
+
 .car-title {
     color: #fff;
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 1px;
     margin: 15px 0;
-    text-align: center;
 }
 
 .car-price {
@@ -36,8 +39,14 @@ body {
     font-weight: 700;
     letter-spacing: 1px;
     margin: 0;
-    padding: 7px 0;
-    text-align: center;
+    padding: 5px 0 0;
+}
+
+.car-monthly-price {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0 0 10px;
+    width: 100%;
 }
 
 .car-img {
