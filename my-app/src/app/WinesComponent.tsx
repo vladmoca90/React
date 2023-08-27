@@ -26,18 +26,19 @@ export default function WinesComponent() {
         <section className="box">
             <WinesFilterComponent categories={categories} onWineSelected={whenWineIsSelected} />
             <div className="products-container">
-                {wines.map((wine, index) => {
-                    return (
-                        <div className="product" key={index}>
-                            <div className="product-description__top">
-                                <p className="product-title">{wine.name}</p>
+                {
+                    wines.map((wine, index) => {
+                        return (
+                            <div className="product" key={index}>
+                                <div className="product-description__top">
+                                    <p className="product-title">{wine.name}</p>
+                                </div>
+                                <div className="product-description__bottom">
+                                    <img alt="wine" className="product-img" key={index} src={"./wineImages/" + wine.img} />
+                                </div>
                             </div>
-                            <div className="product-description__bottom">
-                                <img alt="wine" className="product-img" key={index} src={"./wineImages/" + wine.img} />
-                            </div>
-                        </div>
-                    );
-                })}
+                        );
+                    })}
             </div>
         </section>
     );

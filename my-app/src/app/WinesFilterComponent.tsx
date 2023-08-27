@@ -20,12 +20,13 @@ export const WinesFilterComponent = (props: WinesFilterProps) => {
     return (
         <div>
             <select id="productsList" title="winesD" onChange={selectChange}>
-                <option>All products</option>
-                {props.categories.map((category, index) => {
-                    return (
-                        <option value={category} key={index}>{category}</option>
-                    );
-                })}
+                <option value="All products">All products</option>
+                {
+                    props.categories.map((category, index) => {
+                        return (
+                            <option value={category} key={index}>{category}</option>
+                        );
+                    })}
             </select>
         </div>
     );
