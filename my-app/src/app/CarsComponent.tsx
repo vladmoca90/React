@@ -9,6 +9,26 @@ export default function CarsComponent() {
  
     return (
         <section className="box">
+            <div className="showroom-search">
+                <select  id="carMake" title="carMake" >
+                {
+                    cars.map((car, index) => {
+                        return (
+                            <option key={index}>{car.make}</option>
+                        );
+                    })
+                }
+                </select>
+                <select  id="carModel" title="carModel" >
+                {
+                    cars.map((car, index) => {
+                        return (
+                            <option key={index}>{car.model}</option>
+                        );
+                    })
+                }
+                </select>
+            </div>
             <div className="showroom-container">
                 {
                     cars.map((car, index) => {

@@ -7,6 +7,12 @@ body {
     width: 100%;
 }
 
+#carMake, #carModel {
+    font-size: .75rem;
+    margin: 10px 0;
+    max-width: 150px;
+}
+
 .showroom-container {
     display: flex;
     flex-wrap: wrap;
