@@ -7,9 +7,13 @@ export default function WinesComponent() {
     const [originalWines] = useState<Wine[]>(allWines);
     const [wines, setWines] = useState<Wine[]>(allWines);
     const [categories] = useState<WineCategory[]>(Array.from(new Set(wines.map((wine) => wine.category))));
-    const whenWineIsSelected = useCallback((category: WineCategory) => {
-        const filteredWines = originalWines.filter(w => w.category === category);
-        setWines(filteredWines);
+    const whenWineIsSelected = useCallback((category: WineCategory|undefined) => {
+        if (category === undefined) {
+            setWines(originalWines);
+        } else {
+            const filteredWines = originalWines.filter(w => w.category === category);
+            setWines(filteredWines);
+        }
     }, [originalWines]);
 
     //How to use useEffect

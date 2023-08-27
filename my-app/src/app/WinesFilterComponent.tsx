@@ -3,18 +3,20 @@ import { WineCategory } from './data';
 
 export type WinesFilterProps = {
     categories: WineCategory[];
-    onWineSelected: (category: WineCategory) => void;
+    onWineSelected: (category: WineCategory|undefined) => void;
 }
 
 //A function that filters the dropdown and leaves only the selected wine on the page
 export const WinesFilterComponent = (props: WinesFilterProps) => {
-    const [selectedOption, setSelectedOption] = useState<String>();
 
     // This function is triggered when the select changes
     const selectChange = useCallback(((event: React.ChangeEvent<HTMLSelectElement>) => {
         const value = event.target.value;
-        setSelectedOption(value);
-        props.onWineSelected(value as WineCategory);
+        if (value === "All products") {
+            props.onWineSelected(undefined);
+        } else {
+            props.onWineSelected(value as WineCategory);
+        }
     }), [props]);
 
     return (
