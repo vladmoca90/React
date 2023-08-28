@@ -1,9 +1,10 @@
+"use client";
 import React from 'react';
-import WinesComponent from './WinesComponent';
+import CarsComponent from './CarsComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './wine-sell.css';
+import './cars-showroom.css';
 
-export default function WinesPage() {
-    return (<WinesComponent />);
+export default function CarsPage() {
+    return (<CarsComponent />);
 }
