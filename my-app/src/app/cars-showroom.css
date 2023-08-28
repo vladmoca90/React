@@ -14,7 +14,8 @@ body {
     max-width: 410px;
 }
 
-#carMake, #carModel {
+#carMake,
+#carModel {
     font-size: 1rem;
     height: auto;
     margin: 10px auto;
@@ -96,6 +97,6 @@ body {
 }
 
 .showroom-buttons>a:hover {
-    background-color: #020202;
+    background-color: #333;
     cursor: pointer;
 }
