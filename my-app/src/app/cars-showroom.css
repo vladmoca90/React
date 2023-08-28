@@ -7,10 +7,19 @@ body {
     width: 100%;
 }
 
+.showroom-search {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    max-width: 410px;
+}
+
 #carMake, #carModel {
-    font-size: .75rem;
-    margin: 10px 0;
-    max-width: 150px;
+    font-size: 1rem;
+    height: auto;
+    margin: 10px auto;
+    max-width: 200px;
+    padding: 5px 3px;
 }
 
 .showroom-container {
