@@ -11,15 +11,14 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 10px auto;
-    max-width: 410px;
+    max-width: 720px;
 }
 
-#carMake,
-#carModel {
+#carMake, #carModel, #carPrice {
     font-size: 1rem;
-    height: auto;
+    height: 33px;
     margin: 10px auto;
-    max-width: 200px;
+    max-width: 320px;
     padding: 5px 3px;
 }
 
