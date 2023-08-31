@@ -1,8 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useCallback, useEffect, useState } from 'react';
 import { CarsFilterComponent } from './CarsFilterComponent';
-import { allCars, Car, CarsColor } from './data';
+import { allCars, Car } from './data';
 
 export default function CarsComponent() {
     const [cars] = useState(allCars);
