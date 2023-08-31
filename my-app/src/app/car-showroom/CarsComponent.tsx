@@ -2,7 +2,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image'
 import { CarsFilterComponent } from './CarsFilterComponent';
-import { allCars, Car } from './data';
+import { allCars } from './data';
 
 export default function CarsComponent() {
     const [cars] = useState(allCars);

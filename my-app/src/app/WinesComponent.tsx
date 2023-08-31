@@ -1,5 +1,6 @@
 "use client";
 import React, { useCallback, useEffect, useState } from 'react';
+import Image from 'next/image'
 import { WinesFilterComponent } from './WinesFilterComponent';
 import { Wine, WineCategory, allWines } from './data';
 
@@ -37,7 +38,7 @@ export default function WinesComponent() {
                                     <p className="product-title">{wine.name}</p>
                                 </div>
                                 <div className="product-description__bottom">
-                                    <img alt="wine" className="product-img" key={index} src={"./wineImages/" + wine.img} />
+                                    <Image alt="wine" width={200} height={250}  className="product-img" key={index} src={"./wineImages/" + wine.img} />
                                 </div>
                             </div>
                         );

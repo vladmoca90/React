@@ -1,53 +1,49 @@
-export interface Car {
-    img: string,
-    make: string,
-    model: string,
-    price: number,
-    year: number,
+export interface Wine {
+    category: WineCategory;
+    name: string;
+    img: string;
 }
 
-export const allCars: Car[] = [
+export enum WineCategory {
+    Red = 'Red',
+    White = 'White',
+    Green = 'Green',
+}
+
+export const allWines: Wine[] = [
     {
-        img: 'audi.jpg',
-        make: 'Audi',
-        model: 'TT 2.0T FSI 2dr',
-        price: 2989,
-        year: 2007,
+        name: 'Italian Red Wine',
+        img: 'italian-red.jpg',
+        category: WineCategory.Red,
     },
     {
-        img: 'land-rover.jpg',
-        make: 'Land Rover',
-        model: 'Discovery 2.7 Td V6 HSE 5dr Auto',
-        price: 4489,
-        year: 2009,
+        name: 'Chilean Dry White',
+        img: 'chilean-dry-white.jpg',
+        category: WineCategory.White,
     },
     {
-        img: 'mercedes-benz.jpg',
-        make: 'Mercedes-Benz',
-        model: 'S Class S500 4dr Auto',
-        price: 6489,
-        year: 2006,
+        name: 'NZ Savignon Blanc',
+        img: 'nz-savignon-blanc.jpg',
+        category: WineCategory.White,
     },
     {
-        
-        img: 'nissan.jpg',
-        make: 'Nissan',
-        model: 'Fairlady Turbo 3.5 V6 300 GT 3d',
-        price: 9989,
-        year: 2007,
+        name: 'Spanish Dry White',
+        img: 'spanish-dry-white.jpg',
+        category: WineCategory.White,
     },
     {
-        img: 'skoda.jpg',
-        make: 'Skoda',
-        model: 'Fabia 1.2 TSI SE 5dr',
-        price: 2489,
-        year: 2011,
+        name: 'Californian Chardonnay',
+        img: 'californian-chardonnay.jpg',
+        category: WineCategory.White,
     },
     {
-        img: 'vauxhall.jpg',
-        make: 'Vauxhall',
-        model: 'Mokka 1.6 CDTi Limited Edition 5dr',
-        price: 5789,
-        year: 2015,
+        name: 'Pinot Noir Romania',
+        img: 'romania-pinot-noir.jpg',
+        category: WineCategory.Red,
+    },
+    {
+        name: 'Vinho Verde Portugal',
+        img: 'portugal-vinho-verde.jpg',
+        category: WineCategory.Green,
     }
 ];
