@@ -44,7 +44,7 @@ export default function CarsComponent() {
                                         <span className="car-monthly-price">from &pound;{(car.price / 12).toFixed(0)}/monthly</span>
                                     </p>
                                 </div>
-                                <div>
+                                <div className='car-img-container'>
                                     <Image alt="car" width={415} height={234} className="car-img" key={index} src={"/carsShowroom/" + car.img} />
                                 </div>
                                 <div className="showroom-buttons">
