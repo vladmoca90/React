@@ -1,9 +1,9 @@
 export interface Car {
     img: string,
-    make: string;
-    model: string;
-    price: number;
-    year: number;
+    make: string,
+    model: string,
+    price: number,
+    year: number,
 }
 
 export const allCars: Car[] = [
