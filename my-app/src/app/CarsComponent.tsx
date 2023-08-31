@@ -1,5 +1,6 @@
 "use client";
 import React, { useCallback, useEffect, useState } from 'react';
+import Image from 'next/image'
 import { CarsFilterComponent } from './CarsFilterComponent';
 import { allCars, Car } from './data';
 
@@ -45,7 +46,7 @@ export default function CarsComponent() {
                                     </p>
                                 </div>
                                 <div>
-                                    <img alt="car" className="car-img" key={index} src={"./carsShowroom/" + car.img} />
+                                    <Image alt="car" width={415} height={234} className="car-img" key={index} src={"/carsShowroom/" + car.img} />
                                 </div>
                                 <div className="showroom-buttons">
                                     <a href="#">Enquiry</a>
