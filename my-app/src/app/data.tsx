@@ -1,73 +1,53 @@
-export interface Line {
-    name: string,
-    status: LineStatus,
+export interface Car {
+    img: string,
+    make: string,
+    model: string,
+    price: number,
+    year: number,
 }
 
-export enum LineStatus {
-    Closed = 'Closed',
-    Good = 'Good',
-    PartSuspended = 'PartSuspended',
-}
-
-export const tubeLines: Line[] = [
+export const allCars: Car[] = [
     {
-        name: 'Bakerloo',
-        status: LineStatus.Good,
+        img: 'audi.jpg',
+        make: 'Audi',
+        model: 'TT 2.0T FSI 2dr',
+        price: 2989,
+        year: 2007,
     },
     {
-        name: 'Central',
-        status: LineStatus.Good,
+        img: 'land-rover.jpg',
+        make: 'Land Rover',
+        model: 'Discovery 2.7 Td V6 HSE 5dr Auto',
+        price: 4489,
+        year: 2009,
     },
     {
-        name: 'Circle',
-        status: LineStatus.Good,
+        img: 'mercedes-benz.jpg',
+        make: 'Mercedes-Benz',
+        model: 'S Class S500 4dr Auto',
+        price: 6489,
+        year: 2006,
     },
     {
-        name: 'District',
-        status: LineStatus.PartSuspended,
+        
+        img: 'nissan.jpg',
+        make: 'Nissan',
+        model: 'Fairlady Turbo 3.5 V6 300 GT 3d',
+        price: 9989,
+        year: 2007,
     },
     {
-        name: 'Hammersmith & City',
-        status: LineStatus.PartSuspended,
+        img: 'skoda.jpg',
+        make: 'Skoda',
+        model: 'Fabia 1.2 TSI SE 5dr',
+        price: 2489,
+        year: 2011,
     },
     {
-        name: 'Jubilee',
-        status: LineStatus.Good,
-    },
-    {
-        name: 'Metropolitan',
-        status: LineStatus.PartSuspended,
-    },
-    {
-        name: 'Northern',
-        status: LineStatus.Good,
-    },
-    {
-        name: 'Picadilly',
-        status: LineStatus.Good,
-    },
-    {
-        name: 'Victoria',
-        status: LineStatus.Good,
-    },
-    {
-        name: 'Waterloo & City',
-        status: LineStatus.Closed,
-    },
-    {
-        name: 'London Overground',
-        status: LineStatus.Good,
-    },
-    {
-        name: 'Tfl Rail',
-        status: LineStatus.Good,
-    },
-    {
-        name: 'DLR',
-        status: LineStatus.Good,
-    },
-    {
-        name: 'Croydon Tram',
-        status: LineStatus.Closed,
-    },
-]
+        img: 'vauxhall.jpg',
+        make: 'Vauxhall',
+        model: 'Mokka 1.6 CDTi Limited Edition 5dr',
+        price: 5789,
+        year: 2015,
+    }
+];
