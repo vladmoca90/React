@@ -29,9 +29,9 @@ export default function CarsComponent() {
                     }
                 </select>
                 <select id="carPrice" title="carPrice" >
-                    <option>0 - £4999</option>
-                    <option>£5000 - £9999</option>
-                    <option>£10000 - £14999</option>
+                    <option value="low">0 - £4999</option>
+                    <option value="medium">£5000 - £9999</option>
+                    <option value="high">£10000 - £14999</option>
                 </select>
             </div>
             <div className="showroom-container">
