@@ -12,8 +12,7 @@ body #main {
     width: 480px;
 }
 
-#chooseLineName,
-#chooseLineStatus {
+#chooseLineName, #chooseLineStatus {
     border: 1px solid #333;
     height: 30px;
     width: 200px;
@@ -54,13 +53,13 @@ body #main {
 }
 
 .tube-status--good {
-    color: #007100;
+    color: #006300;
 }
 
 .tube-status--part-suspended {
-    color: #ed9f0f;
+    color: #d78c00;
 }
 
 .tube-status--closed {
-    color: #dd0000;
+    color: #ae0000;
 }
