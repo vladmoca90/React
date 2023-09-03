@@ -21,7 +21,7 @@ export default function FoodListComponent() {
                 <table className="table-main table">
                     <thead className="table-header">
                         <tr>
-                            <th scope="col">#</th>
+                            <th scope="col">Picture</th>
                             <th scope="col">Name</th>
                             <th scope="col">Price</th>
                             <th scope="col">Quantity</th>
@@ -33,7 +33,9 @@ export default function FoodListComponent() {
                             foods.map((food, index) => {
                                 return (
                                     <tr key={index}>
-                                        <td className="food-image"><Image className="food-img" src={'/foodList/' + food.img} alt={food.name} /></td>
+                                        <td className="food-image">
+                                            <Image className="food-img" src={'/foodList/' + food.img} alt={food.name} />
+                                        </td>
                                         <td className="food-name">{food.name}</td>
                                         <td className="food-price">{food.price}</td>
                                         <td className="food-quantity">{food.quantity}</td>
@@ -42,6 +44,28 @@ export default function FoodListComponent() {
                                 );
                             })
                         }
+                    </tbody>
+                </table>
+            </div>
+            <div className="container-calculus">
+                <table className="table-main table table-container-calculus">
+                    <thead className="table-header table-header-calculus">
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody className="table-content table-content-calculus">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
