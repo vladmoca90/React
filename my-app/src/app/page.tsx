@@ -1,10 +1,10 @@
 "use client";
 import React from 'react';
-import CarsComponent from './CarsComponent';
+import PoundsComponent from './PoundsComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './cars-showroom.css';
+import './pounds.css';
 
-export default function CarsPage() {
-    return (<CarsComponent />);
+export default function PoundsPage() {
+    return (<PoundsComponent />);
 }
