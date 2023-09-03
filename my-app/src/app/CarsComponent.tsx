@@ -28,9 +28,9 @@ export default function CarsComponent() {
                     }
                 </select>
                 <select id="carPrice" title="carPrice" >
-                    <option value="low">0 - £4999</option>
-                    <option value="medium">£5000 - £9999</option>
-                    <option value="high">£10000 - £14999</option>
+                    <option value="low">0 - &pound;4999</option>
+                    <option value="medium">&pound;5000 - &pound;9999</option>
+                    <option value="high">&pound;10000 - &pound;14999</option>
                 </select>
             </div>
             <div className="showroom-container">
@@ -45,7 +45,7 @@ export default function CarsComponent() {
                                     </p>
                                 </div>
                                 <div className='car-img-container'>
-                                    <Image alt="car" width={415} height={234} className="car-img" key={index} src={"/carsShowroom/" + car.img} />
+                                    <Image className="car-img" alt={car.make} key={index} src={"/carsShowroom/" + car.img} />
                                 </div>
                                 <div className="showroom-buttons">
                                     <a href="#">Enquiry</a>
