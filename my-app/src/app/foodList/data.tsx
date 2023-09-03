@@ -8,8 +8,8 @@ export interface Food {
 export const allFoods: Food[] = [
     {
         name: 'Tomatoes',
-        price: 2.99,
-        quantity: 1,
+        price: 2.99, //per kg
+        quantity: 1.5,
         unit: 'kg',
     }
 ];
