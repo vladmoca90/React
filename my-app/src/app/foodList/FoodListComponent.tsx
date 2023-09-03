@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Image from 'next/image'
 import { allFoods } from './data';
 
+//https://blog.teamtreehouse.com/javascript-array-methods-reduce 
+
 export default function FoodListComponent() {
     const [foods] = useState(allFoods);
 
