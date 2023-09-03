@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { allFoods } from './data';
 
 export default function FoodListComponent() {
-    const foods = useState(allFoods);
+    const [foods] = useState(allFoods);
 
     return (
         <main className="main">
@@ -23,7 +23,7 @@ export default function FoodListComponent() {
                             foods.map((food, index) => {
                                 return (
                                     <tr key={index}>
-                                        <td className="food-image"></td>
+                                        <td className="food-image"><Image src={'/public/foodList/' + food.img} alt={food.name} /></td>
                                         <td className="food-name"></td>
                                         <td className="food-price"></td>
                                         <td className="food-quantity"></td>
