@@ -23,10 +23,10 @@ export default function FoodListComponent() {
                             foods.map((food, index) => {
                                 return (
                                     <tr key={index}>
-                                        <td className="food-image"><Image src={'/public/foodList/' + food.img} alt={food.name} /></td>
-                                        <td className="food-name"></td>
-                                        <td className="food-price"></td>
-                                        <td className="food-quantity"></td>
+                                        <td className="food-image"><Image className="food-img" src={'/foodList/' + food.img} alt={food.name} /></td>
+                                        <td className="food-name">{food.name}</td>
+                                        <td className="food-price">{food.price}</td>
+                                        <td className="food-quantity">{food.quantity}</td>
                                         <td className="food-total-price"></td>
                                     </tr>
                                 );
