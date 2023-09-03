@@ -13,7 +13,9 @@ export default function FoodListComponent() {
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Name</th>
-                            <th scope="col">Destinations</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total</th>
                         </tr>
                     </thead>
                     <tbody className="table-content">
