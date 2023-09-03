@@ -1,10 +1,10 @@
 "use client";
 import React from 'react';
-import PoundsComponent from './PoundsComponent';
+import FoodComponent from './FoodComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './pounds.css';
+import './foodList.css';
 
-export default function PoundsPage() {
-    return (<PoundsComponent />);
+export default function FoodPage() {
+    return (<FoodComponent />);
 }
