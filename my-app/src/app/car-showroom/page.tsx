@@ -1,10 +1,10 @@
 "use client";
 import React from 'react';
-import FoodComponent from './FoodComponent';
+import CarsComponent from './CarsComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './foodList.css';
+import './cars-showroom.css';
 
-export default function FoodPage() {
-    return (<FoodComponent />);
+export default function CarsPage() {
+    return (<CarsComponent />);
 }
