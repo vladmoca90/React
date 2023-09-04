@@ -2,6 +2,7 @@
 .container-calculus {
   max-width: 100%;
   margin: 20px auto;
+  text-align: center;
 }
 
 .table-main {
@@ -38,5 +39,7 @@
 }
 
 .food-img {
-  max-width: 180px;
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
 }
