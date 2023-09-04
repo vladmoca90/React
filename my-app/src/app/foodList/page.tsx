@@ -5,6 +5,6 @@ import FoodListComponent from './FoodListComponent';
 import 'bootstrap/dist/css/bootstrap.css';
 import './cars-showroom.css';
 
-export default function CarsPage() {
+export default function FoodPage() {
     return (<FoodListComponent />);
 }
