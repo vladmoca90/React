@@ -38,11 +38,11 @@
 .table-content>tr>td {
   border-bottom: 1px solid #ccc;
   vertical-align: middle;
-  width: 20%;
+  width: 15%;
 }
 
 .food-img {
   display: block;
   margin: 0 auto;
-  max-width: 150px;
+  max-width: 115px;
 }
