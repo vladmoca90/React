@@ -41,7 +41,11 @@
   width: 15%;
 }
 
-.food-img {
+.food-image {
+  height: 175px;
+}
+
+.product-img {
   display: block;
   margin: 0 auto;
   max-width: 115px;
