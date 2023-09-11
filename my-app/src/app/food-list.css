@@ -42,11 +42,11 @@
 }
 
 .food-image {
-  height: 175px;
+  height: 160px;
 }
 
 .product-img {
   display: block;
   margin: 0 auto;
-  max-width: 115px;
+  max-width: 100px;
 }
