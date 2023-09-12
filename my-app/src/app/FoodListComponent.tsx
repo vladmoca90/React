@@ -89,3 +89,28 @@ export default function FoodListComponent() {
         </main>
     );
 }
+
+//Sample or the original code
+
+/*
+const totalPrice = useCallback(() => {
+    let sum = 0;
+
+    for (let i = 0; i < foods.length; i++) {
+        ;
+        sum += (foods[i].price) * (foods[i].quantity);
+    };
+
+    return sum.toFixed(2);
+}, [foods]);
+
+const averageFoodPrice = useCallback(() => {
+    let average = 0;
+
+    for (let i = 0; i < foods.length; i++) {
+        average += (foods[i].price * foods[i].quantity) / (foods.length);
+    }
+
+    return average;
+}, [foods]);
+*/
