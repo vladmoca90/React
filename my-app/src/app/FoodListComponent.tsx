@@ -18,6 +18,7 @@ export default function FoodListComponent() {
 
         for (let i = 0; i < foods.length; i++) {
             sum += foods[i].price;
+            
         }
 
         return sum.toFixed(2);
