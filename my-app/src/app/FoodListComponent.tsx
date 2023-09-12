@@ -4,16 +4,18 @@ import { allFoods } from './data';
 
 //https://blog.teamtreehouse.com/javascript-array-methods-reduce 
 //https://www.crocoder.dev/blog/map-filter-reduce-exercises/
-//
 
 //total money spent, median and mean of prices, total prices,
 //display elements based on a condition
 //display most expensive and cheapest + difference between cheapest and the most expensive
 //add new element to the object
 
-
 export default function FoodListComponent() {
     const [foods] = useState(allFoods);
+
+    const totalPrice = useCallback(() => {
+
+    }, []);
 
     return (
         <main className="main">
