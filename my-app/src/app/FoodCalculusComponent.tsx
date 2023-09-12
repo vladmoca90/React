@@ -2,13 +2,15 @@
 import React, { useCallback } from 'react';
 import { Food } from './data';
 
-export type foodsProps = {
+export type FoodCalculusProps = {
     foods: Food[],
+    accumulator: number,
+    value: number,
 }
 
-export const FoodCalculusComponent = (props: foodsProps) => {
+export const FoodCalculusComponent = (props: FoodCalculusProps) => {
     const totalPrice = useCallback(((foods: Food[]) => {
-        let sum = 0;
+        let sum = foods.reduce((accumulator, value) => accumulator + value);
 
       }), []);
 

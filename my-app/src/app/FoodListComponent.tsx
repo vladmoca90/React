@@ -48,7 +48,7 @@ export default function FoodListComponent() {
                     </tbody>
                 </table>
             </div>
-            <FoodCalculusComponent />
+            <FoodCalculusComponent foods={foods} accumulator={0} value={0} />
         </main>
     );
 }
