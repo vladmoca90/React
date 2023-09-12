@@ -11,7 +11,7 @@ export const allFoods: Food[] = [
         img: 'cheese.PNG',
         name: 'Cheese',
         price: 7.99, //per kg
-        quantity: .4,
+        quantity: .5,
         unit: 'kg',
     },
     {
