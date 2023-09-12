@@ -16,11 +16,22 @@ export default function FoodListComponent() {
     const totalPrice = useCallback(() => {
         let sum = 0;
 
-        for (let i = 0; i < foods.length; i++) {;
-            sum += (foods[i].price)*(foods[i].quantity);
+        for (let i = 0; i < foods.length; i++) {
+            ;
+            sum += (foods[i].price) * (foods[i].quantity);
         };
 
         return sum.toFixed(2);
+    }, [foods]);
+
+    const averageFoodPrice = useCallback(() => {
+        let average = 0;
+
+        for (let i = 0; i < foods.length; i++) {
+            average += (foods[i].price * foods[i].quantity) / (foods.length);
+        }
+
+        return average;
     }, [foods]);
 
     return (
@@ -68,7 +79,7 @@ export default function FoodListComponent() {
                     <tbody className="table-content table-content-calculus">
                         <tr>
                             <td>&pound; {totalPrice()}</td>
-                            <td></td>
+                            <td>&pound; {averageFoodPrice().toFixed(3)}</td>
                             <td></td>
                             <td></td>
                         </tr>
