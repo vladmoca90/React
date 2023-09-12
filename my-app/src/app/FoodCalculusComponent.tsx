@@ -8,7 +8,7 @@ export type foodsProps = {
 
 export const FoodCalculusComponent = (props: foodsProps) => {
     const totalPrice = useCallback(((foods: Food[]) => {
-
+        let sum = 0;
 
       }), []);
 
