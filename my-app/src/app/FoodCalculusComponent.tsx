@@ -1,8 +1,17 @@
-import React, { useCallback, useState } from 'react';
-import Image from 'next/image'
-import { allFoods } from './data';
+"use client";
+import React, { useCallback } from 'react';
+import { Food } from './data';
 
-export const FoodCalculusComponent = () => {
+export type foodsProps = {
+    foods: Food[],
+}
+
+export const FoodCalculusComponent = (props: foodsProps) => {
+    const totalPrice = useCallback(((foods: Food[]) => {
+
+
+      }), []);
+
     return (
         <div className="container-calculus" >
             <table className="table-main table table-container-calculus">
@@ -16,7 +25,7 @@ export const FoodCalculusComponent = () => {
                 </thead>
                 <tbody className="table-content table-content-calculus">
                     <tr>
-                        <td></td>
+                        <td>{totalPrice()}</td>
                         <td></td>
                         <td></td>
                         <td></td>
