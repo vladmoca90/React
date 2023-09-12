@@ -14,8 +14,14 @@ export default function FoodListComponent() {
     const [foods] = useState(allFoods);
 
     const totalPrice = useCallback(() => {
+        let sum = 0;
 
-    }, []);
+        for (let i = 0; i < foods.length; i++) {
+            sum += foods[i].price;
+        }
+
+        return sum.toFixed(2);
+    }, [foods]);
 
     return (
         <main className="main">
@@ -61,7 +67,7 @@ export default function FoodListComponent() {
                     </thead>
                     <tbody className="table-content table-content-calculus">
                         <tr>
-                            <td>{totalPrice()}</td>
+                            <td>&pound; {totalPrice()}</td>
                             <td></td>
                             <td></td>
                             <td></td>
