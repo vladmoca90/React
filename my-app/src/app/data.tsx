@@ -18,7 +18,7 @@ export const allFoods: Food[] = [
         img: 'chocolate.PNG',
         name: 'Chocolate',
         price: 1.89, //per 100g
-        quantity: 225,
+        quantity: 2.5, //as 250g
         unit: 'g',
     },
     {
@@ -38,7 +38,7 @@ export const allFoods: Food[] = [
     {
         img: 'onion.PNG',
         name: 'Onion',
-        price: .79, //each
+        price: .89, //each
         quantity: 4,
         unit: 'piece',
     },
@@ -46,14 +46,14 @@ export const allFoods: Food[] = [
         img: 'pork-meat.PNG',
         name: 'Meat (pork)',
         price: 4.99, //per kg
-        quantity: 1.5,
+        quantity: 1.25,
         unit: 'kg',
     },
     {
         img: 'tomato.PNG',
         name: 'Tomatoes',
         price: 3.99, //per kg
-        quantity: 1.15,
+        quantity: 1.1,
         unit: 'kg',
     },
     {
