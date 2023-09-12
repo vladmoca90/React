@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import Image from 'next/image'
 import { allFoods } from './data';
-import { FoodCalculus } from './FoodCalculusComponent';
+import { FoodCalculusComponent } from './FoodCalculusComponent';
 
 //https://blog.teamtreehouse.com/javascript-array-methods-reduce 
 //https://www.crocoder.dev/blog/map-filter-reduce-exercises/
@@ -48,7 +48,7 @@ export default function FoodListComponent() {
                     </tbody>
                 </table>
             </div>
-            <FoodCalculus />
+            <FoodCalculusComponent />
         </main>
     );
 }

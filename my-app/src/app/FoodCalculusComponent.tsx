@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 import Image from 'next/image'
 import { allFoods } from './data';
 
-export const FoodCalculus = () => {
+export const FoodCalculusComponent = () => {
     return (
         <div className="container-calculus" >
             <table className="table-main table table-container-calculus">
