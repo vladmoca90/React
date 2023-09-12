@@ -25,7 +25,7 @@ export default function FoodListComponent() {
                             <th scope="col">Name</th>
                             <th scope="col">Price</th>
                             <th scope="col">Quantity</th>
-                            <th scope="col">Total</th>
+                            <th scope="col">Total price</th>
                         </tr>
                     </thead>
                     <tbody className="table-content">
@@ -51,16 +51,14 @@ export default function FoodListComponent() {
                 <table className="table-main table table-container-calculus">
                     <thead className="table-header table-header-calculus">
                         <tr>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
+                            <th scope="col">Total amount to pay</th>
+                            <th scope="col">Average price of each item</th>
+                            <th scope="col">Cheapest item</th>
+                            <th scope="col">Most expensive item</th>
                         </tr>
                     </thead>
                     <tbody className="table-content table-content-calculus">
                         <tr>
-                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
