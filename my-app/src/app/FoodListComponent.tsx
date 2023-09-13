@@ -1,4 +1,3 @@
-"use client";
 import React, { useCallback, useState } from 'react';
 import Image from 'next/image'
 import { allFoods } from './data';
@@ -8,21 +7,21 @@ export default function FoodListComponent() {
 
     const calculateTotalPrice = useCallback(() => {
         let sum = 0;
-    
+
         for (let i = 0; i < foods.length; i++) {
             sum += (foods[i].price) * (foods[i].quantity);
         };
-    
+
         return sum.toFixed(2);
     }, [foods]);
-    
+
     const calculateAveragePrice = useCallback(() => {
         let average = 0;
-    
+
         for (let i = 0; i < foods.length; i++) {
             average += (foods[i].price * foods[i].quantity) / (foods.length);
         }
-    
+
         return average;
     }, [foods]);
 
