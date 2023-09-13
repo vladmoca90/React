@@ -2,14 +2,6 @@ import React, { useCallback, useState } from 'react';
 import Image from 'next/image'
 import { allFoods } from './data';
 
-//https://blog.teamtreehouse.com/javascript-array-methods-reduce 
-//https://www.crocoder.dev/blog/map-filter-reduce-exercises/
-
-//total money spent, median and mean of prices, total prices,
-//display elements based on a condition
-//display most expensive and cheapest + difference between cheapest and the most expensive
-//add new element to the object
-
 export default function FoodListComponent() {
     const [foods] = useState(allFoods);
 
@@ -17,7 +9,6 @@ export default function FoodListComponent() {
         let sum = 0;
 
         for (let i = 0; i < foods.length; i++) {
-            ;
             sum += (foods[i].price) * (foods[i].quantity);
         };
 
@@ -78,10 +69,10 @@ export default function FoodListComponent() {
                     </thead>
                     <tbody className="table-content table-content-calculus">
                         <tr>
-                            <td>&pound; {totalPrice()}</td>
-                            <td>&pound; {averageFoodPrice().toFixed(3)}</td>
-                            <td></td>
-                            <td></td>
+                            <td>&pound;{totalPrice()}</td>
+                            <td>&pound;{averageFoodPrice().toFixed(3)}</td>
+                            <td>&pound;</td>
+                            <td>&pound;</td>
                         </tr>
                     </tbody>
                 </table>
