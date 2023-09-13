@@ -1,3 +1,4 @@
+"use client";
 import React, { useCallback } from 'react';
 import { Food } from './data';
 
@@ -5,18 +6,18 @@ export type FoodProps = {
     foods: Food[];
 }
 
-export const FoodCalculusComponent = (props: Food[]) => {
-    const totalPrice = useCallback(() => {
+export const FoodCalculusComponent = (props: FoodProps) => {
+    const calculateTotalPrice = useCallback((foods: Food[]) => {
         let sum = 0;
 
-        for (let i = 0; i < foods.length; i++) {
-            sum += (foods[i].price) * (foods[i].quantity);
+        for (const food of foods) {
+            sum += (props.foods.price) * (props.foods.quantity);
         };
 
         return sum;
-    }, [foods]);
+    }, []);
 
-    const averageFoodPrice = useCallback(() => {
+   /* const calculateAveragePrice = useCallback(() => {
         let average = 0;
 
         for (let i = 0; i < foods.length; i++) {
@@ -24,7 +25,7 @@ export const FoodCalculusComponent = (props: Food[]) => {
         }
 
         return average;
-    }, [foods]);
+    }, []); */
 
     return (
         <div className="container-calculus" >
@@ -39,8 +40,8 @@ export const FoodCalculusComponent = (props: Food[]) => {
                 </thead>
                 <tbody className="table-content table-content-calculus">
                     <tr>
-                        <td>&pound;{totalPrice().toFixed(3)}</td>
-                        <td>&pound;{averageFoodPrice().toFixed(3)}</td>
+                        <td>&pound;{calculateTotalPrice().toFixed(3)}</td>
+                        <td>&pound;{calculateAveragePrice().toFixed(3)}</td>
                         <td>&pound;</td>
                         <td>&pound;</td>
                     </tr>

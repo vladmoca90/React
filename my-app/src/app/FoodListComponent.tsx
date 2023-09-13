@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import Image from 'next/image'
 import { allFoods } from './data';
@@ -38,7 +39,7 @@ export default function FoodListComponent() {
                     </tbody>
                 </table>
             </div>
-            <FoodCalculusComponent />
+            <FoodCalculusComponent foods={[]} />
         </main>
     );
 }
@@ -46,7 +47,7 @@ export default function FoodListComponent() {
 //Sample or the original code
 
 /*
-const totalPrice = useCallback(() => {
+const calculateTotalPrice = useCallback(() => {
     let sum = 0;
 
     for (let i = 0; i < foods.length; i++) {
@@ -57,7 +58,7 @@ const totalPrice = useCallback(() => {
     return sum.toFixed(2);
 }, [foods]);
 
-const averageFoodPrice = useCallback(() => {
+const calculateAveragePrice = useCallback(() => {
     let average = 0;
 
     for (let i = 0; i < foods.length; i++) {
