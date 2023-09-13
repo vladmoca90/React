@@ -12,7 +12,7 @@ export default function FoodListComponent() {
             sum += (foods[i].price) * (foods[i].quantity);
         };
 
-        return sum.toFixed(2);
+        return sum;
     }, [foods]);
 
     const calculateAveragePrice = useCallback(() => {
