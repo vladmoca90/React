@@ -6,6 +6,7 @@ https://codeburst.io/react-js-for-beginners-the-basics-87ef6e54dae7
 
 https://codeflarelimited.com/blog/dynamically-populate-select-options-in-react-js/
 
+
 "use client" - To use client components in Next.js, you need to add the use client directive as the first line of your file 
                (before any imports). This will tell Next.js that this is a client component and it can use hooks. 
                Otherwise, Next.js will treat your component as a server component, which cannot use hooks.
