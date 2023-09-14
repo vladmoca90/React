@@ -31,7 +31,8 @@ export default function FoodListComponent() {
          for(let i = 0; i < foods.length; i++) {
  
          }
- 
+
+         return expensive;
      }, [foods]); */
 
     return (
@@ -78,8 +79,8 @@ export default function FoodListComponent() {
                     </thead>
                     <tbody className="table-content table-content-calculus">
                         <tr>
-                            <td>&pound;{calculateTotalPrice().toFixed(3)}</td>
-                            <td>&pound;{calculateAveragePrice().toFixed(3)}</td>
+                            <td>&pound;{calculateTotalPrice().toFixed(2)}</td>
+                            <td>&pound;{calculateAveragePrice().toFixed(2)}</td>
                             <td>&pound;{ }</td>
                             <td>&pound;</td>
                         </tr>

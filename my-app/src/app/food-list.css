@@ -50,3 +50,7 @@
   margin: 0 auto;
   max-width: 100px;
 }
+
+.table-content-calculus>tr>td {
+  padding: 7px 0;
+}
