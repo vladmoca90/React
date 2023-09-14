@@ -25,6 +25,15 @@ export default function FoodListComponent() {
         return average;
     }, [foods]);
 
+    /* const mostExpensiveItem = useCallback(() => {
+         let expensive = foods[0];
+ 
+         for(let i = 0; i < foods.length; i++) {
+ 
+         }
+ 
+     }, [foods]); */
+
     return (
         <main className="main">
             <div className="container-table">
@@ -71,7 +80,7 @@ export default function FoodListComponent() {
                         <tr>
                             <td>&pound;{calculateTotalPrice().toFixed(3)}</td>
                             <td>&pound;{calculateAveragePrice().toFixed(3)}</td>
-                            <td>&pound;</td>
+                            <td>&pound;{ }</td>
                             <td>&pound;</td>
                         </tr>
                     </tbody>
@@ -80,27 +89,3 @@ export default function FoodListComponent() {
         </main>
     );
 }
-
-//Sample or the original code
-
-/*
-const calculateTotalPrice = useCallback(() => {
-    let sum = 0;
-
-    for (let i = 0; i < foods.length; i++) {
-        sum += (foods[i].price) * (foods[i].quantity);
-    };
-
-    return sum.toFixed(2);
-}, [foods]);
-
-const calculateAveragePrice = useCallback(() => {
-    let average = 0;
-
-    for (let i = 0; i < foods.length; i++) {
-        average += (foods[i].price * foods[i].quantity) / (foods.length);
-    }
-
-    return average;
-}, [foods]);
-*/
