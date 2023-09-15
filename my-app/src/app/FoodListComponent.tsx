@@ -44,6 +44,7 @@ export default function FoodListComponent() {
                             <th scope="col">Picture</th>
                             <th scope="col">Name</th>
                             <th scope="col">Price</th>
+                            <th scope="col">Unit</th>
                             <th scope="col">Quantity</th>
                             <th scope="col">Total price</th>
                         </tr>
@@ -58,6 +59,7 @@ export default function FoodListComponent() {
                                         </td>
                                         <td className="food-name">{food.name}</td>
                                         <td className="food-price">{food.price}</td>
+                                        <td className="food-unit">{food.unit}</td>
                                         <td className="food-quantity">{food.quantity}</td>
                                         <td className="food-total-price">{(food.price * food.quantity).toFixed(2)}</td>
                                     </tr>
