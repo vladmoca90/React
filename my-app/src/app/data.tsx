@@ -31,14 +31,14 @@ export const allFoods: Food[] = [
     {
         img: 'milk.PNG',
         name: 'Milk',
-        price: .99, //per pint
+        price: 0.99, //per pint
         quantity: 3,
         unit: 'pint',
     },
     {
         img: 'onion.PNG',
         name: 'Onion',
-        price: .99, //each
+        price: 0.99, //each
         quantity: 4,
         unit: 'piece',
     },
