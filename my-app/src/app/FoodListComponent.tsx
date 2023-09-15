@@ -78,6 +78,7 @@ export default function FoodListComponent() {
                             <th scope="col">Average price of each item</th>
                             <th scope="col">Cheapest item</th>
                             <th scope="col">Most expensive item</th>
+                            <th scope="col">Most common unit</th>
                         </tr>
                     </thead>
                     <tbody className="table-content table-content-calculus">
@@ -87,6 +88,7 @@ export default function FoodListComponent() {
                             <td>&pound;{calculateAveragePrice().toFixed(2)}</td>
                             <td>&pound;{ }</td>
                             <td>&pound;</td>
+                            <td></td>
                         </tr>
                     </tbody>
                 </table>
