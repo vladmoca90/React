@@ -26,10 +26,10 @@ export default function FoodListComponent() {
     }, [foods]);
 
     /* const mostExpensiveItem = useCallback(() => {
-         let expensive = foods[0];
+         let expensive = foods[0].price;
  
          for(let i = 0; i < foods.length; i++) {
- 
+            if(food[i].price < food[0].price)
          }
 
          return expensive;
@@ -86,9 +86,9 @@ export default function FoodListComponent() {
                             <td>&pound;{calculateTotalPrice().toFixed(2)}</td>
                             <td>{foods.length}</td>
                             <td>&pound;{calculateAveragePrice().toFixed(2)}</td>
-                            <td>&pound;{ }</td>
-                            <td>&pound;</td>
-                            <td></td>
+                            <td>&pound;{}</td>
+                            <td>&pound;{}</td>
+                            <td>{}</td>
                         </tr>
                     </tbody>
                 </table>
