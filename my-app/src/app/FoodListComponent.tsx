@@ -70,7 +70,6 @@ export default function FoodListComponent() {
         return common;
     }, [foods]);
 
-
     return (
         <main className="main">
             <div className="container-table">
@@ -79,10 +78,10 @@ export default function FoodListComponent() {
                         <tr>
                             <th scope="col">Picture</th>
                             <th scope="col">Name</th>
-                            <th scope="col">Price</th>
+                            <th scope="col">Price (&pound;)</th>
                             <th scope="col">Unit</th>
                             <th scope="col">Quantity</th>
-                            <th scope="col">Total price</th>
+                            <th scope="col">Total price (&pound;)</th>
                         </tr>
                     </thead>
                     <tbody className="table-content">
@@ -109,11 +108,11 @@ export default function FoodListComponent() {
                 <table className="table-main table table-container-calculus">
                     <thead className="table-header table-header-calculus">
                         <tr>
-                            <th scope="col">Total amount to pay</th>
+                            <th scope="col">Total amount to pay (&pound;)</th>
                             <th scope="col">Total number of items</th>
-                            <th scope="col">Average price of items</th>
-                            <th scope="col">Cheapest item</th>
-                            <th scope="col">Most expensive item</th>
+                            <th scope="col">Average price of items (&pound;)</th>
+                            <th scope="col">Cheapest item (&pound;)</th>
+                            <th scope="col">Most expensive item (&pound;)</th>
                             <th scope="col">Most common unit</th>
                         </tr>
                     </thead>
