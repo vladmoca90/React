@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback } from 'react';
 import { WineCategory } from './data';
 
 export type WinesFilterProps = {
