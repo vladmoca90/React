@@ -1,4 +1,3 @@
-"use client";
 import React, { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image'
 import { WinesFilterComponent } from './WinesFilterComponent';
