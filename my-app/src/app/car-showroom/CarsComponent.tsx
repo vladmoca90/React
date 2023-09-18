@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import Image from 'next/image'
 import { CarsFilterComponent } from './CarsFilterComponent';
 import { allCars } from './data';
