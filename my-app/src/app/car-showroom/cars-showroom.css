@@ -3,12 +3,13 @@ body {
 }
 
 .box {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 20px auto;
     width: 100%;
 }
 
 .showroom-search {
-    background-color: #646464;
+    background-color: #5e5e5e;
     display: flex;
     justify-content: space-between;
     margin: 10px auto;
@@ -97,6 +98,6 @@ body {
 }
 
 .showroom-buttons>a:hover {
-    background-color: #1d1d1d;
+    background-color: #242424;
     cursor: pointer;
 }
