@@ -1,6 +1,5 @@
 import React, { useCallback, useState } from 'react';
 import Image from 'next/image'
-import { CarsFilterComponent } from './CarsFilterComponent';
 import { allCars } from './data';
 
 export default function CarsComponent() {
