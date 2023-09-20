@@ -1,3 +1,4 @@
+"use client";
 import React, { ChangeEvent, useCallback, useState } from 'react';
 import { LineStatus, tubeLines } from './data';
 

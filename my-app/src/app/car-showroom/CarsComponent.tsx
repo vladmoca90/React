@@ -1,4 +1,5 @@
-import React, { useCallback, useState } from 'react';
+"use client";
+import React, { useState } from 'react';
 import Image from 'next/image'
 import { allCars } from './data';
 
