@@ -9,7 +9,7 @@ export default function CarsComponent() {
     return (
         <section className="box">
             <div className="showroom-search">
-                <select id="carMake" title="carMake" >
+                <select id="carMake" title="carMake">
                     {
                         cars.map((car, index) => {
                             return (
@@ -18,7 +18,7 @@ export default function CarsComponent() {
                         })
                     }
                 </select>
-                <select id="carModel" title="carModel" >
+                <select id="carModel" title="carModel">
                     {
                         cars.map((car, index) => {
                             return (
@@ -27,7 +27,7 @@ export default function CarsComponent() {
                         })
                     }
                 </select>
-                <select id="carPrice" title="carPrice" >
+                <select id="carPrice" title="carPrice">
                     <option value="low">0 - &pound;4999</option>
                     <option value="medium">&pound;5000 - &pound;9999</option>
                     <option value="high">&pound;10000 - &pound;14999</option>
@@ -37,14 +37,14 @@ export default function CarsComponent() {
                 {
                     cars.map((car, index) => {
                         return (
-                            <div className='car-container' key={index}>
+                            <div className="car-container" key={index}>
                                 <div className="car-header">
                                     <h3 className="car-title">{car.make} <span>{car.model}</span></h3>
                                     <p className="car-price">&pound; {car.price}
                                         <span className="car-monthly-price">from &pound;{(car.price / 12).toFixed(0)}/monthly</span>
                                     </p>
                                 </div>
-                                <div className='car-img-container'>
+                                <div className="car-img-container">
                                     <Image className="car-img" alt={car.make} key={index} src={"/carsShowroom/" + car.img} />
                                 </div>
                                 <div className="showroom-buttons">
