@@ -1,53 +1,66 @@
-export interface Car {
+export interface Food {
     img: string,
-    make: string,
-    model: string,
+    name: string,
     price: number,
-    year: number,
+    quantity: number,
+    unit: string,
 }
 
-export const allCars: Car[] = [
+export const allFoods: Food[] = [
     {
-        img: 'audi.jpg',
-        make: 'Audi',
-        model: 'TT 2.0T FSI 2dr',
-        price: 2989,
-        year: 2007,
+        img: 'cheese.PNG',
+        name: 'Cheese',
+        price: 7.99, //per kg
+        quantity: .4,
+        unit: 'kg',
     },
     {
-        img: 'land-rover.jpg',
-        make: 'Land Rover',
-        model: 'Discovery 2.7 Td V6 HSE 5dr Auto',
-        price: 4489,
-        year: 2009,
+        img: 'chocolate.PNG',
+        name: 'Dark Chocolate',
+        price: 1.89, //per 100g
+        quantity: 2.5, //as 250g
+        unit: 'g',
     },
     {
-        img: 'mercedes-benz.jpg',
-        make: 'Mercedes-Benz',
-        model: 'S Class S500 4dr Auto',
-        price: 6489,
-        year: 2006,
+        img: 'cucumber.PNG',
+        name: 'Cucumber',
+        price: 3.49, //per kg
+        quantity: 1.5,
+        unit: 'kg',
     },
     {
-        
-        img: 'nissan.jpg',
-        make: 'Nissan',
-        model: 'Fairlady Turbo 3.5 V6 300 GT 3d',
-        price: 9989,
-        year: 2007,
+        img: 'milk.PNG',
+        name: 'Milk',
+        price: 0.99, //per pint
+        quantity: 3,
+        unit: 'pint',
     },
     {
-        img: 'skoda.jpg',
-        make: 'Skoda',
-        model: 'Fabia 1.2 TSI SE 5dr',
-        price: 2489,
-        year: 2011,
+        img: 'onion.PNG',
+        name: 'Onion',
+        price: 0.99, //each
+        quantity: 4,
+        unit: 'piece',
     },
     {
-        img: 'vauxhall.jpg',
-        make: 'Vauxhall',
-        model: 'Mokka 1.6 CDTi Limited Edition 5dr',
-        price: 5789,
-        year: 2015,
-    }
+        img: 'pork-meat.PNG',
+        name: 'Meat (pork)',
+        price: 6.99, //per kg
+        quantity: 1.5,
+        unit: 'kg',
+    },
+    {
+        img: 'tomato.PNG',
+        name: 'Tomatoes',
+        price: 3.99, //per kg
+        quantity: 1,
+        unit: 'kg',
+    },
+    {
+        img: 'whiskey.PNG',
+        name: 'Whiskey',
+        price: 19.99, //per bottle
+        quantity: 2,
+        unit: 'piece',
+    },
 ];
