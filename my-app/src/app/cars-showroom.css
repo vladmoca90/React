@@ -4,7 +4,7 @@ body {
 
 .box {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 20px auto;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -12,7 +12,7 @@ body {
     background-color: #5e5e5e;
     display: flex;
     justify-content: space-between;
-    margin: 10px auto;
+    margin: 30px auto;
     max-width: 720px;
 }
 
