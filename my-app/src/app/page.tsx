@@ -1,9 +1,8 @@
-import React from 'react';
-import FoodListComponent from './FoodListComponent';
+import CarsComponent from './CarsComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './food-list.css';
+import './cars-showroom.css';
 
-export default function FoodListPage() {
-    return (<FoodListComponent />);
+export default function CarsPage() {
+    return (<CarsComponent />);
 }

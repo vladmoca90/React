@@ -16,7 +16,9 @@ body {
     max-width: 720px;
 }
 
-#carMake, #carModel, #carPrice {
+#carMake,
+#carModel,
+#carPrice {
     font-size: .9rem;
     height: 31px;
     margin: 20px auto;
