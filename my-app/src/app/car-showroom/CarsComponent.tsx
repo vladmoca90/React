@@ -45,7 +45,7 @@ export default function CarsComponent() {
                                     </p>
                                 </div>
                                 <div className="car-img-container">
-                                    <Image className="car-img" width={150} height={460} alt={car.make} key={index} src={"/carsShowroom/" + car.img} />
+                                    <Image alt={car.make} className="car-img" layout="responsive" width={0} height={0} key={index} src={"/carsShowroom/" + car.img} />
                                 </div>
                                 <div className="showroom-buttons">
                                     <a href="#">Enquiry</a>
