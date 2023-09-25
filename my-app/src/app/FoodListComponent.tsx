@@ -91,7 +91,7 @@ export default function FoodListComponent() {
                                 return (
                                     <tr key={index}>
                                         <td className="food-image">
-                                            <Image alt={food.name} className="product-img" fill width={0} height={0} src={'/foodList/' + food.img} />
+                                            <Image alt={food.name} className="product-img" width={0} height={0} src={'/foodList/' + food.img} />
                                         </td>
                                         <td className="food-name">{food.name}</td>
                                         <td className="food-price">{food.price}</td>
