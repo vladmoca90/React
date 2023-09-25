@@ -59,11 +59,9 @@ export default function FoodListComponent() {
         let common = [];
 
         for (let i = 0; i < foods.length; i++) {
-            for (let j = i + 1; j < foods.length; j++) {
-                if (foods[i].unit == foods[j].unit) {
-                    if (common.indexOf(foods[i].unit) == -1) {
-                        common.push(foods[i].unit);
-                    }
+            if (foods[0].unit == foods[i].unit) {
+                if (common.indexOf(foods[i].unit) == -1) {
+                    common.push(foods[i].unit);
                 }
             }
         }
