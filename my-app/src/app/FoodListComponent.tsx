@@ -91,7 +91,7 @@ export default function FoodListComponent() {
                                 return (
                                     <tr key={index}>
                                         <td className="food-image">
-                                            <Image alt={food.name} className="product-img" layout="responsive" width={0} height={0} src={'/foodList/' + food.img} />
+                                            <Image alt={food.name} className="product-img" fill width={0} height={0} src={'/foodList/' + food.img} />
                                         </td>
                                         <td className="food-name">{food.name}</td>
                                         <td className="food-price">{food.price}</td>
@@ -132,3 +132,21 @@ export default function FoodListComponent() {
         </main>
     );
 }
+
+/*
+ const getMostCommonUnit = useCallback(() => {
+        let common = [];
+
+        for (let i = 0; i < foods.length; i++) {
+            for (let j = i + 1; j < foods.length; j++) {
+                if (foods[i].unit == foods[j].unit) {
+                    if (common.indexOf(foods[i].unit) == -1) {
+                        common.push(foods[i].unit);
+                    }
+                }
+            }
+        }
+
+        return common;
+    }, [foods]);
+*/

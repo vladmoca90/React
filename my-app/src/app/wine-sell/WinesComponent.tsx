@@ -38,7 +38,7 @@ export default function WinesComponent() {
                                     <p className="product-title">{wine.name}</p>
                                 </div>
                                 <div className="product-description__bottom">
-                                    <Image alt={wine.name} className="product-img" layout="responsive" width={0} height={0} key={index} src={"/wineImages/" + wine.img} />
+                                    <Image alt={wine.name} className="product-img" fill width={0} height={0} key={index} src={"/wineImages/" + wine.img} />
                                 </div>
                             </div>
                         );
