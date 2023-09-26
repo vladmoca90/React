@@ -62,5 +62,5 @@ export const allFoods: Food[] = [
         price: 19.99, //per bottle
         quantity: 2,
         unit: 'piece',
-    },
+    }
 ];
