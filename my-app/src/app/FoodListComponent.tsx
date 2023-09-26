@@ -56,7 +56,7 @@ export default function FoodListComponent() {
 
     //A function the returns the most common unit of measurement
     const getMostCommonUnit = useCallback(() => {
-        let common;
+        let common:string | undefined;
         let maxCount = 0;
 
         for (let i = 0; i < foods.length; i++) {
