@@ -1,66 +1,49 @@
-export interface Food {
-    img: string,
-    name: string,
-    price: number,
-    quantity: number,
-    unit: string,
+export interface Wine {
+    category: WineCategory;
+    name: string;
+    img: string;
 }
 
-export const allFoods: Food[] = [
+export enum WineCategory {
+    Red = 'Red',
+    White = 'White',
+    Green = 'Green',
+}
+
+export const allWines: Wine[] = [
     {
-        img: 'cheese.PNG',
-        name: 'Cheese',
-        price: 7.99, //per kg
-        quantity: .4,
-        unit: 'kg',
+        name: 'Italian Red Wine',
+        img: 'italian-red.jpg',
+        category: WineCategory.Red,
     },
     {
-        img: 'chocolate.PNG',
-        name: 'Dark Chocolate',
-        price: 1.89, //per 100g
-        quantity: 2.5, //as 250g
-        unit: 'g',
+        name: 'Chilean Dry White',
+        img: 'chilean-dry-white.jpg',
+        category: WineCategory.White,
     },
     {
-        img: 'cucumber.PNG',
-        name: 'Cucumber',
-        price: 3.49, //per kg
-        quantity: 1.5,
-        unit: 'kg',
+        name: 'NZ Savignon Blanc',
+        img: 'nz-savignon-blanc.jpg',
+        category: WineCategory.White,
     },
     {
-        img: 'milk.PNG',
-        name: 'Milk',
-        price: 0.99, //per pint
-        quantity: 3,
-        unit: 'pint',
+        name: 'Spanish Dry White',
+        img: 'spanish-dry-white.jpg',
+        category: WineCategory.White,
     },
     {
-        img: 'onion.PNG',
-        name: 'Onion',
-        price: 0.99, //each
-        quantity: 4,
-        unit: 'piece',
+        name: 'Californian Chardonnay',
+        img: 'californian-chardonnay.jpg',
+        category: WineCategory.White,
     },
     {
-        img: 'pork-meat.PNG',
-        name: 'Meat (pork)',
-        price: 6.99, //per kg
-        quantity: 1.5,
-        unit: 'kg',
+        name: 'Pinot Noir Romania',
+        img: 'romania-pinot-noir.jpg',
+        category: WineCategory.Red,
     },
     {
-        img: 'tomato.PNG',
-        name: 'Tomatoes',
-        price: 3.99, //per kg
-        quantity: 1,
-        unit: 'kg',
-    },
-    {
-        img: 'whiskey.PNG',
-        name: 'Whiskey',
-        price: 19.99, //per bottle
-        quantity: 2,
-        unit: 'piece',
-    },
+        name: 'Vinho Verde Portugal',
+        img: 'portugal-vinho-verde.jpg',
+        category: WineCategory.Green,
+    }
 ];

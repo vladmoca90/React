@@ -1,10 +1,10 @@
 "use client";
-import React, { useCallback } from 'react';
+import { useCallback } from 'react';
 import { WineCategory } from './data';
 
 export type WinesFilterProps = {
     categories: WineCategory[];
-    onWineSelected: (category: WineCategory|undefined) => void;
+    onWineSelected: (category: WineCategory | undefined) => void;
 }
 
 //A function that filters the dropdown and leaves only the selected wine on the page
