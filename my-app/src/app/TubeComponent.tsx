@@ -39,7 +39,7 @@ const getLineStatusFriendlyName = (status: LineStatus) => {
 }
 
 const getLineStatusFromFriendlyName = (friendlyName: string): LineStatus => {
-    switch(friendlyName) {
+    switch (friendlyName) {
         case 'Good service':
             return LineStatus.Good;
 

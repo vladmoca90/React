@@ -1,4 +1,3 @@
-import React from 'react';
 import TubeComponent from './TubeComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
