@@ -36,7 +36,6 @@ body {
     background-color: #646464;
     border: 1px solid #a81900;
     margin: 10px;
-    max-width: 465px;
 }
 
 .car-header {
@@ -48,18 +47,18 @@ body {
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 1px;
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .car-price {
     background-color: #a81900;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: 1px;
-    line-height: 28px;
+    line-height: 26px;
     margin: 0;
-    padding: 10px 0;
+    padding: 7px 0;
 }
 
 .car-monthly-price {
@@ -74,7 +73,7 @@ body {
     border-bottom: 1px solid #a81900;
     display: block;
     margin: 0 auto;
-    width: 100% !important;
+    max-width: 465px;
 }
 
 .showroom-buttons {
@@ -100,6 +99,6 @@ body {
 }
 
 .showroom-buttons>a:hover {
-    background-color: #242424;
+    background-color: #1a1a1a;
     cursor: pointer;
 }

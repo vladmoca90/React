@@ -29,7 +29,7 @@ export const allCars: Car[] = [
         year: 2006,
     },
     {
-        
+
         img: 'nissan.jpg',
         make: 'Nissan',
         model: 'Fairlady Turbo 3.5 V6 300 GT 3d',
