@@ -10,6 +10,7 @@ export default function CarsComponent() {
         <section className="box">
             <div className="showroom-search">
                 <select id="carMake" title="carMake">
+                    <option value="make">-- Make --</option>
                     {
                         cars.map((car, index) => {
                             return (
@@ -19,6 +20,7 @@ export default function CarsComponent() {
                     }
                 </select>
                 <select id="carModel" title="carModel">
+                    <option value="model">-- Model --</option>
                     {
                         cars.map((car, index) => {
                             return (
@@ -28,6 +30,7 @@ export default function CarsComponent() {
                     }
                 </select>
                 <select id="carPrice" title="carPrice">
+                    <option value="price">-- Price --</option>
                     <option value="low">0 - &pound;4999</option>
                     <option value="medium">&pound;5000 - &pound;9999</option>
                     <option value="high">&pound;10000 - &pound;14999</option>
@@ -41,7 +44,7 @@ export default function CarsComponent() {
                                 <div className="car-header">
                                     <h3 className="car-title">{car.make} <span>{car.model}</span></h3>
                                     <p className="car-price">&pound; {car.price}
-                                        <span className="car-monthly-price">from &pound;{(car.price / 12).toFixed(0)}/monthly</span>
+                                        <span className="car-monthly-price">from &pound; {(car.price / 12).toFixed(0)}/monthly</span>
                                     </p>
                                 </div>
                                 <div className="car-img-container">
