@@ -1,66 +1,87 @@
-export interface Food {
-    img: string,
-    name: string,
-    price: number,
-    quantity: number,
-    unit: string,
+export interface Flight {
+    airline: string;
+    destinations: string[];
 }
 
-export const allFoods: Food[] = [
+export const allFlights: Flight[] = [
     {
-        img: 'cheese.PNG',
-        name: 'Cheese',
-        price: 7.99, //per kg
-        quantity: .4,
-        unit: 'kg',
+        airline: "Air Algerie",
+        destinations: ["Algiers"],
     },
     {
-        img: 'chocolate.PNG',
-        name: 'Dark Chocolate',
-        price: 1.89, //per 100g
-        quantity: 2.5, //as 250g
-        unit: 'g',
+        airline: "Air France",
+        destinations: ["Paris-Charles de Gaulle"],
     },
     {
-        img: 'cucumber.PNG',
-        name: 'Cucumber',
-        price: 3.49, //per kg
-        quantity: 1.5,
-        unit: 'kg',
+        airline: "Avianca",
+        destinations: ["Bogota-El Dorado"],
     },
     {
-        img: 'milk.PNG',
-        name: 'Milk',
-        price: 0.99, //per pint
-        quantity: 3,
-        unit: 'pint',
+        airline: "Brussels Airlines",
+        destinations: ["Brussels-International"],
     },
     {
-        img: 'onion.PNG',
-        name: 'Onion',
-        price: 0.99, //each
-        quantity: 4,
-        unit: 'piece',
+        airline: "Cathay Pacific",
+        destinations: ["Hong Kong"],
     },
     {
-        img: 'pork-meat.PNG',
-        name: 'Meat (pork)',
-        price: 6.99, //per kg
-        quantity: 1.5,
-        unit: 'kg',
+        airline: "Delta Airlines",
+        destinations: ["New York-JFK"],
     },
     {
-        img: 'tomato.PNG',
-        name: 'Tomatoes',
-        price: 3.99, //per kg
-        quantity: 1,
-        unit: 'kg',
+        airline: "El Al",
+        destinations: ["Tel Aviv-Ben Gurion"],
     },
     {
-        img: 'whiskey.PNG',
-        name: 'Whiskey',
-        price: 19.99, //per bottle
-        quantity: 2,
-        unit: 'piece',
+        airline: "Hainan Airlines",
+        destinations: ["Beijing-Capital", "Shanghai-Pudong"],
     },
+    {
+        airline: "Iran Air",
+        destinations: ["Tehran-Khomeini"],
+    },
+    {
+        airline: "Japan Airlines",
+        destinations: ["Tokyo-Haneda"],
+    },
+    {
+        airline: "KLM",
+        destinations: ["Amsterdam-Schipol"],
+    },
+    {
+        airline: "Lufthansa",
+        destinations: ["Frankfurt", "Munich"],
+    },
+    {
+        airline: "Aeromexico",
+        destinations: ["Mexico City"],
+    },
+    {
+        airline: "Royal Air Jordanian",
+        destinations: ["Amman-Queen Alia"],
+    },
+    {
+        airline: "Oman Air",
+        destinations: ["Muscat"],
+    },
+    {
+        airline: "TAROM",
+        destinations: ["Bucharest-Otopeni"],
+    },
+    {
+        airline: "Turkish Airlines",
+        destinations: ["Istanbul-Ataturk"],
+    },
+    {
+        airline: "United Airlines",
+        destinations: ["Chicago-O'Hare", "Dallas-Fort Worth", "Houston-Intercontinental", "Los Angeles", "Newark", "San Francisco"],
+    },
+    {
+        airline: "Virgin Atlantic",
+        destinations: ["Atlanta-Hartsfield Jackson", "Boston-Logan", "Delhi-Indira Ghandi", "Havana", "Hong Kong", "Johannesburg-Tambo", "Lagos", "Las Vegas-McCarran", "Los Angeles", "Miami", "Mumbai-Shivaji", "New York–JFK", "Newark", "San Francisco", "São Paulo–Guarulhos", "Seattle/Tacoma", "Shanghai–Pudong", "Tel Aviv-Ben Gurion", "Washington–Dulles"],
+    },
+    {
+        airline: "WestJet",
+        destinations: ["Calgary"],
+    }
 ];
