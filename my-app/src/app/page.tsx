@@ -1,8 +1,8 @@
-import AirlinesDestinationsComponent from './AirlinesDestinationsComponent';
+import CarsComponent from './CarsComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './airlines-destinations.css';
+import './cars-showroom.css';
 
-export default function DestinationsPage() {
-  return (<AirlinesDestinationsComponent />);
+export default function CarsPage() {
+    return (<CarsComponent />);
 }

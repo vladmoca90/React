@@ -1,87 +1,53 @@
-export interface Flight {
-    airline: string;
-    destinations: string[];
+export interface Car {
+    img: string,
+    make: string,
+    model: string,
+    price: number,
+    year: number,
 }
 
-export const allFlights: Flight[] = [
+export const allCars: Car[] = [
     {
-        airline: "Air Algerie",
-        destinations: ["Algiers"],
+        img: 'audi.jpg',
+        make: 'Audi',
+        model: 'TT 2.0T FSI 2dr',
+        price: 2989,
+        year: 2007,
     },
     {
-        airline: "Air France",
-        destinations: ["Paris-Charles de Gaulle"],
+        img: 'land-rover.jpg',
+        make: 'Land Rover',
+        model: 'Discovery 2.7 Td V6 HSE 5dr Auto',
+        price: 4489,
+        year: 2009,
     },
     {
-        airline: "Avianca",
-        destinations: ["Bogota-El Dorado"],
+        img: 'mercedes-benz.jpg',
+        make: 'Mercedes-Benz',
+        model: 'S Class S500 4dr Auto',
+        price: 6489,
+        year: 2006,
     },
     {
-        airline: "Brussels Airlines",
-        destinations: ["Brussels-International"],
+
+        img: 'nissan.jpg',
+        make: 'Nissan',
+        model: 'Fairlady Turbo 3.5 V6 300 GT 3d',
+        price: 9989,
+        year: 2007,
     },
     {
-        airline: "Cathay Pacific",
-        destinations: ["Hong Kong"],
+        img: 'skoda.jpg',
+        make: 'Skoda',
+        model: 'Fabia 1.2 TSI SE 5dr',
+        price: 2489,
+        year: 2011,
     },
     {
-        airline: "Delta Airlines",
-        destinations: ["New York-JFK"],
-    },
-    {
-        airline: "El Al",
-        destinations: ["Tel Aviv-Ben Gurion"],
-    },
-    {
-        airline: "Hainan Airlines",
-        destinations: ["Beijing-Capital", "Shanghai-Pudong"],
-    },
-    {
-        airline: "Iran Air",
-        destinations: ["Tehran-Khomeini"],
-    },
-    {
-        airline: "Japan Airlines",
-        destinations: ["Tokyo-Haneda"],
-    },
-    {
-        airline: "KLM",
-        destinations: ["Amsterdam-Schipol"],
-    },
-    {
-        airline: "Lufthansa",
-        destinations: ["Frankfurt", "Munich"],
-    },
-    {
-        airline: "Aeromexico",
-        destinations: ["Mexico City"],
-    },
-    {
-        airline: "Royal Air Jordanian",
-        destinations: ["Amman-Queen Alia"],
-    },
-    {
-        airline: "Oman Air",
-        destinations: ["Muscat"],
-    },
-    {
-        airline: "TAROM",
-        destinations: ["Bucharest-Otopeni"],
-    },
-    {
-        airline: "Turkish Airlines",
-        destinations: ["Istanbul-Ataturk"],
-    },
-    {
-        airline: "United Airlines",
-        destinations: ["Chicago-O'Hare", "Dallas-Fort Worth", "Houston-Intercontinental", "Los Angeles", "Newark", "San Francisco"],
-    },
-    {
-        airline: "Virgin Atlantic",
-        destinations: ["Atlanta-Hartsfield Jackson", "Boston-Logan", "Delhi-Indira Ghandi", "Havana", "Hong Kong", "Johannesburg-Tambo", "Lagos", "Las Vegas-McCarran", "Los Angeles", "Miami", "Mumbai-Shivaji", "New York–JFK", "Newark", "San Francisco", "São Paulo–Guarulhos", "Seattle/Tacoma", "Shanghai–Pudong", "Tel Aviv-Ben Gurion", "Washington–Dulles"],
-    },
-    {
-        airline: "WestJet",
-        destinations: ["Calgary"],
+        img: 'vauxhall.jpg',
+        make: 'Vauxhall',
+        model: 'Mokka 1.6 CDTi Limited Edition 5dr',
+        price: 5789,
+        year: 2015,
     }
 ];
