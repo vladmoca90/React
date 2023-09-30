@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100;400;700&display=swap');
+
 body {
     background-color: #313131;
+    font-family: 'Onest', sans-serif;
 }
 
 .box {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
     width: 100%;
 }
 
 .showroom-search {
-    background-color: #5e5e5e;
+    background-color: #848484;
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
@@ -26,15 +28,23 @@ body {
     max-width: 320px;
 }
 
+.showroom-buttons,
 .showroom-container {
     display: flex;
     flex-wrap: wrap;
+}
+
+.showroom-container {
     justify-content: center;
 }
 
-.car-container {
-    background-color: #646464;
+.car-container,
+.showroom-search {
     border: 1px solid #a81900;
+}
+
+.car-container {
+    background-color: #848484;
     margin: 10px;
 }
 
@@ -50,15 +60,19 @@ body {
     margin: 10px 0;
 }
 
-.car-price {
+.car-price,
+.showroom-buttons>a {
     background-color: #a81900;
+}
+
+.car-price {
     color: #fff;
     font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 26px;
     margin: 0;
-    padding: 7px 0;
+    padding: 7px 0 4px;
 }
 
 .car-monthly-price {
@@ -77,14 +91,11 @@ body {
 }
 
 .showroom-buttons {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
 }
 
 .showroom-buttons>a {
-    background-color: #a81900;
     color: #fff;
     font-size: 1rem;
     font-weight: 400;
