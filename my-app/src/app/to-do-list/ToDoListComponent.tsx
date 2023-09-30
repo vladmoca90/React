@@ -2,7 +2,7 @@
 import { useCallback } from 'react';
 
 export default function ToDoListComponent() {
-    <section>
+    return (<section>
         <div className="container">
             <h3 className="title">To do list</h3>
             <div className="main-container">
@@ -18,4 +18,5 @@ export default function ToDoListComponent() {
             </div>
         </div>
     </section>
+    );
 }
