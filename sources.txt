@@ -21,3 +21,11 @@ RUN:
 
 cd my-app
 npm run dev
+
+
+
+https://hackr.io/blog/react-projects - examples of projects
+
+https://flatlogic.com/blog/top-15-react-app-ideas-for-web-developer-in-2022/ - examples of projects
+
+projects - weather app, dating app
