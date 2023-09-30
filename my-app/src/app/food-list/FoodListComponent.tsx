@@ -1,5 +1,5 @@
 "use client";
-import React, { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import Image from 'next/image'
 import { allFoods } from './data';
 
