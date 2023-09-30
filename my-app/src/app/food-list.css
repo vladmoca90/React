@@ -11,7 +11,7 @@
 .table-main {
   border-spacing: 0;
   border: 1px solid #ccc;
-  margin: 15px auto 0;
+  margin: 30px auto 0;
   max-width: 1200px;
   width: 100%;
 }
@@ -44,7 +44,7 @@
 }
 
 .food-image {
-  height: 150px;
+  height: 130px;
 }
 
 .product-img {
