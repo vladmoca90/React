@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
-    max-width: 600px;
+    max-width: 680px;
     padding: 15px 20px;
 }
 
@@ -42,6 +42,7 @@ body {
 .car-container {
     background-color: #848484;
     margin: 10px;
+    max-width: 465px;
 }
 
 .car-header {
@@ -50,8 +51,9 @@ body {
 
 .car-title {
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
+    height: 40px;
     letter-spacing: 1px;
     margin: 10px 0;
 }

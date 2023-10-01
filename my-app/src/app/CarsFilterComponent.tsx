@@ -8,7 +8,7 @@ export const CarsFilterComponent = () => {
     return (
         <div className="showroom-search">
             <select id="carMake" title="carMake">
-                <option value="make">-- Make --</option>
+                <option value="make">-- Any Make --</option>
                 {
                     cars.map((car, index) => {
                         return (
@@ -18,7 +18,7 @@ export const CarsFilterComponent = () => {
                 }
             </select>
             <select id="carModel" title="carModel">
-                <option value="model">-- Model --</option>
+                <option value="model">-- Any Model --</option>
                 {
                     cars.map((car, index) => {
                         return (
