@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
-    max-width: 680px;
+    max-width: 720px;
     padding: 15px 20px;
 }
 
@@ -23,10 +23,10 @@ body {
 #carModel,
 #carPrice {
     border: 1px solid #5e5e5e;
-    font-size: .75rem;
+    font-size: .8rem;
     font-weight: 700;
     height: 30px;
-    max-width: 320px;
+    max-width: 350px;
 }
 
 .showroom-buttons,
