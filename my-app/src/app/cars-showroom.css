@@ -22,7 +22,7 @@ body {
 #carMake,
 #carModel,
 #carPrice {
-    border: 1px solid #1a1a1a;
+    border: 1px solid #5e5e5e;
     font-size: .75rem;
     font-weight: 700;
     height: 30px;
