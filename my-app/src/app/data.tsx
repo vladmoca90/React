@@ -87,7 +87,7 @@ export const allCars: Car[] = [
         year: 2012,
     },
     {
-        img: 'octovia.jpg',
+        img: 'skoda.jpg',
         make: 'Skoda',
         model: 'Octavia 2.0T FSI vRS 5dr',
         price: 7999,
