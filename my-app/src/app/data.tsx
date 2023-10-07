@@ -43,11 +43,11 @@ export const allCars: Car[] = [
         year: 2006,
     },
     {
-        img: 'vauxhall.jpg',
-        make: 'Vauxhall',
-        model: 'Ampera 111kW Electron 5dr Auto',
-        price: 11499,
-        year: 2014,
+        img: 'mercedes-benz.jpg',
+        make: 'Mercedes-Benz',
+        model: 'C Class C220 CDI Blue AMG Sport 4dr',
+        price: 5499,
+        year: 2012,
     },
     {
         img: 'nissan.jpg',
@@ -79,17 +79,17 @@ export const allCars: Car[] = [
         year: 2011,
     },
     {
-        img: 'mercedes-benz.jpg',
-        make: 'Mercedes-Benz',
-        model: 'C Class C220 CDI Blue AMG Sport 4dr',
-        price: 5499,
-        year: 2012,
-    },
-    {
         img: 'vauxhall.jpg',
         make: 'Vauxhall',
         model: 'Mokka 1.6 CDTi Limited Edition 5dr',
         price: 5789,
         year: 2015,
+    },
+    {
+        img: 'vauxhall.jpg',
+        make: 'Vauxhall',
+        model: 'Ampera 111kW Electron 5dr Auto',
+        price: 11499,
+        year: 2014,
     },
 ];
