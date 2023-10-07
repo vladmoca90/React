@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image'
 import { allFoods } from './data';
-import FoodListTotalsComponent from './FoodListTotalsComponent';
+import { FoodListTotalsComponent } from './FoodListTotalsComponent';
 
 export default function FoodListComponent() {
     const [foods] = useState(allFoods);
