@@ -53,7 +53,7 @@ export const allCars: Car[] = [
         img: 'nissan.jpg',
         make: 'Nissan',
         model: 'Fairlady Turbo 3.5 V6 300 GT 3d',
-        price: 9989,
+        price: 9449,
         year: 2007,
     },
     {
@@ -61,7 +61,7 @@ export const allCars: Car[] = [
         img: 'nissan.jpg',
         make: 'Nissan',
         model: 'Pathfinder 2.5 dCi 171 Acenta 5dr',
-        price: 4289,
+        price: 4280,
         year: 2010,
     },
     {
@@ -75,14 +75,14 @@ export const allCars: Car[] = [
         img: 'skoda.jpg',
         make: 'Skoda',
         model: 'Octavia 2.0T FSI vRS 5dr',
-        price: 7999,
+        price: 7499,
         year: 2011,
     },
     {
         img: 'vauxhall.jpg',
         make: 'Vauxhall',
         model: 'Mokka 1.6 CDTi Limited Edition 5dr',
-        price: 5789,
+        price: 5712,
         year: 2015,
     },
     {
