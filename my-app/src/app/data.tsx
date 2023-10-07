@@ -8,11 +8,18 @@ export interface Car {
 
 export const allCars: Car[] = [
     {
-        img: 'vauxhall.jpg',
-        make: 'Vauxhall',
-        model: 'Ampera 111kW Electron 5dr Auto',
-        price: 11499,
-        year: 2014,
+        img: 'audi.jpg',
+        make: 'Audi',
+        model: 'TT 2.0T FSI 2dr',
+        price: 2989,
+        year: 2007,
+    },
+    {
+        img: 'audi.jpg',
+        make: 'Audi',
+        model: 'Q5 2.0T FSI Quattro S Line Special Ed 5dr S Tronic',
+        price: 9999,
+        year: 2011,
     },
     {
         img: 'land-rover.jpg',
@@ -20,13 +27,6 @@ export const allCars: Car[] = [
         model: 'Discovery 3',
         price: 5999,
         year: 2006,
-    },
-    {
-        img: 'audi.jpg',
-        make: 'Audi',
-        model: 'TT 2.0T FSI 2dr',
-        price: 2989,
-        year: 2007,
     },
     {
         img: 'land-rover.jpg',
@@ -43,14 +43,13 @@ export const allCars: Car[] = [
         year: 2006,
     },
     {
-        img: 'audi.jpg',
-        make: 'Audi',
-        model: 'Q5 2.0T FSI Quattro S Line Special Ed 5dr S Tronic',
-        price: 9999,
-        year: 2011,
+        img: 'vauxhall.jpg',
+        make: 'Vauxhall',
+        model: 'Ampera 111kW Electron 5dr Auto',
+        price: 11499,
+        year: 2014,
     },
     {
-
         img: 'nissan.jpg',
         make: 'Nissan',
         model: 'Fairlady Turbo 3.5 V6 300 GT 3d',
@@ -73,11 +72,11 @@ export const allCars: Car[] = [
         year: 2011,
     },
     {
-        img: 'vauxhall.jpg',
-        make: 'Vauxhall',
-        model: 'Mokka 1.6 CDTi Limited Edition 5dr',
-        price: 5789,
-        year: 2015,
+        img: 'skoda.jpg',
+        make: 'Skoda',
+        model: 'Octavia 2.0T FSI vRS 5dr',
+        price: 7999,
+        year: 2011,
     },
     {
         img: 'mercedes-benz.jpg',
@@ -87,10 +86,10 @@ export const allCars: Car[] = [
         year: 2012,
     },
     {
-        img: 'skoda.jpg',
-        make: 'Skoda',
-        model: 'Octavia 2.0T FSI vRS 5dr',
-        price: 7999,
-        year: 2011,
+        img: 'vauxhall.jpg',
+        make: 'Vauxhall',
+        model: 'Mokka 1.6 CDTi Limited Edition 5dr',
+        price: 5789,
+        year: 2015,
     },
 ];
