@@ -38,7 +38,7 @@ export const CarsFilterComponent = () => {
                 }
             </select>
             <select id="carPrice" title="carPrice">
-                <option value="price">-- Price --</option>
+                <option value="price">-- Any Price --</option>
                 <option value="low">&pound;0 - &pound;4999</option>
                 <option value="medium">&pound;5000 - &pound;9999</option>
                 <option value="high">&pound;10000 - &pound;14999</option>
