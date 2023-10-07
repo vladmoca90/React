@@ -29,3 +29,13 @@ https://hackr.io/blog/react-projects - examples of projects
 https://flatlogic.com/blog/top-15-react-app-ideas-for-web-developer-in-2022/ - examples of projects
 
 projects - weather app, dating app
+
+//How to use useEffect
+
+useEffect(() => {
+    console.log('Hello!');
+}, []);
+
+useEffect(() => {
+    console.log('Wines changed!');
+}, [wines]);

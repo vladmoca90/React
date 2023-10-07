@@ -17,15 +17,6 @@ export default function WinesComponent() {
         }
     }, [originalWines]);
 
-    //How to use useEffect
-    useEffect(() => {
-        console.log('Hello!');
-    }, []);
-
-    useEffect(() => {
-        console.log('Wines changed!');
-    }, [wines]);
-
     return (
         <section className="box">
             <WinesFilterComponent categories={categories} onWineSelected={whenWineIsSelected} />
