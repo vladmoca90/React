@@ -1,7 +1,6 @@
 "use client";
 import { useState, useCallback } from 'react';
 import { allCars } from './data';
-import { Carme } from 'next/font/google';
 
 export const CarsFilterComponent = () => {
     const [cars] = useState(allCars);
