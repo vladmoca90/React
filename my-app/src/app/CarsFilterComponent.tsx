@@ -1,9 +1,20 @@
 "use client";
 import { useState, useCallback } from 'react';
 import { allCars } from './data';
+import { Carme } from 'next/font/google';
 
 export const CarsFilterComponent = () => {
     const [cars] = useState(allCars);
+
+    const populateWithMakes = useCallback(() => {
+        let carMake: string | undefined;
+
+        for (let i = 0; i < cars.length; i++) {
+            carMake = cars[i].make;
+        }
+
+        return carMake;
+    }, [cars]);
 
     return (
         <div className="showroom-search">
