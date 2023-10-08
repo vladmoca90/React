@@ -7,6 +7,7 @@ import { FoodListTotalsComponent } from './FoodListTotalsComponent';
 export default function FoodListComponent() {
     const [foods] = useState(allFoods);
 
+    //Before testing
     return (
         <main className="main">
             <div className="container-table">
