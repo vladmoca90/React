@@ -5,7 +5,7 @@ import { allCars } from './data';
 export const CarsFilterComponent = () => {
     const [cars] = useState(allCars);
 
-    const populateWithMakes = useCallback(() => {
+    /* const populateWithMakes = useCallback(() => {
         let carMake: string | undefined;
 
         for (let i = 0; i < cars.length; i++) {
@@ -13,7 +13,7 @@ export const CarsFilterComponent = () => {
         }
 
         return carMake;
-    }, [cars]);
+    }, [cars]); */
 
     return (
         <div className="showroom-search">
