@@ -6,6 +6,7 @@ https://codeburst.io/react-js-for-beginners-the-basics-87ef6e54dae7
 
 https://codeflarelimited.com/blog/dynamically-populate-select-options-in-react-js/
 
+
 https://www.youtube.com/watch?v=-MFiza7ZRzs&ab_channel=DaveGray --> useful video to create APIs with Next.js
 
 https://nextjs.org/docs/app/building-your-application/data-fetching --> sources how to create APIs with Next.js
