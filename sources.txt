@@ -8,6 +8,8 @@ https://codeflarelimited.com/blog/dynamically-populate-select-options-in-react-j
 
 https://www.youtube.com/watch?v=-MFiza7ZRzs&ab_channel=DaveGray - useful video to create APIs with Next.js
 
+- route.ts cannot be in the same folder as page.tsx (in the same directory!s)
+
 
 "use client" - To use client components in Next.js, you need to add the use client directive as the first line of your file 
                (before any imports). This will tell Next.js that this is a client component and it can use hooks. 
