@@ -1,13 +1,25 @@
 "use client";
-import { useState } from 'react';
-import { allFlights } from './data';
+import { useEffect, useState } from 'react';
+import { allFlights } from './route';
 import { TotalDestinations } from './TotalDestinationsComponent';
 
 export default function AirlinesDestinationsComponent() {
   const [flights] = useState(allFlights);
+  let AirlinesDestUrl = 'http://localhost:3000/api/airlines-destinations';
 
-  // http://localhost:3000/api/airlines-destinations
-  
+  useEffect(() => {
+    fetch(AirlinesDestUrl)
+      .then(data => {
+        console.log(data);
+      })
+      .then((result) => {
+
+      },
+      (error) => {
+        console.log(error);
+      });
+  }, [AirlinesDestUrl])
+
   return (
     <main className="main">
       <div className="container-table">
