@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from 'react';
-import { allFlights } from './APIs/airlines-destinations/route';
+import { allFlights } from './route';
 import { TotalDestinations } from './TotalDestinationsComponent';
 
 export default function AirlinesDestinationsComponent() {
