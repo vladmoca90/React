@@ -7,7 +7,7 @@ import { FoodListTotalsComponent } from './FoodListTotalsComponent';
 export default function FoodListComponent() {
     const [foods] = useState(allFoods);
 
-    // http://localhost:3000/api/foold-list
+    // http://localhost:3000/food-list
 
     return (
         <main className="main">

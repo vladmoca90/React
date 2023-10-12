@@ -57,7 +57,7 @@ const getLineStatusFromFriendlyName = (friendlyName: string): LineStatus => {
 export default function TubeComponent() {
     const [lines] = useState(tubeLines);
 
-    // http://localhost:3000/api/tube-lines
+    // http://localhost:3000/tube-status
     
     const [selectedLine, setSelectedLine] = useState(lines[0]);
 

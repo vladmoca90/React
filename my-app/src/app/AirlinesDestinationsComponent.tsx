@@ -6,7 +6,7 @@ import { TotalDestinations } from './TotalDestinationsComponent';
 export default function AirlinesDestinationsComponent() {
   const [flights] = useState(allFlights);
   
-  let AirlinesDestUrl = 'http://localhost:3000/api/airlines-destinations';
+  let AirlinesDestUrl = 'http://localhost:3000/airlines-destinations';
 
   useEffect(() => {
     fetch(AirlinesDestUrl)
