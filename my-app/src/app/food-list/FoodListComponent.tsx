@@ -7,7 +7,7 @@ import { FoodListTotalsComponent } from './FoodListTotalsComponent';
 export default function FoodListComponent() {
     const [foods] = useState(allFoods);
 
-    // http://localhost:3000/food-list
+    // let foodListUrl = http://localhost:3000/food-list;
 
     return (
         <main className="main">

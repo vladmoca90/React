@@ -57,8 +57,8 @@ const getLineStatusFromFriendlyName = (friendlyName: string): LineStatus => {
 export default function TubeComponent() {
     const [lines] = useState(tubeLines);
 
-    // http://localhost:3000/tube-status
-    
+    // let tubeLinesUrl = http://localhost:3000/tube-status;
+
     const [selectedLine, setSelectedLine] = useState(lines[0]);
 
     const selectLine = useCallback((event: ChangeEvent<HTMLSelectElement>) => {

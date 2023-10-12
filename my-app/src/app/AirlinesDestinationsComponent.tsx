@@ -5,7 +5,7 @@ import { TotalDestinations } from './TotalDestinationsComponent';
 
 export default function AirlinesDestinationsComponent() {
   const [flights] = useState(allFlights);
-  
+
   let AirlinesDestUrl = 'http://localhost:3000/airlines-destinations';
 
   useEffect(() => {
@@ -16,9 +16,9 @@ export default function AirlinesDestinationsComponent() {
       .then((result) => {
 
       },
-      (error) => {
-        console.log(error);
-      });
+        (error) => {
+          console.log(error);
+        });
   }, [AirlinesDestUrl])
 
   return (
