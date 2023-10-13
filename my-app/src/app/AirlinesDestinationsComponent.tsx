@@ -6,10 +6,10 @@ import { TotalDestinations } from './TotalDestinationsComponent';
 export default function AirlinesDestinationsComponent() {
   const [flights] = useState(allFlights);
 
-  let AirlinesDestUrl = 'http://localhost:3000/airlines-destinations';
+  let airlinesDestUrl = 'http://localhost:3000/airlines-destinations';
 
-  const AirlinesDestValues = useEffect(() => {
-    fetch(AirlinesDestUrl)
+  const airlinesDestValues = useEffect(() => {
+    fetch(airlinesDestUrl)
       .then(data => {
         console.log(data);
       })
@@ -19,7 +19,7 @@ export default function AirlinesDestinationsComponent() {
         (error) => {
           console.log(error);
         });
-  }, [AirlinesDestUrl]);
+  }, [airlinesDestUrl]);
 
   return (
     <main className="main">
