@@ -8,7 +8,7 @@ export default function AirlinesDestinationsComponent() {
 
   let AirlinesDestUrl = 'http://localhost:3000/airlines-destinations';
 
-  useEffect(() => {
+  const AirlinesDestValues = useEffect(() => {
     fetch(AirlinesDestUrl)
       .then(data => {
         console.log(data);
@@ -19,7 +19,7 @@ export default function AirlinesDestinationsComponent() {
         (error) => {
           console.log(error);
         });
-  }, [AirlinesDestUrl])
+  }, [AirlinesDestUrl]);
 
   return (
     <main className="main">

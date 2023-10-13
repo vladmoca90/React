@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import { allFoods } from './data';
 import { FoodListTotalsComponent } from './FoodListTotalsComponent';
@@ -7,7 +7,20 @@ import { FoodListTotalsComponent } from './FoodListTotalsComponent';
 export default function FoodListComponent() {
     const [foods] = useState(allFoods);
 
-    // let foodListUrl = http://localhost:3000/food-list;
+    let foodListUrl = 'http://localhost:3000/food-list';
+
+    const foodListValues = useEffect(() => {
+        fetch(foodListUrl)
+          .then(data => {
+            console.log(data);
+          })
+          .then((result) => {
+    
+          },
+            (error) => {
+              console.log(error);
+            });
+      }, [foodListUrl]);
 
     return (
         <main className="main">
