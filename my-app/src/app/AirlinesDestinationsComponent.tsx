@@ -20,6 +20,7 @@ export default function AirlinesDestinationsComponent() {
 
         });
   }, [airlinesDestUrl]);
+  
   return (
     <main className="main">
       <div className="container-table">
