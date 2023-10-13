@@ -57,7 +57,7 @@ const getLineStatusFromFriendlyName = (friendlyName: string): LineStatus => {
 export default function TubeComponent() {
     const [lines] = useState(tubeLines);
 
-    let tubeLinesUrl = 'http://localhost:3000/tube-status';
+    let tubeLinesUrl = "http://localhost:3000/tube-status";
 
     const tubeLinesValues = useEffect(() => {
         fetch(tubeLinesUrl)

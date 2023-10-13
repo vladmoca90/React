@@ -7,7 +7,7 @@ import { FoodListTotalsComponent } from './FoodListTotalsComponent';
 export default function FoodListComponent() {
     const [foods] = useState(allFoods);
 
-    let foodListUrl = 'http://localhost:3000/food-list';
+    let foodListUrl = "http://localhost:3000/food-list";
 
     const foodListValues = useEffect(() => {
         fetch(foodListUrl)
