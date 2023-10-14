@@ -17,6 +17,22 @@ export default function WinesComponent() {
         }
     }, [originalWines]);
 
+    let WinesSellUrl = "http://localhost:3000/wines-sell";
+
+    useEffect(() => {
+        fetch(WinesSellUrl)
+            .then(data => {
+                console.log(data);
+            })
+            .then(
+                (result) => {
+                    console.log(result);
+                },
+                (error) => {
+                    console.log(error);
+                });
+    }, [WinesSellUrl]);
+
     return (
         <section className="box">
             <WinesFilterComponent categories={categories} onWineSelected={whenWineIsSelected} />
