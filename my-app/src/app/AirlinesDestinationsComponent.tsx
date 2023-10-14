@@ -17,7 +17,7 @@ export default function AirlinesDestinationsComponent() {
 
       },
         (error) => {
-
+          console.log(error);
         });
   }, [airlinesDestUrl]);
 

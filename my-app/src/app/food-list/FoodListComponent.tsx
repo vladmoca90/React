@@ -9,18 +9,18 @@ export default function FoodListComponent() {
 
     let foodListUrl = "http://localhost:3000/food-list";
 
-    const foodListValues = useEffect(() => {
+    useEffect(() => {
         fetch(foodListUrl)
-          .then(data => {
-            console.log(data);
-          })
-          .then((result) => {
-    
-          },
-            (error) => {
-              console.log(error);
-            });
-      }, [foodListUrl]);
+            .then(data => {
+                console.log(data);
+            })
+            .then((result) => {
+
+            },
+                (error) => {
+                    console.log(error);
+                });
+    }, [foodListUrl]);
 
     return (
         <main className="main">

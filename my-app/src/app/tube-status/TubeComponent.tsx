@@ -59,18 +59,18 @@ export default function TubeComponent() {
 
     let tubeLinesUrl = "http://localhost:3000/tube-status";
 
-    const tubeLinesValues = useEffect(() => {
+    useEffect(() => {
         fetch(tubeLinesUrl)
-          .then(data => {
-            console.log(data);
-          })
-          .then((result) => {
-    
-          },
-            (error) => {
-              console.log(error);
-            });
-      }, [tubeLinesUrl]);
+            .then(data => {
+                console.log(data);
+            })
+            .then((result) => {
+
+            },
+                (error) => {
+                    console.log(error);
+                });
+    }, [tubeLinesUrl]);
 
     const [selectedLine, setSelectedLine] = useState(lines[0]);
 
