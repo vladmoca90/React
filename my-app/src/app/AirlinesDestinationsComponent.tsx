@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { allFlights } from './route';
 import { TotalDestinations } from './TotalDestinationsComponent';
 
-export type AirlinesRequestProps = {
+export type AirlinesDestinationsProps = {
     result: undefined;
     error: string;
 }
@@ -11,10 +11,10 @@ export type AirlinesRequestProps = {
 export default function AirlinesDestinationsComponent() {
     const [flights] = useState(allFlights);
 
-    let airlinesDestUrl = "http://localhost:3000/airlines-destinations";
+    let airlinesDestinationsUrl = "http://localhost:3000/airlines-destinations";
 
     useEffect(() => {
-        fetch(airlinesDestUrl)
+        fetch(airlinesDestinationsUrl)
             .then(data => {
                 console.log(data);
             })
@@ -25,7 +25,7 @@ export default function AirlinesDestinationsComponent() {
                 (error) => {
                     console.log(error);
                 });
-    }, [airlinesDestUrl]);
+    }, [airlinesDestinationsUrl]);
 
     return (
         <main className="main">
