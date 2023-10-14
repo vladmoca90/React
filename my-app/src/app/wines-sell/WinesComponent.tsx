@@ -1,6 +1,6 @@
 "use client";
+import Image from 'next/image';
 import { useCallback, useEffect, useState } from 'react';
-import Image from 'next/image'
 import { WinesFilterComponent } from './WinesFilterComponent';
 import { Wine, WineCategory, allWines } from './data';
 
