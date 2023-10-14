@@ -14,9 +14,10 @@ export default function FoodListComponent() {
             .then(data => {
                 console.log(data);
             })
-            .then((result) => {
-
-            },
+            .then(
+                (result) => {
+                    console.log(result);
+                },
                 (error) => {
                     console.log(error);
                 });

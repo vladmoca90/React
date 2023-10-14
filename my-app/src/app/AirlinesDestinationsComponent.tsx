@@ -3,6 +3,11 @@ import { useEffect, useState } from 'react';
 import { allFlights } from './route';
 import { TotalDestinations } from './TotalDestinationsComponent';
 
+export type AirlinesRequestProps = {
+  result: undefined;
+  error: string;
+}
+
 export default function AirlinesDestinationsComponent() {
   const [flights] = useState(allFlights);
 
@@ -13,9 +18,10 @@ export default function AirlinesDestinationsComponent() {
       .then(data => {
         console.log(data);
       })
-      .then((result) => {
-
-      },
+      .then(
+        (result) => {
+          console.log(result);
+        },
         (error) => {
           console.log(error);
         });

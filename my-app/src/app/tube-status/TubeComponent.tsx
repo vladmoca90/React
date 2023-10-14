@@ -64,9 +64,10 @@ export default function TubeComponent() {
             .then(data => {
                 console.log(data);
             })
-            .then((result) => {
-
-            },
+            .then(
+                (result) => {
+                    console.log(result);
+                },
                 (error) => {
                     console.log(error);
                 });
