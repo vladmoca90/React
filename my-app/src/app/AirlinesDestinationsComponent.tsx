@@ -9,7 +9,6 @@ interface Flight {
 
 export default function AirlinesDestinationsComponent() {
     const [error, setError] = useState(null);
-    const [isLoaded] = useState(false);
     const [flights, setFlights] = useState<Flight[]>([]);
 
     let airlinesDestinationsUrl = "http://localhost:3000/airlines-destinations";
