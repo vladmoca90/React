@@ -15,9 +15,6 @@ export default function AirlinesDestinationsComponent() {
 
     useEffect(() => {
         fetch(airlinesDestinationsUrl)
-            .then(data => {
-                console.log(data);
-            })
             .then(
                 (response) => {
                     console.log(response);

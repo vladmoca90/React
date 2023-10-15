@@ -61,9 +61,6 @@ export default function TubeComponent() {
 
     useEffect(() => {
         fetch(tubeLinesUrl)
-            .then(data => {
-                console.log(data);
-            })
             .then(
                 (response) => {
                     console.log(response);

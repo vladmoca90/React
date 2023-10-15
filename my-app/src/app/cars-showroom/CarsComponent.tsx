@@ -11,9 +11,6 @@ export default function CarsComponent() {
 
     useEffect(() => {
         fetch(carsShowroomUrl)
-            .then(data => {
-                console.log(data);
-            })
             .then(
                 (response) => {
                     console.log(response);

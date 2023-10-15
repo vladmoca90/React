@@ -21,9 +21,6 @@ export default function WinesComponent() {
 
     useEffect(() => {
         fetch(WinesSellUrl)
-            .then(data => {
-                console.log(data);
-            })
             .then(
                 (result) => {
                     console.log(result);

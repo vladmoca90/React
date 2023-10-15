@@ -11,9 +11,6 @@ export default function FoodListComponent() {
 
     useEffect(() => {
         fetch(foodListUrl)
-            .then(data => {
-                console.log(data);
-            })
             .then(
                 (response) => {
                     console.log(response);
