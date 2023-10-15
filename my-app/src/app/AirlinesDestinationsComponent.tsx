@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from 'react';
-// import { allFlights } from './airlines-destinations/route';
 import { TotalDestinations } from './TotalDestinationsComponent';
 
 interface Flight {
@@ -23,11 +22,6 @@ export default function AirlinesDestinationsComponent() {
             .catch(error =>
                 setError(error))
     }, [airlinesDestinationsUrl]);
-    /* if (error) {
-         return <div>Error: {error}</div>
-     } else if (!isLoaded) {
-         return <div className="loading-flights">Loading...</div>;
-     } else { */
     return (
         <main className="main">
             <div className="container-table">
