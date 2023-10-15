@@ -1,6 +1,6 @@
 "use client";
 import { useCallback, useState } from 'react';
-import { allFoods } from './data';
+import { allFoods } from '../APIs/food-list/data';
 
 export const FoodListTotalsComponent = () => {
     const [foods] = useState(allFoods);

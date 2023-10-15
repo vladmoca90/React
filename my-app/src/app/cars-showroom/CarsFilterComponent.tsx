@@ -1,6 +1,6 @@
 "use client";
 import { useState, useCallback } from 'react';
-import { allCars } from './data';
+import { allCars } from '../APIs/cars-showroom/data';
 
 export const CarsFilterComponent = () => {
     const [cars] = useState(allCars);

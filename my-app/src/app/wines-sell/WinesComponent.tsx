@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { useCallback, useEffect, useState } from 'react';
 import { WinesFilterComponent } from './WinesFilterComponent';
-import { Wine, WineCategory, allWines } from './data';
+import { Wine, WineCategory, allWines } from '../APIs/wine-sell/data';
 
 export default function WinesComponent() {
     const [originalWines] = useState<Wine[]>(allWines);
