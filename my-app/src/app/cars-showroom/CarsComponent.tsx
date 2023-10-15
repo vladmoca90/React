@@ -7,7 +7,7 @@ import { CarsFilterComponent } from './CarsFilterComponent';
 export default function CarsComponent() {
     const [cars] = useState(allCars);
 
-    let carsShowroomUrl = "http://localhost:3000/cars-showroom";
+    /* let carsShowroomUrl = "http://localhost:3000/cars-showroom";
 
     useEffect(() => {
         fetch(carsShowroomUrl)
@@ -18,7 +18,7 @@ export default function CarsComponent() {
                 (error) => {
                     console.log(error);
                 });
-    }, [carsShowroomUrl]);
+    }, [carsShowroomUrl]); */
 
     return (
         <section className="box">

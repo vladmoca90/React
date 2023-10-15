@@ -17,7 +17,7 @@ export default function WinesComponent() {
         }
     }, [originalWines]);
 
-    let WinesSellUrl = "http://localhost:3000/wines-sell";
+   /* let WinesSellUrl = "http://localhost:3000/wines-sell";
 
     useEffect(() => {
         fetch(WinesSellUrl)
@@ -28,7 +28,7 @@ export default function WinesComponent() {
                 (error) => {
                     console.log(error);
                 });
-    }, [WinesSellUrl]);
+    }, [WinesSellUrl]); */
 
     return (
         <section className="box">
