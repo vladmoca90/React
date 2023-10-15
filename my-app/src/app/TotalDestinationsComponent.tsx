@@ -4,7 +4,7 @@ import { Flight } from './APIs/airlines-destinations/route';
 
 export type TotalDestinationsProps = {
   flights: Flight[];
-};
+}
 
 export const TotalDestinations = (props: TotalDestinationsProps) => {
   const calculateTotal = useCallback(((flights: Flight[]) => {

@@ -17,6 +17,7 @@ export default function AirlinesDestinationsComponent() {
             .catch(error =>
                 setError(error))
     }, [airlinesDestinationsUrl]);
+
     return (
         <main className="main">
             <div className="container-table">
