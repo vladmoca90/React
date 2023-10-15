@@ -4,7 +4,7 @@ import { allFlights } from './airlines-destinations/route';
 import { TotalDestinations } from './TotalDestinationsComponent';
 
 export type AirlinesDestinationsProps = {
-    result: undefined;
+    response: allFlights[] | undefined;
     error: string;
 }
 
@@ -19,8 +19,8 @@ export default function AirlinesDestinationsComponent() {
                 console.log(data);
             })
             .then(
-                (result) => {
-                    console.log(result);
+                (response) => {
+                    console.log(response);
                 },
                 (error) => {
                     console.log(error);
