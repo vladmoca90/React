@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from "react-dom/client";
-import TubePage from '../APIs/tube-status/page';
+import TubePage from './page';
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 

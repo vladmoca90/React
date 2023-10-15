@@ -1,4 +1,4 @@
-import TubeComponent from '../../tube-status/TubeComponent';
+import TubeComponent from './TubeComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './tube-status.css';
