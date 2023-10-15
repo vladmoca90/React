@@ -1,11 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import { TotalDestinations } from './TotalDestinationsComponent';
-
-interface Flight {
-    airline: string;
-    destinations: string[];
-}
+import { Flight } from './airlines-destinations/route';
 
 export default function AirlinesDestinationsComponent() {
     const [error, setError] = useState(null);
