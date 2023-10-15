@@ -15,13 +15,9 @@ export default function AirlinesDestinationsComponent() {
 
     useEffect(() => {
         fetch(airlinesDestinationsUrl)
-            .then(
-                (response) => {
-                    console.log(response);
-                },
-                (error) => {
-                    console.log(error);
-                });
+            .then(response => response.json())
+            .then(res => console.log(res))
+            
     }, [airlinesDestinationsUrl]);
 
     return (
