@@ -9,6 +9,26 @@ export const allFlights: Flight[] = [
         destinations: ["Algiers"],
     },
     {
+        airline: "Air Algerie",
+        destinations: ["Algiers"],
+    },
+    {
+        airline: "Air Algerie",
+        destinations: ["Algiers"],
+    },
+    {
+        airline: "Air Algerie",
+        destinations: ["Algiers"],
+    },
+    {
+        airline: "Air Algerie",
+        destinations: ["Algiers"],
+    },
+    {
+        airline: "Air Algerie",
+        destinations: ["Algiers"],
+    },
+    {
         airline: "Air France",
         destinations: ["Paris-Charles de Gaulle"],
     },
