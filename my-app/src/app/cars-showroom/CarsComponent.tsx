@@ -21,7 +21,7 @@ export default function CarsComponent() {
 
     return (
         <section className="box">
-            <CarsFilterComponent />
+            <CarsFilterComponent cars={[]} />
             <div className="showroom-container">
                 {
                     cars.map((car, index) => {
