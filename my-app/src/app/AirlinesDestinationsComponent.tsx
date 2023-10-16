@@ -1,10 +1,9 @@
 "use client";
-import { useEffect, useState } from 'react';
-import { TotalDestinations } from './TotalDestinationsComponent';
-import { Flight } from './APIs/airlines-destinations/route';
+import { useEffect, useState } from "react";
+import { TotalDestinations } from "./TotalDestinationsComponent";
+import { Flight } from "./APIs/airlines-destinations/route";
 
 export default function AirlinesDestinationsComponent() {
-    const [err, setError] = useState(null);
     const [flights, setFlights] = useState<Flight[]>([]);
 
     let airlinesDestinationsUrl = "http://localhost:3000/APIs/airlines-destinations";
@@ -13,7 +12,6 @@ export default function AirlinesDestinationsComponent() {
         fetch(airlinesDestinationsUrl)
             .then(response => response.json())
             .then(response => setFlights(response as Flight[]))
-            .catch(err => setError(err))
     }, [airlinesDestinationsUrl]);
 
     return (
@@ -34,7 +32,7 @@ export default function AirlinesDestinationsComponent() {
                                     <tr key={index}>
                                         <td className="airline-number">{index + 1}</td>
                                         <td className="airline-name">{flight.airline}</td>
-                                        <td className="airline-destinations-list">{flight.destinations.toString().replace(/,/g, ', ')}</td>
+                                        <td className="airline-destinations-list">{flight.destinations.toString().replace(/,/g, ", ")}</td>
                                     </tr>
                                 );
                             })

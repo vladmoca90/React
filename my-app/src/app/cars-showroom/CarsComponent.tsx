@@ -5,7 +5,6 @@ import { CarsFilterComponent } from './CarsFilterComponent';
 import { Car } from '../APIs/cars-showroom/route';
 
 export default function CarsComponent() {
-    const [error, setError] = useState(null);
     const [cars, setCars] = useState<Car[]>([]);
 
     let carsShowroomUrl = "http://localhost:3000/APIs/cars-showroom";
@@ -14,7 +13,6 @@ export default function CarsComponent() {
         fetch(carsShowroomUrl)
             .then(response => response.json())
             .then(response => setCars(response as Car[]))
-            .catch(err => setError(err))
     }, [carsShowroomUrl]);
 
     return (
