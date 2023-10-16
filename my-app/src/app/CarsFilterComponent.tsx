@@ -1,5 +1,5 @@
 "use client";
-import { useState, useCallback } from 'react';
+import { useState } from 'react';
 import { allCars } from './APIs/cars-showroom/route';
 
 export const CarsFilterComponent = () => {
