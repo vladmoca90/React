@@ -6,7 +6,7 @@ import { CarsFilterComponent } from './CarsFilterComponent';
 
 export default function CarsComponent() {
     const [error, setError] = useState(null);
-    const [cars, setCars] = useState<Car[]>([]);;
+    const [cars, setCars] = useState<Car[]>([]);
 
     let carsShowroomUrl = "http://localhost:3000/APIs/cars-showroom";
 
