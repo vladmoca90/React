@@ -1,24 +1,23 @@
 "use client";
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { allCars } from './APIs/cars-showroom/data';
+import { Car, allCars } from './APIs/cars-showroom/route';
 import { CarsFilterComponent } from './CarsFilterComponent';
 
 export default function CarsComponent() {
-    const [cars] = useState(allCars);
+    const [error, setError] = useState(null);
+    const [cars, setCars] = useState<Car[]>([]);;
 
-    /* let carsShowroomUrl = "http://localhost:3000/cars-showroom";
+    let carsShowroomUrl = "http://localhost:3000/APIs/cars-showroom";
 
     useEffect(() => {
         fetch(carsShowroomUrl)
-            .then(
-                (response) => {
-                    console.log(response);
-                },
-                (error) => {
-                    console.log(error);
-                });
-    }, [carsShowroomUrl]); */
+            .then((response) => response)
+            .then(e => e.json())
+            .then(e => setCars(e as Car[]))
+            .catch(error =>
+                setError(error))
+    }, [carsShowroomUrl]);
 
     return (
         <section className="box">
