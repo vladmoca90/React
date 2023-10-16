@@ -6,7 +6,7 @@ export type CarsFilterProps = {
     cars: Car[];
 }
 
-export const CarsFilterComponent = () => {
+export const CarsFilterComponent = (props: CarsFilterProps) => {
     const [cars] = useState(allCars);
 
     return (
