@@ -13,8 +13,7 @@ export default function AirlinesDestinationsComponent() {
         fetch(airlinesDestinationsUrl)
             .then(response => response.json())
             .then(response => setFlights(response as Flight[]))
-            .catch(err =>
-                setError(err))
+            .catch(err => setError(err))
     }, [airlinesDestinationsUrl]);
 
     return (

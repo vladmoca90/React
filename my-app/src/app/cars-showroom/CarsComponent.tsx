@@ -14,8 +14,7 @@ export default function CarsComponent() {
         fetch(carsShowroomUrl)
             .then(response => response.json())
             .then(response => setCars(response as Car[]))
-            .catch(err =>
-                setError(err))
+            .catch(err => setError(err))
     }, [carsShowroomUrl]);
 
     return (
