@@ -49,3 +49,16 @@ useEffect(() => {
 useEffect(() => {
     console.log('Wines changed!');
 }, [wines]);
+
+//API code sample
+
+let carsShowroomUrl = "http://localhost:3000/APIs/cars-showroom";
+
+useEffect(() => {
+    fetch(carsShowroomUrl)
+        .then((response) => response)
+        .then(e => e.json())
+        .then(e => setCars(e as Car[]))
+        .catch(error =>
+            setError(error))
+}, [carsShowroomUrl]);
