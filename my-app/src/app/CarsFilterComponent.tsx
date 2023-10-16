@@ -5,16 +5,6 @@ import { allCars } from './APIs/cars-showroom/data';
 export const CarsFilterComponent = () => {
     const [cars] = useState(allCars);
 
-    /* const populateWithMakes = useCallback(() => {
-        let carMake: string | undefined;
-
-        for (let i = 0; i < cars.length; i++) {
-            carMake = cars[i].make;
-        }
-
-        return carMake;
-    }, [cars]); */
-
     return (
         <div className="showroom-search">
             <select id="carMake" title="carMake">
