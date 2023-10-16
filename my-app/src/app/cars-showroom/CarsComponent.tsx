@@ -12,9 +12,8 @@ export default function CarsComponent() {
 
     useEffect(() => {
         fetch(carsShowroomUrl)
-            .then((response) => response)
-            .then(e => e.json())
-            .then(e => setCars(e as Car[]))
+            .then(response => response.json())
+            .then(response => setCars(response as Car[]))
             .catch(error =>
                 setError(error))
     }, [carsShowroomUrl]);
