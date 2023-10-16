@@ -4,7 +4,7 @@ import { TotalDestinations } from './TotalDestinationsComponent';
 import { Flight } from './APIs/airlines-destinations/route';
 
 export default function AirlinesDestinationsComponent() {
-    const [error, setError] = useState(null);
+    const [err, setError] = useState(null);
     const [flights, setFlights] = useState<Flight[]>([]);
 
     let airlinesDestinationsUrl = "http://localhost:3000/APIs/airlines-destinations";
@@ -13,8 +13,8 @@ export default function AirlinesDestinationsComponent() {
         fetch(airlinesDestinationsUrl)
             .then(response => response.json())
             .then(response => setFlights(response as Flight[]))
-            .catch(error =>
-                setError(error))
+            .catch(err =>
+                setError(err))
     }, [airlinesDestinationsUrl]);
 
     return (
