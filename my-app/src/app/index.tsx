@@ -8,4 +8,4 @@ root.render(
   <React.StrictMode>
     <DestinationsPage />
   </React.StrictMode>
-);
+)
