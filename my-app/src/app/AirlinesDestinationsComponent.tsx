@@ -11,9 +11,8 @@ export default function AirlinesDestinationsComponent() {
 
     useEffect(() => {
         fetch(airlinesDestinationsUrl)
-            .then((response) => response)
-            .then(e => e.json())
-            .then(e => setFlights(e as Flight[]))
+            .then(response => response.json())
+            .then(response => setFlights(response as Flight[]))
             .catch(error =>
                 setError(error))
     }, [airlinesDestinationsUrl]);
