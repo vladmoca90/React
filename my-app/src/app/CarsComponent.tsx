@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { Car, allCars } from './APIs/cars-showroom/route';
+import { Car } from './APIs/cars-showroom/route';
 import { CarsFilterComponent } from './CarsFilterComponent';
 
 export default function CarsComponent() {
