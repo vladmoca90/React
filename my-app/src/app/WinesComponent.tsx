@@ -17,13 +17,13 @@ export default function WinesComponent() {
         }
     }, [originalWines]);
 
-    let WinesSellUrl = "http://localhost:3000/wines-sell";
+    let winesSellUrl = "http://localhost:3000/APIs/wine-sell";
 
     useEffect(() => {
-        fetch(WinesSellUrl)
+        fetch(winesSellUrl)
             .then(response => response.json())
             .then(response => setWines(response as Wine[]))
-    }, [WinesSellUrl]);
+    }, [winesSellUrl]);
 
     return (
         <section className="box">

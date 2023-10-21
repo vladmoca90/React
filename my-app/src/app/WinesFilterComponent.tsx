@@ -1,6 +1,6 @@
 "use client";
 import { useCallback } from 'react';
-import { WineCategory } from './APIs/wine-sell/data';
+import { WineCategory } from './APIs/wine-sell/route';
 
 export type WinesFilterProps = {
     categories: WineCategory[];
