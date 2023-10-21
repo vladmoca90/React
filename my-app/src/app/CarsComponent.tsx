@@ -6,7 +6,7 @@ import { Car } from './APIs/cars-showroom/route';
 export default function CarsComponent() {
     const [cars, setCars] = useState<Car[]>([]);
 
-    let carsShowroomUrl = "http://localhost:3000/APIs/cars-showroom1";
+    let carsShowroomUrl = "http://localhost:3000/APIs/cars-showroom";
 
     useEffect(() => {
         fetch(carsShowroomUrl)
