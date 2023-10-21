@@ -55,14 +55,14 @@ const getLineStatusFromFriendlyName = (friendlyName: string): LineStatus => {
 }
 
 export default function TubeComponent() {
-    const [lines] = useState(tubeLines);
+    const [lines, setLines] = useState(tubeLines);
 
     let tubeStatusUrl = "http://localhost:3000/APIs/tube-status";
 
     useEffect(() => {
         fetch(tubeStatusUrl)
             .then(response => response.json())
-            .then(response => setWines(response as Wine[]))
+            .then(response => setLines(response as tubeLines))
     }, [tubeStatusUrl]);
 
     const [selectedLine, setSelectedLine] = useState(lines[0]);
