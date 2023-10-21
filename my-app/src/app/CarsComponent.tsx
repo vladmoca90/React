@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { CarsFilterComponent } from './CarsFilterComponent';
-import { Car } from '../APIs/cars-showroom/route';
+import { Car } from './APIs/cars-showroom/route';
 
 export default function CarsComponent() {
     const [cars, setCars] = useState<Car[]>([]);
