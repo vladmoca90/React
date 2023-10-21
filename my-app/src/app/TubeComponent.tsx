@@ -1,6 +1,6 @@
 "use client";
 import React, { ChangeEvent, useCallback, useEffect, useState } from 'react';
-import { LineStatus, tubeLines } from '../APIs/tube-status/data';
+import { LineStatus, tubeLines } from './APIs/tube-status/data';
 
 const getLineStatusClassName = (status: LineStatus) => {
     let lineStatusClass = '';
