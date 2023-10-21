@@ -74,7 +74,7 @@ body {
 
 .car-monthly-price {
     display: inline-block;
-    font-size: .8rem;
+    font-size: .75rem;
     font-weight: 600;
     padding: 0;
     width: 100%;
@@ -94,7 +94,7 @@ body {
 
 .showroom-buttons>a {
     color: #fff;
-    font-size: 1rem;
+    font-size: .85rem;
     font-weight: 400;
     letter-spacing: 1px;
     margin: 5px;
