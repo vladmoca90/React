@@ -11,9 +11,18 @@ body {
     width: 100%;
 }
 
-.showroom-search {
+.showroom-search,
+.car-container {
     background-color: #848484;
+}
+
+.showroom-search,
+.showroom-buttons,
+.showroom-container {
     display: flex;
+}
+
+.showroom-search {
     justify-content: space-between;
     margin: 30px auto;
     max-width: 720px;
@@ -31,7 +40,6 @@ body {
 
 .showroom-buttons,
 .showroom-container {
-    display: flex;
     flex-wrap: wrap;
 }
 
@@ -40,7 +48,6 @@ body {
 }
 
 .car-container {
-    background-color: #848484;
     margin: 10px;
     max-width: 465px;
 }
@@ -61,7 +68,7 @@ body {
 
 .car-price,
 .showroom-buttons>a {
-    background-color: #a81900;
+    background-color: #971700;
 }
 
 .car-price {
@@ -83,7 +90,7 @@ body {
 }
 
 .car-img {
-    border-bottom: 1px solid #a81900;
+    border-bottom: 1px solid #971700;
     display: block;
     margin: 0 auto;
     max-width: 465px;
