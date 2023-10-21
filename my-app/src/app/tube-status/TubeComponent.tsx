@@ -57,18 +57,13 @@ const getLineStatusFromFriendlyName = (friendlyName: string): LineStatus => {
 export default function TubeComponent() {
     const [lines] = useState(tubeLines);
 
-   /* let tubeLinesUrl = "http://localhost:3000/tube-status";
+   /* let tubeStatusUrl = "http://localhost:3000/APIs/tube-status";
 
     useEffect(() => {
-        fetch(tubeLinesUrl)
-            .then(
-                (response) => {
-                    console.log(response);
-                },
-                (error) => {
-                    console.log(error);
-                });
-    }, [tubeLinesUrl]); */
+        fetch(tubeStatusUrl)
+            .then(response => response.json())
+            .then(response => setWines(response as Wine[]))
+    }, [tubeStatusUrl]); */
 
     const [selectedLine, setSelectedLine] = useState(lines[0]);
 
