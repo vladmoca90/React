@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { useCallback, useEffect, useState } from 'react';
 import { WinesFilterComponent } from './WinesFilterComponent';
-import { Wine, WineCategory, allWines } from '../APIs/wine-sell/data';
+import { Wine, WineCategory, allWines } from './APIs/wine-sell/route';
 
 export default function WinesComponent() {
     const [originalWines] = useState<Wine[]>(allWines);
@@ -17,18 +17,13 @@ export default function WinesComponent() {
         }
     }, [originalWines]);
 
-   /* let WinesSellUrl = "http://localhost:3000/wines-sell";
+    let WinesSellUrl = "http://localhost:3000/wines-sell";
 
     useEffect(() => {
         fetch(WinesSellUrl)
-            .then(
-                (result) => {
-                    console.log(result);
-                },
-                (error) => {
-                    console.log(error);
-                });
-    }, [WinesSellUrl]); */
+            .then(response => response.json())
+            .then(response => setWines(response as Wine[]))
+    }, [WinesSellUrl]);
 
     return (
         <section className="box">
