@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600;700&display=swap');
 
 body {
-    background-color: #313131;
+    background-image: url('/my-app/public/carsShowroom/car-showroom-bg.jpg');
     font-family: 'Gabarito', cursive;
 }
 
