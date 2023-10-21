@@ -1,13 +1,12 @@
 "use client";
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { CarsFilterComponent } from './CarsFilterComponent';
 import { Car } from './APIs/cars-showroom/route';
 
 export default function CarsComponent() {
     const [cars, setCars] = useState<Car[]>([]);
 
-    let carsShowroomUrl = "http://localhost:3000/APIs/cars-showroom";
+    let carsShowroomUrl = "http://localhost:3000/APIs/cars-showroom1";
 
     useEffect(() => {
         fetch(carsShowroomUrl)
@@ -17,7 +16,34 @@ export default function CarsComponent() {
 
     return (
         <section className="box">
-            <CarsFilterComponent cars={[]} />
+            <div className="showroom-search">
+                <select id="carMake" title="carMake">
+                    <option value="make">-- Any Make --</option>
+                    {
+                        cars.map((car, index) => {
+                            return (
+                                <option value={car.make} key={index}>{car.make}</option>
+                            );
+                        })
+                    }
+                </select>
+                <select id="carModel" title="carModel">
+                    <option value="model">-- Any Model --</option>
+                    {
+                        cars.map((car, index) => {
+                            return (
+                                <option value={car.model} key={index}>{car.model}</option>
+                            );
+                        })
+                    }
+                </select>
+                <select id="carPrice" title="carPrice">
+                    <option value="price">-- Any Price --</option>
+                    <option value="low">&pound;0 - &pound;4999</option>
+                    <option value="medium">&pound;5000 - &pound;9999</option>
+                    <option value="high">&pound;10000 - &pound;14999</option>
+                </select>
+            </div>
             <div className="showroom-container">
                 {
                     cars.map((car, index) => {
