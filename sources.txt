@@ -13,6 +13,9 @@ https://www.youtube.com/watch?v=zR5FoKMAJp4&ab_channel=YaserAz --> 2nd useful vi
 
 https://nextjs.org/docs/app/building-your-application/data-fetching --> sources how to create APIs with Next.js
 
+https://legacy.reactjs.org/docs/faq-ajax.html --> sources how to create APIs with Next.js
+
+
 - route.ts cannot be in the same folder as page.tsx (in the same directory!)
 
 
