@@ -18,8 +18,6 @@ export default function CarsComponent() {
         
     }, []);
 
-    removeMakeDuplicates();
-
     return (
         <section className="box">
             <div className="showroom-search">
@@ -38,7 +36,7 @@ export default function CarsComponent() {
                     {
                         cars.map((car, index) => {
                             return (
-                                <option value={car.model} key={index}>{car.make}</option>
+                                <option value={car.model} key={index}>{car.model}</option>
                             );
                         })
                     }
