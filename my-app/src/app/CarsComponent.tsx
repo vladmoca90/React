@@ -14,6 +14,10 @@ export default function CarsComponent() {
             .then(response => setCars(response as Car[]))
     }, [carsShowroomUrl]);
 
+    /*const removeMakeDuplicates = () => {
+        return cars.filter((car, index) => cars.indexOf(car) === index)
+    } */
+
     return (
         <section className="box">
             <div className="showroom-search">
@@ -32,7 +36,7 @@ export default function CarsComponent() {
                     {
                         cars.map((car, index) => {
                             return (
-                                <option value={car.model} key={index}>{car.model}</option>
+                                <option value={car.model} key={index}>{removeMakeDuplicates()}</option>
                             );
                         })
                     }
