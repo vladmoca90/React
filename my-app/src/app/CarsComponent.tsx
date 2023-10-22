@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Car } from './APIs/cars-showroom/route';
 
 export default function CarsComponent() {
@@ -14,9 +14,11 @@ export default function CarsComponent() {
             .then(response => setCars(response as Car[]))
     }, [carsShowroomUrl]);
 
-    /*const removeMakeDuplicates = () => {
-        return cars.filter((car, index) => cars.indexOf(car) === index)
-    } */
+    const removeMakeDuplicates = useCallback(() => {
+        
+    }, []);
+
+    removeMakeDuplicates();
 
     return (
         <section className="box">
@@ -36,7 +38,7 @@ export default function CarsComponent() {
                     {
                         cars.map((car, index) => {
                             return (
-                                <option value={car.model} key={index}>{removeMakeDuplicates()}</option>
+                                <option value={car.model} key={index}>{car.make}</option>
                             );
                         })
                     }
