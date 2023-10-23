@@ -15,7 +15,7 @@ export default function CarsComponent() {
     }, [carsShowroomUrl]);
 
     const removeDuplicatedMakes = useCallback(() => {
-       return [...new Map(cars.map((cars) => [cars.make, cars])).values()]
+        return [...new Map(cars.map((cars) => [cars.make, cars])).values()]
     }, [cars]);
 
     return (
