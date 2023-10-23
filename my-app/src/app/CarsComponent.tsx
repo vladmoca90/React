@@ -14,6 +14,10 @@ export default function CarsComponent() {
             .then(response => setCars(response as Car[]))
     }, [carsShowroomUrl]);
 
+    const uniqueMakes = useCallback(() => {
+       
+    }, []);
+
     return (
         <section className="box">
             <div className="showroom-search">
