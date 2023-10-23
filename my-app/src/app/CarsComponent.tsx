@@ -17,13 +17,15 @@ export default function CarsComponent() {
     //A function that removes the duplicates from the array and display each value once in the dropdown
 
     const removeDuplicatedMakes = useCallback(() => {
-        let carsDictionary = {};
-        
+        let carsDictionary = [];
+
         for (let i = 0; i < cars.length; i++) {
-            carsDictionary = Object.assign(carsDictionary, {
-                "makes": cars[i].make
-            });
+            if (cars[i].make) {
+                carsDictionary.push(cars[i].make)
+            }
         }
+
+        return carsDictionary;
     }, [cars])
 
     console.log(removeDuplicatedMakes());
