@@ -18,13 +18,7 @@ export default function CarsComponent() {
     //A function that removes the duplicates from the array and display each value once in the dropdown
 
     const removeDuplicatedMakes = useCallback(() => {
-        const carsSet = new Set();
-
-        return cars.filter(car => {
-            const duplicate = carsSet.has(car.make);
-            carsSet.add(car.make);
-            return !duplicate;
-        });
+        
     }, [cars])
 
     const selectMake = useCallback((event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -37,7 +31,7 @@ export default function CarsComponent() {
                 <select id="carMake" title="carMake" onChange={selectMake}>
                     <option value="make">-- Any Make --</option>
                     {
-                        removeDuplicatedMakes().map((car, index) => {
+                        cars.map((car, index) => {
                             return (
                                 <option value={car.make} key={index}>{car.make}</option>
                             );
