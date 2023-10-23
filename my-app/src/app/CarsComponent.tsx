@@ -31,10 +31,14 @@ export default function CarsComponent() {
         });
     }, [cars])
 
+    const selectMake = useCallback((event: React.ChangeEvent<HTMLSelectElement>) => {
+        const value = event.target.value;
+    }, [])
+
     return (
         <section className="box">
             <div className="showroom-search">
-                <select id="carMake" title="carMake">
+                <select id="carMake" title="carMake" onChange={selectMake}>
                     <option value="make">-- Any Make --</option>
                     {
                         removeDuplicatedMakes().map((car, index) => {
