@@ -5,6 +5,7 @@ import { Car } from './APIs/cars-showroom/route';
 
 export default function CarsComponent() {
     const [cars, setCars] = useState<Car[]>([]);
+    let carsDictionary = {};
 
     let carsShowroomUrl = "http://localhost:3000/APIs/cars-showroom";
 
@@ -15,11 +16,6 @@ export default function CarsComponent() {
     }, [carsShowroomUrl]);
 
     //A function that removes the duplicates from the array and display each value once in the dropdown
-
-    /*const removeDuplicatedMakes = useCallback(() => {
-        return [...new Map(cars.map((cars) => [cars.make, cars])).values()]
-    }, [cars]); 
-    --> another method  */
 
     const removeDuplicatedMakes = useCallback(() => {
         const carsSet = new Set();
