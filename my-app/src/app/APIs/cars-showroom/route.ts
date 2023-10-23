@@ -5,5 +5,4 @@ export async function GET() {
     return NextResponse.json(allCars)
 }
 
-export { allCars }
 export type { Car }
