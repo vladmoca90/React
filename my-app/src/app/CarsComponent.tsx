@@ -20,13 +20,13 @@ export default function CarsComponent() {
         let carsDictionary = {};
         
         for (let i = 0; i < cars.length; i++) {
-            carsDictionary = {
+            carsDictionary = Object.assign(carsDictionary, {
                 "makes": cars[i].make
-            }
+            });
         }
-
-        console.log(carsDictionary);
     }, [cars])
+
+    console.log(removeDuplicatedMakes());
 
     const selectMake = useCallback((event: React.ChangeEvent<HTMLSelectElement>) => {
         const value = event.target.value;
