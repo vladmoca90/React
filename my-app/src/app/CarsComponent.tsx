@@ -5,7 +5,6 @@ import { Car } from './APIs/cars-showroom/route';
 
 export default function CarsComponent() {
     const [cars, setCars] = useState<Car[]>([]);
-    let carsDictionary = {};
 
     let carsShowroomUrl = "http://localhost:3000/APIs/cars-showroom";
 
@@ -18,7 +17,15 @@ export default function CarsComponent() {
     //A function that removes the duplicates from the array and display each value once in the dropdown
 
     const removeDuplicatedMakes = useCallback(() => {
+        let carsDictionary = {};
         
+        for (let i = 0; i < cars.length; i++) {
+            carsDictionary = {
+                "makes": cars[i].make
+            }
+        }
+
+        console.log(carsDictionary);
     }, [cars])
 
     const selectMake = useCallback((event: React.ChangeEvent<HTMLSelectElement>) => {
