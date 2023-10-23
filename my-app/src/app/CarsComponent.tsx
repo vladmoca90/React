@@ -15,8 +15,8 @@ export default function CarsComponent() {
     }, [carsShowroomUrl]);
 
     const uniqueMakes = useCallback(() => {
-       
-    }, []);
+       return [...new Map(cars.map((cars) => [cars.make, cars])).values()]
+    }, [cars]);
 
     return (
         <section className="box">
@@ -24,7 +24,7 @@ export default function CarsComponent() {
                 <select id="carMake" title="carMake">
                     <option value="make">-- Any Make --</option>
                     {
-                        cars.map((car, index) => {
+                        uniqueMakes().map((car, index) => {
                             return (
                                 <option value={car.make} key={index}>{car.make}</option>
                             );
