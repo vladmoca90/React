@@ -14,9 +14,20 @@ export default function CarsComponent() {
             .then(response => setCars(response as Car[]))
     }, [carsShowroomUrl]);
 
-    const removeDuplicatedMakes = useCallback(() => {
+    //A function that removes the duplicates from the array and display each value once in the dropdown
+
+    /*const removeDuplicatedMakes = useCallback(() => {
         return [...new Map(cars.map((cars) => [cars.make, cars])).values()]
-    }, [cars]);
+    }, [cars]); 
+    --> another method  */
+
+    const carsSet = new Set();
+
+    const removeDuplicatedMakes = cars.filter(car => {
+        const duplicate = carsSet.has(car.make);
+        carsSet.add(car.make);
+        return !duplicate;
+    });
 
     return (
         <section className="box">
@@ -24,7 +35,7 @@ export default function CarsComponent() {
                 <select id="carMake" title="carMake">
                     <option value="make">-- Any Make --</option>
                     {
-                        removeDuplicatedMakes().map((car, index) => {
+                        removeDuplicatedMakes.map((car, index) => {
                             return (
                                 <option value={car.make} key={index}>{car.make}</option>
                             );
