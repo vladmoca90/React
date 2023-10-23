@@ -15,6 +15,8 @@ https://nextjs.org/docs/app/building-your-application/data-fetching --> sources 
 
 https://legacy.reactjs.org/docs/faq-ajax.html --> sources how to create APIs with Next.js
 
+https://fullstackheroes.com/tutorials/javascript/5-ways-to-remove-duplicate-objects-from-array-based-on-property/ --> way to remove duplicates from arrays
+
 
 - route.ts cannot be in the same folder as page.tsx (in the same directory!)
 
@@ -66,22 +68,3 @@ useEffect(() => {
         .catch(error =>
             setError(error))
 }, [carsShowroomUrl]);
-
-
-https://fullstackheroes.com/tutorials/javascript/5-ways-to-remove-duplicate-objects-from-array-based-on-property/ --> way to remove duplicates from arrays
-
--- For the Car Showroom project --
-
-1) const removeDuplicatedMakes = useCallback(() => {
-        return [...new Map(cars.map((cars) => [cars.make, cars])).values()]
-    }, [cars]); 
-
-2) const removeDuplicatedMakes = useCallback(() => {
-        const carsSet = new Set();
-
-        return cars.filter(car => {
-            const duplicate = carsSet.has(car.make);
-            carsSet.add(car.make);
-            return !duplicate;
-        });
-    }, [cars])
