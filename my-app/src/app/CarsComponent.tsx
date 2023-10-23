@@ -14,7 +14,7 @@ export default function CarsComponent() {
             .then(response => setCars(response as Car[]))
     }, [carsShowroomUrl]);
 
-    const uniqueMakes = useCallback(() => {
+    const removeDuplicatedMakes = useCallback(() => {
        return [...new Map(cars.map((cars) => [cars.make, cars])).values()]
     }, [cars]);
 
@@ -24,7 +24,7 @@ export default function CarsComponent() {
                 <select id="carMake" title="carMake">
                     <option value="make">-- Any Make --</option>
                     {
-                        uniqueMakes().map((car, index) => {
+                        removeDuplicatedMakes().map((car, index) => {
                             return (
                                 <option value={car.make} key={index}>{car.make}</option>
                             );
