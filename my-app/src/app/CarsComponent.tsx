@@ -20,9 +20,7 @@ export default function CarsComponent() {
         let carsDictionary = [];
 
         for (let i = 0; i < cars.length; i++) {
-            if (cars[i].make) {
-                carsDictionary.push(cars[i].make)
-            }
+            
         }
 
         return carsDictionary;
