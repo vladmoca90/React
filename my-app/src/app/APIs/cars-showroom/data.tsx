@@ -1,5 +1,4 @@
 export interface Car {
-    id: number,
     img: string,
     make: string,
     model: string,
@@ -9,7 +8,6 @@ export interface Car {
 
 export const allCars: Car[] = [
     {
-        id: 1,
         img: 'audi.jpg',
         make: 'Audi',
         model: 'TT 2.0T FSI 2dr',
@@ -17,7 +15,6 @@ export const allCars: Car[] = [
         year: 2007,
     },
     {
-        id: 2,
         img: 'audi.jpg',
         make: 'Audi',
         model: 'Q5 2.0T FSI Quattro S Line Special Ed 5dr S Tronic',
@@ -25,7 +22,6 @@ export const allCars: Car[] = [
         year: 2011,
     },
     {
-        id: 3,
         img: 'land-rover.jpg',
         make: 'Land Rover',
         model: 'Discovery 3',
@@ -33,7 +29,6 @@ export const allCars: Car[] = [
         year: 2006,
     },
     {
-        id: 4,
         img: 'land-rover.jpg',
         make: 'Land Rover',
         model: 'Discovery 2.7 Td V6 HSE 5dr Auto',
@@ -41,7 +36,6 @@ export const allCars: Car[] = [
         year: 2009,
     },
     {
-        id: 5,
         img: 'mercedes-benz.jpg',
         make: 'Mercedes-Benz',
         model: 'S Class S500 4dr Auto',
@@ -49,7 +43,6 @@ export const allCars: Car[] = [
         year: 2006,
     },
     {
-        id: 6,
         img: 'mercedes-benz.jpg',
         make: 'Mercedes-Benz',
         model: 'C Class C220 CDI Blue AMG Sport 4dr',
@@ -57,7 +50,6 @@ export const allCars: Car[] = [
         year: 2012,
     },
     {
-        id: 7,
         img: 'nissan.jpg',
         make: 'Nissan',
         model: 'Fairlady Turbo 3.5 V6 300 GT 3d',
@@ -65,7 +57,7 @@ export const allCars: Car[] = [
         year: 2007,
     },
     {
-        id: 8,
+
         img: 'nissan.jpg',
         make: 'Nissan',
         model: 'Pathfinder 2.5 dCi 171 Acenta 5dr',
@@ -73,7 +65,6 @@ export const allCars: Car[] = [
         year: 2010,
     },
     {
-        id: 9,
         img: 'skoda.jpg',
         make: 'Skoda',
         model: 'Fabia 1.2 TSI SE 5dr',
@@ -81,7 +72,6 @@ export const allCars: Car[] = [
         year: 2011,
     },
     {
-        id: 10,
         img: 'skoda.jpg',
         make: 'Skoda',
         model: 'Octavia 2.0T FSI vRS 5dr',
@@ -89,7 +79,6 @@ export const allCars: Car[] = [
         year: 2011,
     },
     {
-        id: 11,
         img: 'vauxhall.jpg',
         make: 'Vauxhall',
         model: 'Mokka 1.6 CDTi Limited Edition 5dr',
@@ -97,7 +86,6 @@ export const allCars: Car[] = [
         year: 2015,
     },
     {
-        id: 12,
         img: 'vauxhall.jpg',
         make: 'Vauxhall',
         model: 'Ampera 111kW Electron 5dr Auto',
