@@ -4,3 +4,5 @@ import { allFoods } from './data';
 export async function GET() {
     return NextResponse.json(allFoods);
 }
+
+export { allFoods };
