@@ -17,12 +17,12 @@ export default function CarsComponent() {
     //A function that removes the duplicates from the array and display each value once in the dropdown
 
     const removeDuplicatedMakes = useCallback(() => {
-        let carsDictionary:any = {};
+        let carsDictionary: any | undefined = {};
 
         for (let i = 0; i < cars.length; i++) {
             let key = cars[i].make;
 
-            if(carsDictionary[key]) {
+            if (carsDictionary[key]) {
                 carsDictionary[key]++;
             }
             else {
