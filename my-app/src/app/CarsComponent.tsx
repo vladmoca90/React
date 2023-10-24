@@ -16,7 +16,7 @@ export default function CarsComponent() {
 
     //A function that removes the duplicates from the array and display each value once in the dropdown
     const removeDuplicatedMakes = useCallback(() => {
-        let carsDictionary: any | undefined = {};
+        let carsDictionary: {[make: string]: number} = {};
 
         for (let i = 0; i < cars.length; i++) {
             let key = cars[i].make;
@@ -27,9 +27,9 @@ export default function CarsComponent() {
             else {
                 carsDictionary[key] = 1;
             }
-
-            return Object.keys(carsDictionary);
         }
+
+        return Object.keys(carsDictionary);
     }, [cars])
 
     console.log(removeDuplicatedMakes());
@@ -44,7 +44,7 @@ export default function CarsComponent() {
                 <select id="carMake" title="carMake" onChange={selectMake}>
                     <option value="make">-- Any Make --</option>
                     {
-                        cars.map((car, index) => {
+                        removeDuplicatedMakes().map((car, index) => {
                             return (
                                 <option value={car.make} key={index}>{car.make}</option>
                             );
