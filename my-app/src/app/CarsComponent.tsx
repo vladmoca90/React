@@ -15,7 +15,6 @@ export default function CarsComponent() {
     }, [carsShowroomUrl]);
 
     //A function that removes the duplicates from the array and display each value once in the dropdown
-
     const removeDuplicatedMakes = useCallback(() => {
         let carsDictionary: any | undefined = {};
 
