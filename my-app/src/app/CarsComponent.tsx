@@ -16,17 +16,24 @@ export default function CarsComponent() {
 
     //A function that removes the duplicates from the array and display each value once in the dropdown
 
-    const removeDuplicatedMakes = useCallback(() => {
-        let carsDictionary = [];
+    /*const removeDuplicatedMakes = useCallback(() => {
+        let carsDictionary = {};
 
         for (let i = 0; i < cars.length; i++) {
-            
-        }
+            let key = cars[i];
 
-        return carsDictionary;
+            if(carsDictionary[key]) {
+                carsDictionary[key]++;
+            }
+            else {
+                carsDictionary[key] = 1;
+            }
+
+            return Object.keys(carsDictionary);
+        }
     }, [cars])
 
-    console.log(removeDuplicatedMakes());
+    console.log(removeDuplicatedMakes()); */
 
     const selectMake = useCallback((event: React.ChangeEvent<HTMLSelectElement>) => {
         const value = event.target.value;
