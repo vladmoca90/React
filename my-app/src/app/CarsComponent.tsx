@@ -23,7 +23,7 @@ export default function CarsComponent() {
                 continue;
             }
             else {
-                carsDictionary[cars[i].make] = cars[i].make;
+                carsDictionary[cars[i].make] = cars;
             }
         }
 
