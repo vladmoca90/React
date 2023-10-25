@@ -17,6 +17,8 @@ https://legacy.reactjs.org/docs/faq-ajax.html --> sources how to create APIs wit
 
 https://fullstackheroes.com/tutorials/javascript/5-ways-to-remove-duplicate-objects-from-array-based-on-property/ --> way to remove duplicates from arrays
 
+https://pietschsoft.com/post/2015/09/05/javascript-basics-how-to-create-a-dictionary-with-keyvalue-pairs?fbclid=IwAR1JAqRyJYwvs39dXjkUo6y--A7khZIZAlXJXmwfu-oMO_JOOuOByInN9CI --> create a dictionary
+
 Remove duplicates with object destructuring --> const removeDuplicatedMakes = useCallback(() => {
                                                     return [...new Map(cars.map((cars) => [cars.make, cars])).values()]
                                                 }, [cars]);
