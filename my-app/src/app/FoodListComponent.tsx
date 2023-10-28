@@ -6,7 +6,7 @@ import { allFoods } from './APIs/food-list/data';
 export default function FoodListComponent() {
     const [foods] = useState(allFoods);
 
-    /*let foodListUrl = "http://localhost:3000/APIs/food-list";
+    let foodListUrl = "http://localhost:3000/APIs/food-list";
 
     useEffect(() => {
         fetch(foodListUrl)
@@ -17,7 +17,7 @@ export default function FoodListComponent() {
                 (error) => {
                     console.log(error);
                 });
-    }, [foodListUrl]); */
+    }, [foodListUrl]);
 
     //A function that calculates the total price
     const calculateTotalPrice = useCallback(() => {
