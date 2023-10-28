@@ -73,3 +73,7 @@ useEffect(() => {
         .catch(error =>
             setError(error))
 }, [carsShowroomUrl]);
+
+//Short writing for a for loop
+
+for (let j = 0; j < foods.length; j++) { ... } ---> for (let i in foods) { ... }
