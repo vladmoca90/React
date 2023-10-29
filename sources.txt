@@ -77,3 +77,24 @@ useEffect(() => {
 //Short writing for a for loop
 
 for (let j = 0; j < foods.length; j++) { ... } ---> for (let i in foods) { ... }
+
+//Most common element without dictionary
+
+let common: string | undefined;
+let maxCount = 0;
+
+for (let i in foods) {
+    let count = 0;
+
+    for (let j = 0; j < foods.length; j++) {
+        if (foods[i].unit == foods[j].unit) {
+            count++;
+        }
+        if (count > maxCount) {
+            maxCount = count;
+            common = foods[i].unit;
+        }
+    }
+}
+
+return common;

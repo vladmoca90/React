@@ -72,11 +72,13 @@ export default function FoodListComponent() {
         let foodDictionary: { [food: string[number]]: any } = {};
 
         for (let i in foods) {
+            let count = 0;
+
             if (foodDictionary[foods[i].unit]) {
-                continue;
+                count++;
             }
             else {
-                foodDictionary[foods[i].unit] = foods[i];
+                foodDictionary[foods[i].unit] = foods[i].unit;
             }
         }
 
@@ -84,24 +86,7 @@ export default function FoodListComponent() {
 
         return Object.keys(foodDictionary);
 
-        /*let common: string | undefined;
-        let maxCount = 0;
 
-        for (let i in foods) {
-            let count = 0;
-
-            for (let j = 0; j < foods.length; j++) {
-                if (foods[i].unit == foods[j].unit) {
-                    count++;
-                }
-                if (count > maxCount) {
-                    maxCount = count;
-                    common = foods[i].unit;
-                }
-            }
-        }
-
-        return common;*/
     }, [foods]);
 
     return (
