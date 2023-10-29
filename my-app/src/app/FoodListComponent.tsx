@@ -78,15 +78,12 @@ export default function FoodListComponent() {
                 count++;
             }
             else {
-                foodDictionary[foods[i].unit] = foods[i].unit;
+                foodDictionary[foods[i].unit] = foods[i];
             }
         }
-
         console.log(foodDictionary);
 
         return Object.keys(foodDictionary);
-
-
     }, [foods]);
 
     return (
