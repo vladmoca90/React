@@ -73,6 +73,7 @@ export default function FoodListComponent() {
 
         for (let i in foods) {
             let count = 0;
+            let common: string | undefined;
 
             if (foodDictionary[foods[i].unit]) {
                 count++;
