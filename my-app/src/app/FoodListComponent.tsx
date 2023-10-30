@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
-import { Food } from './APIs/food-list/data';
+import { Food } from './APIs/food-list/route';
 
 export default function FoodListComponent() {
     const [foods, setFoods] = useState<Food[]>([]);
