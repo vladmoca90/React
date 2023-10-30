@@ -1,8 +1,8 @@
-import CarsComponent from './CarsComponent';
+import FoodListComponent from './FoodListComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './cars-showroom.css';
+import './food-list.css';
 
-export default function CarsPage() {
-    return (<CarsComponent />);
+export default function FoodListPage() {
+    return (<FoodListComponent />);
 }
