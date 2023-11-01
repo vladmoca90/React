@@ -19,6 +19,8 @@ https://fullstackheroes.com/tutorials/javascript/5-ways-to-remove-duplicate-obje
 
 https://pietschsoft.com/post/2015/09/05/javascript-basics-how-to-create-a-dictionary-with-keyvalue-pairs?fbclid=IwAR1JAqRyJYwvs39dXjkUo6y--A7khZIZAlXJXmwfu-oMO_JOOuOByInN9CI --> create a dictionary
 
+https://stackoverflow.com/questions/34913675/how-to-iterate-keys-values-in-javascript --> how to itinerate a dictionary
+
 Remove duplicates with object destructuring --> const removeDuplicatedMakes = useCallback(() => {
                                                     return [...new Map(cars.map((cars) => [cars.make, cars])).values()]
                                                 }, [cars]);
@@ -76,7 +78,7 @@ useEffect(() => {
 
 //Short writing for a for loop
 
-for (let j = 0; j < foods.length; j++) { ... } ---> for (let i in foods) { ... }
+for (let j = 0; j < foods.length; j++) { ... } ---> for (let i of foods) { ... }
 
 //Most common element without dictionary
 
