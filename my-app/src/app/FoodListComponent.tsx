@@ -74,16 +74,7 @@ export default function FoodListComponent() {
         for (let i in foods) {
             let count = 0;
 
-            if (foodDictionary[foods[i].unit]) {
-                count++;
-            }
-            else {
-                maxCount = count;
-                commonUnit = foods[i].unit;
-            }
         }
-
-        console.log(foodDictionary);
 
         return commonUnit;
     }, [foods]);
