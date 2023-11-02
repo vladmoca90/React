@@ -61,7 +61,7 @@ export const allCars: Car[] = [
         img: 'nissan.jpg',
         make: 'Nissan',
         model: 'Pathfinder 2.5 dCi 171 Acenta 5dr',
-        price: 4280,
+        price: 4279,
         year: 2010,
     },
     {
@@ -82,7 +82,7 @@ export const allCars: Car[] = [
         img: 'vauxhall.jpg',
         make: 'Vauxhall',
         model: 'Mokka 1.6 CDTi Limited Edition 5dr',
-        price: 5712,
+        price: 5749,
         year: 2015,
     },
     {
