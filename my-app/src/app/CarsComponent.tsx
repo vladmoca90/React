@@ -5,6 +5,7 @@ import { Car } from './APIs/cars-showroom/route';
 
 export default function CarsComponent() {
     const [cars, setCars] = useState<Car[]>([]);
+    const [selectedOption, setSelectedOption] = useState<String>();
 
     let carsShowroomUrl = "http://localhost:3000/APIs/cars-showroom";
 
@@ -34,6 +35,7 @@ export default function CarsComponent() {
 
     const selectMake = useCallback((event: React.ChangeEvent<HTMLSelectElement>) => {
         const value = event.target.value;
+        setSelectedOption(value);
     }, [])
 
     return (
