@@ -23,7 +23,7 @@ const App = () => {
                 <option value="yellow">Yellow</option>
                 <option value="kindacode.com">Kindacode.com</option>
             </select>
-            {selectedOption && <h2 style={styles.result}>{selectedOption}</h2>}
+            {selectedOption && <h2>{selectedOption}</h2>}
         </div>
     );
 };
