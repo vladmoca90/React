@@ -12,8 +12,8 @@ const App = () => {
     };
 
     return (
-        <div style={styles.container}>
-            <select onChange={selectChange} style={styles.select}>
+        <div>
+            <select onChange={selectChange}>
                 <option selected disabled>
                     Choose one
                 </option>
@@ -29,20 +29,3 @@ const App = () => {
 };
 
 export default App;
-
-// Just some styles
-const styles: { [name: string]: React.CSSProperties } = {
-    container: {
-        marginTop: 50,
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-    },
-    select: {
-        padding: 5,
-        width: 200,
-    },
-    result: {
-        marginTop: 30,
-    },
-};
