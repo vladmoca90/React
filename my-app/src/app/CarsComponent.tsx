@@ -51,7 +51,7 @@ export default function CarsComponent() {
                         })
                     }
                 </select>
-                <select id="carModel" title="carModel">
+                <select id="carModel" title="carModel" disabled>
                     <option value="model">-- Any Model --</option>
                     {
                         cars.map((car, index) => {
