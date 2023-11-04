@@ -2,9 +2,25 @@ https://www.geeksforgeeks.org/reactjs-introduction-jsx/
 
 https://reactjs.org/ ---> https://react.dev/ (new website)
 
+* Commands ->
+
+npm run build - is the command to build
+npm start - to open IE
+
+RUN:
+
+cd my-app
+npm run dev
+
+
 https://codeburst.io/react-js-for-beginners-the-basics-87ef6e54dae7
 
 https://codeflarelimited.com/blog/dynamically-populate-select-options-in-react-js/
+
+
+https://hackr.io/blog/react-projects - examples of projects
+
+https://flatlogic.com/blog/top-15-react-app-ideas-for-web-developer-in-2022/ - examples of projects
 
 
 https://www.youtube.com/watch?v=-MFiza7ZRzs&ab_channel=DaveGray --> useful video to create APIs with Next.js
@@ -14,6 +30,7 @@ https://www.youtube.com/watch?v=zR5FoKMAJp4&ab_channel=YaserAz --> 2nd useful vi
 https://nextjs.org/docs/app/building-your-application/data-fetching --> sources how to create APIs with Next.js
 
 https://legacy.reactjs.org/docs/faq-ajax.html --> sources how to create APIs with Next.js
+
 
 https://fullstackheroes.com/tutorials/javascript/5-ways-to-remove-duplicate-objects-from-array-based-on-property/ --> way to remove duplicates from arrays
 
@@ -32,25 +49,7 @@ Remove duplicates with object destructuring --> const removeDuplicatedMakes = us
 "use client" - To use client components in Next.js, you need to add the use client directive as the first line of your file 
                (before any imports). This will tell Next.js that this is a client component and it can use hooks. 
                Otherwise, Next.js will treat your component as a server component, which cannot use hooks.
-               
 
-* Commands ->
-
-npm run build - is the command to build
-npm start - to open IE
-
-RUN:
-
-cd my-app
-npm run dev
-
-
-
-https://hackr.io/blog/react-projects - examples of projects
-
-https://flatlogic.com/blog/top-15-react-app-ideas-for-web-developer-in-2022/ - examples of projects
-
-projects - weather app, dating app
 
 //How to use useEffect
 
