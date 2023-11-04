@@ -17,7 +17,7 @@ export default function CarsComponent() {
 
     //A function that removes the duplicates from the array and display each value once in the dropdown
     const removeDuplicatedMakes = useCallback(() => {
-        let carsDictionary: {[make: string[number]]: any} = {};
+        let carsDictionary: { [make: string[number]]: any } = {};
 
         for (let i = 0; i < cars.length; i++) {
             if (carsDictionary[cars[i].make]) {
