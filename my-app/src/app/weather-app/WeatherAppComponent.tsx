@@ -1,6 +1,6 @@
 "use client";
 import { useCallback } from 'react';
 
-export default function WeatherComponent() {
+export default function WeatherAppComponent() {
     return <section></section>;
 }

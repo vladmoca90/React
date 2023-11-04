@@ -1,7 +1,7 @@
-import WeatherComponent from './WeatherComponent';
+import WeatherComponent from './WeatherAppComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './weather-application.css';
+import './weather-app.css';
 
 export default function WeatherPage() {
     return (<WeatherComponent />);
