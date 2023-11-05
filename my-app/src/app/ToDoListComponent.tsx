@@ -1,6 +1,10 @@
 "use client";
 import React, { useCallback, useState } from 'react';
 
+export type ToDoListProps = {
+    list: [],
+}
+
 export default function ToDoListComponent() {
     return (
         <section>

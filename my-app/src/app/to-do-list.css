@@ -10,7 +10,7 @@ body {
     color: #fff;
     font-family: Tahoma;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     margin: 45px 0;
     text-align: center;
     text-transform: uppercase;
@@ -27,7 +27,7 @@ body {
 }
 
 .main-container .add-button {
-    background-color: #035917;
+    background-color: #00841f;
     border-color: transparent;
     border: 0;
     border-top-right-radius: 5px;
@@ -60,7 +60,7 @@ body {
 }
 
 .list-container .list-main li {
-    background-color: #a7e3f2;
+    background-color: #8fdff3;
     border: 1px solid #19576c;
     border-radius: 5px;
     box-shadow: 1px -1px 24px #19576c;
