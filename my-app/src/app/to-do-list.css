@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100;400;600;700&display=swap');
 
 body {
-    background-color: #06a1c4;
+    background: #00a5c9;
     margin: 0;
     padding: 0;
 }
@@ -37,6 +37,7 @@ body {
     padding: 5px 0;
     width: 85px;
     text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
