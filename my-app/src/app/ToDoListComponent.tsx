@@ -2,6 +2,12 @@
 import React, { useCallback, useState } from 'react';
 
 export default function ToDoListComponent() {
+    const text = useState('');
+
+    const addText = useCallback(() => {
+
+    }, []);
+
     return (
         <section>
             <div className="container">
