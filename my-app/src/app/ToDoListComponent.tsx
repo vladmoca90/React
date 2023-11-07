@@ -1,7 +1,13 @@
 "use client";
 import React, { useCallback, useState } from 'react';
+import TodoTask from "./Components/TodoTask";
+import { ITask } from "./Interfaces";
 
 export default function ToDoListComponent() {
+    const [task, setTask] = useState<string>("");
+    const [deadline, setDealine] = useState<number>(0);
+    const [todoList, setTodoList] = useState<ITask[]>([]);
+
     return (
         <section>
             <div className="container">
