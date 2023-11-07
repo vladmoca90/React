@@ -1,8 +1,10 @@
 "use client";
 import React, { useCallback, useState } from 'react';
 
-export type ToDoListProps = {
-    list: [],
+interface item {
+    completed: boolean;
+    id: number;
+    text: string;
 }
 
 export default function ToDoListComponent() {
@@ -13,7 +15,7 @@ export default function ToDoListComponent() {
                 <div className="main-container">
                     <div className="type-field">
                         <input aria-label="text" type="text" id="field" className="form-control" placeholder="Write here..." />
-                        <a className="add-button">+ Add</a>
+                        <button className="add-button">+ Add</button>
                     </div>
                     <div className="list-container">
                         <ul className="list-main">
