@@ -6,6 +6,10 @@ interface Props {
   completeTask(taskNameToDelete: string): void;
 }
 
+<ul className="list-main">
+<li className="list-item"></li>
+</ul>
+
 const TodoTask = ({ task, completeTask }: Props) => {
   return (
     <div className="task">
