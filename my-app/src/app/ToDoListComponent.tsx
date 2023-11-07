@@ -8,6 +8,22 @@ interface item {
 }
 
 export default function ToDoListComponent() {
+    const [todos, setTodos] = useState<item[]>([
+        { id: 1, text: 'Learn Typescript with George', completed: false },
+        { id: 2, text: 'Build To Do List', completed: false }
+    ]);
+
+    const handleToggle = (id: number) => {
+        setTodos(
+            todos.map((todo) => {
+                if (todo.id === id) {
+                    return { ...todo, completed: !todo.completed };
+                }
+                return todo;
+            })
+        )
+    }
+
     return (
         <section>
             <div className="container">
@@ -19,7 +35,11 @@ export default function ToDoListComponent() {
                     </div>
                     <div className="list-container">
                         <ul className="list-main">
-                            <li className="list-item"></li>
+                            {
+                                todos.map((todo) => {
+                                    <li key={todo.id} onClick={() => handleToggle(todo.id)} className="list-item">{todo.text}</li>
+                                })
+                            }
                         </ul>
                     </div>
                 </div>
