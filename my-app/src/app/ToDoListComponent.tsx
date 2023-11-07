@@ -13,6 +13,8 @@ export default function ToDoListComponent() {
         { id: 2, text: 'Build To Do List', completed: false }
     ]);
 
+    const [input, setInput] = useState<string>('');
+
     const handleToggle = (id: number) => {
         setTodos(
             todos.map((todo) => {
@@ -24,20 +26,25 @@ export default function ToDoListComponent() {
         )
     }
 
+    const handleClick = () => {
+        const newTodo: item = { id: Date.now(), text: input, completed: false };
+        setTodos([...todos, newTodo]);
+    };
+
     return (
         <section>
             <div className="container">
                 <h3 className="title">To do list</h3>
                 <div className="main-container">
                     <div className="type-field">
-                        <input aria-label="text" type="text" id="field" className="form-control" placeholder="Write here..." />
-                        <button className="add-button">+ Add</button>
+                        <input aria-label="text" type="text" id="field" className="form-control" placeholder="Write here..." onChange={(e) => setInput(e.currentTarget.value)} />
+                        <button className="add-button" onClick={handleClick()}>+ Add</button>
                     </div>
                     <div className="list-container">
                         <ul className="list-main">
                             {
                                 todos.map((todo) => {
-                                    <li key={todo.id} onClick={() => handleToggle(todo.id)} className="list-item">{todo.text}</li>
+                                    return (<li key={todo.id} onClick={() => handleToggle(todo.id)} style={{ textDecoration: todo.completed ? 'line-through' : 'none' }} className="list-item">{todo.text}</li>);
                                 })
                             }
                         </ul>
