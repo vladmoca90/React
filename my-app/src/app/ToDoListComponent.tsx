@@ -1,7 +1,7 @@
 "use client";
 import React, { useCallback, useState } from 'react';
-import TodoTask from "./Components/TodoTask";
-import { ITask } from "./Interfaces";
+import TodoTask from "./toDoTask";
+import { ITask } from "./interfaces";
 
 export default function ToDoListComponent() {
     const [task, setTask] = useState<string>("");
