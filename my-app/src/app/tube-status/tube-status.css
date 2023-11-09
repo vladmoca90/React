@@ -6,7 +6,7 @@ body {
 }
 
 body #main {
-    color: #333;
+    color: #222222;
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
     width: 480px;
@@ -14,7 +14,7 @@ body #main {
 
 #chooseLineName,
 #chooseLineStatus {
-    border: 1px solid #333;
+    border: 1px solid #222;
     height: 30px;
     width: 200px;
 }
