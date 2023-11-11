@@ -38,7 +38,10 @@ https://pietschsoft.com/post/2015/09/05/javascript-basics-how-to-create-a-dictio
 
 https://stackoverflow.com/questions/34913675/how-to-iterate-keys-values-in-javascript --> how to itinerate a dictionary
 
+
 https://codesandbox.io/s/todo-list-with-react-and-typescript-6kvkn?file=/src/components/TodoItem.tsx --> to do list
+
+https://www.geeksforgeeks.org/create-todo-app-using-reactjs/ --> to do list
 
 Remove duplicates with object destructuring --> const removeDuplicatedMakes = useCallback(() => {
                                                     return [...new Map(cars.map((cars) => [cars.make, cars])).values()]
