@@ -43,6 +43,7 @@ https://codesandbox.io/s/todo-list-with-react-and-typescript-6kvkn?file=/src/com
 
 https://www.geeksforgeeks.org/create-todo-app-using-reactjs/ --> to do list
 
+
 Remove duplicates with object destructuring --> const removeDuplicatedMakes = useCallback(() => {
                                                     return [...new Map(cars.map((cars) => [cars.make, cars])).values()]
                                                 }, [cars]);
@@ -80,9 +81,11 @@ useEffect(() => {
             setError(error))
 }, [carsShowroomUrl]);
 
+
 //Short writing for a for loop
 
 for (let j = 0; j < foods.length; j++) { ... } ---> for (let i of foods) { ... }
+
 
 //Most common element without dictionary
 
