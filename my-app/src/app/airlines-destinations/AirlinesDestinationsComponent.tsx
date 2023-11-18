@@ -5,13 +5,17 @@ import { Flight } from "./APIs/airlines-destinations/route";
 
 export default function AirlinesDestinationsComponent() {
     const [flights, setFlights] = useState<Flight[]>([]);
+    const [error, setError] = useState<String>();
 
     let airlinesDestinationsUrl = "http://localhost:3000/APIs/airlines-destinations";
 
     useEffect(() => {
         fetch(airlinesDestinationsUrl)
-            .then(response => response.json())
-            .then(response => setFlights(response as Flight[]))
+            .then((response) => response)
+            .then(e => e.json())
+            .then(e => setFlights(e as Flight[]))
+            .catch(error =>
+                setError(error))
     }, [airlinesDestinationsUrl]);
 
     return (

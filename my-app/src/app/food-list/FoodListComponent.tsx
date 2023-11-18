@@ -5,6 +5,7 @@ import { allFoods } from './APIs/food-list/data';
 
 export default function FoodListComponent() {
     const [foods] = useState(allFoods);
+    const [error, setError] = useState<String>();
 
     /* const [foods, setFoods] = useState<Food[]>([]);
 
@@ -14,7 +15,9 @@ export default function FoodListComponent() {
         fetch(foodListUrl)
             .then((response) => response)
             .then(e => e.json())
-            .then(e => setFoods(e as Food[]))
+            .then(e => setFlights(e as Food[]))
+            .catch(error =>
+                setError(error))
     }, [foodListUrl]); */
 
     //A function that calculates the total price
