@@ -9,14 +9,6 @@ export default function WinesComponent() {
     const [wines, setWines] = useState<Wine[]>(allWines);
     const [error, setError] = useState<String>();
     const [categories] = useState<WineCategory[]>(Array.from(new Set(wines.map((wine) => wine.category))));
-    const whenWineIsSelected = useCallback((category: WineCategory | undefined) => {
-        if (category === undefined) {
-            setWines(originalWines);
-        } else {
-            const filteredWines = originalWines.filter(w => w.category === category);
-            setWines(filteredWines);
-        }
-    }, [originalWines]);
 
     let winesSellUrl = "http://localhost:3000/APIs/wine-sell";
 
@@ -28,6 +20,15 @@ export default function WinesComponent() {
             .catch(error =>
                 setError(error))
     }, [winesSellUrl]);
+
+    const whenWineIsSelected = useCallback((category: WineCategory | undefined) => {
+        if (category === undefined) {
+            setWines(originalWines);
+        } else {
+            const filteredWines = originalWines.filter(w => w.category === category);
+            setWines(filteredWines);
+        }
+    }, [originalWines]);
 
     return (
         <section className="box">
