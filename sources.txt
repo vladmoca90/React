@@ -84,7 +84,7 @@ useEffect(() => {
 
 //Short writing for a for loop
 
-for (let j = 0; j < foods.length; j++) { ... } ---> for (let i of foods) { ... }
+for (let j = 0; j < foods.length; j++) { ... } ===> for (let i of foods) { ... }
 
 
 //Most common element without dictionary
