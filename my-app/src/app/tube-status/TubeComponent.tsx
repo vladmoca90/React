@@ -57,6 +57,7 @@ const getLineStatusFromFriendlyName = (friendlyName: string): LineStatus => {
 
 export default function TubeComponent() {
     const [lines, setLines] = useState(tubeLines);
+    const [error, setError] = useState<String>();
     const [selectedLine, setSelectedLine] = useState(lines[0]);
 
     const selectLine = useCallback((event: ChangeEvent<HTMLSelectElement>) => {
@@ -79,8 +80,11 @@ export default function TubeComponent() {
 
     useEffect(() => {
         fetch(tubeStatusUrl)
-            .then(response => response.json())
+            .then((response) => response)
+            .then(e => e.json())
             .then(response => setLines(response as Line[]))
+            .catch(error =>
+                setError(error))
     }, [tubeStatusUrl]);
 
     return (
