@@ -5,14 +5,18 @@ import { Car } from './APIs/cars-showroom/route';
 
 export default function CarsComponent() {
     const [cars, setCars] = useState<Car[]>([]);
+    const [error, setError] = useState<String>();
     const [selectedOption, setSelectedOption] = useState<String>();
 
     let carsShowroomUrl = "http://localhost:3000/APIs/cars-showroom";
 
     useEffect(() => {
         fetch(carsShowroomUrl)
-            .then(response => response.json())
-            .then(response => setCars(response as Car[]))
+            .then((response) => response)
+            .then(e => e.json())
+            .then(e => setCars(e as Car[]))
+            .catch(error =>
+                setError(error))
     }, [carsShowroomUrl]);
 
     //A function that removes the duplicates from the array and display each value once in the dropdown
