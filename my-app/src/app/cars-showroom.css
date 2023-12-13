@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+    background: url('/carsShowroom/car-showroom-bg.jpg') no-repeat fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.box {
+    margin: 0 auto 20px;
+    width: 100%;
+}
+
+.showroom-search,
+.car-container {
+    background-color: #848484;
+}
+
+.showroom-search,
+.showroom-buttons,
+.showroom-container {
+    display: flex;
+}
+
+.showroom-search {
+    justify-content: space-between;
+    margin: 30px auto;
+    max-width: 720px;
+    padding: 15px 20px;
+}
+
+#carMake,
+#carModel,
+#carPrice {
+    font-size: .8rem;
+    font-weight: 700;
+    height: 30px;
+    max-width: 350px;
+}
+
+.showroom-buttons,
+.showroom-container {
+    flex-wrap: wrap;
+}
+
+.showroom-container {
+    justify-content: center;
+}
+
+.car-container {
+    margin: 10px;
+    max-width: 465px;
+}
+
+.car-header {
+    padding: 5px 0 0;
+    text-align: center;
+}
+
+.car-title {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    height: 45px;
+    letter-spacing: 1px;
+    margin: 0 5px 10px;
+}
+
+.car-price,
+.showroom-buttons>a {
+    background-color: #a61900;
+}
+
+.car-price {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 23px;
+    margin: 0;
+    padding: 10px 0 6px;
+}
+
+.car-monthly-price {
+    display: inline-block;
+    font-size: .75rem;
+    font-weight: 600;
+    padding: 0;
+    width: 100%;
+}
+
+.car-img {
+    border-bottom: 1px solid #971700;
+    display: block;
+    margin: 0 auto;
+    max-width: 465px;
+}
+
+.showroom-buttons {
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.showroom-buttons>a {
+    color: #fff;
+    font-size: .85rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 5px;
+    padding: 7px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s linear;
+    width: 47%;
+}
+
+.showroom-buttons>a:hover {
+    background-color: #1a1a1a;
+    cursor: pointer;
+}
