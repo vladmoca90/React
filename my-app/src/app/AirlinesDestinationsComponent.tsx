@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { TotalDestinations } from "./TotalDestinationsComponent";
-import { allFlights } from "./../../data/destinations.json";
+import { allFlights } from "../../data/destinations.json";
 
 export default function AirlinesDestinationsComponent() {
     const [flights, setFlights] = useState<typeof allFlights>([]);
