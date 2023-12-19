@@ -7,6 +7,8 @@ https://reactjs.org/ ---> https://react.dev/ (new website)
 npm run build - is the command to build
 npm start - to open IE
 
+npx json-server --watch data/destinations.json --port 8000 --> to create the server API
+
 RUN:
 
 cd my-app
