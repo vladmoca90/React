@@ -1,0 +1,60 @@
+{
+    "foods": [
+        {
+            "img": "cheese.PNG",
+            "name": "Cheese",
+            "price": 7.99,
+            "quantity": 0.4,
+            "unit": "kg"
+        },
+        {
+            "img": "chocolate.PNG",
+            "name": "Dark Chocolate",
+            "price": 1.89,
+            "quantity": 2.5,
+            "unit": "g"
+        },
+        {
+            "img": "cucumber.PNG",
+            "name": "Cucumber",
+            "price": 3.49,
+            "quantity": 1.5,
+            "unit": "kg"
+        },
+        {
+            "img": "milk.PNG",
+            "name": "Milk",
+            "price": 0.99,
+            "quantity": 3,
+            "unit": "pint"
+        },
+        {
+            "img": "onion.PNG",
+            "name": "Onion",
+            "price": 0.99,
+            "quantity": 4,
+            "unit": "piece"
+        },
+        {
+            "img": "pork-meat.PNG",
+            "name": "Meat (pork)",
+            "price": 6.99,
+            "quantity": 1.5,
+            "unit": "kg"
+        },
+        {
+            "img": "tomato.PNG",
+            "name": "Tomatoes",
+            "price": 3.99,
+            "quantity": 1,
+            "unit": "kg"
+        },
+        {
+            "img": "whiskey.PNG",
+            "name": "Whiskey",
+            "price": 19.99,
+            "quantity": 2,
+            "unit": "piece"
+        }
+    ]
+}
