@@ -4,21 +4,20 @@ import Image from 'next/image';
 import { allFoods } from './../../data/foods.json';
 
 export default function FoodListComponent() {
-    const [foods] = useState(allFoods);
-    const [error, setError] = useState<String>();
-
-    /* const [foods, setFoods] = useState<Food[]>([]);
+    const [foods, setFoods] = useState<typeof allFoods[]>();
 
     let foodsUrl = "http://localhost:8000/allFoods";
 
     useEffect(() => {
         fetch(foodsUrl)
-            .then((response) => response)
-            .then(e => e.json())
-            .then(e => setFlights(e as Food[]))
-            .catch(error =>
-                setError(error))
-    }, [foodsUrl]); */
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                setFoods(data);
+            });
+    }, [foodsUrl]);
 
     //A function that calculates the total price
     const calculateTotalPrice = useCallback(() => {
