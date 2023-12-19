@@ -5,5 +5,5 @@ export async function GET() {
     return NextResponse.json(allWines)
 }
 
-export { allWines, WineCategory }
+export { WineCategory }
 export type { Wine }
