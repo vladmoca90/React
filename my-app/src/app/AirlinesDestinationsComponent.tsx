@@ -1,15 +1,15 @@
 "use client";
 import { useEffect, useState } from "react";
 import { TotalDestinations } from "./TotalDestinationsComponent";
-import { Flight } from "./APIs/airlines-destinations/data";
+import { allFlights } from "./../../data/destinations.json";
 
 export default function AirlinesDestinationsComponent() {
-    const [flights, setFlights] = useState<Flight[]>([]);
+    const [flights, setFlights] = useState<typeof allFlights>([]);
 
-    let airlinesDestinationsUrl = "http://localhost:8000/destinations";
+    let flightsUrl = "http://localhost:8000/allFlights";
 
     useEffect(() => {
-        fetch(airlinesDestinationsUrl)
+        fetch(flightsUrl)
             .then(response => {
                 return response.json();
             })
@@ -17,7 +17,7 @@ export default function AirlinesDestinationsComponent() {
                 console.log(data);
                 setFlights(data);
             });
-    }, [airlinesDestinationsUrl]);
+    }, [flightsUrl]);
 
     return (
         <main className="main">
