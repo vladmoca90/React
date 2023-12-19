@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { allFoods } from './../../data/foods.json';
 
 export default function FoodListComponent() {
-    const [foods, setFoods] = useState<typeof allFoods[]>();
+    const [foods, setFoods] = useState<typeof allFoods>([]);
 
     let foodsUrl = "http://localhost:8000/allFoods";
 
@@ -24,7 +24,7 @@ export default function FoodListComponent() {
         let sum = 0;
 
         for (let i in foods) {
-            sum += (foods[i].price) * (foods[i].quantity);
+            sum += (allFoods[i].price) * (allFoods[i].quantity);
         }
 
         return sum;
@@ -35,7 +35,7 @@ export default function FoodListComponent() {
         let average = 0;
 
         for (let i in foods) {
-            average += (foods[i].price * foods[i].quantity) / (foods.length);
+            average += (allFoods[i].price * allFoods[i].quantity) / (foods.length);
         }
 
         return average;
@@ -43,11 +43,11 @@ export default function FoodListComponent() {
 
     //A function that returns the highest price of an item
     const getMostExpensiveItem = useCallback(() => {
-        let expensive = foods[0].price;
+        let expensive = allFoods[0].price;
 
         for (let i in foods) {
-            if (foods[i].price > expensive) {
-                expensive = foods[i].price;
+            if (allFoods[i].price > expensive) {
+                expensive = allFoods[i].price;
             }
         }
 
@@ -56,11 +56,11 @@ export default function FoodListComponent() {
 
     //A function that returns the smallest price of an item
     const getCheapestItem = useCallback(() => {
-        let cheapest = foods[0].price;
+        let cheapest = allFoods[0].price;
 
         for (let i in foods) {
-            if (foods[i].price < cheapest) {
-                cheapest = foods[i].price;
+            if (allFoods[i].price < cheapest) {
+                cheapest = allFoods[i].price;
             }
         }
 
