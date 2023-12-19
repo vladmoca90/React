@@ -42,7 +42,7 @@
     },
     {
       "airline": "KLM",
-      "destinations": ["Amsterdam-Schipol"]
+      "destinations": ["Amsterdam"]
     },
     {
       "airline": "Lufthansa",
@@ -54,7 +54,7 @@
     },
     {
       "airline": "Royal Air Jordanian",
-      "destinations": ["Amman-Queen Alia"]
+      "destinations": ["Amman"]
     },
     {
       "airline": "Oman Air",
