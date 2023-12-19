@@ -10,7 +10,7 @@ export default function WinesComponent() {
     const [error, setError] = useState<String>();
     const [categories] = useState<WineCategory[]>(Array.from(new Set(wines.map((wine) => wine.category))));
 
-    let winesSellUrl = "http://localhost:3000/APIs/wine-sell";
+   /* let winesSellUrl = "http://localhost:3000/APIs/wine-sell";
 
     useEffect(() => {
         fetch(winesSellUrl)
@@ -19,7 +19,7 @@ export default function WinesComponent() {
             .then(response => setWines(response as Wine[]))
             .catch(error =>
                 setError(error))
-    }, [winesSellUrl]);
+    }, [winesSellUrl]); */
 
     const whenWineIsSelected = useCallback((category: WineCategory | undefined) => {
         if (category === undefined) {

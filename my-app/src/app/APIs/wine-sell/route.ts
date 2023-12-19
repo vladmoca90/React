@@ -1,8 +1,9 @@
 import { NextResponse } from 'next/server';
-import { allWines } from './data';
+import { Wine, WineCategory, allWines } from './data';
 
 export async function GET() {
     return NextResponse.json(allWines)
 }
 
-export { allWines };
+export { allWines, WineCategory }
+export type { Wine }
