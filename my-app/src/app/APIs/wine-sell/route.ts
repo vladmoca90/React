@@ -5,4 +5,4 @@ export async function GET() {
     return NextResponse.json(allWines)
 }
 
-export { allWines };
+export { allWines }
