@@ -75,7 +75,7 @@ export default function TubeComponent() {
         console.log(statusName, lineStatus);
     }, []);
 
-    let tubeUrl = "http://localhost:3000/APIs/tube-status";
+   /* let tubeUrl = "http://localhost:3000/APIs/tube-status";
 
     useEffect(() => {
         fetch(tubeUrl)
@@ -86,7 +86,7 @@ export default function TubeComponent() {
                 console.log(data);
                 setLines(data);
             });
-    }, [tubeUrl]);
+    }, [tubeUrl]); */
 
     return (
         <div id="main">
