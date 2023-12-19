@@ -1,7 +1,6 @@
 "use client";
 import React, { ChangeEvent, useCallback, useEffect, useState } from 'react';
 import { LineStatus, tubeLines } from './APIs/tube-status/route';
-import { Line } from './APIs/tube-status/data';
 
 const getLineStatusClassName = (status: LineStatus) => {
     let lineStatusClass = '';
@@ -76,16 +75,18 @@ export default function TubeComponent() {
         console.log(statusName, lineStatus);
     }, []);
 
-    let tubeStatusUrl = "http://localhost:3000/APIs/tube-status";
+    let tubeUrl = "http://localhost:3000/APIs/tube-status";
 
     useEffect(() => {
-        fetch(tubeStatusUrl)
-            .then((response) => response)
-            .then(e => e.json())
-            .then(response => setLines(response as Line[]))
-            .catch(error =>
-                setError(error))
-    }, [tubeStatusUrl]);
+        fetch(tubeUrl)
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                setLines(data);
+            });
+    }, [tubeUrl]);
 
     return (
         <div id="main">
