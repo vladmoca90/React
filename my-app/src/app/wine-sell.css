@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
+
+body {
+    background-color: #fffbec;
+}
+
+.box {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px 0;
+}
+
+#productsList {
+    border: 1px solid #c1c1c1;
+    display: block;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin: 30px auto 45px;
+    padding: 8px 0 8px 8px;
+    width: 200px;
+}
+
+#productsList option {
+    border-radius: 0;
+}
+
+.products-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+@media screen and (min-width: 768px) {
+    .products-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin: 0 10px 20px;
+    min-width: 280px;
+    padding: 15px 0;
+}
+
+.product-description__top {
+    text-align: center;
+}
+
+.product .product-title {
+    color: #d38606;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.product .product-img {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
