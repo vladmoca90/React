@@ -1,5 +1,5 @@
 {
-    "foods": [
+    "allFoods": [
         {
             "img": "cheese.PNG",
             "name": "Cheese",
