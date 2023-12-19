@@ -6,15 +6,15 @@
     },
     {
       "airline": "Air France",
-      "destinations": ["Paris-Charles de Gaulle"]
+      "destinations": ["Paris-CDG"]
     },
     {
       "airline": "Avianca",
-      "destinations": ["Bogota-El Dorado"]
+      "destinations": ["Bogota"]
     },
     {
       "airline": "Brussels Airlines",
-      "destinations": ["Brussels-International"]
+      "destinations": ["Brussels"]
     },
     {
       "airline": "Cathay Pacific",
@@ -26,15 +26,15 @@
     },
     {
       "airline": "El Al",
-      "destinations": ["Tel Aviv-Ben Gurion"]
+      "destinations": ["Tel Aviv"]
     },
     {
       "airline": "Hainan Airlines",
-      "destinations": ["Beijing-Capital", "Shanghai-Pudong"]
+      "destinations": ["Beijing-Daxing", "Shanghai"]
     },
     {
       "airline": "Iran Air",
-      "destinations": ["Tehran-Khomeini"]
+      "destinations": ["Tehran"]
     },
     {
       "airline": "Japan Airlines",
@@ -62,18 +62,18 @@
     },
     {
       "airline": "TAROM",
-      "destinations": ["Bucharest-Otopeni"]
+      "destinations": ["Bucharest"]
     },
     {
       "airline": "Turkish Airlines",
-      "destinations": ["Istanbul-Ataturk"]
+      "destinations": ["Istanbul"]
     },
     {
       "airline": "United Airlines",
       "destinations": [
-        "Chicago-O'Hare",
-        "Dallas-Fort Worth",
-        "Houston-Intercontinental",
+        "Chicago",
+        "Dallas",
+        "Houston",
         "Los Angeles",
         "Newark",
         "San Francisco"
@@ -82,25 +82,25 @@
     {
       "airline": "Virgin Atlantic",
       "destinations": [
-        "Atlanta-Hartsfield Jackson",
-        "Boston-Logan",
-        "Delhi-Indira Ghandi",
+        "Atlanta",
+        "Boston",
+        "Delhi",
         "Havana",
         "Hong Kong",
-        "Johannesburg-Tambo",
+        "Johannesburg",
         "Lagos",
-        "Las Vegas-McCarran",
+        "Las Vegas",
         "Los Angeles",
         "Miami",
-        "Mumbai-Shivaji",
-        "New York–JFK",
+        "Mumbai",
+        "New York-JFK",
         "Newark",
         "San Francisco",
-        "São Paulo–Guarulhos",
+        "São Paulo",
         "Seattle/Tacoma",
-        "Shanghai–Pudong",
-        "Tel Aviv-Ben Gurion",
-        "Washington–Dulles"
+        "Shanghai",
+        "Tel Aviv",
+        "Washington"
       ]
     },
     {
