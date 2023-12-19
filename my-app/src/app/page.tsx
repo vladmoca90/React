@@ -1,8 +1,8 @@
-import TubeComponent from './TubeComponent';
+import AirlinesDestinationsComponent from './AirlinesDestinationsComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './tube-status.css';
+import './airlines-destinations.css';
 
-export default function TubePage() {
-    return (<TubeComponent />);
+export default function DestinationsPage() {
+    return (<AirlinesDestinationsComponent />);
 }
