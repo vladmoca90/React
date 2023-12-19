@@ -8,16 +8,18 @@ export default function CarsComponent() {
     const [error, setError] = useState<String>();
     const [selectedOption, setSelectedOption] = useState<String>();
 
-    let carsShowroomUrl = "http://localhost:3000/APIs/cars-showroom";
+    let carsUrl = "http://localhost:3000/APIs/cars-showroom";
 
     useEffect(() => {
-        fetch(carsShowroomUrl)
-            .then((response) => response)
-            .then(e => e.json())
-            .then(e => setCars(e as Car[]))
-            .catch(error =>
-                setError(error))
-    }, [carsShowroomUrl]);
+        fetch(carsUrl)
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                setCars(data);
+            });
+    }, [carsUrl]);
 
     //A function that removes the duplicates from the array and display each value once in the dropdown
     const removeDuplicatedMakes = useCallback(() => {
