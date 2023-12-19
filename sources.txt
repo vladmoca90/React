@@ -25,6 +25,8 @@ https://hackr.io/blog/react-projects - examples of projects
 https://flatlogic.com/blog/top-15-react-app-ideas-for-web-developer-in-2022/ - examples of projects
 
 
+https://www.youtube.com/watch?v=qdCHEUaFhBk&ab_channel=NetNinja --> video with json API server
+
 https://www.youtube.com/watch?v=-MFiza7ZRzs&ab_channel=DaveGray --> useful video to create APIs with Next.js
 
 https://www.youtube.com/watch?v=zR5FoKMAJp4&ab_channel=YaserAz --> 2nd useful video to create APIs with Next.js
