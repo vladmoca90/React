@@ -5,7 +5,7 @@ import { Food } from './api/food-list/food';
 import { allFoods } from './api/food-list/data';
 
 export default function FoodListComponent() {
-    const [foods] = useState<Food[]>([]);
+    const [foods] = useState(allFoods);
 
     //A function that calculates the total price
     const calculateTotalPrice = useCallback(() => {
