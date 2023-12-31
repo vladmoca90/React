@@ -1,10 +1,4 @@
-export interface Car {
-    img: string,
-    make: string,
-    model: string,
-    price: number,
-    year: number,
-}
+import { Car } from "./car";
 
 export const allCars: Car[] = [
     {
