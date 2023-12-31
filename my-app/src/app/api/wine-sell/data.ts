@@ -38,3 +38,5 @@ export const allWines: Wine[] = [
         category: WineCategory.Green,
     }
 ];
+
+export { WineCategory };
