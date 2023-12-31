@@ -1,13 +1,5 @@
-export interface Line {
-    name: string,
-    status: LineStatus,
-}
-
-export enum LineStatus {
-    Closed = 'Closed',
-    Good = 'Good',
-    PartSuspended = 'PartSuspended',
-}
+import { Line } from "./line";
+import { LineStatus } from "./lineStatus";
 
 export const tubeLines: Line[] = [
     {

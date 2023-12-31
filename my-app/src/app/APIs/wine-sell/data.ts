@@ -1,14 +1,5 @@
-export interface Wine {
-    category: WineCategory;
-    name: string;
-    img: string;
-}
-
-export enum WineCategory {
-    Red = 'Red',
-    White = 'White',
-    Green = 'Green',
-}
+import { Wine } from "./wine";
+import { WineCategory } from "./wineCategory";
 
 export const allWines: Wine[] = [
     {

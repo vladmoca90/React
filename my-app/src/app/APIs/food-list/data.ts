@@ -1,10 +1,4 @@
-export interface Food {
-    img: string,
-    name: string,
-    price: number,
-    quantity: number,
-    unit: string,
-}
+import { Food } from "./food";
 
 export const allFoods: Food[] = [
     {
