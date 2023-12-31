@@ -1,8 +1,8 @@
-import AirlinesDestinationsComponent from './AirlinesDestinationsComponent';
+import FoodListComponent from './FoodListComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './airlines-destinations.css';
+import './food-list.css';
 
-export default function DestinationsPage() {
-    return (<AirlinesDestinationsComponent />);
+export default function FoodListPage() {
+    return (<FoodListComponent />);
 }

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { TotalDestinations } from "./TotalDestinationsComponent";
-import { Flight } from "./APIs/airlines-destinations/flight";
+import { Flight } from "../APIs/airlines-destinations/flight";
 
 export default function AirlinesDestinationsComponent() {
     const [flights, setFlights] = useState<Flight[]>();
