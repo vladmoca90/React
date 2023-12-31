@@ -1,8 +1,8 @@
-import TubeComponent from './TubeComponent';
+import FoodListComponent from './FoodListComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './tube-status.css';
+import './food-list.css';
 
-export default function TubePage() {
-    return (<TubeComponent />);
+export default function FoodListPage() {
+    return (<FoodListComponent />);
 }

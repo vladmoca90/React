@@ -1,23 +1,11 @@
 "use client";
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import Image from 'next/image';
-import { Food } from './../api/food-list/food';
+import { Food } from './api/food-list/food';
+import { allFoods } from './api/food-list/data';
 
 export default function FoodListComponent() {
-    const [foods, setFoods] = useState<Food[]>();
-
-    let foodsUrl = "http://localhost:8000/api/food-list";
-
-    useEffect(() => {
-        fetch(foodsUrl)
-            .then(response => {
-                return response.json();
-            })
-            .then(data => {
-                console.log(data);
-                setFoods(data);
-            });
-    }, [foodsUrl]);
+    const [foods] = useState<Food[]>([]);
 
     //A function that calculates the total price
     const calculateTotalPrice = useCallback(() => {
