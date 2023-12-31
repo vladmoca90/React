@@ -1,7 +1,6 @@
 "use client";
 import { useState, useCallback } from 'react';
 import Image from 'next/image';
-import { Food } from './api/food-list/food';
 import { allFoods } from './api/food-list/data';
 
 export default function FoodListComponent() {

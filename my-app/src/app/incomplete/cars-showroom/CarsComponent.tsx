@@ -1,25 +1,11 @@
 "use client";
 import Image from 'next/image';
-import { useCallback, useEffect, useState } from 'react';
-import { Car } from './../api/cars-showroom/car';
+import { useCallback, useState } from 'react';
+import { allCars } from '../../api/cars-showroom/data';
 
 export default function CarsComponent() {
-    const [cars, setCars] = useState<Car[]>([]);
-    const [error, setError] = useState<String>();
+    const [cars] = useState(allCars);
     const [selectedOption, setSelectedOption] = useState<String>();
-
-    let carsUrl = "http://localhost:3000/APIs/cars-showroom";
-
-    useEffect(() => {
-        fetch(carsUrl)
-            .then(response => {
-                return response.json();
-            })
-            .then(data => {
-                console.log(data);
-                setCars(data);
-            });
-    }, [carsUrl]);
 
     //A function that removes the duplicates from the array and display each value once in the dropdown
     const removeDuplicatedMakes = useCallback(() => {
