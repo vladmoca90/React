@@ -4,19 +4,18 @@ import { TotalDestinations } from "./TotalDestinationsComponent";
 import { Flight } from "../APIs/airlines-destinations/flight";
 
 export default function AirlinesDestinationsComponent() {
-    const [flights, setFlights] = useState<Flight[]>();
+    const [flights, setFlights] = useState<Flight[]>([]);
+    const [error, setError] = useState<String>();
 
     let flightsUrl = "http://localhost:8000/APIs/airlines-destinations";
 
     useEffect(() => {
         fetch(flightsUrl)
-            .then(response => {
-                return response.json();
-            })
-            .then(data => {
-                console.log(data);
-                setFlights(data);
-            });
+            .then((response) => response)
+            .then(e => e.json())
+            .then(e => setFlights(e as Flight[]))
+            .catch(error =>
+                setError(error))
     }, [flightsUrl]);
 
     return (
