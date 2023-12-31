@@ -1,8 +1,8 @@
-import WinesComponent from './WinesComponent';
+import TubeComponent from './TubeComponent';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './wine-sell.css';
+import './tube-status.css';
 
-export default function WinesPage() {
-    return (<WinesComponent />);
+export default function TubePage() {
+    return (<TubeComponent />);
 }
