@@ -1,17 +1,18 @@
 "use client";
 import Image from 'next/image';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { WinesFilterComponent } from './WinesFilterComponent';
-import { Wine, WineCategory } from './APIs/wine-sell/data';
-import { allWines } from './APIs/wine-sell/route';
+import { allWines } from './api/wine-sell/route';
+import { WineCategory } from './api/wine-sell/wineCategory';
+import { Wine } from './api/wine-sell/wine';
 
 export default function WinesComponent() {
     const [originalWines] = useState<Wine[]>(allWines);
     const [wines, setWines] = useState<Wine[]>(allWines);
-    const [error, setError] = useState<String>();
+    // const [error, setError] = useState<String>();
     const [categories] = useState<WineCategory[]>(Array.from(new Set(wines.map((wine) => wine.category))));
 
-   /* let winesUrl = "http://localhost:3000/APIs/wine-sell";
+   /* let winesUrl = "http://localhost:3000/api/wine-sell";
 
     useEffect(() => {
         fetch(winesUrl)
