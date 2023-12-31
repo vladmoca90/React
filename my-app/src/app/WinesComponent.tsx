@@ -9,21 +9,7 @@ import { Wine } from './api/wine-sell/wine';
 export default function WinesComponent() {
     const [originalWines] = useState<Wine[]>(allWines);
     const [wines, setWines] = useState<Wine[]>(allWines);
-    // const [error, setError] = useState<String>();
     const [categories] = useState<WineCategory[]>(Array.from(new Set(wines.map((wine) => wine.category))));
-
-   /* let winesUrl = "http://localhost:3000/api/wine-sell";
-
-    useEffect(() => {
-        fetch(winesUrl)
-            .then(response => {
-                return response.json();
-            })
-            .then(data => {
-                console.log(data);
-                setWines(data);
-            });
-    }, [winesUrl]); */
 
     const whenWineIsSelected = useCallback((category: WineCategory | undefined) => {
         if (category === undefined) {

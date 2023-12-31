@@ -1,6 +1,6 @@
 "use client";
 import { useCallback } from 'react';
-import { Flight } from '../APIs/airlines-destinations/flight';
+import { Flight } from '../api/airlines-destinations/flight';
 
 export type TotalDestinationsProps = {
   flights: Flight[];

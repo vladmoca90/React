@@ -1,12 +1,12 @@
 "use client";
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
-import { Food } from '../APIs/food-list/food';
+import { Food } from './../api/food-list/food';
 
 export default function FoodListComponent() {
     const [foods, setFoods] = useState<Food[]>();
 
-    let foodsUrl = "http://localhost:8000/APIs/food-list";
+    let foodsUrl = "http://localhost:8000/api/food-list";
 
     useEffect(() => {
         fetch(foodsUrl)
