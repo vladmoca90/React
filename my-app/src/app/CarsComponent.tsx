@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import { useCallback, useState } from 'react';
-import { allCars } from '../../api/cars-showroom/data';
+import { allCars } from './api/cars-showroom/data';
 
 export default function CarsComponent() {
     const [cars] = useState(allCars);
